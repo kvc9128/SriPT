@@ -1,0 +1,32 @@
+2024-01-02 00:01:13,825 - DEBUG - Read all Unix Words
+2024-01-02 00:01:14,364 - DEBUG - Added book blood_of_olympus.txt
+2024-01-02 00:01:14,452 - DEBUG - Updated pickled file.
+2024-01-02 00:01:15,267 - DEBUG - Added book clash_of_kings.txt
+2024-01-02 00:01:15,333 - DEBUG - Updated pickled file.
+2024-01-02 00:01:15,640 - DEBUG - Added book Cracking-the-Coding-Interview.txt
+2024-01-02 00:01:15,700 - DEBUG - Updated pickled file.
+2024-01-02 00:01:16,466 - DEBUG - Added book Data Mining Concepts and Techniques.txt
+2024-01-02 00:01:16,534 - DEBUG - Updated pickled file.
+2024-01-02 00:01:17,132 - DEBUG - Added book Deep Learning by Ian Goodfellow.txt
+2024-01-02 00:01:17,203 - DEBUG - Updated pickled file.
+2024-01-02 00:01:17,778 - DEBUG - Added book Elements of Statistical Learning.txt
+2024-01-02 00:01:17,838 - DEBUG - Updated pickled file.
+2024-01-02 00:01:18,159 - DEBUG - Added book house_of_hades.txt
+2024-01-02 00:01:18,230 - DEBUG - Updated pickled file.
+2024-01-02 00:01:18,583 - DEBUG - Added book MachineLearning by TomMitchell.txt
+2024-01-02 00:01:18,678 - DEBUG - Updated pickled file.
+2024-01-02 00:01:18,963 - DEBUG - Added book mark_of_athena.txt
+2024-01-02 00:01:19,030 - DEBUG - Updated pickled file.
+2024-01-02 00:01:19,044 - DEBUG - Added book percy_jackson_and_the_greek_gods.txt
+2024-01-02 00:01:19,116 - DEBUG - Updated pickled file.
+2024-01-02 00:01:19,313 - DEBUG - Added book percy_jackson_and_the_lightning_thief.txt
+2024-01-02 00:01:19,378 - DEBUG - Updated pickled file.
+2024-01-02 00:01:20,138 - DEBUG - Added book storm_of_swords.txt
+2024-01-02 00:01:20,208 - DEBUG - Updated pickled file.
+2024-01-02 00:01:20,208 - INFO - Added all books.
+2024-01-02 00:01:20,886 - INFO - Wrote common_sense_qa words to pickle
+2024-01-02 00:01:28,469 - INFO - Wrote trivia_q_a words to pickle
+2024-01-02 00:01:39,415 - INFO - Wrote squad_web_qa words to pickle
+2024-01-02 00:03:45,370 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-02 00:04:00,479 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-02 00:04:00,479 - INFO - Vocabulary loaded successfully. Found 329755 words

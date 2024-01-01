@@ -17,7 +17,8 @@ def load_books(books: list, vocabulary: VOCAB):
 		logger.debug(msg="Added book " + book[18:])
 		file_pi = open(PICKLE_FILE_PATH, 'wb')
 		pickle.dump(vocabulary, file_pi)
-		logger.debug(msg="Wrote book's words to Vocab and pickled file.")
+		logger.debug(msg="Updated pickled file.")
+	logger.info(msg="Added all books.")
 
 
 def read_common_sense_qa(vocabulary):
@@ -43,23 +44,24 @@ def read_common_sense_qa(vocabulary):
 
 	file_pi = open(PICKLE_FILE_PATH, 'wb')
 	pickle.dump(vocabulary, file_pi)
-	logger.debug(msg="Wrote common_sense_qa words to pickle")
+	logger.info(msg="Wrote common_sense_qa words to pickle")
 
 
 def read_squad_web_qa(vocabulary):
-	file_path = "..Datasets/QA/squad_web.json"
+	file_path = "../Datasets/QA/squad_web.json"
 	with open(file_path, 'r') as file:
 		data = json.load(file)
 		# Iterate through each entry in the "Data" list
 		for entry in data['Data']:
 			question = entry['Question']
 			vocabulary.add_raw_sentence(question)
-			normalized_entity_name = entry['Answer']['NormalizedMatchedWikiEntityName']
+
+			normalized_entity_name = entry['Answer']['Value']
 			vocabulary.add_raw_sentence(normalized_entity_name)
 
 	file_pi = open(PICKLE_FILE_PATH, 'wb')
 	pickle.dump(vocabulary, file_pi)
-	logger.debug(msg="Wrote squad_web_qa words to pickle")
+	logger.info(msg="Wrote squad_web_qa words to pickle")
 
 
 def read_trivia_qa(vocabulary):
@@ -78,7 +80,7 @@ def read_trivia_qa(vocabulary):
 
 	file_pi = open(PICKLE_FILE_PATH, 'wb')
 	pickle.dump(vocabulary, file_pi)
-	logger.debug(msg="Wrote trivia_q_a words to pickle")
+	logger.info(msg="Wrote trivia_q_a words to pickle")
 
 
 def main():
@@ -105,29 +107,31 @@ def main():
 		except FileNotFoundError:
 			logger.critical(msg="File does not exist. Creating from scratch")
 			vocabulary = VOCAB("all_words")
+		finally:
+			message = "Vocabulary loaded successfully. Found " + str(vocabulary.num_words()) + " words"
+			logger.info(msg=message)
 	elif args.mode == 'create':
 		vocabulary = VOCAB("all_words")
+		logger.debug(msg="Read all Unix Words")
+		books = [
+			"../Datasets/Books/blood_of_olympus.txt",
+			"../Datasets/Books/clash_of_kings.txt",
+			"../Datasets/Books/Cracking-the-Coding-Interview.txt",
+			"../Datasets/Books/Data Mining Concepts and Techniques.txt",
+			"../Datasets/Books/Deep Learning by Ian Goodfellow.txt",
+			"../Datasets/Books/Elements of Statistical Learning.txt",
+			"../Datasets/Books/house_of_hades.txt",
+			"../Datasets/Books/MachineLearning by TomMitchell.txt",
+			"../Datasets/Books/mark_of_athena.txt",
+			"../Datasets/Books/percy_jackson_and_the_greek_gods.txt",
+			"../Datasets/Books/percy_jackson_and_the_lightning_thief.txt",
+			"../Datasets/Books/storm_of_swords.txt"
+		]
 
-	books = [
-		"../Datasets/Books/blood_of_olympus.txt",
-		"../Datasets/Books/clash_of_kings.txt",
-		"../Datasets/Books/Cracking-the-Coding-Interview.txt",
-		"../Datasets/Books/Data Mining Concepts and Techniques.txt",
-		"../Datasets/Books/Deep Learning by Ian Goodfellow.txt",
-		"../Datasets/Books/Elements of Statistical Learning.txt",
-		"../Datasets/Books/house_of_hades.txt",
-		"../Datasets/Books/MachineLearning by TomMitchell.txt",
-		"../Datasets/Books/mark_of_athena.txt",
-		"../Datasets/Books/percy_jackson_and_the_greek_gods.txt",
-		"../Datasets/Books/percy_jackson_and_the_lightning_thief.txt",
-		"../Datasets/Books/storm_of_swords.txt"
-	]
-
-	logger.debug(msg="Read all Unix Words")
-	load_books(books, vocabulary)
-	read_common_sense_qa(vocabulary)
-	read_squad_web_qa(vocabulary)
-	read_trivia_qa(vocabulary)
+		load_books(books, vocabulary)
+		read_common_sense_qa(vocabulary)
+		read_trivia_qa(vocabulary)
+		read_squad_web_qa(vocabulary)
 
 
 main()
