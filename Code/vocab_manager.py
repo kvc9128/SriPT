@@ -43,7 +43,7 @@ def read_common_sense_qa(vocabulary):
 
 	file_pi = open(PICKLE_FILE_PATH, 'wb')
 	pickle.dump(vocabulary, file_pi)
-	logger.debug(msg="Wrote common_sense_qa to pickle")
+	logger.debug(msg="Wrote common_sense_qa words to pickle")
 
 
 def read_squad_web_qa(vocabulary):
@@ -59,7 +59,26 @@ def read_squad_web_qa(vocabulary):
 
 	file_pi = open(PICKLE_FILE_PATH, 'wb')
 	pickle.dump(vocabulary, file_pi)
-	logger.debug(msg="Wrote squad_web_qa to pickle")
+	logger.debug(msg="Wrote squad_web_qa words to pickle")
+
+
+def read_trivia_qa(vocabulary):
+	file_path = "../Datasets/QA/trivia_q_a.json"
+	with open(file_path, 'r') as file:
+		json_data = json.load(file)
+
+		for item in json_data['data']:
+			for paragraph in item['paragraphs']:
+				for qa in paragraph['qas']:
+					question = qa['question']
+					vocabulary.add_raw_sentence(question)
+					# Assumes that you want the text of the first answer (if multiple answers exist)
+					answer_text = qa['answers'][0]['text'] if qa['answers'] else "No answer"
+					vocabulary.add_raw_sentence(answer_text)
+
+	file_pi = open(PICKLE_FILE_PATH, 'wb')
+	pickle.dump(vocabulary, file_pi)
+	logger.debug(msg="Wrote trivia_q_a words to pickle")
 
 
 def main():
@@ -108,6 +127,7 @@ def main():
 	load_books(books, vocabulary)
 	read_common_sense_qa(vocabulary)
 	read_squad_web_qa(vocabulary)
+	read_trivia_qa(vocabulary)
 
 
 main()
