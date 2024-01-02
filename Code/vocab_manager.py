@@ -86,7 +86,7 @@ def read_trivia_qa(vocabulary):
 def main():
 	parser = argparse.ArgumentParser(description='Process mode.')
 	# Add the --mode argument
-	parser.add_argument('--mode', default='create', choices=['create', 'load'],
+	parser.add_argument('--mode', default='load', choices=['create', 'load'],
 	                    help="Mode of operation: 'create' or 'load'")
 	# Parse the arguments
 	args = parser.parse_args()
