@@ -1,6 +1,6 @@
 import torch.nn as nn
-from MultiHeadSelfAttention import MultiHeadedSelfAttention
-from FeedForward import FeedForward
+from Code.Model.MultiHeadSelfAttention import MultiHeadedSelfAttention
+from Code.Model.FeedForward import FeedForward
 
 
 class Decoder(nn.Module):

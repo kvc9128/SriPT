@@ -30,3 +30,31 @@
 2024-01-02 00:03:45,370 - DEBUG - vocabulary object found and loaded successfully.
 2024-01-02 00:04:00,479 - DEBUG - vocabulary object found and loaded successfully.
 2024-01-02 00:04:00,479 - INFO - Vocabulary loaded successfully. Found 329755 words
+2024-01-02 18:28:41,136 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-02 18:28:41,137 - INFO - Vocabulary loaded successfully. Found 329755 words
+2024-01-02 18:29:10,450 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-02 18:29:10,450 - INFO - Vocabulary loaded successfully. Found 329755 words
+2024-01-02 18:29:52,116 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-02 18:29:52,116 - INFO - Vocabulary loaded successfully. Found 329755 words
+2024-01-02 18:30:06,956 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-02 18:30:06,957 - INFO - Vocabulary loaded successfully. Found 329755 words
+2024-01-02 18:30:18,237 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-02 18:30:18,237 - INFO - Vocabulary loaded successfully. Found 329755 words
+2024-01-02 18:30:26,800 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-02 18:30:26,800 - INFO - Vocabulary loaded successfully. Found 329755 words
+2024-01-02 18:30:26,886 - DEBUG - CACHEDIR=/Users/srikamal/.matplotlib
+2024-01-02 18:30:26,894 - DEBUG - Using fontManager instance from /Users/srikamal/.matplotlib/fontlist-v330.json
+2024-01-02 18:30:27,318 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-02 18:30:27,318 - INFO - Vocabulary loaded successfully. Found 329755 words
+2024-01-02 18:30:56,396 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-02 18:30:56,396 - INFO - Vocabulary loaded successfully. Found 329755 words
+2024-01-02 18:30:56,477 - DEBUG - CACHEDIR=/Users/srikamal/.matplotlib
+2024-01-02 18:30:56,480 - DEBUG - Using fontManager instance from /Users/srikamal/.matplotlib/fontlist-v330.json
+2024-01-02 18:30:56,893 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-02 18:30:56,893 - INFO - Vocabulary loaded successfully. Found 329755 words
+2024-01-02 18:30:57,070 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-02 18:30:57,070 - INFO - Vocabulary loaded successfully. Found 329755 words
+2024-01-02 18:31:00,123 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-02 18:31:00,123 - INFO - Vocabulary loaded successfully. Found 329755 words
+2024-01-02 18:31:00,124 - INFO - Started training on ../Datasets/Books/blood_of_olympus.txt
+2024-01-02 18:31:00,811 - INFO - Generated and shuffled sequences for book ../Datasets/Books/blood_of_olympus.txt

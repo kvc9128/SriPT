@@ -4,7 +4,7 @@ import logging
 import numpy as np
 import matplotlib.pyplot as plt
 from Code.vocab_manager import load_vocab
-from text_file_parser import create_sequences_from_book
+from Code.Train.text_file_parser import create_sequences_from_book
 
 logger = logging.getLogger(__name__)
 QUICK_SAVE_PATH = "quicksave/"
@@ -44,6 +44,9 @@ class Train:
 		for epoch in range(self.num_epochs):
 			losses = []
 			for i in range(0, len(self.encoded_sequences), self.batch_size):
+				if i + self.batch_size > len(self.encoded_sequences):
+					break  # Skip the last partial batch
+
 				batch_sequences = self.encoded_sequences[i:i + self.batch_size]
 				batch_targets = self.encoded_targets[i:i + self.batch_size]
 
@@ -135,5 +138,6 @@ class Train:
 				self.encoded_targets = encoded_targets[chunk_id: chunk_id + chunk_size]
 				model, optimizer = self.train()
 				Train.quick_save_model(model, optimizer, chunk_id, data_file_path, QUICK_SAVE_PATH)
+			self.plot_loss()
 			Train.quick_save_model(model, optimizer, -1, data_file_path, MODEL_FILE_PATH)
 			logger.info(f"Successfully trained on {data_file_path}")

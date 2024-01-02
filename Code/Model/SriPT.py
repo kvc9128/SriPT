@@ -1,7 +1,7 @@
 import torch.nn as nn
 
-from LM_Head import LMHead
-from DecoderStack import DecoderStack
+from Code.Model.LMHead import LMHead
+from Code.Model.DecoderStack import DecoderStack
 from Code.Utilities.Positional_Encoder import positional_encoder
 
 

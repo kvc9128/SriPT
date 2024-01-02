@@ -1,5 +1,5 @@
 import torch.nn as nn
-from Decoder import Decoder
+from Code.Model.Decoder import Decoder
 
 
 class DecoderStack(nn.Module):

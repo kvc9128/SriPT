@@ -140,9 +140,9 @@ def main():
 
 	# Execute based on the mode
 	if args.mode == 'load':
-		load_vocab()
+		return load_vocab()
 	elif args.mode == 'create':
-		create_vocab_from_scratch()
+		return create_vocab_from_scratch()
 
 
 main()
