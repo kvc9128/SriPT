@@ -11,6 +11,7 @@ from vocab import VOCAB
 logger = logging.getLogger(__name__)
 PICKLE_FILE_PATH = "../Datasets/Words/vocab.obj"
 
+
 def load_books(books: list, vocabulary: VOCAB):
 	for book in books:
 		vocabulary.add_book_from_txt_file(book)
@@ -83,6 +84,52 @@ def read_trivia_qa(vocabulary):
 	logger.info(msg="Wrote trivia_q_a words to pickle")
 
 
+def load_vocab():
+	try:
+		file_path = open(PICKLE_FILE_PATH, 'rb')
+		vocabulary = pickle.load(file_path)
+		if isinstance(vocabulary, VOCAB):
+			logger.debug(msg="vocabulary object found and loaded successfully.")
+		else:
+			logger.warning(msg="File does not contain a Vocab object. Creating from scratch")
+			return create_vocab_from_scratch()
+		return vocabulary
+	except pickle.UnpicklingError:
+		logger.critical(msg="UnPickling error. Creating from scratch")
+		return create_vocab_from_scratch()
+	except FileNotFoundError:
+		logger.critical(msg="File does not exist. Creating from scratch")
+		return create_vocab_from_scratch()
+	finally:
+		message = "Vocabulary loaded successfully. Found " + str(vocabulary.num_words()) + " words"
+		logger.info(msg=message)
+
+
+def create_vocab_from_scratch():
+	vocabulary = VOCAB("all_words")
+	logger.debug(msg="Read all Unix Words")
+	books = [
+		"../Datasets/Books/blood_of_olympus.txt",
+		"../Datasets/Books/clash_of_kings.txt",
+		"../Datasets/Books/Cracking-the-Coding-Interview.txt",
+		"../Datasets/Books/Data Mining Concepts and Techniques.txt",
+		"../Datasets/Books/Deep Learning by Ian Goodfellow.txt",
+		"../Datasets/Books/Elements of Statistical Learning.txt",
+		"../Datasets/Books/house_of_hades.txt",
+		"../Datasets/Books/MachineLearning by TomMitchell.txt",
+		"../Datasets/Books/mark_of_athena.txt",
+		"../Datasets/Books/percy_jackson_and_the_greek_gods.txt",
+		"../Datasets/Books/percy_jackson_and_the_lightning_thief.txt",
+		"../Datasets/Books/storm_of_swords.txt"
+	]
+
+	load_books(books, vocabulary)
+	read_common_sense_qa(vocabulary)
+	read_trivia_qa(vocabulary)
+	read_squad_web_qa(vocabulary)
+	return vocabulary
+
+
 def main():
 	parser = argparse.ArgumentParser(description='Process mode.')
 	# Add the --mode argument
@@ -93,45 +140,9 @@ def main():
 
 	# Execute based on the mode
 	if args.mode == 'load':
-		try:
-			file_path = open(PICKLE_FILE_PATH, 'rb')
-			vocabulary = pickle.load(file_path)
-			if isinstance(vocabulary, VOCAB):
-				logger.debug(msg="vocabulary object found and loaded successfully.")
-			else:
-				logger.warning(msg="File does not contain a Vocab object. Creating from scratch")
-				vocabulary = VOCAB("all_words")
-		except pickle.UnpicklingError:
-			logger.critical(msg="UnPickling error. Creating from scratch")
-			vocabulary = VOCAB("all_words")
-		except FileNotFoundError:
-			logger.critical(msg="File does not exist. Creating from scratch")
-			vocabulary = VOCAB("all_words")
-		finally:
-			message = "Vocabulary loaded successfully. Found " + str(vocabulary.num_words()) + " words"
-			logger.info(msg=message)
+		load_vocab()
 	elif args.mode == 'create':
-		vocabulary = VOCAB("all_words")
-		logger.debug(msg="Read all Unix Words")
-		books = [
-			"../Datasets/Books/blood_of_olympus.txt",
-			"../Datasets/Books/clash_of_kings.txt",
-			"../Datasets/Books/Cracking-the-Coding-Interview.txt",
-			"../Datasets/Books/Data Mining Concepts and Techniques.txt",
-			"../Datasets/Books/Deep Learning by Ian Goodfellow.txt",
-			"../Datasets/Books/Elements of Statistical Learning.txt",
-			"../Datasets/Books/house_of_hades.txt",
-			"../Datasets/Books/MachineLearning by TomMitchell.txt",
-			"../Datasets/Books/mark_of_athena.txt",
-			"../Datasets/Books/percy_jackson_and_the_greek_gods.txt",
-			"../Datasets/Books/percy_jackson_and_the_lightning_thief.txt",
-			"../Datasets/Books/storm_of_swords.txt"
-		]
-
-		load_books(books, vocabulary)
-		read_common_sense_qa(vocabulary)
-		read_trivia_qa(vocabulary)
-		read_squad_web_qa(vocabulary)
+		create_vocab_from_scratch()
 
 
 main()
