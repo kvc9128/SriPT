@@ -11,7 +11,7 @@ def positional_encoder(embedding_dimensions, sequence_length):
 	# Like the paper, I will use fixed embeddings, and generate them at run time
 	positional_encoding = torch.zeros(sequence_length, embedding_dimensions)
 	# position is an array going from 0-seq_len, but reshaped, so it's a 2d matrix [seq_len, 1]
-	position = torch.arange(0, sequence_length, dtype=torch.float).unsqueeze(1)
+	position = torch.arange(0, sequence_length, dtype=torch.int).unsqueeze(1)
 	# for every dimension_index, multiply by 2, divide by embedding_dimensions, and use that as exponent
 	# just read the paper again
 
@@ -22,5 +22,5 @@ def positional_encoder(embedding_dimensions, sequence_length):
 	# odd numbered columns are cosine
 	positional_encoding[:, 1::2] = torch.cos(position * div_term)
 
-	positional_encoding = positional_encoding.to(dtype=torch.float, device=DEVICE)
+	positional_encoding = positional_encoding.to(dtype=torch.long, device=DEVICE)
 	return positional_encoding

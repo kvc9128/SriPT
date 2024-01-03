@@ -1,7 +1,8 @@
 import os
+
+import numpy as np
 import torch
 import logging
-import torch.nn.functional as F
 
 from Code import vocab_manager
 from Code.Model.SriPT import SriPT
@@ -10,19 +11,19 @@ from Code.Utilities.Transcoder import encode_raw_text
 logger = logging.getLogger(__name__)
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-MODEL_FILE_PATH = "TRAINED_MODELS/checkpoint.pth"
+SAVED_FOLDER = "../TRAINED_MODELS/"
 
 
 def load_model(model):
 	try:
-		if os.path.exists(MODEL_FILE_PATH):
-			checkpoint = torch.load(MODEL_FILE_PATH)
-			model.load_state_dict(checkpoint['model_state_dict'])
+		if os.path.exists(SAVED_FOLDER):
+			model_path = os.path.join(SAVED_FOLDER, 'model.pt')
+			torch.save(model.state_dict(), model_path)
 			logger.info(f"Successfully loaded model with weights and parameters")
 		else:
 			logger.error("No checkpoint found. Please provide a model and checkpoint.")
 	except FileNotFoundError:
-		logger.error(f"Checkpoint file not found: {MODEL_FILE_PATH}")
+		logger.error(f"Checkpoint file not found: {SAVED_FOLDER}")
 	except KeyError as e:
 		logger.error(f"Missing key in checkpoint data: {e}")
 	except RuntimeError as e:
@@ -36,11 +37,10 @@ def load_model(model):
 def generate_text(model, start_prompt, context_window, VOCAB, max_output_length=48, temperature=0.95):
 	model.eval()
 	generated_sequence = start_prompt
-	start_prompt_len = len(start_prompt.split())
-	for _ in range(max_output_length + start_prompt_len):  # don't want to include length of q in a
+	for _ in range(max_output_length):  # don't want to include length of q in a
 		# Tokenize the current sequence
-		input_ids = encode_raw_text(generated_sequence, VOCAB, context_window)
-		input_tensor = torch.tensor([input_ids], dtype=torch.long, device=DEVICE)
+		input_ids = encode_raw_text(generated_sequence, VOCAB, context_window, inference=True)
+		input_tensor = torch.tensor(np.array([input_ids]), dtype=torch.long, device=DEVICE)
 
 		mask = torch.ones_like(input_tensor)
 		mask.to(DEVICE)
@@ -50,15 +50,17 @@ def generate_text(model, start_prompt, context_window, VOCAB, max_output_length=
 			output = model(input_tensor, mask)
 
 		output = output / temperature
-		probabilities = F.softmax(output, dim=-1)
+		most_likely_tokens = torch.argmax(output, dim=-1)  # pick tokens with highest probability
+		most_likely_tokens = most_likely_tokens[0]  # get the last token
+		most_likely_token = most_likely_tokens[-1]
 
-		predicted_token_id = torch.multinomial(probabilities, 1).item()
-
-		if predicted_token_id == VOCAB.word2index("EOS"):
+		if int(most_likely_token) == VOCAB.word2index("EOS"):
 			generated_sequence += "."
 			break
+		elif int(most_likely_token) == VOCAB.word2index("PAD"):
+			generated_sequence += ""
 		else:
-			generated_sequence += " " + VOCAB.index2word(predicted_token_id)
+			generated_sequence += " " + VOCAB.index2word(int(most_likely_token))
 
 	return generated_sequence
 
@@ -85,7 +87,7 @@ def setup_generation():
 
 	# load model and optimizer from previous state
 	model = load_model(model)
-	prompt = "His joints hurt"
+	prompt = "Jason was a"
 	print(generate_text(model, prompt, context_window, VOCAB))
 
 

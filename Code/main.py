@@ -62,7 +62,7 @@ def main():
 	book = books[0]  # change manually as we train
 	logger.info(f"Model has {total_params} parameters in model")
 	# print(MODEL)
-	# trainer.train_model_on(book)
+	trainer.train_model_on(book)
 
 
 main()

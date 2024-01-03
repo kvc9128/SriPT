@@ -8,7 +8,7 @@ from Code.Train.text_file_parser import create_sequences_from_book
 
 logger = logging.getLogger(__name__)
 QUICK_SAVE_PATH = "quicksave/"
-MODEL_FILE_PATH = "../TRAINED_MODELS/"
+SAVE_PATH = "../TRAINED_MODELS/"
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 
@@ -38,10 +38,10 @@ class Train:
 		# Internal function - do not use directly
 		train_losses = []
 		# Preallocate tensors
-		sequence_tensor = torch.empty((self.batch_size, self.context_window), dtype=torch.float,
+		sequence_tensor = torch.empty((self.batch_size, self.context_window), dtype=torch.long,
 		                              device=DEVICE)
-		mask_tensor = torch.empty_like(sequence_tensor, dtype=torch.float, device=DEVICE)
-		target_tensor = torch.empty((self.batch_size, self.context_window), dtype=torch.float,
+		mask_tensor = torch.empty_like(sequence_tensor, dtype=torch.long, device=DEVICE)
+		target_tensor = torch.empty((self.batch_size, self.context_window), dtype=torch.long,
 		                            device=DEVICE)
 
 		for epoch in range(self.num_epochs):
@@ -54,10 +54,10 @@ class Train:
 				batch_targets = self.encoded_targets[i:i + self.batch_size]
 
 				sequence_tensor[:len(batch_sequences)].copy_(torch.tensor(batch_sequences,
-				                                                          dtype=torch.float,
+				                                                          dtype=torch.long,
 				                                                          device=DEVICE))
 				target_tensor[:len(batch_targets)].copy_(torch.tensor(batch_targets,
-				                                                      dtype=torch.float,
+				                                                      dtype=torch.long,
 				                                                      device=DEVICE))
 				mask_tensor[:len(batch_sequences)].fill_(1)
 				mask_tensor[sequence_tensor == self.VOCAB.word2index("PAD")] = 0
@@ -95,34 +95,18 @@ class Train:
 
 	@staticmethod
 	def quick_save_model(model, optimizer, chunk_idx, document, path):
-		checkpoint = {
-			'model_state_dict': model.state_dict(),
-			'optimizer_state_dict': optimizer.state_dict(),
-			'chunk_id': chunk_idx
-		}
 		os.makedirs(path, exist_ok=True)
-		torch.save(checkpoint, os.path.join(path, 'checkpoint.pth'))
+		# save the model
+		model_path = os.path.join(path, 'model.pt')
+		torch.save(model.state_dict(), model_path)
+		optimizer_path = os.path.join(path, 'optimizer.pt')
+		torch.save(optimizer.state_dict(), optimizer_path)
+
 		with open(os.path.join(path, 'last_index.txt'), 'w') as f:
 			f.write(str(chunk_idx))
+
 		logger.info(
 			msg=f"Stored model and optimizer after {chunk_idx}e6 sequences for document {document}")
-
-	def load_quick_save(self):
-		"""
-		The expected flow is every so often, we save our progress. If there is an issue,
-		we must manually use load_quick_save to restore progress instead of starting from
-		scratch on a book.
-		:return:
-		"""
-		checkpoint_file = os.path.join(QUICK_SAVE_PATH, 'checkpoint.pth')
-		if os.path.exists(checkpoint_file):
-			checkpoint = torch.load(checkpoint_file)
-			self.model.load_state_dict(checkpoint['model_state_dict'])
-			self.optimizer.load_state_dict(checkpoint['optimizer_state_dict'])
-			chunk_idx = checkpoint['chunk_idx'] + 1
-			logger.info(f"Resuming from chunk index {chunk_idx}.")
-		else:
-			logger.error("No checkpoint found. Please provide a model and checkpoint.")
 
 	def train_model_on(self, data_file_path, chunk_size=int(1e6)):
 		"""
@@ -147,5 +131,5 @@ class Train:
 				model, optimizer = self.train()
 				Train.quick_save_model(model, optimizer, chunk_id, data_file_path, QUICK_SAVE_PATH)
 			self.plot_loss()
-			Train.quick_save_model(model, optimizer, -1, data_file_path, MODEL_FILE_PATH)
+			Train.quick_save_model(model, optimizer, chunk_id+1, data_file_path, SAVE_PATH)
 			logger.info(f"Successfully trained on {data_file_path}")

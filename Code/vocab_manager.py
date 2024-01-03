@@ -3,7 +3,8 @@ import json
 import argparse
 import logging
 
-from Code.vocab import VOCAB
+from vocab import VOCAB
+from log_config import setup_logging
 
 # create the logger
 logger = logging.getLogger(__name__)
@@ -91,6 +92,8 @@ def load_vocab():
 		else:
 			logger.warning(msg="File does not contain a Vocab object. Creating from scratch")
 			vocabulary = create_vocab_from_scratch()
+		message = f"Vocabulary loaded successfully with {vocabulary.num_words()} words."
+		logger.info(msg=message)
 		return vocabulary
 	except pickle.UnpicklingError:
 		logger.critical(msg="UnPickling error. Creating from scratch")
@@ -98,9 +101,6 @@ def load_vocab():
 	except FileNotFoundError:
 		logger.critical(msg="File does not exist. Creating from scratch")
 		return create_vocab_from_scratch()
-	finally:
-		message = "Vocabulary loaded successfully."
-		logger.info(msg=message)
 
 
 def create_vocab_from_scratch():
@@ -125,6 +125,8 @@ def create_vocab_from_scratch():
 	read_common_sense_qa(vocabulary)
 	read_trivia_qa(vocabulary)
 	read_squad_web_qa(vocabulary)
+	message = f"Vocabulary Created successfully with {vocabulary.num_words()} words."
+	logger.info(msg=message)
 	return vocabulary
 
 

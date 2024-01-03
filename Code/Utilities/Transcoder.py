@@ -4,13 +4,14 @@ import numpy as np
 logger = logging.getLogger(__name__)
 
 
-def encode_raw_text(text, VOCAB, seq_len):
+def encode_raw_text(text, VOCAB, seq_len, inference=False):
 	if isinstance(text, str):
 		text = VOCAB.normalize_string(text)
 		text = text.split()
 
 	if len(text) > seq_len:
-		logger.warning("Truncated sentence, exceeded context window size.")
+		if not inference:
+			logger.warning("Truncated sentence, exceeded context window size.")
 		text = text[-seq_len:]
 
 	# Original code replaced by more efficient flow below
