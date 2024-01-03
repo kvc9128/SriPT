@@ -11,7 +11,7 @@ def encode_raw_text(text, VOCAB, seq_len):
 
 	if len(text) > seq_len:
 		logger.warning("Truncated sentence, exceeded context window size.")
-		text = text[:seq_len]
+		text = text[-seq_len:]
 
 	# Original code replaced by more efficient flow below
 	# if len(words) < seq_len:

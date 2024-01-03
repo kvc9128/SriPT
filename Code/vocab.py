@@ -27,7 +27,6 @@ class VOCAB:
 		self.add_punctuation_and_numbers()
 		self.add_unix_words()
 
-
 	# Get a list of all words in corpus
 	def get_words(self):
 		return list(self._word2index.keys())

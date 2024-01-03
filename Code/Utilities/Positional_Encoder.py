@@ -7,6 +7,7 @@ def positional_encoder(embedding_dimensions, sequence_length):
 	:param sequence_length: The length of context history we consider. 
 	:return: A tensor of shape [seq_len, embedding_dimensions]
 	"""
+	DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 	# Like the paper, I will use fixed embeddings, and generate them at run time
 	positional_encoding = torch.zeros(sequence_length, embedding_dimensions)
 	# position is an array going from 0-seq_len, but reshaped, so it's a 2d matrix [seq_len, 1]
@@ -21,5 +22,5 @@ def positional_encoder(embedding_dimensions, sequence_length):
 	# odd numbered columns are cosine
 	positional_encoding[:, 1::2] = torch.cos(position * div_term)
 
-	positional_encoding = positional_encoding.to(torch.int64)
+	positional_encoding = positional_encoding.to(dtype=torch.float, device=DEVICE)
 	return positional_encoding

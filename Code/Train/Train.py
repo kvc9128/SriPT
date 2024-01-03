@@ -9,6 +9,7 @@ from Code.Train.text_file_parser import create_sequences_from_book
 logger = logging.getLogger(__name__)
 QUICK_SAVE_PATH = "quicksave/"
 MODEL_FILE_PATH = "../TRAINED_MODELS/"
+DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 
 class Train:
@@ -37,9 +38,11 @@ class Train:
 		# Internal function - do not use directly
 		train_losses = []
 		# Preallocate tensors
-		sequence_tensor = torch.empty((self.batch_size, self.context_window), dtype=torch.long)
-		mask_tensor = torch.empty_like(sequence_tensor, dtype=torch.long)
-		target_tensor = torch.empty((self.batch_size, self.context_window), dtype=torch.long)
+		sequence_tensor = torch.empty((self.batch_size, self.context_window), dtype=torch.float,
+		                              device=DEVICE)
+		mask_tensor = torch.empty_like(sequence_tensor, dtype=torch.float, device=DEVICE)
+		target_tensor = torch.empty((self.batch_size, self.context_window), dtype=torch.float,
+		                            device=DEVICE)
 
 		for epoch in range(self.num_epochs):
 			losses = []
@@ -51,9 +54,11 @@ class Train:
 				batch_targets = self.encoded_targets[i:i + self.batch_size]
 
 				sequence_tensor[:len(batch_sequences)].copy_(torch.tensor(batch_sequences,
-				                                                          dtype=torch.long))
+				                                                          dtype=torch.float,
+				                                                          device=DEVICE))
 				target_tensor[:len(batch_targets)].copy_(torch.tensor(batch_targets,
-				                                                      dtype=torch.long))
+				                                                      dtype=torch.float,
+				                                                      device=DEVICE))
 				mask_tensor[:len(batch_sequences)].fill_(1)
 				mask_tensor[sequence_tensor == self.VOCAB.word2index("PAD")] = 0
 
@@ -99,7 +104,8 @@ class Train:
 		torch.save(checkpoint, os.path.join(path, 'checkpoint.pth'))
 		with open(os.path.join(path, 'last_index.txt'), 'w') as f:
 			f.write(str(chunk_idx))
-		logger.info(msg=f"Stored model and optimizer after {chunk_idx}e6 sequences for document {document}")
+		logger.info(
+			msg=f"Stored model and optimizer after {chunk_idx}e6 sequences for document {document}")
 
 	def load_quick_save(self):
 		"""

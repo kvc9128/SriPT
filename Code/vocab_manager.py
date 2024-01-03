@@ -3,9 +3,7 @@ import json
 import argparse
 import logging
 
-# Do not delete, used to configure logging
-from log_config import setup_logging
-from vocab import VOCAB
+from Code.vocab import VOCAB
 
 # create the logger
 logger = logging.getLogger(__name__)
@@ -92,7 +90,7 @@ def load_vocab():
 			logger.debug(msg="vocabulary object found and loaded successfully.")
 		else:
 			logger.warning(msg="File does not contain a Vocab object. Creating from scratch")
-			return create_vocab_from_scratch()
+			vocabulary = create_vocab_from_scratch()
 		return vocabulary
 	except pickle.UnpicklingError:
 		logger.critical(msg="UnPickling error. Creating from scratch")
@@ -101,7 +99,7 @@ def load_vocab():
 		logger.critical(msg="File does not exist. Creating from scratch")
 		return create_vocab_from_scratch()
 	finally:
-		message = "Vocabulary loaded successfully. Found " + str(vocabulary.num_words()) + " words"
+		message = "Vocabulary loaded successfully."
 		logger.info(msg=message)
 
 
