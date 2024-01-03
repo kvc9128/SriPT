@@ -132,8 +132,10 @@ class Train:
 				text_file_path=data_file_path,
 				context_window_length=self.context_window
 			)
+			logger.info("Obtained sequences")
 			num_sequences = len(encoded_sequences)
 			for chunk_id in range(0, num_sequences, chunk_size):
+				logger.info(f"Training for chunk id {chunk_id}")
 				self.encoded_sequences = encoded_sequences[chunk_id: chunk_id + chunk_size]
 				self.encoded_targets = encoded_targets[chunk_id: chunk_id + chunk_size]
 				model, optimizer = self.train()

@@ -62,7 +62,7 @@ def generate_sequences_for_text(normalized_text, context_window_length, VOCAB, t
 	np.random.shuffle(indices)
 	shuffled_encoded_sequences = encoded_sequences[indices]
 	shuffled_encoded_targets = encoded_targets[indices]
-	logger.info(msg="Generated and shuffled sequences for book " + text_file_path)
+	logger.info(msg=f"Generated and shuffled {len(shuffled_encoded_sequences)} sequences for book " + text_file_path[18:])
 	return shuffled_encoded_sequences, shuffled_encoded_targets
 
 

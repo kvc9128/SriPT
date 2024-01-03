@@ -12,11 +12,12 @@ import re
 
 
 class VOCAB:
-	def __init__(self, name):
+	def __init__(self, name, min_occurrence=2):
 		self.SOS = "SOS"
 		self.EOS = "EOS"
 		self.PAD = "PAD"
 		self.UNK = "UNK"
+		self.min_count = min_occurrence
 		self.file_path = "../Datasets/Words/unix-words.txt"
 		self.name = name  # The name of the vocabulary
 		self._word2index = {"SOS": 0, "EOS": 1, "PAD": 2, "UNK": 3}  # Map word to token index
@@ -25,6 +26,7 @@ class VOCAB:
 		self._n_words = 4  # Count SOS, EOS and PAD and UNK
 		self.add_punctuation_and_numbers()
 		self.add_unix_words()
+
 
 	# Get a list of all words in corpus
 	def get_words(self):
@@ -48,14 +50,21 @@ class VOCAB:
 		else:
 			return self._index2word[token]
 
-	# Add all words from unix-words to VOCAB object
+	# Add all words from unix-words to VOCAB object that occur min_occurrence number of times
 	def add_unix_words(self):
+		word_count = {}
 		with open(self.file_path, 'r') as file:
 			words = file.readlines()
 		# Remove newline characters
-		words = [word.strip() for word in words]
 		for word in words:
-			self.add_word(word)
+			word = word.strip()
+			if word in word_count:
+				word_count[word] += 1
+			else:
+				word_count[word] = 1
+		for word, count in word_count.items():
+			if count >= self.min_count:
+				self.add_word(word)
 
 	# Add all the words in a sentence to the vocabulary
 	def add_normalized_sentence(self, sentence):

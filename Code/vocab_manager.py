@@ -106,7 +106,7 @@ def load_vocab():
 
 
 def create_vocab_from_scratch():
-	vocabulary = VOCAB("all_words")
+	vocabulary = VOCAB("all_words", min_occurrence=2)
 	logger.debug(msg="Read all Unix Words")
 	books = [
 		"../Datasets/Books/blood_of_olympus.txt",

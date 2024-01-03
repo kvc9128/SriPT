@@ -24,10 +24,10 @@ books = [
 
 def main():
 	# Hyperparameters
-	embedding_dimension = 512
-	context_window = 64  # context window
-	number_of_decoder_layers = 8
-	num_attention_heads = 6
+	embedding_dimension = 256
+	context_window = 24  # context window
+	number_of_decoder_layers = 6
+	num_attention_heads = 4
 	dropout_rate = 0.15
 	VOCAB = vocab_manager.load_vocab()
 	VOCAB_SIZE = VOCAB.num_words()
@@ -43,8 +43,8 @@ def main():
 
 	OPTIMIZER = torch.optim.Adam(MODEL.parameters(), lr=0.0001)
 	LOSS_FN = nn.CrossEntropyLoss()
-	EPOCHS = 25
-	BATCH_SIZE = 128
+	EPOCHS = 4
+	BATCH_SIZE = 256
 
 	trainer = Train(
 		model=MODEL,
@@ -54,6 +54,12 @@ def main():
 		optimizer=OPTIMIZER,
 		context_window=context_window
 	)
+
+	total_params = sum(
+		param.numel() for param in MODEL.parameters()
+	)
+	logger.info(f"Model has {total_params} parameters in model")
+	# print(MODEL)
 
 	book = books[0]  # change manually as we train
 	trainer.train_model_on(book)
