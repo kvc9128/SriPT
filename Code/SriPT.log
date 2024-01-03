@@ -16678,3 +16678,40 @@
 2024-01-03 00:04:35,711 - DEBUG - ticklocs array([1.e-02, 1.e-01, 1.e+00, 1.e+01, 1.e+02])
 2024-01-03 00:04:40,674 - INFO - Stored model and optimizer after -1e6 sequences for document ../Datasets/Books/blood_of_olympus.txt
 2024-01-03 00:04:40,674 - INFO - Successfully trained on ../Datasets/Books/blood_of_olympus.txt
+2024-01-03 12:13:28,054 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-03 12:13:28,055 - INFO - Vocabulary loaded successfully. Found 124520 words
+2024-01-03 12:13:28,136 - DEBUG - CACHEDIR=/Users/srikamal/.matplotlib
+2024-01-03 12:13:28,142 - DEBUG - Using fontManager instance from /Users/srikamal/.matplotlib/fontlist-v330.json
+2024-01-03 12:13:28,530 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-03 12:13:28,531 - INFO - Vocabulary loaded successfully. Found 124520 words
+2024-01-03 12:13:28,589 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-03 12:13:28,589 - INFO - Vocabulary loaded successfully. Found 124520 words
+2024-01-03 12:13:29,773 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-03 12:13:29,773 - INFO - Vocabulary loaded successfully. Found 124520 words
+2024-01-03 12:13:29,774 - INFO - Model has 68617832 parameters in model
+2024-01-03 12:15:36,074 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-03 12:15:36,074 - INFO - Vocabulary loaded successfully. Found 124520 words
+2024-01-03 12:15:36,143 - DEBUG - CACHEDIR=/Users/srikamal/.matplotlib
+2024-01-03 12:15:36,146 - DEBUG - Using fontManager instance from /Users/srikamal/.matplotlib/fontlist-v330.json
+2024-01-03 12:15:36,469 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-03 12:15:36,469 - INFO - Vocabulary loaded successfully. Found 124520 words
+2024-01-03 12:15:36,524 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-03 12:15:36,524 - INFO - Vocabulary loaded successfully. Found 124520 words
+2024-01-03 12:15:37,574 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-03 12:15:37,574 - INFO - Vocabulary loaded successfully. Found 124520 words
+2024-01-03 12:15:37,575 - INFO - Model has 68617832 parameters in model
+2024-01-03 12:15:37,811 - INFO - Found 130150 words in book
+2024-01-03 12:17:09,131 - INFO - Generated and shuffled 3123000 sequences for book blood_of_olympus.txt
+2024-01-03 12:20:16,364 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-03 12:20:16,364 - INFO - Vocabulary loaded successfully. Found 124520 words
+2024-01-03 12:20:16,452 - DEBUG - CACHEDIR=/Users/srikamal/.matplotlib
+2024-01-03 12:20:16,456 - DEBUG - Using fontManager instance from /Users/srikamal/.matplotlib/fontlist-v330.json
+2024-01-03 12:20:16,834 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-03 12:20:16,834 - INFO - Vocabulary loaded successfully. Found 124520 words
+2024-01-03 12:20:16,891 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-03 12:20:16,891 - INFO - Vocabulary loaded successfully. Found 124520 words
+2024-01-03 12:20:17,952 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-03 12:20:17,952 - INFO - Vocabulary loaded successfully. Found 124520 words
+2024-01-03 12:20:17,953 - INFO - Model has 68617832 parameters in model
+2024-01-03 12:20:18,189 - INFO - Found 130150 words in book
+2024-01-03 12:21:48,800 - INFO - Generated and shuffled 3123000 sequences for book blood_of_olympus.txt

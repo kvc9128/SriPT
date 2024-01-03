@@ -12,9 +12,10 @@ def create_sequences_from_book(VOCAB, text_file_path, context_window_length):
 			# Convert any unicode to ascii, and normalize the string
 			normalized_text = VOCAB.normalize_string(text)
 			normalized_text = [word for word in normalized_text.split()]
+			logger.info(f"Found {len(normalized_text)} words in book")
 			# TODO change how much txt we are passing in, only reduce for testing
 			return generate_sequences_for_text(
-				normalized_text[:250],
+				normalized_text,
 				context_window_length,
 				VOCAB,
 				text_file_path

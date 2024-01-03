@@ -21,5 +21,5 @@ def positional_encoder(embedding_dimensions, sequence_length):
 	# odd numbered columns are cosine
 	positional_encoding[:, 1::2] = torch.cos(position * div_term)
 
-	positional_encoding = torch.tensor(positional_encoding, dtype=torch.float)
+	positional_encoding = positional_encoding.to(torch.int64)
 	return positional_encoding

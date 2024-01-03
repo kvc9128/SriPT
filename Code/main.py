@@ -4,6 +4,7 @@ import torch.nn as nn
 import vocab_manager
 from Model.SriPT import SriPT
 from Train.Train import Train
+from Code.Train.text_file_parser import create_sequences_from_book
 
 logger = logging.getLogger(__name__)
 books = [
@@ -58,11 +59,17 @@ def main():
 	total_params = sum(
 		param.numel() for param in MODEL.parameters()
 	)
+	book = books[0]  # change manually as we train
 	logger.info(f"Model has {total_params} parameters in model")
+	encoded_sequences, encoded_targets = create_sequences_from_book(
+		VOCAB=VOCAB,
+		text_file_path=book,
+		context_window_length=context_window
+	)
 	# print(MODEL)
 
-	book = books[0]  # change manually as we train
-	trainer.train_model_on(book)
+
+	# trainer.train_model_on(book)
 
 
 main()
