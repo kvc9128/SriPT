@@ -5,6 +5,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from Code.vocab_manager import load_vocab
 from Code.Train.text_file_parser import create_sequences_from_book
+from Code.Train.text_file_parser import create_sequences_from_json
 
 logger = logging.getLogger(__name__)
 QUICK_SAVE_PATH = "quicksave/"
@@ -94,7 +95,7 @@ class Train:
 		plt.show()
 
 	@staticmethod
-	def quick_save_model(model, optimizer, chunk_idx, document, path):
+	def quick_save_model(model, optimizer, document, path):
 		os.makedirs(path, exist_ok=True)
 		# save the model
 		model_path = os.path.join(path, 'model.pt')
@@ -102,13 +103,10 @@ class Train:
 		optimizer_path = os.path.join(path, 'optimizer.pt')
 		torch.save(optimizer.state_dict(), optimizer_path)
 
-		with open(os.path.join(path, 'last_index.txt'), 'w') as f:
-			f.write(str(chunk_idx))
-
 		logger.info(
-			msg=f"Stored model and optimizer after {chunk_idx}e6 sequences for document {document}")
+			msg=f"Stored model for document {document}")
 
-	def train_model_on(self, data_file_path, chunk_size=int(1e6)):
+	def train_model_on(self, data_file_path):
 		"""
 		Chunk size is the number of instances, after which, the model will be saved, and
 		:param data_file_path:
@@ -116,20 +114,26 @@ class Train:
 		:return:
 		"""
 		logger.info(f"Started training on {data_file_path}")
+		encoded_sequences, encoded_targets = None, None
 		if data_file_path[-4:] == ".txt":
 			encoded_sequences, encoded_targets = create_sequences_from_book(
 				VOCAB=self.VOCAB,
 				text_file_path=data_file_path,
 				context_window_length=self.context_window
 			)
-			logger.info("Obtained sequences")
-			num_sequences = len(encoded_sequences)
-			for chunk_id in range(0, num_sequences, chunk_size):
-				logger.info(f"Training for chunk id {chunk_id}")
-				self.encoded_sequences = encoded_sequences[chunk_id: chunk_id + chunk_size]
-				self.encoded_targets = encoded_targets[chunk_id: chunk_id + chunk_size]
-				model, optimizer = self.train()
-				Train.quick_save_model(model, optimizer, chunk_id, data_file_path, QUICK_SAVE_PATH)
-			self.plot_loss()
-			Train.quick_save_model(model, optimizer, chunk_id+1, data_file_path, SAVE_PATH)
-			logger.info(f"Successfully trained on {data_file_path}")
+			logger.debug("Obtained sequences for book")
+
+		elif data_file_path[-5:] == ".json":
+			encoded_sequences, encoded_targets = create_sequences_from_json(
+				VOCAB=self.VOCAB,
+				json_file_path=data_file_path,
+				context_window_length=self.context_window
+			)
+			logger.debug(f"Obtained sequences for json file {data_file_path}")
+
+		self.encoded_sequences = encoded_sequences
+		self.encoded_targets = encoded_targets
+		model, optimizer = self.train()
+		self.plot_loss()
+		Train.quick_save_model(model, optimizer, data_file_path, SAVE_PATH)
+		logger.info(f"Successfully trained on {data_file_path}")

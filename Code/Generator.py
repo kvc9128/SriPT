@@ -68,7 +68,7 @@ def generate_text(model, start_prompt, context_window, VOCAB, max_output_length=
 def setup_generation():
 	# defining hyperparameters TODO: Move these to a file so that we don't need to edit in main and here
 	embedding_dimension = 256
-	context_window = 24  # context window
+	context_window = 32  # context window
 	number_of_decoder_layers = 6
 	num_attention_heads = 4
 	dropout_rate = 0.15

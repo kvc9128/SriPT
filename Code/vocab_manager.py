@@ -18,7 +18,7 @@ def load_books(books: list, vocabulary: VOCAB):
 		file_pi = open(PICKLE_FILE_PATH, 'wb')
 		pickle.dump(vocabulary, file_pi)
 		logger.debug(msg="Updated pickled file.")
-	logger.info(msg="Added all books.")
+	logger.info(msg="Added all datasets.")
 
 
 def read_common_sense_qa(vocabulary):

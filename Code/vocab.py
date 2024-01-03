@@ -12,20 +12,21 @@ import re
 
 
 class VOCAB:
-	def __init__(self, name, min_occurrence=2):
+	def __init__(self, name, min_occurrence=3):
 		self.SOS = "SOS"
 		self.EOS = "EOS"
 		self.PAD = "PAD"
 		self.UNK = "UNK"
 		self.min_count = min_occurrence
-		self.file_path = "../Datasets/Words/unix-words.txt"
+		self.write_file_path = "../Datasets/Words/unix-words.txt"
+		self.read_file_path = "../Datasets/Words/30k.txt"
 		self.name = name  # The name of the vocabulary
 		self._word2index = {"SOS": 0, "EOS": 1, "PAD": 2, "UNK": 3}  # Map word to token index
 		self._index2word = {0: "SOS", 1: "EOS", 2: "PAD", 3: "UNK"}  # Map token index to word
 		# Number of unique words in the corpus
 		self._n_words = 4  # Count SOS, EOS and PAD and UNK
-		self.add_punctuation_and_numbers()
 		self.add_unix_words()
+		self.add_punctuation_and_numbers()
 
 	# Get a list of all words in corpus
 	def get_words(self):
@@ -49,10 +50,10 @@ class VOCAB:
 		else:
 			return self._index2word[token]
 
-	# Add all words from unix-words to VOCAB object that occur min_occurrence number of times
+	# Add all words from 30k-words to VOCAB object that occur min_occurrence number of times
 	def add_unix_words(self):
 		word_count = {}
-		with open(self.file_path, 'r') as file:
+		with open(self.read_file_path, 'r') as file:
 			words = file.readlines()
 		# Remove newline characters
 		for word in words:
@@ -84,7 +85,7 @@ class VOCAB:
 			self._word2index[word] = self._n_words
 			self._index2word[self._n_words] = word
 			self._n_words += 1
-			with open(self.file_path, 'a') as file:
+			with open(self.write_file_path, 'a') as file:
 				# Write each new word on a new line
 				file.write(word + '\n')
 
@@ -100,6 +101,8 @@ class VOCAB:
 		s = VOCAB.unicode_to_ascii(s.lower().strip())
 		s = re.sub(r"([?!]+)", r"\1 ", s)
 		s = re.sub(r"\.", " EOS", s)  # Replace periods with 'EOS'
+		s = re.sub(r"\?", " EOS", s)  # Replace Question marks with 'EOS'
+		s = re.sub(r"!", " EOS", s)  # Replace Exclamation marks with 'EOS'
 		s = re.sub(r"[^a-zA-ZEOS!?]+", r" ", s)
 		return s
 

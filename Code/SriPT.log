@@ -3,3 +3,319 @@
 2024-01-03 15:28:37,318 - WARNING - This is a warning message
 2024-01-03 15:28:37,318 - ERROR - This is an error message
 2024-01-03 15:28:37,318 - CRITICAL - This is a critical message
+2024-01-03 21:04:17,072 - WARNING - File does not contain a Vocab object. Creating from scratch
+2024-01-03 21:04:28,196 - WARNING - File does not contain a Vocab object. Creating from scratch
+2024-01-03 21:04:30,684 - DEBUG - Read all Unix Words
+2024-01-03 21:04:31,227 - DEBUG - Added book blood_of_olympus.txt
+2024-01-03 21:04:31,235 - DEBUG - Updated pickled file.
+2024-01-03 21:05:55,461 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-03 21:05:55,461 - INFO - Vocabulary loaded successfully with 35069 words.
+2024-01-03 21:06:27,459 - DEBUG - Read all Unix Words
+2024-01-03 21:06:27,669 - DEBUG - Added book blood_of_olympus.txt
+2024-01-03 21:06:27,679 - DEBUG - Updated pickled file.
+2024-01-03 21:06:28,599 - DEBUG - Added book clash_of_kings.txt
+2024-01-03 21:06:28,608 - DEBUG - Updated pickled file.
+2024-01-03 21:06:28,920 - DEBUG - Added book Cracking-the-Coding-Interview.txt
+2024-01-03 21:06:28,931 - DEBUG - Updated pickled file.
+2024-01-03 21:06:29,818 - DEBUG - Added book Data Mining Concepts and Techniques.txt
+2024-01-03 21:06:29,831 - DEBUG - Updated pickled file.
+2024-01-03 21:06:30,468 - DEBUG - Added book Deep Learning by Ian Goodfellow.txt
+2024-01-03 21:06:30,477 - DEBUG - Updated pickled file.
+2024-01-03 21:06:31,053 - DEBUG - Added book Elements of Statistical Learning.txt
+2024-01-03 21:06:31,064 - DEBUG - Updated pickled file.
+2024-01-03 21:06:31,369 - DEBUG - Added book house_of_hades.txt
+2024-01-03 21:06:31,380 - DEBUG - Updated pickled file.
+2024-01-03 21:06:31,787 - DEBUG - Added book MachineLearning by TomMitchell.txt
+2024-01-03 21:06:31,798 - DEBUG - Updated pickled file.
+2024-01-03 21:06:32,069 - DEBUG - Added book mark_of_athena.txt
+2024-01-03 21:06:32,080 - DEBUG - Updated pickled file.
+2024-01-03 21:06:32,096 - DEBUG - Added book percy_jackson_and_the_greek_gods.txt
+2024-01-03 21:06:32,109 - DEBUG - Updated pickled file.
+2024-01-03 21:06:32,308 - DEBUG - Added book percy_jackson_and_the_lightning_thief.txt
+2024-01-03 21:06:32,319 - DEBUG - Updated pickled file.
+2024-01-03 21:06:33,083 - DEBUG - Added book storm_of_swords.txt
+2024-01-03 21:06:33,098 - DEBUG - Updated pickled file.
+2024-01-03 21:06:33,098 - INFO - Added all books.
+2024-01-03 21:06:33,709 - INFO - Wrote common_sense_qa words to pickle
+2024-01-03 21:06:41,339 - INFO - Wrote trivia_q_a words to pickle
+2024-01-03 21:06:52,396 - INFO - Wrote squad_web_qa words to pickle
+2024-01-03 21:06:52,625 - INFO - Vocabulary Created successfully with 124520 words.
+2024-01-03 21:09:15,804 - DEBUG - Read all Unix Words
+2024-01-03 21:09:15,987 - DEBUG - Added book blood_of_olympus.txt
+2024-01-03 21:09:16,015 - DEBUG - Updated pickled file.
+2024-01-03 21:09:16,495 - DEBUG - Added book clash_of_kings.txt
+2024-01-03 21:09:16,520 - DEBUG - Updated pickled file.
+2024-01-03 21:09:16,639 - DEBUG - Added book Cracking-the-Coding-Interview.txt
+2024-01-03 21:09:16,666 - DEBUG - Updated pickled file.
+2024-01-03 21:09:17,118 - DEBUG - Added book Data Mining Concepts and Techniques.txt
+2024-01-03 21:09:17,142 - DEBUG - Updated pickled file.
+2024-01-03 21:09:17,563 - DEBUG - Added book Deep Learning by Ian Goodfellow.txt
+2024-01-03 21:09:17,587 - DEBUG - Updated pickled file.
+2024-01-03 21:09:18,082 - DEBUG - Added book Elements of Statistical Learning.txt
+2024-01-03 21:09:18,108 - DEBUG - Updated pickled file.
+2024-01-03 21:09:18,338 - DEBUG - Added book house_of_hades.txt
+2024-01-03 21:09:18,370 - DEBUG - Updated pickled file.
+2024-01-03 21:09:18,620 - DEBUG - Added book MachineLearning by TomMitchell.txt
+2024-01-03 21:09:18,648 - DEBUG - Updated pickled file.
+2024-01-03 21:09:18,874 - DEBUG - Added book mark_of_athena.txt
+2024-01-03 21:09:18,901 - DEBUG - Updated pickled file.
+2024-01-03 21:09:18,910 - DEBUG - Added book percy_jackson_and_the_greek_gods.txt
+2024-01-03 21:09:18,937 - DEBUG - Updated pickled file.
+2024-01-03 21:09:19,065 - DEBUG - Added book percy_jackson_and_the_lightning_thief.txt
+2024-01-03 21:09:19,093 - DEBUG - Updated pickled file.
+2024-01-03 21:09:19,774 - DEBUG - Added book storm_of_swords.txt
+2024-01-03 21:09:19,810 - DEBUG - Updated pickled file.
+2024-01-03 21:09:19,811 - INFO - Added all books.
+2024-01-03 21:09:20,220 - INFO - Wrote common_sense_qa words to pickle
+2024-01-03 21:09:24,761 - INFO - Wrote trivia_q_a words to pickle
+2024-01-03 21:09:34,140 - INFO - Wrote squad_web_qa words to pickle
+2024-01-03 21:09:34,370 - INFO - Vocabulary Created successfully with 127669 words.
+2024-01-03 21:11:51,611 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-03 21:11:51,611 - INFO - Vocabulary loaded successfully with 127669 words.
+2024-01-03 21:13:48,188 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-03 21:13:48,188 - INFO - Vocabulary loaded successfully with 127669 words.
+2024-01-03 21:13:48,243 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-03 21:13:48,243 - INFO - Vocabulary loaded successfully with 127669 words.
+2024-01-03 21:13:49,307 - INFO - Successfully loaded model with weights and parameters
+2024-01-03 21:14:16,825 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-03 21:14:16,825 - INFO - Vocabulary loaded successfully with 127669 words.
+2024-01-03 21:14:16,883 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-03 21:14:16,883 - INFO - Vocabulary loaded successfully with 127669 words.
+2024-01-03 21:14:17,937 - INFO - Successfully loaded model with weights and parameters
+2024-01-03 21:16:39,547 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-03 21:16:39,547 - INFO - Vocabulary loaded successfully with 127669 words.
+2024-01-03 21:16:39,597 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-03 21:16:39,597 - INFO - Vocabulary loaded successfully with 127669 words.
+2024-01-03 21:16:40,507 - INFO - Successfully loaded model with weights and parameters
+2024-01-03 21:18:40,738 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-03 21:18:40,739 - INFO - Vocabulary loaded successfully with 127669 words.
+2024-01-03 21:18:40,792 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-03 21:18:40,792 - INFO - Vocabulary loaded successfully with 127669 words.
+2024-01-03 21:18:42,071 - INFO - Successfully loaded model with weights and parameters
+2024-01-03 22:04:53,081 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-03 22:04:53,082 - INFO - Vocabulary loaded successfully with 127669 words.
+2024-01-03 22:04:53,233 - DEBUG - CACHEDIR=/Users/srikamal/.matplotlib
+2024-01-03 22:04:53,241 - DEBUG - Using fontManager instance from /Users/srikamal/.matplotlib/fontlist-v330.json
+2024-01-03 22:04:58,965 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-03 22:04:58,965 - INFO - Vocabulary loaded successfully with 127669 words.
+2024-01-03 22:04:59,030 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-03 22:04:59,030 - INFO - Vocabulary loaded successfully with 127669 words.
+2024-01-03 22:04:59,030 - INFO - Running on cpu
+2024-01-03 22:05:00,725 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-03 22:05:00,731 - INFO - Vocabulary loaded successfully with 127669 words.
+2024-01-03 22:05:00,739 - INFO - Model has 70233269 parameters in model
+2024-01-03 22:05:06,203 - INFO - Started training on ../Datasets/Books/blood_of_olympus.txt
+2024-01-03 22:05:19,511 - INFO - Found 131843 words in book
+2024-01-03 22:14:46,755 - DEBUG - Read all Unix Words
+2024-01-03 22:14:47,733 - DEBUG - Added book blood_of_olympus.txt
+2024-01-03 22:14:47,736 - DEBUG - Updated pickled file.
+2024-01-03 22:14:48,825 - DEBUG - Added book clash_of_kings.txt
+2024-01-03 22:14:48,829 - DEBUG - Updated pickled file.
+2024-01-03 22:14:49,153 - DEBUG - Added book Cracking-the-Coding-Interview.txt
+2024-01-03 22:14:49,158 - DEBUG - Updated pickled file.
+2024-01-03 22:14:50,096 - DEBUG - Added book Data Mining Concepts and Techniques.txt
+2024-01-03 22:14:50,104 - DEBUG - Updated pickled file.
+2024-01-03 22:14:50,771 - DEBUG - Added book Deep Learning by Ian Goodfellow.txt
+2024-01-03 22:14:50,778 - DEBUG - Updated pickled file.
+2024-01-03 22:14:51,408 - DEBUG - Added book Elements of Statistical Learning.txt
+2024-01-03 22:14:51,419 - DEBUG - Updated pickled file.
+2024-01-03 22:14:51,806 - DEBUG - Added book house_of_hades.txt
+2024-01-03 22:14:51,815 - DEBUG - Updated pickled file.
+2024-01-03 22:14:52,224 - DEBUG - Added book MachineLearning by TomMitchell.txt
+2024-01-03 22:14:52,233 - DEBUG - Updated pickled file.
+2024-01-03 22:14:52,593 - DEBUG - Added book mark_of_athena.txt
+2024-01-03 22:14:52,603 - DEBUG - Updated pickled file.
+2024-01-03 22:14:52,617 - DEBUG - Added book percy_jackson_and_the_greek_gods.txt
+2024-01-03 22:14:52,626 - DEBUG - Updated pickled file.
+2024-01-03 22:14:52,844 - DEBUG - Added book percy_jackson_and_the_lightning_thief.txt
+2024-01-03 22:14:52,853 - DEBUG - Updated pickled file.
+2024-01-03 22:14:53,755 - DEBUG - Added book storm_of_swords.txt
+2024-01-03 22:14:53,766 - DEBUG - Updated pickled file.
+2024-01-03 22:14:53,766 - INFO - Added all books.
+2024-01-03 22:14:54,354 - INFO - Wrote common_sense_qa words to pickle
+2024-01-03 22:15:02,523 - INFO - Wrote trivia_q_a words to pickle
+2024-01-03 22:15:15,179 - INFO - Wrote squad_web_qa words to pickle
+2024-01-03 22:15:15,413 - INFO - Vocabulary Created successfully with 100780 words.
+2024-01-03 22:16:31,128 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-03 22:16:31,128 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-03 22:16:44,813 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-03 22:16:44,813 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-03 22:16:44,883 - DEBUG - CACHEDIR=/Users/srikamal/.matplotlib
+2024-01-03 22:16:44,887 - DEBUG - Using fontManager instance from /Users/srikamal/.matplotlib/fontlist-v330.json
+2024-01-03 22:16:45,185 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-03 22:16:45,186 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-03 22:16:45,223 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-03 22:16:45,223 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-03 22:16:45,223 - INFO - Running on cpu
+2024-01-03 22:16:45,973 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-03 22:16:45,973 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-03 22:16:45,973 - INFO - Model has 56439212 parameters in model
+2024-01-03 22:21:40,788 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-03 22:21:40,788 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-03 22:21:40,839 - DEBUG - CACHEDIR=/Users/srikamal/.matplotlib
+2024-01-03 22:21:40,842 - DEBUG - Using fontManager instance from /Users/srikamal/.matplotlib/fontlist-v330.json
+2024-01-03 22:21:41,104 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-03 22:21:41,104 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-03 22:21:41,147 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-03 22:21:41,147 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-03 22:21:41,147 - INFO - Running on cpu
+2024-01-03 22:21:41,958 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-03 22:21:41,958 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-03 22:21:41,959 - INFO - Model has 85785004 parameters in model
+2024-01-03 22:21:53,429 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-03 22:21:53,429 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-03 22:21:53,486 - DEBUG - CACHEDIR=/Users/srikamal/.matplotlib
+2024-01-03 22:21:53,488 - DEBUG - Using fontManager instance from /Users/srikamal/.matplotlib/fontlist-v330.json
+2024-01-03 22:21:53,711 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-03 22:21:53,719 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-03 22:21:53,763 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-03 22:21:53,763 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-03 22:21:53,763 - INFO - Running on cpu
+2024-01-03 22:21:54,390 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-03 22:21:54,390 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-03 22:21:54,391 - INFO - Model has 56439212 parameters in model
+2024-01-03 22:22:15,840 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-03 22:22:15,840 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-03 22:22:15,888 - DEBUG - CACHEDIR=/Users/srikamal/.matplotlib
+2024-01-03 22:22:15,890 - DEBUG - Using fontManager instance from /Users/srikamal/.matplotlib/fontlist-v330.json
+2024-01-03 22:22:16,124 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-03 22:22:16,124 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-03 22:22:16,169 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-03 22:22:16,169 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-03 22:22:16,169 - INFO - Running on cpu
+2024-01-03 22:22:16,778 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-03 22:22:16,778 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-03 22:22:16,779 - INFO - Model has 55644317 parameters in model
+2024-01-03 22:22:54,600 - DEBUG - Read all Unix Words
+2024-01-03 22:22:54,998 - DEBUG - Added book blood_of_olympus.txt
+2024-01-03 22:22:55,003 - DEBUG - Updated pickled file.
+2024-01-03 22:22:55,868 - DEBUG - Added book clash_of_kings.txt
+2024-01-03 22:22:55,874 - DEBUG - Updated pickled file.
+2024-01-03 22:22:56,056 - DEBUG - Added book Cracking-the-Coding-Interview.txt
+2024-01-03 22:22:56,063 - DEBUG - Updated pickled file.
+2024-01-03 22:22:56,738 - DEBUG - Added book Data Mining Concepts and Techniques.txt
+2024-01-03 22:22:56,748 - DEBUG - Updated pickled file.
+2024-01-03 22:22:57,368 - DEBUG - Added book Deep Learning by Ian Goodfellow.txt
+2024-01-03 22:22:57,377 - DEBUG - Updated pickled file.
+2024-01-03 22:22:57,970 - DEBUG - Added book Elements of Statistical Learning.txt
+2024-01-03 22:22:57,978 - DEBUG - Updated pickled file.
+2024-01-03 22:22:58,302 - DEBUG - Added book house_of_hades.txt
+2024-01-03 22:22:58,312 - DEBUG - Updated pickled file.
+2024-01-03 22:22:58,653 - DEBUG - Added book MachineLearning by TomMitchell.txt
+2024-01-03 22:22:58,666 - DEBUG - Updated pickled file.
+2024-01-03 22:22:58,946 - DEBUG - Added book mark_of_athena.txt
+2024-01-03 22:22:58,954 - DEBUG - Updated pickled file.
+2024-01-03 22:22:58,968 - DEBUG - Added book percy_jackson_and_the_greek_gods.txt
+2024-01-03 22:22:58,977 - DEBUG - Updated pickled file.
+2024-01-03 22:22:59,156 - DEBUG - Added book percy_jackson_and_the_lightning_thief.txt
+2024-01-03 22:22:59,166 - DEBUG - Updated pickled file.
+2024-01-03 22:22:59,959 - DEBUG - Added book storm_of_swords.txt
+2024-01-03 22:22:59,968 - DEBUG - Updated pickled file.
+2024-01-03 22:22:59,968 - INFO - Added all books.
+2024-01-03 22:23:00,474 - INFO - Wrote common_sense_qa words to pickle
+2024-01-03 22:23:07,742 - INFO - Wrote trivia_q_a words to pickle
+2024-01-03 22:23:20,706 - INFO - Wrote squad_web_qa words to pickle
+2024-01-03 22:23:20,934 - INFO - Vocabulary Created successfully with 100780 words.
+2024-01-03 22:25:34,503 - DEBUG - Read all Unix Words
+2024-01-03 22:25:34,682 - DEBUG - Added book blood_of_olympus.txt
+2024-01-03 22:25:34,702 - DEBUG - Updated pickled file.
+2024-01-03 22:25:35,198 - DEBUG - Added book clash_of_kings.txt
+2024-01-03 22:25:35,222 - DEBUG - Updated pickled file.
+2024-01-03 22:25:35,361 - DEBUG - Added book Cracking-the-Coding-Interview.txt
+2024-01-03 22:25:35,416 - DEBUG - Updated pickled file.
+2024-01-03 22:25:35,933 - DEBUG - Added book Data Mining Concepts and Techniques.txt
+2024-01-03 22:25:35,957 - DEBUG - Updated pickled file.
+2024-01-03 22:25:36,419 - DEBUG - Added book Deep Learning by Ian Goodfellow.txt
+2024-01-03 22:25:36,459 - DEBUG - Updated pickled file.
+2024-01-03 22:25:37,002 - DEBUG - Added book Elements of Statistical Learning.txt
+2024-01-03 22:25:37,023 - DEBUG - Updated pickled file.
+2024-01-03 22:25:37,270 - DEBUG - Added book house_of_hades.txt
+2024-01-03 22:25:37,292 - DEBUG - Updated pickled file.
+2024-01-03 22:25:37,581 - DEBUG - Added book MachineLearning by TomMitchell.txt
+2024-01-03 22:25:37,601 - DEBUG - Updated pickled file.
+2024-01-03 22:25:37,806 - DEBUG - Added book mark_of_athena.txt
+2024-01-03 22:25:37,831 - DEBUG - Updated pickled file.
+2024-01-03 22:25:37,841 - DEBUG - Added book percy_jackson_and_the_greek_gods.txt
+2024-01-03 22:25:37,866 - DEBUG - Updated pickled file.
+2024-01-03 22:25:38,002 - DEBUG - Added book percy_jackson_and_the_lightning_thief.txt
+2024-01-03 22:25:38,022 - DEBUG - Updated pickled file.
+2024-01-03 22:25:38,703 - DEBUG - Added book storm_of_swords.txt
+2024-01-03 22:25:38,723 - DEBUG - Updated pickled file.
+2024-01-03 22:25:38,723 - INFO - Added all books.
+2024-01-03 22:25:39,138 - INFO - Wrote common_sense_qa words to pickle
+2024-01-03 22:25:43,832 - INFO - Wrote trivia_q_a words to pickle
+2024-01-03 22:25:53,835 - INFO - Wrote squad_web_qa words to pickle
+2024-01-03 22:25:54,057 - INFO - Vocabulary Created successfully with 100780 words.
+2024-01-03 23:11:59,810 - DEBUG - Read all Unix Words
+2024-01-03 23:12:00,810 - DEBUG - Added book blood_of_olympus.txt
+2024-01-03 23:12:00,813 - DEBUG - Updated pickled file.
+2024-01-03 23:12:01,884 - DEBUG - Added book clash_of_kings.txt
+2024-01-03 23:12:01,889 - DEBUG - Updated pickled file.
+2024-01-03 23:12:02,184 - DEBUG - Added book Cracking-the-Coding-Interview.txt
+2024-01-03 23:12:02,188 - DEBUG - Updated pickled file.
+2024-01-03 23:12:03,081 - DEBUG - Added book Data Mining Concepts and Techniques.txt
+2024-01-03 23:12:03,087 - DEBUG - Updated pickled file.
+2024-01-03 23:12:03,736 - DEBUG - Added book Deep Learning by Ian Goodfellow.txt
+2024-01-03 23:12:03,742 - DEBUG - Updated pickled file.
+2024-01-03 23:12:04,392 - DEBUG - Added book Elements of Statistical Learning.txt
+2024-01-03 23:12:04,401 - DEBUG - Updated pickled file.
+2024-01-03 23:12:04,738 - DEBUG - Added book house_of_hades.txt
+2024-01-03 23:12:04,745 - DEBUG - Updated pickled file.
+2024-01-03 23:12:05,128 - DEBUG - Added book MachineLearning by TomMitchell.txt
+2024-01-03 23:12:05,136 - DEBUG - Updated pickled file.
+2024-01-03 23:12:05,436 - DEBUG - Added book mark_of_athena.txt
+2024-01-03 23:12:05,444 - DEBUG - Updated pickled file.
+2024-01-03 23:12:05,456 - DEBUG - Added book percy_jackson_and_the_greek_gods.txt
+2024-01-03 23:12:05,465 - DEBUG - Updated pickled file.
+2024-01-03 23:12:05,662 - DEBUG - Added book percy_jackson_and_the_lightning_thief.txt
+2024-01-03 23:12:05,669 - DEBUG - Updated pickled file.
+2024-01-03 23:12:06,457 - DEBUG - Added book storm_of_swords.txt
+2024-01-03 23:12:06,468 - DEBUG - Updated pickled file.
+2024-01-03 23:12:06,468 - INFO - Added all books.
+2024-01-03 23:12:07,084 - INFO - Wrote common_sense_qa words to pickle
+2024-01-03 23:12:14,947 - INFO - Wrote trivia_q_a words to pickle
+2024-01-03 23:12:27,802 - INFO - Wrote squad_web_qa words to pickle
+2024-01-03 23:12:28,031 - INFO - Vocabulary Created successfully with 100780 words.
+2024-01-03 23:37:19,563 - DEBUG - Read all Unix Words
+2024-01-03 23:37:20,573 - DEBUG - Added book blood_of_olympus.txt
+2024-01-03 23:37:20,575 - DEBUG - Updated pickled file.
+2024-01-03 23:37:21,620 - DEBUG - Added book clash_of_kings.txt
+2024-01-03 23:37:21,623 - DEBUG - Updated pickled file.
+2024-01-03 23:37:21,929 - DEBUG - Added book Cracking-the-Coding-Interview.txt
+2024-01-03 23:37:21,934 - DEBUG - Updated pickled file.
+2024-01-03 23:37:22,786 - DEBUG - Added book Data Mining Concepts and Techniques.txt
+2024-01-03 23:37:22,793 - DEBUG - Updated pickled file.
+2024-01-03 23:37:23,492 - DEBUG - Added book Deep Learning by Ian Goodfellow.txt
+2024-01-03 23:37:23,499 - DEBUG - Updated pickled file.
+2024-01-03 23:37:24,103 - DEBUG - Added book Elements of Statistical Learning.txt
+2024-01-03 23:37:24,110 - DEBUG - Updated pickled file.
+2024-01-03 23:37:24,491 - DEBUG - Added book house_of_hades.txt
+2024-01-03 23:37:24,499 - DEBUG - Updated pickled file.
+2024-01-03 23:37:24,873 - DEBUG - Added book MachineLearning by TomMitchell.txt
+2024-01-03 23:37:24,883 - DEBUG - Updated pickled file.
+2024-01-03 23:37:25,169 - DEBUG - Added book mark_of_athena.txt
+2024-01-03 23:37:25,177 - DEBUG - Updated pickled file.
+2024-01-03 23:37:25,191 - DEBUG - Added book percy_jackson_and_the_greek_gods.txt
+2024-01-03 23:37:25,200 - DEBUG - Updated pickled file.
+2024-01-03 23:37:25,444 - DEBUG - Added book percy_jackson_and_the_lightning_thief.txt
+2024-01-03 23:37:25,454 - DEBUG - Updated pickled file.
+2024-01-03 23:37:26,213 - DEBUG - Added book storm_of_swords.txt
+2024-01-03 23:37:26,222 - DEBUG - Updated pickled file.
+2024-01-03 23:37:26,222 - INFO - Added all datasets.
+2024-01-03 23:37:26,857 - INFO - Wrote common_sense_qa words to pickle
+2024-01-03 23:37:34,637 - INFO - Wrote trivia_q_a words to pickle
+2024-01-03 23:37:47,069 - INFO - Wrote squad_web_qa words to pickle
+2024-01-03 23:37:47,306 - INFO - Vocabulary Created successfully with 100780 words.
+2024-01-03 23:38:07,627 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-03 23:38:07,628 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-03 23:38:07,766 - DEBUG - CACHEDIR=/Users/srikamal/.matplotlib
+2024-01-03 23:38:07,774 - DEBUG - Using fontManager instance from /Users/srikamal/.matplotlib/fontlist-v330.json
+2024-01-03 23:38:08,323 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-03 23:38:08,323 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-03 23:38:08,365 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-03 23:38:08,365 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-03 23:38:08,365 - INFO - Running on cpu
+2024-01-03 23:38:09,839 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-03 23:38:09,839 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-03 23:38:09,844 - INFO - Model has 55644317 parameters in model
+2024-01-03 23:38:09,844 - INFO - Started training on ../Datasets/QA/common_sense_q_a.json

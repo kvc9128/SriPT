@@ -7,7 +7,7 @@ from Train.Train import Train
 
 logger = logging.getLogger(__name__)
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-books = [
+datasets = [
 	"../Datasets/Books/blood_of_olympus.txt",
 	"../Datasets/Books/clash_of_kings.txt",
 	"../Datasets/Books/Cracking-the-Coding-Interview.txt",
@@ -19,14 +19,17 @@ books = [
 	"../Datasets/Books/mark_of_athena.txt",
 	"../Datasets/Books/percy_jackson_and_the_greek_gods.txt",
 	"../Datasets/Books/percy_jackson_and_the_lightning_thief.txt",
-	"../Datasets/Books/storm_of_swords.txt"
+	"../Datasets/Books/storm_of_swords.txt",
+	"../Datasets/QA/squad_web.json",
+	"../Datasets/QA/trivia_q_a.json",
+	"../Datasets/QA/common_sense_q_a.json"
 ]
 
 
 def main():
 	# Hyperparameters
 	embedding_dimension = 256
-	context_window = 24  # context window
+	context_window = 32  # context window
 	number_of_decoder_layers = 6
 	num_attention_heads = 4
 	dropout_rate = 0.15
@@ -59,10 +62,12 @@ def main():
 	total_params = sum(
 		param.numel() for param in MODEL.parameters()
 	)
-	book = books[0]  # change manually as we train
+	book = datasets[-1]  # change manually as we train
 	logger.info(f"Model has {total_params} parameters in model")
-	# print(MODEL)
 	trainer.train_model_on(book)
+
+	# print(MODEL)
+	# trainer.train_model_on(book)
 
 
 main()
