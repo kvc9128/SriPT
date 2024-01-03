@@ -73,10 +73,10 @@ def generate_sequences_for_text(normalized_text, context_window_length, VOCAB, t
 	np.random.shuffle(indices)
 	shuffled_encoded_sequences = encoded_sequences[indices]
 	shuffled_encoded_targets = encoded_targets[indices]
-	# Since we have such a large set of datasets, limit each book to 1 million sequences
-	if len(shuffled_encoded_sequences) > 1e6:
-		shuffled_encoded_sequences = shuffled_encoded_sequences[:int(1e6)]
-		shuffled_encoded_targets = shuffled_encoded_targets[:int(1e6)]
+	# Since we have such a large set of datasets, limit each book to 2 million sequences
+	if len(shuffled_encoded_sequences) > 2e6:
+		shuffled_encoded_sequences = shuffled_encoded_sequences[:int(2e6)]
+		shuffled_encoded_targets = shuffled_encoded_targets[:int(2e6)]
 	logger.info(
 		msg=f"Generated and shuffled {len(shuffled_encoded_sequences)} sequences for book " + text_file_path[
 		                                                                                      18:])

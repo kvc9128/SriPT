@@ -1,3 +1,4 @@
+import os
 import torch
 import logging
 import torch.nn as nn
@@ -24,12 +25,35 @@ datasets = [
 	"../Datasets/QA/trivia_q_a.json",
 	"../Datasets/QA/common_sense_q_a.json"
 ]
+SAVED_FOLDER = "../TRAINED_MODELS/"
+
+
+def load_model(model, optimizer):
+	try:
+		if os.path.exists(SAVED_FOLDER):
+			model_path = os.path.join(SAVED_FOLDER, 'model.pt')
+			torch.save(model.state_dict(), model_path)
+			optimizer_path = os.path.join(SAVED_FOLDER, 'optimizer.pt')
+			torch.save(optimizer.state_dict(), optimizer_path)
+			logger.info(f"Successfully loaded model with weights and parameters")
+		else:
+			logger.error("No checkpoint found. Please provide a model and checkpoint.")
+	except FileNotFoundError:
+		logger.error(f"Checkpoint file not found: {SAVED_FOLDER}")
+	except KeyError as e:
+		logger.error(f"Missing key in checkpoint data: {e}")
+	except RuntimeError as e:
+		logger.error(f"Error loading state dict: {e}")
+	except Exception as e:  # Generic catch-all for other exceptions
+		logger.error(f"An error occurred while loading the model: {e}")
+	finally:
+		return model, optimizer
 
 
 def main():
 	# Hyperparameters
 	embedding_dimension = 256
-	context_window = 32  # context window
+	context_window = 72  # context window
 	number_of_decoder_layers = 6
 	num_attention_heads = 4
 	dropout_rate = 0.15
@@ -47,7 +71,7 @@ def main():
 	MODEL.to(DEVICE)
 	OPTIMIZER = torch.optim.Adam(MODEL.parameters(), lr=0.0001)
 	LOSS_FN = nn.CrossEntropyLoss()
-	EPOCHS = 4
+	EPOCHS = 6
 	BATCH_SIZE = 256
 
 	trainer = Train(
@@ -62,12 +86,20 @@ def main():
 	total_params = sum(
 		param.numel() for param in MODEL.parameters()
 	)
-	book = datasets[-1]  # change manually as we train
 	logger.info(f"Model has {total_params} parameters in model")
-	trainer.train_model_on(book)
 
-	# print(MODEL)
-	# trainer.train_model_on(book)
+	# gonna train on jsons overnight
+	dataset = datasets[-3]  # change manually as we train
+	trainer.train_model_on(dataset)
+	MODEL, OPTIMIZER = load_model(MODEL, OPTIMIZER)
+	trainer.update_model_and_optimizer(MODEL, OPTIMIZER)
+	dataset = datasets[-2]  # change manually as we train
+	trainer.train_model_on(dataset)
+	MODEL, OPTIMIZER = load_model(MODEL, OPTIMIZER)
+	trainer.update_model_and_optimizer(MODEL, OPTIMIZER)
+	dataset = datasets[-1]  # change manually as we train
+	trainer.train_model_on(dataset)
+
 
 
 main()

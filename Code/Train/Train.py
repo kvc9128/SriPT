@@ -106,11 +106,14 @@ class Train:
 		logger.info(
 			msg=f"Stored model for document {document}")
 
+	def update_model_and_optimizer(self, model, optimizer):
+		self.optimizer = optimizer
+		self.model = model
+		logger.debug(f"Successfully updated model and optimizer")
+
 	def train_model_on(self, data_file_path):
 		"""
-		Chunk size is the number of instances, after which, the model will be saved, and
 		:param data_file_path:
-		:param chunk_size:
 		:return:
 		"""
 		logger.info(f"Started training on {data_file_path}")
