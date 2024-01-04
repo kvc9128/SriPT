@@ -785,3 +785,18 @@
 2024-01-04 00:10:15,273 - WARNING - Truncated sentence, exceeded context window size.
 2024-01-04 00:10:15,682 - INFO - Generated and shuffled 76496 sequences for SQuAD dataset
 2024-01-04 00:10:15,913 - DEBUG - Obtained sequences for json file ../Datasets/QA/squad_web.json
+2024-01-04 11:51:56,107 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-04 11:51:56,107 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-04 11:51:56,180 - DEBUG - CACHEDIR=/Users/srikamal/.matplotlib
+2024-01-04 11:51:56,184 - DEBUG - Using fontManager instance from /Users/srikamal/.matplotlib/fontlist-v330.json
+2024-01-04 11:51:56,505 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-04 11:51:56,505 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-04 11:51:56,544 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-04 11:51:56,544 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-04 11:51:56,545 - INFO - Running on cpu
+2024-01-04 11:51:57,358 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-04 11:51:57,358 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-04 11:51:57,359 - INFO - Model has 56439212 parameters in model
+2024-01-04 11:51:57,359 - INFO - Started training on ../Datasets/QA/common_sense_q_a.json
+2024-01-04 11:51:58,068 - INFO - Generated and shuffled 9741 sequences for common sense dataset
+2024-01-04 11:51:58,069 - DEBUG - Obtained sequences for json file ../Datasets/QA/common_sense_q_a.json
