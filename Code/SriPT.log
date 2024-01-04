@@ -746,3 +746,42 @@
 2024-01-04 00:00:49,321 - WARNING - Truncated sentence, exceeded context window size.
 2024-01-04 00:00:50,213 - INFO - Generated and shuffled 76496 sequences for SQuAD dataset
 2024-01-04 00:00:50,451 - DEBUG - Obtained sequences for json file ../Datasets/QA/squad_web.json
+2024-01-04 00:10:03,405 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-04 00:10:03,406 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-04 00:10:03,457 - DEBUG - CACHEDIR=/Users/srikamal/.matplotlib
+2024-01-04 00:10:03,459 - DEBUG - Using fontManager instance from /Users/srikamal/.matplotlib/fontlist-v330.json
+2024-01-04 00:10:03,651 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-04 00:10:03,651 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-04 00:10:03,696 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-04 00:10:03,696 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-04 00:10:03,697 - INFO - Running on cpu
+2024-01-04 00:10:04,342 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-04 00:10:04,342 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-04 00:10:04,343 - INFO - Model has 56439212 parameters in model
+2024-01-04 00:10:04,343 - INFO - Started training on ../Datasets/QA/squad_web.json
+2024-01-04 00:10:14,093 - WARNING - Truncated sentence, exceeded context window size.
+2024-01-04 00:10:14,103 - WARNING - Truncated sentence, exceeded context window size.
+2024-01-04 00:10:14,106 - WARNING - Truncated sentence, exceeded context window size.
+2024-01-04 00:10:14,144 - WARNING - Truncated sentence, exceeded context window size.
+2024-01-04 00:10:14,150 - WARNING - Truncated sentence, exceeded context window size.
+2024-01-04 00:10:14,153 - WARNING - Truncated sentence, exceeded context window size.
+2024-01-04 00:10:14,159 - WARNING - Truncated sentence, exceeded context window size.
+2024-01-04 00:10:15,147 - WARNING - Truncated sentence, exceeded context window size.
+2024-01-04 00:10:15,153 - WARNING - Truncated sentence, exceeded context window size.
+2024-01-04 00:10:15,155 - WARNING - Truncated sentence, exceeded context window size.
+2024-01-04 00:10:15,172 - WARNING - Truncated sentence, exceeded context window size.
+2024-01-04 00:10:15,177 - WARNING - Truncated sentence, exceeded context window size.
+2024-01-04 00:10:15,182 - WARNING - Truncated sentence, exceeded context window size.
+2024-01-04 00:10:15,191 - WARNING - Truncated sentence, exceeded context window size.
+2024-01-04 00:10:15,195 - WARNING - Truncated sentence, exceeded context window size.
+2024-01-04 00:10:15,197 - WARNING - Truncated sentence, exceeded context window size.
+2024-01-04 00:10:15,200 - WARNING - Truncated sentence, exceeded context window size.
+2024-01-04 00:10:15,205 - WARNING - Truncated sentence, exceeded context window size.
+2024-01-04 00:10:15,215 - WARNING - Truncated sentence, exceeded context window size.
+2024-01-04 00:10:15,220 - WARNING - Truncated sentence, exceeded context window size.
+2024-01-04 00:10:15,235 - WARNING - Truncated sentence, exceeded context window size.
+2024-01-04 00:10:15,248 - WARNING - Truncated sentence, exceeded context window size.
+2024-01-04 00:10:15,249 - WARNING - Truncated sentence, exceeded context window size.
+2024-01-04 00:10:15,273 - WARNING - Truncated sentence, exceeded context window size.
+2024-01-04 00:10:15,682 - INFO - Generated and shuffled 76496 sequences for SQuAD dataset
+2024-01-04 00:10:15,913 - DEBUG - Obtained sequences for json file ../Datasets/QA/squad_web.json
