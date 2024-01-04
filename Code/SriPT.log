@@ -1380,3 +1380,92 @@
 2024-01-04 19:33:41,075 - INFO - Model has 115917228 parameters.
 2024-01-04 19:33:41,075 - INFO - Started training on ../Datasets/Books/blood_of_olympus.txt
 2024-01-04 19:33:41,261 - INFO - Found 131843 words in book
+2024-01-04 15:48:58,527 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-04 15:48:58,527 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-04 15:49:50,346 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-04 15:49:50,346 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-04 15:50:19,340 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-04 15:50:19,341 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-04 15:50:20,423 - DEBUG - matplotlib data path: /home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data
+2024-01-04 15:50:20,438 - DEBUG - CONFIGDIR=/home/srikamal2001/.config/matplotlib
+2024-01-04 15:50:20,440 - DEBUG - interactive is False
+2024-01-04 15:50:20,440 - DEBUG - platform is linux
+2024-01-04 15:50:20,634 - DEBUG - CACHEDIR=/home/srikamal2001/.cache/matplotlib
+2024-01-04 15:50:20,637 - DEBUG - Using fontManager instance from /home/srikamal2001/.cache/matplotlib/fontlist-v330.json
+2024-01-04 15:50:21,200 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-04 15:50:21,200 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-04 15:50:21,893 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-04 15:50:21,893 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-04 15:50:21,893 - INFO - Running on cpu
+2024-01-04 16:18:57,987 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-04 16:18:57,987 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-04 16:18:58,097 - DEBUG - matplotlib data path: /home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data
+2024-01-04 16:18:58,102 - DEBUG - CONFIGDIR=/home/srikamal2001/.config/matplotlib
+2024-01-04 16:18:58,104 - DEBUG - interactive is False
+2024-01-04 16:18:58,104 - DEBUG - platform is linux
+2024-01-04 16:18:58,163 - DEBUG - CACHEDIR=/home/srikamal2001/.cache/matplotlib
+2024-01-04 16:18:58,164 - DEBUG - Using fontManager instance from /home/srikamal2001/.cache/matplotlib/fontlist-v330.json
+2024-01-04 16:18:58,433 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-04 16:18:58,434 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-04 16:19:27,991 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-04 16:19:27,992 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-04 16:19:27,999 - INFO - Running on cuda
+2024-01-04 16:19:31,476 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-04 16:19:31,476 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-04 16:19:31,477 - INFO - Model has 115917228 parameters.
+2024-01-04 16:19:31,477 - INFO - Started training on ../Datasets/QA/squad_web.json
+2024-01-04 16:25:59,395 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-04 16:25:59,395 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-04 16:25:59,506 - DEBUG - matplotlib data path: /home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data
+2024-01-04 16:25:59,512 - DEBUG - CONFIGDIR=/home/srikamal2001/.config/matplotlib
+2024-01-04 16:25:59,513 - DEBUG - interactive is False
+2024-01-04 16:25:59,513 - DEBUG - platform is linux
+2024-01-04 16:25:59,572 - DEBUG - CACHEDIR=/home/srikamal2001/.cache/matplotlib
+2024-01-04 16:25:59,574 - DEBUG - Using fontManager instance from /home/srikamal2001/.cache/matplotlib/fontlist-v330.json
+2024-01-04 16:25:59,851 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-04 16:25:59,852 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-04 16:26:01,410 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-04 16:26:01,410 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-04 16:26:01,410 - INFO - Running on cuda
+2024-01-04 16:26:04,412 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-04 16:26:04,413 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-04 16:26:04,414 - INFO - Model has 115917228 parameters.
+2024-01-04 16:26:04,414 - INFO - Started training on ../Datasets/QA/squad_web.json
+2024-01-04 16:26:50,882 - INFO - Generated and shuffled 1076026 sequences for SQuAD dataset
+2024-01-04 16:26:51,231 - DEBUG - Obtained sequences for json file ../Datasets/QA/squad_web.json
+2024-01-04 16:38:05,237 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-04 16:38:05,237 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-04 16:38:05,350 - DEBUG - matplotlib data path: /home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data
+2024-01-04 16:38:05,355 - DEBUG - CONFIGDIR=/home/srikamal2001/.config/matplotlib
+2024-01-04 16:38:05,356 - DEBUG - interactive is False
+2024-01-04 16:38:05,356 - DEBUG - platform is linux
+2024-01-04 16:38:05,416 - DEBUG - CACHEDIR=/home/srikamal2001/.cache/matplotlib
+2024-01-04 16:38:05,417 - DEBUG - Using fontManager instance from /home/srikamal2001/.cache/matplotlib/fontlist-v330.json
+2024-01-04 16:38:05,688 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-04 16:38:05,688 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-04 16:38:07,306 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-04 16:38:07,306 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-04 16:38:07,307 - INFO - Running on cuda
+2024-01-04 16:38:09,997 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-04 16:38:09,997 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-04 16:38:09,998 - INFO - Model has 85785004 parameters.
+2024-01-04 16:38:09,998 - INFO - Started training on ../Datasets/QA/squad_web.json
+2024-01-04 16:38:46,198 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-04 16:38:46,198 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-04 16:38:46,307 - DEBUG - matplotlib data path: /home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data
+2024-01-04 16:38:46,312 - DEBUG - CONFIGDIR=/home/srikamal2001/.config/matplotlib
+2024-01-04 16:38:46,313 - DEBUG - interactive is False
+2024-01-04 16:38:46,313 - DEBUG - platform is linux
+2024-01-04 16:38:46,371 - DEBUG - CACHEDIR=/home/srikamal2001/.cache/matplotlib
+2024-01-04 16:38:46,372 - DEBUG - Using fontManager instance from /home/srikamal2001/.cache/matplotlib/fontlist-v330.json
+2024-01-04 16:38:46,640 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-04 16:38:46,640 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-04 16:38:48,163 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-04 16:38:48,163 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-04 16:38:48,163 - INFO - Running on cuda
+2024-01-04 16:38:50,551 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-04 16:38:50,552 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-04 16:38:50,553 - INFO - Model has 56439212 parameters.
+2024-01-04 16:38:50,553 - INFO - Started training on ../Datasets/QA/squad_web.json
+2024-01-04 16:39:36,970 - INFO - Generated and shuffled 1076026 sequences for SQuAD dataset
+2024-01-04 16:39:37,318 - DEBUG - Obtained sequences for json file ../Datasets/QA/squad_web.json
