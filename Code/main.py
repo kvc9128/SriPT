@@ -71,7 +71,7 @@ def main():
 	MODEL.to(DEVICE)
 	OPTIMIZER = torch.optim.Adam(MODEL.parameters(), lr=0.0001)
 	LOSS_FN = nn.CrossEntropyLoss()
-	EPOCHS = 6
+	EPOCHS = 20
 	BATCH_SIZE = 64
 
 	trainer = Train(
@@ -88,29 +88,10 @@ def main():
 	)
 	logger.info(f"Model has {total_params} parameters.")
 
-	dataset = datasets[-3]  # common sense
-	trainer.train_model_on(dataset)
-
-	MODEL, OPTIMIZER = load_model(MODEL, OPTIMIZER)
-	trainer.update_model_and_optimizer(MODEL, OPTIMIZER)
-	dataset = datasets[-2]  # trivia
-	trainer.train_model_on(dataset)
-
-	MODEL, OPTIMIZER = load_model(MODEL, OPTIMIZER)
-	trainer.update_model_and_optimizer(MODEL, OPTIMIZER)
-	dataset = datasets[-1]  # squad
-	trainer.train_model_on(dataset)
-
-	MODEL, OPTIMIZER = load_model(MODEL, OPTIMIZER)
-	trainer.update_model_and_optimizer(MODEL, OPTIMIZER)
-	dataset = datasets[0]  # blood of olympus
-	trainer.train_model_on(dataset)
-
-	MODEL, OPTIMIZER = load_model(MODEL, OPTIMIZER)
-	trainer.update_model_and_optimizer(MODEL, OPTIMIZER)
-	dataset = datasets[1]  # clash of kings
-	trainer.train_model_on(dataset)
-
+	for dataset in datasets:
+		trainer.train_model_on(dataset)
+		MODEL, OPTIMIZER = load_model(MODEL, OPTIMIZER)
+		trainer.update_model_and_optimizer(MODEL, OPTIMIZER)
 
 
 main()
