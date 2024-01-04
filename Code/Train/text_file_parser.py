@@ -142,8 +142,8 @@ def create_sequences_from_trivia(VOCAB, context_window_length):
 							VOCAB
 						)
 
-						encoded_sequences.append(sentence_encoded_sequences)
-						encoded_targets.append(sentence_encoded_targets)
+						encoded_sequences.extend(sentence_encoded_sequences)
+						encoded_targets.extend(sentence_encoded_targets)
 
 			encoded_sequences = np.array(encoded_sequences)
 			encoded_targets = np.array(encoded_targets)
@@ -184,8 +184,8 @@ def create_sequences_from_SQuAD(VOCAB, context_window_length):
 					VOCAB
 				)
 
-				encoded_sequences.append(sentence_encoded_sequences)
-				encoded_targets.append(sentence_encoded_targets)
+				encoded_sequences.extend(sentence_encoded_sequences)
+				encoded_targets.extend(sentence_encoded_targets)
 
 			encoded_sequences = np.array(encoded_sequences)
 			encoded_targets = np.array(encoded_targets)
