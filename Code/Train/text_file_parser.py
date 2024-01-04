@@ -57,7 +57,7 @@ def generate_sequences_for_text(normalized_text, context_window_length, VOCAB, t
 	shuffled_encoded_targets = encoded_targets[indices]
 	# Since we have such a large set of datasets, limit each book to 2 million sequences
 	if len(shuffled_encoded_sequences) > 500000:
-        shuffled_encoded_sequences = shuffled_encoded_sequences[:500000]
+		shuffled_encoded_sequences = shuffled_encoded_sequences[:500000]
 		shuffled_encoded_targets = shuffled_encoded_targets[:500000]
 	logger.info(
 		msg=f"Generated and shuffled {len(shuffled_encoded_sequences)} sequences for book " + text_file_path[
@@ -95,7 +95,7 @@ def create_sequences_from_common_sense(VOCAB, context_window_length):
 					sentence,
 					context_window_length,
 					VOCAB
-					)
+				)
 
 				encoded_sequences.extend(sentence_encoded_sequences)
 				encoded_targets.extend(sentence_encoded_targets)
@@ -106,9 +106,9 @@ def create_sequences_from_common_sense(VOCAB, context_window_length):
 			np.random.shuffle(indices)
 			shuffled_encoded_sequences = encoded_sequences[indices]
 			shuffled_encoded_targets = encoded_targets[indices]
-            if len(shuffled_encoded_sequences) > 500000:
-                shuffled_encoded_sequences = shuffled_encoded_sequences[:500000]
-                shuffled_encoded_targets = shuffled_encoded_targets[:500000]
+			if len(shuffled_encoded_sequences) > 500000:
+				shuffled_encoded_sequences = shuffled_encoded_sequences[:500000]
+				shuffled_encoded_targets = shuffled_encoded_targets[:500000]
 			logger.info(
 				msg=f"Generated and shuffled {len(shuffled_encoded_sequences)} sequences for common sense dataset")
 			return shuffled_encoded_sequences, shuffled_encoded_targets
@@ -155,9 +155,10 @@ def create_sequences_from_trivia(VOCAB, context_window_length):
 			shuffled_encoded_sequences = encoded_sequences[indices]
 			shuffled_encoded_targets = encoded_targets[indices]
 			if len(shuffled_encoded_sequences) > 500000:
-                shuffled_encoded_sequences = shuffled_encoded_sequences[:500000]
-                shuffled_encoded_targets = shuffled_encoded_targets[:500000]
-            logger.info(msg=f"Generated and shuffled {len(shuffled_encoded_sequences)} sequences for trivia dataset")
+				shuffled_encoded_sequences = shuffled_encoded_sequences[:500000]
+				shuffled_encoded_targets = shuffled_encoded_targets[:500000]
+			logger.info(
+				msg=f"Generated and shuffled {len(shuffled_encoded_sequences)} sequences for trivia dataset")
 			return shuffled_encoded_sequences, shuffled_encoded_targets
 
 	except FileNotFoundError:
@@ -199,10 +200,10 @@ def create_sequences_from_SQuAD(VOCAB, context_window_length):
 			shuffled_encoded_sequences = encoded_sequences[indices]
 			shuffled_encoded_targets = encoded_targets[indices]
 			if len(shuffled_encoded_sequences) > 500000:
-                shuffled_encoded_sequences = shuffled_encoded_sequences[:500000]
-                shuffled_encoded_targets = shuffled_encoded_targets[:500000]
+				shuffled_encoded_sequences = shuffled_encoded_sequences[:500000]
+				shuffled_encoded_targets = shuffled_encoded_targets[:500000]
 
-            logger.info(
+			logger.info(
 				msg=f"Generated and shuffled {len(shuffled_encoded_sequences)} sequences for SQuAD dataset")
 			return shuffled_encoded_sequences, shuffled_encoded_targets
 
