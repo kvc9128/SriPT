@@ -1350,3 +1350,33 @@
 2024-01-04 19:30:32,522 - INFO - Started training on ../Datasets/QA/common_sense_q_a.json
 2024-01-04 19:30:39,854 - INFO - Generated and shuffled 136918 sequences for common sense dataset
 2024-01-04 19:30:39,860 - DEBUG - Obtained sequences for json file ../Datasets/QA/common_sense_q_a.json
+2024-01-04 19:33:00,308 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-04 19:33:00,309 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-04 19:33:00,378 - DEBUG - CACHEDIR=/Users/srikamal/.matplotlib
+2024-01-04 19:33:00,382 - DEBUG - Using fontManager instance from /Users/srikamal/.matplotlib/fontlist-v330.json
+2024-01-04 19:33:00,694 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-04 19:33:00,694 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-04 19:33:00,743 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-04 19:33:00,743 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-04 19:33:00,743 - INFO - Running on cpu
+2024-01-04 19:33:01,967 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-04 19:33:01,967 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-04 19:33:01,968 - INFO - Model has 115917228 parameters.
+2024-01-04 19:33:01,969 - INFO - Started training on ../Datasets/Books/blood_of_olympus.txt
+2024-01-04 19:33:02,145 - INFO - Found 131843 words in book
+2024-01-04 19:33:03,680 - INFO - Generated and shuffled 27840 sequences for book blood_of_olympus.txt
+2024-01-04 19:33:03,684 - DEBUG - Obtained sequences for book
+2024-01-04 19:33:39,619 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-04 19:33:39,619 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-04 19:33:39,690 - DEBUG - CACHEDIR=/Users/srikamal/.matplotlib
+2024-01-04 19:33:39,694 - DEBUG - Using fontManager instance from /Users/srikamal/.matplotlib/fontlist-v330.json
+2024-01-04 19:33:39,984 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-04 19:33:39,985 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-04 19:33:40,025 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-04 19:33:40,025 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-04 19:33:40,025 - INFO - Running on cpu
+2024-01-04 19:33:41,074 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-04 19:33:41,074 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-04 19:33:41,075 - INFO - Model has 115917228 parameters.
+2024-01-04 19:33:41,075 - INFO - Started training on ../Datasets/Books/blood_of_olympus.txt
+2024-01-04 19:33:41,261 - INFO - Found 131843 words in book

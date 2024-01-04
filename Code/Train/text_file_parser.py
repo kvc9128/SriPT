@@ -16,7 +16,7 @@ def create_sequences_from_book(VOCAB, text_file_path, context_window_length):
 			logger.info(f"Found {len(normalized_text)} words in book")
 			# TODO change how much txt we are passing in, only reduce for testing
 			return generate_sequences_for_text(
-				normalized_text[:500],
+				normalized_text,
 				context_window_length,
 				VOCAB,
 				text_file_path

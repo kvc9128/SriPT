@@ -53,7 +53,7 @@ def load_model(model, optimizer):
 def main():
 	# Hyperparameters
 	embedding_dimension = 512
-	context_window = 64  # context window
+	context_window = 32  # context window
 	number_of_decoder_layers = 6
 	num_attention_heads = 4
 	dropout_rate = 0.15
@@ -87,18 +87,28 @@ def main():
 		param.numel() for param in MODEL.parameters()
 	)
 	logger.info(f"Model has {total_params} parameters.")
-	print(MODEL)
 
-	# gonna train on jsons overnight
-	# dataset = datasets[-3]  # change manually as we train
-	# trainer.train_model_on(dataset)
-	# MODEL, OPTIMIZER = load_model(MODEL, OPTIMIZER)
-	# trainer.update_model_and_optimizer(MODEL, OPTIMIZER)
-	# dataset = datasets[-2]  # change manually as we train
-	# trainer.train_model_on(dataset)
-	# MODEL, OPTIMIZER = load_model(MODEL, OPTIMIZER)
-	# trainer.update_model_and_optimizer(MODEL, OPTIMIZER)
-	dataset = datasets[-1]  # change manually as we train
+	dataset = datasets[-3]  # common sense
+	trainer.train_model_on(dataset)
+
+	MODEL, OPTIMIZER = load_model(MODEL, OPTIMIZER)
+	trainer.update_model_and_optimizer(MODEL, OPTIMIZER)
+	dataset = datasets[-2]  # trivia
+	trainer.train_model_on(dataset)
+
+	MODEL, OPTIMIZER = load_model(MODEL, OPTIMIZER)
+	trainer.update_model_and_optimizer(MODEL, OPTIMIZER)
+	dataset = datasets[-1]  # squad
+	trainer.train_model_on(dataset)
+
+	MODEL, OPTIMIZER = load_model(MODEL, OPTIMIZER)
+	trainer.update_model_and_optimizer(MODEL, OPTIMIZER)
+	dataset = datasets[0]  # blood of olympus
+	trainer.train_model_on(dataset)
+
+	MODEL, OPTIMIZER = load_model(MODEL, OPTIMIZER)
+	trainer.update_model_and_optimizer(MODEL, OPTIMIZER)
+	dataset = datasets[1]  # clash of kings
 	trainer.train_model_on(dataset)
 
 

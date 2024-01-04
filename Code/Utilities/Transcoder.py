@@ -11,7 +11,7 @@ def encode_raw_text(text, VOCAB, seq_len, inference=False):
 
 	if len(text) > seq_len:
 		if not inference:
-			logger.warning("Truncated sentence, exceeded context window size.")
+			logger.debug("Truncated sentence, exceeded context window size.")
 		text = text[-seq_len:]
 
 	# Original code replaced by more efficient flow below
