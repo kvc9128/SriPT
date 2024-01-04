@@ -800,3 +800,57 @@
 2024-01-04 11:51:57,359 - INFO - Started training on ../Datasets/QA/common_sense_q_a.json
 2024-01-04 11:51:58,068 - INFO - Generated and shuffled 9741 sequences for common sense dataset
 2024-01-04 11:51:58,069 - DEBUG - Obtained sequences for json file ../Datasets/QA/common_sense_q_a.json
+2024-01-04 11:32:32,777 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-04 11:32:32,778 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-04 11:37:05,483 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-04 11:37:05,483 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-04 11:38:35,824 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-04 11:38:35,825 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-04 11:39:22,194 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-04 11:39:22,194 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-04 11:39:28,806 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-04 11:39:28,806 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-04 11:43:13,548 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-04 11:43:13,548 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-04 11:43:13,661 - DEBUG - matplotlib data path: /home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data
+2024-01-04 11:43:13,666 - DEBUG - CONFIGDIR=/home/srikamal2001/.config/matplotlib
+2024-01-04 11:43:13,668 - DEBUG - interactive is False
+2024-01-04 11:43:13,668 - DEBUG - platform is linux
+2024-01-04 11:43:13,725 - DEBUG - CACHEDIR=/home/srikamal2001/.cache/matplotlib
+2024-01-04 11:43:13,725 - DEBUG - font search path [PosixPath('/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf'), PosixPath('/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/afm'), PosixPath('/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/pdfcorefonts')]
+2024-01-04 11:43:14,647 - INFO - generated new fontManager
+2024-01-04 11:43:14,955 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-04 11:43:14,955 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-04 11:43:16,641 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-04 11:43:16,641 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-04 11:43:16,642 - INFO - Running on cuda
+2024-01-04 11:43:19,003 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-04 11:43:19,003 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-04 11:43:19,004 - INFO - Model has 56439212 parameters in model
+2024-01-04 11:43:19,005 - INFO - Started training on ../Datasets/QA/squad_web.json
+2024-01-04 11:43:29,646 - WARNING - Truncated sentence, exceeded context window size.
+2024-01-04 11:43:29,660 - WARNING - Truncated sentence, exceeded context window size.
+2024-01-04 11:43:29,665 - WARNING - Truncated sentence, exceeded context window size.
+2024-01-04 11:43:29,718 - WARNING - Truncated sentence, exceeded context window size.
+2024-01-04 11:43:29,726 - WARNING - Truncated sentence, exceeded context window size.
+2024-01-04 11:43:29,731 - WARNING - Truncated sentence, exceeded context window size.
+2024-01-04 11:43:29,739 - WARNING - Truncated sentence, exceeded context window size.
+2024-01-04 11:43:31,020 - WARNING - Truncated sentence, exceeded context window size.
+2024-01-04 11:43:31,029 - WARNING - Truncated sentence, exceeded context window size.
+2024-01-04 11:43:31,033 - WARNING - Truncated sentence, exceeded context window size.
+2024-01-04 11:43:31,057 - WARNING - Truncated sentence, exceeded context window size.
+2024-01-04 11:43:31,065 - WARNING - Truncated sentence, exceeded context window size.
+2024-01-04 11:43:31,072 - WARNING - Truncated sentence, exceeded context window size.
+2024-01-04 11:43:31,084 - WARNING - Truncated sentence, exceeded context window size.
+2024-01-04 11:43:31,091 - WARNING - Truncated sentence, exceeded context window size.
+2024-01-04 11:43:31,094 - WARNING - Truncated sentence, exceeded context window size.
+2024-01-04 11:43:31,099 - WARNING - Truncated sentence, exceeded context window size.
+2024-01-04 11:43:31,106 - WARNING - Truncated sentence, exceeded context window size.
+2024-01-04 11:43:31,121 - WARNING - Truncated sentence, exceeded context window size.
+2024-01-04 11:43:31,127 - WARNING - Truncated sentence, exceeded context window size.
+2024-01-04 11:43:31,144 - WARNING - Truncated sentence, exceeded context window size.
+2024-01-04 11:43:31,160 - WARNING - Truncated sentence, exceeded context window size.
+2024-01-04 11:43:31,161 - WARNING - Truncated sentence, exceeded context window size.
+2024-01-04 11:43:31,189 - WARNING - Truncated sentence, exceeded context window size.
+2024-01-04 11:43:31,504 - INFO - Generated and shuffled 76496 sequences for SQuAD dataset
+2024-01-04 11:43:31,847 - DEBUG - Obtained sequences for json file ../Datasets/QA/squad_web.json
