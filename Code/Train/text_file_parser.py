@@ -38,12 +38,9 @@ def create_sequences_from_json(VOCAB, json_file_path, context_window_length):
 
 def generate_sequences_for_text(normalized_text, context_window_length, VOCAB, text_file_path):
 	"""
-	This is the new format of sequence generation, This should allow us to encode QA pairs.
-	This function however, only deals with
-
-	for example
+	example
 	sequence = [PAD, PAD, I, AM, PERCY] # irl tokens(ints), used words for ease of understanding
-	target = [PAD, PAD, PAD, PAD, JACKSON]
+	target = [JACKSON]
 
 	:param normalized_text:
 	:param context_window_length:
@@ -51,24 +48,9 @@ def generate_sequences_for_text(normalized_text, context_window_length, VOCAB, t
 	:param text_file_path:
 	:return:
 	"""
-	encoded_sequences, encoded_targets = [], []
-	for i in range(0, len(normalized_text) - 1 - context_window_length):
-		sequence = normalized_text[i: i + context_window_length]
-		target = normalized_text[i + 1: i + context_window_length + 1]
-		for t in range(context_window_length):
-			encoded_sequence = encode_raw_text(
-				sequence[:t + 1], VOCAB,
-				seq_len=context_window_length
-			)
-			encoded_target = encode_raw_text(
-				target[t], VOCAB,
-				seq_len=context_window_length
-			)
-
-			encoded_sequences.append(encoded_sequence)
-			encoded_targets.append(encoded_target)
-
-	encoded_sequences, encoded_targets = np.array(encoded_sequences), np.array(encoded_targets)
+	encoded_sequences, encoded_targets = generate_sequences_old(normalized_text,
+	                                                            context_window_length,
+	                                                            VOCAB)
 	indices = np.arange(len(encoded_sequences))
 	np.random.shuffle(indices)
 	shuffled_encoded_sequences = encoded_sequences[indices]
@@ -108,17 +90,15 @@ def create_sequences_from_common_sense(VOCAB, context_window_length):
 				normalized_choice = VOCAB.normalize_string(choice_text)
 				normalized_choice = [word for word in normalized_choice.split()]
 
-				encoded_sequence = encode_raw_text(
-					normalized_question, VOCAB,
-					seq_len=context_window_length
-				)
-				encoded_target = encode_raw_text(
-					normalized_choice, VOCAB,
-					seq_len=context_window_length
-				)
+				sentence = np.concatenate((normalized_question, normalized_choice))
+				sentence_encoded_sequences, sentence_encoded_targets = generate_sequences_for_sentence(
+					sentence,
+					context_window_length,
+					VOCAB
+					)
 
-				encoded_sequences.append(encoded_sequence)
-				encoded_targets.append(encoded_target)
+				encoded_sequences.extend(sentence_encoded_sequences)
+				encoded_targets.extend(sentence_encoded_targets)
 
 			encoded_sequences = np.array(encoded_sequences)
 			encoded_targets = np.array(encoded_targets)
@@ -154,17 +134,16 @@ def create_sequences_from_trivia(VOCAB, context_window_length):
 						normalized_answer = VOCAB.normalize_string(answer_text)
 						normalized_answer = [word for word in normalized_answer.split()]
 
-						encoded_sequence = encode_raw_text(
-							normalized_question, VOCAB,
-							seq_len=context_window_length
-						)
-						encoded_target = encode_raw_text(
-							normalized_answer, VOCAB,
-							seq_len=context_window_length
+						sentence = np.concatenate(
+							(normalized_question, normalized_answer))
+						sentence_encoded_sequences, sentence_encoded_targets = generate_sequences_for_sentence(
+							sentence,
+							context_window_length,
+							VOCAB
 						)
 
-						encoded_sequences.append(encoded_sequence)
-						encoded_targets.append(encoded_target)
+						encoded_sequences.append(sentence_encoded_sequences)
+						encoded_targets.append(sentence_encoded_targets)
 
 			encoded_sequences = np.array(encoded_sequences)
 			encoded_targets = np.array(encoded_targets)
@@ -197,17 +176,16 @@ def create_sequences_from_SQuAD(VOCAB, context_window_length):
 				normalized_answer = VOCAB.normalize_string(normalized_entity_name)
 				normalized_answer = [word for word in normalized_answer.split()]
 
-				encoded_sequence = encode_raw_text(
-					normalized_question, VOCAB,
-					seq_len=context_window_length
-				)
-				encoded_target = encode_raw_text(
-					normalized_answer, VOCAB,
-					seq_len=context_window_length
+				sentence = np.concatenate(
+					(normalized_question, normalized_answer))
+				sentence_encoded_sequences, sentence_encoded_targets = generate_sequences_for_sentence(
+					sentence,
+					context_window_length,
+					VOCAB
 				)
 
-				encoded_sequences.append(encoded_sequence)
-				encoded_targets.append(encoded_target)
+				encoded_sequences.append(sentence_encoded_sequences)
+				encoded_targets.append(sentence_encoded_targets)
 
 			encoded_sequences = np.array(encoded_sequences)
 			encoded_targets = np.array(encoded_targets)
@@ -224,7 +202,7 @@ def create_sequences_from_SQuAD(VOCAB, context_window_length):
 		return np.array([]), np.array([])
 
 
-def generate_sequences_old(normalized_text, context_window_length, VOCAB, text_file_path):
+def generate_sequences_old(normalized_text, context_window_length, VOCAB):
 	"""
 	This is the old format of sequence generation, for example
 	sequence = [PAD, PAD, I, AM, PERCY] # irl tokens(ints), used words for ease of understanding
@@ -233,7 +211,6 @@ def generate_sequences_old(normalized_text, context_window_length, VOCAB, text_f
 	:param normalized_text:
 	:param context_window_length:
 	:param VOCAB:
-	:param text_file_path:
 	:return:
 	"""
 	encoded_sequences, encoded_targets = [], []
@@ -251,9 +228,19 @@ def generate_sequences_old(normalized_text, context_window_length, VOCAB, text_f
 			encoded_targets.append(encoded_target)
 
 	encoded_sequences, encoded_targets = np.array(encoded_sequences), np.array(encoded_targets)
-	indices = np.arange(len(encoded_sequences))
-	np.random.shuffle(indices)
-	shuffled_encoded_sequences = encoded_sequences[indices]
-	shuffled_encoded_targets = encoded_targets[indices]
-	logger.info(msg="Generated and shuffled sequences for book " + text_file_path)
-	return shuffled_encoded_sequences, shuffled_encoded_targets
+	return encoded_sequences, encoded_targets
+
+
+def generate_sequences_for_sentence(normalized_sentence, context_window_length, VOCAB):
+	normalized_sentence = normalized_sentence[-context_window_length:]  # crop long sentences
+	encoded_sequences, encoded_targets = [], []
+	for t in range(1, len(normalized_sentence) - 1):
+		encoded_sequence = encode_raw_text(normalized_sentence[:t],
+		                                   VOCAB,
+		                                   seq_len=context_window_length)
+		encoded_target = np.array([VOCAB.word2index(normalized_sentence[t + 1])])
+
+		encoded_sequences.append(encoded_sequence)
+		encoded_targets.append(encoded_target)
+	encoded_sequences, encoded_targets = np.array(encoded_sequences), np.array(encoded_targets)
+	return encoded_sequences, encoded_targets

@@ -50,7 +50,7 @@ def generate_text(model, start_prompt, context_window, VOCAB, max_output_length=
 			output = model(input_tensor, mask)
 
 		output = output / temperature
-		most_likely_tokens = torch.argmax(output, dim=-1)  # pick tokens with highest probability
+		most_likely_tokens = torch.argmax(output, dim=-1)  # pick tokens with the highest probability
 		most_likely_tokens = most_likely_tokens[0]  # get the last token
 		most_likely_token = most_likely_tokens[-1]
 
@@ -65,10 +65,40 @@ def generate_text(model, start_prompt, context_window, VOCAB, max_output_length=
 	return generated_sequence
 
 
+def generate_next_token(model, start_prompt, context_window, VOCAB, max_output_length=50):
+	model.eval()  # Set the model to evaluation mode
+	generated_sequence = start_prompt
+
+	for _ in range(max_output_length):
+		# Tokenize the current sequence
+		input_ids = encode_raw_text(generated_sequence, VOCAB, context_window)
+		input_tensor = torch.tensor([input_ids], dtype=torch.long, device=DEVICE)
+
+		mask = torch.ones_like(input_tensor)
+		mask.to(DEVICE)
+		mask[input_tensor == 2] = 0
+
+		# Generate prediction
+		with torch.no_grad():
+			output = model(input_tensor, mask)
+
+		# Get the last predicted token (the next token)
+		predicted_token_id = torch.argmax(output, dim=-1).item()
+
+		# Break if EOS token is generated
+		if predicted_token_id == VOCAB.word2index("EOS"):
+			generated_sequence += "."
+			break
+		else:
+			generated_sequence += " " + VOCAB.index2word(predicted_token_id)
+
+	return generated_sequence
+
+
 def setup_generation():
 	# defining hyperparameters TODO: Move these to a file so that we don't need to edit in main and here
-	embedding_dimension = 256
-	context_window = 72  # context window
+	embedding_dimension = 512
+	context_window = 64  # context window
 	number_of_decoder_layers = 6
 	num_attention_heads = 4
 	dropout_rate = 0.15
@@ -88,7 +118,8 @@ def setup_generation():
 	# load model and optimizer from previous state
 	model = load_model(model)
 	prompt = "Jason was a"
-	print(generate_text(model, prompt, context_window, VOCAB))
+	# print(generate_text(model, prompt, context_window, VOCAB))
+	print(generate_next_token(model, prompt, context_window, VOCAB))
 
 
 setup_generation()

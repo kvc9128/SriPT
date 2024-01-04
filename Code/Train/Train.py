@@ -42,7 +42,7 @@ class Train:
 		sequence_tensor = torch.empty((self.batch_size, self.context_window), dtype=torch.long,
 		                              device=DEVICE)
 		mask_tensor = torch.empty_like(sequence_tensor, dtype=torch.long, device=DEVICE)
-		target_tensor = torch.empty((self.batch_size, self.context_window), dtype=torch.long,
+		target_tensor = torch.empty((self.batch_size, 1), dtype=torch.long,
 		                            device=DEVICE)
 
 		for epoch in range(self.num_epochs):
@@ -64,16 +64,16 @@ class Train:
 				mask_tensor[sequence_tensor == self.VOCAB.word2index("PAD")] = 0
 
 				# Forward pass
-				# model_out = self.model(sequence_tensor, mask_tensor)
-				# target_tensor_squeezed = target_tensor.squeeze(1)
+				model_out = self.model(sequence_tensor, mask_tensor)
+				target_tensor_squeezed = target_tensor.squeeze(1)
 
 				# Forward pass (Seq2Seq style)
-				model_out = self.model(sequence_tensor, mask_tensor)
-				model_out = model_out.view(-1, model_out.size(-1))
-				target_tensor_squeezed = target_tensor.view(-1)
-				loss = self.loss_fn(model_out, target_tensor_squeezed)
+				# model_out = self.model(sequence_tensor, mask_tensor)
+				# model_out = model_out.view(-1, model_out.size(-1))
+				# target_tensor_squeezed = target_tensor.view(-1)
 
 				# Backpropagation
+				loss = self.loss_fn(model_out, target_tensor_squeezed)
 				loss.backward()
 				self.optimizer.step()
 				self.optimizer.zero_grad()

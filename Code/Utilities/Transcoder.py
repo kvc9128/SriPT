@@ -25,6 +25,6 @@ def encode_raw_text(text, VOCAB, seq_len, inference=False):
 	padding_length = seq_len - len(text)
 	if padding_length > 0:
 		padding = [VOCAB.PAD] * padding_length
-		text = padding + text
+		text = np.concatenate((padding, text))
 
 	return np.array([VOCAB.word2index(word) for word in text])  # tokenized_text
