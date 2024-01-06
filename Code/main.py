@@ -56,7 +56,7 @@ def main():
 	context_window = 32  # context window
 	number_of_decoder_layers = 6
 	num_attention_heads = 4
-	dropout_rate = 0.15
+	dropout_rate = 0.1
 	VOCAB = vocab_manager.load_vocab()
 	VOCAB_SIZE = VOCAB.num_words()
 	logger.info(msg=f"Running on {DEVICE}")
