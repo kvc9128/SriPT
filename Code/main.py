@@ -71,7 +71,7 @@ def main():
 	MODEL.to(DEVICE)
 	OPTIMIZER = torch.optim.Adam(MODEL.parameters(), lr=0.0001)
 	LOSS_FN = nn.CrossEntropyLoss()
-	EPOCHS = 20
+	EPOCHS = 40
 	BATCH_SIZE = 64
 
 	trainer = Train(
