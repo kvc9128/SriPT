@@ -18,7 +18,7 @@ def load_model(model):
 	try:
 		if os.path.exists(SAVED_FOLDER):
 			model_path = os.path.join(SAVED_FOLDER, 'model.pt')
-			torch.save(model.state_dict(), model_path)
+			model.load_state_dict(torch.load(model_path))
 			logger.info(f"Successfully loaded model with weights and parameters")
 		else:
 			logger.error("No checkpoint found. Please provide a model and checkpoint.")
@@ -65,7 +65,7 @@ def generate_text(model, start_prompt, context_window, VOCAB, max_output_length=
 	return generated_sequence
 
 
-def generate_next_token(model, start_prompt, context_window, VOCAB, max_output_length=50):
+def generate_next_token(model, start_prompt, context_window, VOCAB, max_output_length=32):
 	model.eval()  # Set the model to evaluation mode
 	generated_sequence = start_prompt
 
@@ -86,7 +86,7 @@ def generate_next_token(model, start_prompt, context_window, VOCAB, max_output_l
 		predicted_token_id = torch.argmax(output, dim=-1).item()
 
 		# Break if EOS token is generated
-		if predicted_token_id == VOCAB.word2index("EOS"):
+		if predicted_token_id == VOCAB.word2index("EOS") or predicted_token_id == VOCAB.word2index("eos"):
 			generated_sequence += "."
 			break
 		else:
@@ -117,7 +117,7 @@ def setup_generation():
 
 	# load model and optimizer from previous state
 	model = load_model(model)
-	prompt = "Jason was a"
+	prompt = "Percy jackson"
 	# print(generate_text(model, prompt, context_window, VOCAB))
 	print(generate_next_token(model, prompt, context_window, VOCAB))
 

@@ -100,9 +100,9 @@ class VOCAB:
 	def normalize_string(s):
 		s = VOCAB.unicode_to_ascii(s.lower().strip())
 		s = re.sub(r"([?!]+)", r"\1 ", s)
-		s = re.sub(r"\.", " EOS", s)  # Replace periods with 'EOS'
-		s = re.sub(r"\?", " EOS", s)  # Replace Question marks with 'EOS'
-		s = re.sub(r"!", " EOS", s)  # Replace Exclamation marks with 'EOS'
+		s = re.sub(r"\.", " EOS ", s)  # Replace periods with 'EOS'
+		s = re.sub(r"\?", " EOS ", s)  # Replace Question marks with 'EOS'
+		s = re.sub(r"!", " EOS ", s)  # Replace Exclamation marks with 'EOS'
 		s = re.sub(r"[^a-zA-ZEOS!?]+", r" ", s)
 		return s
 

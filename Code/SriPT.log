@@ -2221,3 +2221,117 @@
 2024-01-05 21:25:41,809 - INFO - Successfully trained on ../Datasets/QA/common_sense_q_a.json
 2024-01-05 21:25:48,512 - INFO - Successfully loaded model with weights and parameters
 2024-01-05 21:25:48,513 - DEBUG - Successfully updated model and optimizer
+2024-01-06 00:48:08,904 - DEBUG - Read all Unix Words
+2024-01-06 00:48:09,883 - DEBUG - Added book blood_of_olympus.txt
+2024-01-06 00:48:09,886 - DEBUG - Updated pickled file.
+2024-01-06 00:48:11,003 - DEBUG - Added book clash_of_kings.txt
+2024-01-06 00:48:11,010 - DEBUG - Updated pickled file.
+2024-01-06 00:48:11,315 - DEBUG - Added book Cracking-the-Coding-Interview.txt
+2024-01-06 00:48:11,318 - DEBUG - Updated pickled file.
+2024-01-06 00:48:12,208 - DEBUG - Added book Data Mining Concepts and Techniques.txt
+2024-01-06 00:48:12,214 - DEBUG - Updated pickled file.
+2024-01-06 00:48:12,884 - DEBUG - Added book Deep Learning by Ian Goodfellow.txt
+2024-01-06 00:48:12,891 - DEBUG - Updated pickled file.
+2024-01-06 00:48:13,565 - DEBUG - Added book Elements of Statistical Learning.txt
+2024-01-06 00:48:13,576 - DEBUG - Updated pickled file.
+2024-01-06 00:48:13,950 - DEBUG - Added book house_of_hades.txt
+2024-01-06 00:48:13,958 - DEBUG - Updated pickled file.
+2024-01-06 00:48:14,361 - DEBUG - Added book MachineLearning by TomMitchell.txt
+2024-01-06 00:48:14,370 - DEBUG - Updated pickled file.
+2024-01-06 00:48:14,695 - DEBUG - Added book mark_of_athena.txt
+2024-01-06 00:48:14,703 - DEBUG - Updated pickled file.
+2024-01-06 00:48:14,718 - DEBUG - Added book percy_jackson_and_the_greek_gods.txt
+2024-01-06 00:48:14,727 - DEBUG - Updated pickled file.
+2024-01-06 00:48:14,954 - DEBUG - Added book percy_jackson_and_the_lightning_thief.txt
+2024-01-06 00:48:14,963 - DEBUG - Updated pickled file.
+2024-01-06 00:48:15,770 - DEBUG - Added book storm_of_swords.txt
+2024-01-06 00:48:15,779 - DEBUG - Updated pickled file.
+2024-01-06 00:48:15,780 - INFO - Added all datasets.
+2024-01-06 00:48:16,403 - INFO - Wrote common_sense_qa words to pickle
+2024-01-06 00:48:24,338 - INFO - Wrote trivia_q_a words to pickle
+2024-01-06 00:48:36,179 - INFO - Wrote squad_web_qa words to pickle
+2024-01-06 00:48:36,389 - INFO - Vocabulary Created successfully with 100364 words.
+2024-01-06 00:51:50,974 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-06 00:51:50,974 - INFO - Vocabulary loaded successfully with 100364 words.
+2024-01-06 00:51:51,025 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-06 00:51:51,025 - INFO - Vocabulary loaded successfully with 100364 words.
+2024-01-06 00:51:51,879 - INFO - Successfully loaded model with weights and parameters
+2024-01-06 00:52:12,906 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-06 00:52:12,929 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-06 00:52:12,951 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-06 00:52:12,974 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-06 00:52:12,997 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-06 00:52:13,020 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-06 00:52:13,042 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-06 00:52:13,065 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-06 00:52:13,087 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-06 00:52:13,111 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-06 00:52:13,138 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-06 00:52:13,167 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-06 00:52:13,194 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-06 00:52:13,221 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-06 00:52:13,247 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-06 00:52:13,272 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-06 00:52:13,295 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-06 00:52:13,318 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-06 00:52:13,340 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-06 00:52:13,366 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-06 00:53:47,856 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-06 00:53:47,858 - INFO - Vocabulary loaded successfully with 100364 words.
+2024-01-06 00:53:52,623 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-06 00:53:52,624 - INFO - Vocabulary loaded successfully with 100364 words.
+2024-01-06 00:53:52,741 - DEBUG - CACHEDIR=/Users/srikamal/.matplotlib
+2024-01-06 00:53:52,747 - DEBUG - Using fontManager instance from /Users/srikamal/.matplotlib/fontlist-v330.json
+2024-01-06 00:53:53,298 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-06 00:53:53,298 - INFO - Vocabulary loaded successfully with 100364 words.
+2024-01-06 00:53:53,338 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-06 00:53:53,339 - INFO - Vocabulary loaded successfully with 100364 words.
+2024-01-06 00:53:53,339 - INFO - Running on cpu
+2024-01-06 00:53:54,757 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-06 00:53:54,757 - INFO - Vocabulary loaded successfully with 100364 words.
+2024-01-06 00:53:54,763 - INFO - Model has 56225804 parameters.
+2024-01-06 00:53:54,764 - INFO - Started training on ../Datasets/Books/blood_of_olympus.txt
+2024-01-06 00:53:56,185 - INFO - Found 131880 words in book
+2024-01-06 00:55:47,391 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-06 00:55:47,391 - INFO - Vocabulary loaded successfully with 100364 words.
+2024-01-06 00:55:47,427 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-06 00:55:47,427 - INFO - Vocabulary loaded successfully with 100364 words.
+2024-01-06 00:55:48,176 - INFO - Successfully loaded model with weights and parameters
+2024-01-06 00:55:48,812 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-06 00:55:48,831 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-06 00:55:48,850 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-06 00:55:48,870 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-06 00:55:48,889 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-06 00:55:48,908 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-06 00:55:48,926 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-06 00:55:48,946 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-06 00:55:48,964 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-06 00:55:48,983 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-06 00:55:49,003 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-06 00:55:49,022 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-06 00:55:49,041 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-06 00:55:49,060 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-06 00:55:49,079 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-06 00:55:49,099 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-06 00:55:49,120 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-06 00:55:49,142 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-06 00:55:49,164 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-06 00:55:49,188 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-06 00:56:16,188 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-06 00:56:16,189 - INFO - Vocabulary loaded successfully with 100364 words.
+2024-01-06 00:56:16,230 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-06 00:56:16,230 - INFO - Vocabulary loaded successfully with 100364 words.
+2024-01-06 00:56:16,948 - INFO - Successfully loaded model with weights and parameters
+2024-01-06 00:56:17,581 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-06 00:56:17,601 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-06 00:56:44,262 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-06 00:56:44,263 - INFO - Vocabulary loaded successfully with 100364 words.
+2024-01-06 00:56:44,299 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-06 00:56:44,299 - INFO - Vocabulary loaded successfully with 100364 words.
+2024-01-06 00:56:45,027 - INFO - Successfully loaded model with weights and parameters
+2024-01-06 00:56:45,667 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-06 00:58:08,391 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-06 00:58:08,392 - INFO - Vocabulary loaded successfully with 100364 words.
+2024-01-06 00:58:08,444 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-06 00:58:08,444 - INFO - Vocabulary loaded successfully with 100364 words.
+2024-01-06 00:58:09,407 - INFO - Successfully loaded model with weights and parameters
