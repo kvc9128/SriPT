@@ -1650,3 +1650,574 @@
 2024-01-04 17:36:42,025 - INFO - Generated and shuffled 500000 sequences for trivia dataset
 2024-01-04 17:36:42,089 - DEBUG - Obtained sequences for json file ../Datasets/QA/trivia_q_a.json
 2024-01-04 17:42:28,090 - INFO - 	Epoch: 0 Loss: 6.900878055670661
+2024-01-04 18:14:40,174 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-04 18:14:40,174 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-04 18:14:40,282 - DEBUG - matplotlib data path: /home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data
+2024-01-04 18:14:40,287 - DEBUG - CONFIGDIR=/home/srikamal2001/.config/matplotlib
+2024-01-04 18:14:40,289 - DEBUG - interactive is False
+2024-01-04 18:14:40,289 - DEBUG - platform is linux
+2024-01-04 18:14:40,346 - DEBUG - CACHEDIR=/home/srikamal2001/.cache/matplotlib
+2024-01-04 18:14:40,348 - DEBUG - Using fontManager instance from /home/srikamal2001/.cache/matplotlib/fontlist-v330.json
+2024-01-04 18:14:40,616 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-04 18:14:40,616 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-04 18:14:42,197 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-04 18:14:42,198 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-04 18:14:42,198 - INFO - Running on cuda
+2024-01-04 18:14:44,582 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-04 18:14:44,582 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-04 18:14:44,583 - INFO - Model has 56439212 parameters.
+2024-01-04 18:14:44,584 - INFO - Started training on ../Datasets/Books/blood_of_olympus.txt
+2024-01-04 18:14:44,870 - INFO - Found 131843 words in book
+2024-01-04 18:16:58,087 - INFO - Generated and shuffled 500000 sequences for book blood_of_olympus.txt
+2024-01-04 18:16:58,094 - DEBUG - Obtained sequences for book
+2024-01-04 18:23:03,017 - INFO - 	Epoch: 0 Loss: 5.88449244418635
+2024-01-04 18:29:02,352 - INFO - 	Epoch: 1 Loss: 5.091566892751839
+2024-01-04 18:35:00,091 - INFO - 	Epoch: 2 Loss: 4.7181406879937775
+2024-01-04 18:40:49,650 - INFO - 	Epoch: 3 Loss: 4.392442524555214
+2024-01-04 18:46:38,592 - INFO - 	Epoch: 4 Loss: 4.09170738639309
+2024-01-04 18:52:29,040 - INFO - 	Epoch: 5 Loss: 3.80893812558618
+2024-01-04 18:58:18,588 - INFO - 	Epoch: 6 Loss: 3.5427674699366793
+2024-01-04 19:04:07,948 - INFO - 	Epoch: 7 Loss: 3.2943426610504245
+2024-01-04 19:09:54,979 - INFO - 	Epoch: 8 Loss: 3.0679826164514177
+2024-01-04 19:15:41,578 - INFO - 	Epoch: 9 Loss: 2.8581926956643096
+2024-01-04 19:21:29,513 - INFO - 	Epoch: 10 Loss: 2.669162679621945
+2024-01-04 19:27:17,517 - INFO - 	Epoch: 11 Loss: 2.498942374160701
+2024-01-04 19:33:04,933 - INFO - 	Epoch: 12 Loss: 2.345539404271019
+2024-01-04 19:38:52,473 - INFO - 	Epoch: 13 Loss: 2.205722497126657
+2024-01-04 19:44:40,810 - INFO - 	Epoch: 14 Loss: 2.076326335263875
+2024-01-04 19:50:28,547 - INFO - 	Epoch: 15 Loss: 1.965952381682408
+2024-01-04 19:56:17,125 - INFO - 	Epoch: 16 Loss: 1.862749884396227
+2024-01-04 20:02:05,304 - INFO - 	Epoch: 17 Loss: 1.7671164615042565
+2024-01-04 20:07:52,565 - INFO - 	Epoch: 18 Loss: 1.684576041145747
+2024-01-04 20:13:39,934 - INFO - 	Epoch: 19 Loss: 1.6048521305726726
+2024-01-04 20:13:39,937 - DEBUG - Loaded backend agg version v2.2.
+2024-01-04 20:13:39,940 - DEBUG - findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0.
+2024-01-04 20:13:39,940 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf', name='DejaVu Sans', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 0.33499999999999996
+2024-01-04 20:13:39,940 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniIta.ttf', name='STIXNonUnicode', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2024-01-04 20:13:39,940 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizOneSymBol.ttf', name='STIXSizeOneSym', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2024-01-04 20:13:39,940 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/cmr10.ttf', name='cmr10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-04 20:13:39,940 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/cmss10.ttf', name='cmss10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-04 20:13:39,940 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-Bold.ttf', name='DejaVu Sans Mono', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2024-01-04 20:13:39,940 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/cmex10.ttf', name='cmex10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-04 20:13:39,940 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-Oblique.ttf', name='DejaVu Sans Mono', style='oblique', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2024-01-04 20:13:39,941 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Oblique.ttf', name='DejaVu Sans', style='oblique', variant='normal', weight=400, stretch='normal', size='scalable')) = 1.05
+2024-01-04 20:13:39,941 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneral.ttf', name='STIXGeneral', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-04 20:13:39,941 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif.ttf', name='DejaVu Serif', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-04 20:13:39,941 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralItalic.ttf', name='STIXGeneral', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2024-01-04 20:13:39,941 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono.ttf', name='DejaVu Sans Mono', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-04 20:13:39,941 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUni.ttf', name='STIXNonUnicode', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-04 20:13:39,941 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizOneSymReg.ttf', name='STIXSizeOneSym', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-04 20:13:39,941 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerifDisplay.ttf', name='DejaVu Serif Display', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-04 20:13:39,941 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizThreeSymReg.ttf', name='STIXSizeThreeSym', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-04 20:13:39,941 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf', name='DejaVu Sans', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 0.05
+2024-01-04 20:13:39,941 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/cmmi10.ttf', name='cmmi10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-04 20:13:39,941 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/cmsy10.ttf', name='cmsy10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-04 20:13:39,941 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/cmtt10.ttf', name='cmtt10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-04 20:13:39,942 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-BoldOblique.ttf', name='DejaVu Sans', style='oblique', variant='normal', weight=700, stretch='normal', size='scalable')) = 1.335
+2024-01-04 20:13:39,942 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFourSymBol.ttf', name='STIXSizeFourSym', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2024-01-04 20:13:39,942 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-BoldOblique.ttf', name='DejaVu Sans Mono', style='oblique', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+2024-01-04 20:13:39,942 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-Italic.ttf', name='DejaVu Serif', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2024-01-04 20:13:39,942 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansDisplay.ttf', name='DejaVu Sans Display', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-04 20:13:39,942 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFourSymReg.ttf', name='STIXSizeFourSym', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-04 20:13:39,942 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniBolIta.ttf', name='STIXNonUnicode', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+2024-01-04 20:13:39,942 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizThreeSymBol.ttf', name='STIXSizeThreeSym', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2024-01-04 20:13:39,942 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniBol.ttf', name='STIXNonUnicode', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2024-01-04 20:13:39,942 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-BoldItalic.ttf', name='DejaVu Serif', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+2024-01-04 20:13:39,942 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralBolIta.ttf', name='STIXGeneral', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+2024-01-04 20:13:39,942 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizTwoSymBol.ttf', name='STIXSizeTwoSym', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2024-01-04 20:13:39,942 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/cmb10.ttf', name='cmb10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-04 20:13:39,942 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralBol.ttf', name='STIXGeneral', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2024-01-04 20:13:39,942 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFiveSymReg.ttf', name='STIXSizeFiveSym', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-04 20:13:39,942 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizTwoSymReg.ttf', name='STIXSizeTwoSym', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-04 20:13:39,943 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-Bold.ttf', name='DejaVu Serif', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2024-01-04 20:13:39,943 - DEBUG - findfont: score(FontEntry(fname='/usr/share/fonts/truetype/lato/Lato-Hairline.ttf', name='Lato', style='normal', variant='normal', weight=100, stretch='normal', size='scalable')) = 10.335
+2024-01-04 20:13:39,943 - DEBUG - findfont: score(FontEntry(fname='/usr/share/fonts/truetype/lato/Lato-Regular.ttf', name='Lato', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-04 20:13:39,943 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmsans12-oblique.otf', name='Latin Modern Sans', style='oblique', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2024-01-04 20:13:39,943 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmromanslant17-regular.otf', name='Latin Modern Roman Slanted', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-04 20:13:39,943 - DEBUG - findfont: score(FontEntry(fname='/usr/share/fonts/truetype/dejavu/DejaVuSansMono-Bold.ttf', name='DejaVu Sans Mono', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2024-01-04 20:13:39,943 - DEBUG - findfont: score(FontEntry(fname='/usr/share/fonts/truetype/lato/Lato-HeavyItalic.ttf', name='Lato', style='italic', variant='normal', weight=800, stretch='normal', size='scalable')) = 11.43
+2024-01-04 20:13:39,943 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmroman7-bold.otf', name='Latin Modern Roman', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2024-01-04 20:13:39,943 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmroman9-bold.otf', name='Latin Modern Roman', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2024-01-04 20:13:39,943 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmroman6-regular.otf', name='Latin Modern Roman', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-04 20:13:39,943 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmsansquot8-bold.otf', name='Latin Modern Sans Quotation', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2024-01-04 20:13:39,943 - DEBUG - findfont: score(FontEntry(fname='/usr/share/fonts/truetype/lato/Lato-ThinItalic.ttf', name='Lato', style='italic', variant='normal', weight=200, stretch='normal', size='scalable')) = 11.24
+2024-01-04 20:13:39,943 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmsans9-regular.otf', name='Latin Modern Sans', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-04 20:13:39,943 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmsans10-boldoblique.otf', name='Latin Modern Sans', style='oblique', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+2024-01-04 20:13:39,944 - DEBUG - findfont: score(FontEntry(fname='/usr/share/fonts/truetype/lato/Lato-LightItalic.ttf', name='Lato', style='italic', variant='normal', weight=300, stretch='normal', size='scalable')) = 11.145
+2024-01-04 20:13:39,944 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmmono9-regular.otf', name='Latin Modern Mono', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-04 20:13:39,944 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-regular.otf', name='Latin Modern Mono Light', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-04 20:13:39,944 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf', name='Latin Modern Roman Caps', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-04 20:13:39,944 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmsansquot8-regular.otf', name='Latin Modern Sans Quotation', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-04 20:13:39,944 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmromanslant10-bold.otf', name='Latin Modern Roman Slanted', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2024-01-04 20:13:39,944 - DEBUG - findfont: score(FontEntry(fname='/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf', name='DejaVu Sans', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 0.33499999999999996
+2024-01-04 20:13:39,944 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmromanslant9-regular.otf', name='Latin Modern Roman Slanted', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-04 20:13:39,944 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmromandemi10-oblique.otf', name='Latin Modern Roman Demi', style='oblique', variant='normal', weight=600, stretch='normal', size='scalable')) = 11.24
+2024-01-04 20:13:39,944 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmroman10-bold.otf', name='Latin Modern Roman', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2024-01-04 20:13:39,944 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmromandunh10-regular.otf', name='Latin Modern Roman Dunhill', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-04 20:13:39,944 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmroman12-regular.otf', name='Latin Modern Roman', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-04 20:13:39,944 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmsansquot8-oblique.otf', name='Latin Modern Sans Quotation', style='oblique', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2024-01-04 20:13:39,944 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmromanslant12-regular.otf', name='Latin Modern Roman Slanted', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-04 20:13:39,944 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf', name='Latin Modern Roman', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-04 20:13:39,944 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmroman5-regular.otf', name='Latin Modern Roman', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-04 20:13:39,945 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmmono10-italic.otf', name='Latin Modern Mono', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2024-01-04 20:13:39,945 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmroman8-bold.otf', name='Latin Modern Roman', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2024-01-04 20:13:39,945 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmroman7-regular.otf', name='Latin Modern Roman', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-04 20:13:39,945 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmromanslant8-regular.otf', name='Latin Modern Roman Slanted', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-04 20:13:39,945 - DEBUG - findfont: score(FontEntry(fname='/usr/share/fonts/truetype/lato/Lato-BlackItalic.ttf', name='Lato', style='italic', variant='normal', weight=900, stretch='normal', size='scalable')) = 11.525
+2024-01-04 20:13:39,945 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmromanslant10-regular.otf', name='Latin Modern Roman Slanted', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-04 20:13:39,945 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmsans8-oblique.otf', name='Latin Modern Sans', style='oblique', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2024-01-04 20:13:39,945 - DEBUG - findfont: score(FontEntry(fname='/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf', name='DejaVu Serif', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2024-01-04 20:13:39,945 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmroman6-bold.otf', name='Latin Modern Roman', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2024-01-04 20:13:39,945 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmmonoprop10-oblique.otf', name='Latin Modern Mono Prop', style='oblique', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2024-01-04 20:13:39,945 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmmono8-regular.otf', name='Latin Modern Mono', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-04 20:13:39,945 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmroman17-regular.otf', name='Latin Modern Roman', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-04 20:13:39,945 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmmonoproplt10-boldoblique.otf', name='Latin Modern Mono Prop Light', style='oblique', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+2024-01-04 20:13:39,945 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf', name='Latin Modern Sans', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2024-01-04 20:13:39,946 - DEBUG - findfont: score(FontEntry(fname='/usr/share/fonts/truetype/lato/Lato-Italic.ttf', name='Lato', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2024-01-04 20:13:39,946 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmmonoprop10-regular.otf', name='Latin Modern Mono Prop', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-04 20:13:39,946 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmroman10-bolditalic.otf', name='Latin Modern Roman', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+2024-01-04 20:13:39,946 - DEBUG - findfont: score(FontEntry(fname='/usr/share/fonts/truetype/lato/Lato-Heavy.ttf', name='Lato', style='normal', variant='normal', weight=800, stretch='normal', size='scalable')) = 10.43
+2024-01-04 20:13:39,946 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmsansquot8-boldoblique.otf', name='Latin Modern Sans Quotation', style='oblique', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+2024-01-04 20:13:39,946 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmmonoproplt10-bold.otf', name='Latin Modern Mono Prop Light', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2024-01-04 20:13:39,946 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmroman5-bold.otf', name='Latin Modern Roman', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2024-01-04 20:13:39,946 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmroman12-bold.otf', name='Latin Modern Roman', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2024-01-04 20:13:39,946 - DEBUG - findfont: score(FontEntry(fname='/usr/share/fonts/truetype/lato/Lato-Black.ttf', name='Lato', style='normal', variant='normal', weight=900, stretch='normal', size='scalable')) = 10.525
+2024-01-04 20:13:39,946 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmmonoltcond10-regular.otf', name='Latin Modern Mono Light Cond', style='normal', variant='normal', weight=400, stretch='condensed', size='scalable')) = 10.25
+2024-01-04 20:13:39,946 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-oblique.otf', name='Latin Modern Roman Caps', style='oblique', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2024-01-04 20:13:39,946 - DEBUG - findfont: score(FontEntry(fname='/usr/share/fonts/truetype/lato/Lato-SemiboldItalic.ttf', name='Lato', style='italic', variant='normal', weight=600, stretch='normal', size='scalable')) = 11.24
+2024-01-04 20:13:39,946 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmromandemi10-regular.otf', name='Latin Modern Roman Demi', style='normal', variant='normal', weight=600, stretch='normal', size='scalable')) = 10.24
+2024-01-04 20:13:39,946 - DEBUG - findfont: score(FontEntry(fname='/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf', name='DejaVu Sans Mono', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-04 20:13:39,946 - DEBUG - findfont: score(FontEntry(fname='/usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf', name='DejaVu Serif', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-04 20:13:39,946 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmromandunh10-oblique.otf', name='Latin Modern Roman Dunhill', style='oblique', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2024-01-04 20:13:39,947 - DEBUG - findfont: score(FontEntry(fname='/usr/share/fonts/truetype/lato/Lato-Bold.ttf', name='Lato', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2024-01-04 20:13:39,947 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmromanunsl10-regular.otf', name='Latin Modern Roman Unslanted', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-04 20:13:39,947 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmmonocaps10-regular.otf', name='Latin Modern Mono Caps', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-04 20:13:39,947 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmroman9-regular.otf', name='Latin Modern Roman', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-04 20:13:39,947 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmmonoproplt10-regular.otf', name='Latin Modern Mono Prop Light', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-04 20:13:39,947 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-boldoblique.otf', name='Latin Modern Mono Light', style='oblique', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+2024-01-04 20:13:39,947 - DEBUG - findfont: score(FontEntry(fname='/usr/share/fonts/truetype/lato/Lato-BoldItalic.ttf', name='Lato', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+2024-01-04 20:13:39,947 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-oblique.otf', name='Latin Modern Mono Light', style='oblique', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2024-01-04 20:13:39,947 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmroman12-italic.otf', name='Latin Modern Roman', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2024-01-04 20:13:39,947 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmmonoslant10-regular.otf', name='Latin Modern Mono Slanted', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-04 20:13:39,947 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmsansdemicond10-regular.otf', name='Latin Modern Sans Demi Cond', style='normal', variant='normal', weight=600, stretch='condensed', size='scalable')) = 10.44
+2024-01-04 20:13:39,947 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm-math/latinmodern-math.otf', name='Latin Modern Math', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-04 20:13:39,947 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmroman8-regular.otf', name='Latin Modern Roman', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-04 20:13:39,947 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmmonocaps10-oblique.otf', name='Latin Modern Mono Caps', style='oblique', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2024-01-04 20:13:39,947 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf', name='Latin Modern Sans', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-04 20:13:39,947 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmsans17-regular.otf', name='Latin Modern Sans', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-04 20:13:39,948 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf', name='Latin Modern Sans', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-04 20:13:39,948 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmroman7-italic.otf', name='Latin Modern Roman', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2024-01-04 20:13:39,948 - DEBUG - findfont: score(FontEntry(fname='/usr/share/fonts/truetype/lato/Lato-MediumItalic.ttf', name='Lato', style='italic', variant='normal', weight=500, stretch='normal', size='scalable')) = 11.145
+2024-01-04 20:13:39,948 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf', name='Latin Modern Mono Light', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2024-01-04 20:13:39,948 - DEBUG - findfont: score(FontEntry(fname='/usr/share/fonts/truetype/lato/Lato-Semibold.ttf', name='Lato', style='normal', variant='normal', weight=600, stretch='normal', size='scalable')) = 10.24
+2024-01-04 20:13:39,948 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmmono12-regular.otf', name='Latin Modern Mono', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-04 20:13:39,948 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf', name='Latin Modern Mono', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-04 20:13:39,948 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmsans17-oblique.otf', name='Latin Modern Sans', style='oblique', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2024-01-04 20:13:39,948 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmroman9-italic.otf', name='Latin Modern Roman', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2024-01-04 20:13:39,948 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf', name='Latin Modern Sans', style='oblique', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2024-01-04 20:13:39,948 - DEBUG - findfont: score(FontEntry(fname='/usr/share/fonts/truetype/lato/Lato-HairlineItalic.ttf', name='Lato', style='italic', variant='normal', weight=100, stretch='normal', size='scalable')) = 11.335
+2024-01-04 20:13:39,948 - DEBUG - findfont: score(FontEntry(fname='/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf', name='DejaVu Sans', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 0.05
+2024-01-04 20:13:39,948 - DEBUG - findfont: score(FontEntry(fname='/usr/share/fonts/truetype/lato/Lato-Light.ttf', name='Lato', style='normal', variant='normal', weight=300, stretch='normal', size='scalable')) = 10.145
+2024-01-04 20:13:39,948 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmroman8-italic.otf', name='Latin Modern Roman', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2024-01-04 20:13:39,948 - DEBUG - findfont: score(FontEntry(fname='/usr/share/fonts/truetype/lato/Lato-Medium.ttf', name='Lato', style='normal', variant='normal', weight=500, stretch='normal', size='scalable')) = 10.145
+2024-01-04 20:13:39,949 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmmonoproplt10-oblique.otf', name='Latin Modern Mono Prop Light', style='oblique', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2024-01-04 20:13:39,949 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmsansdemicond10-oblique.otf', name='Latin Modern Sans Demi Cond', style='oblique', variant='normal', weight=600, stretch='condensed', size='scalable')) = 11.44
+2024-01-04 20:13:39,949 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmsans9-oblique.otf', name='Latin Modern Sans', style='oblique', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2024-01-04 20:13:39,949 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmroman10-italic.otf', name='Latin Modern Roman', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2024-01-04 20:13:39,949 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmmonoltcond10-oblique.otf', name='Latin Modern Mono Light Cond', style='oblique', variant='normal', weight=400, stretch='condensed', size='scalable')) = 11.25
+2024-01-04 20:13:39,949 - DEBUG - findfont: score(FontEntry(fname='/usr/share/fonts/truetype/lato/Lato-Thin.ttf', name='Lato', style='normal', variant='normal', weight=200, stretch='normal', size='scalable')) = 10.24
+2024-01-04 20:13:39,949 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf', name='Latin Modern Sans', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-04 20:13:39,949 - DEBUG - findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000.
+2024-01-04 20:13:46,706 - INFO - Stored model for document ../Datasets/Books/blood_of_olympus.txt
+2024-01-04 20:13:46,706 - INFO - Successfully trained on ../Datasets/Books/blood_of_olympus.txt
+2024-01-04 20:13:53,604 - INFO - Successfully loaded model with weights and parameters
+2024-01-04 20:13:53,605 - DEBUG - Successfully updated model and optimizer
+2024-01-04 20:13:53,605 - INFO - Started training on ../Datasets/Books/clash_of_kings.txt
+2024-01-04 20:13:54,337 - INFO - Found 360860 words in book
+2024-01-04 20:19:56,171 - INFO - Generated and shuffled 500000 sequences for book clash_of_kings.txt
+2024-01-04 20:19:56,189 - DEBUG - Obtained sequences for book
+2024-01-04 20:25:44,431 - INFO - 	Epoch: 0 Loss: 6.0686730921604175
+2024-01-04 20:31:32,012 - INFO - 	Epoch: 1 Loss: 5.357868047506456
+2024-01-04 20:37:19,695 - INFO - 	Epoch: 2 Loss: 5.054701953897461
+2024-01-04 20:43:07,544 - INFO - 	Epoch: 3 Loss: 4.837049064273659
+2024-01-04 20:48:54,987 - INFO - 	Epoch: 4 Loss: 4.647554817684357
+2024-01-04 20:54:43,095 - INFO - 	Epoch: 5 Loss: 4.478564697293459
+2024-01-04 21:00:31,504 - INFO - 	Epoch: 6 Loss: 4.321133501366109
+2024-01-04 21:06:19,401 - INFO - 	Epoch: 7 Loss: 4.174324070833551
+2024-01-04 21:12:07,339 - INFO - 	Epoch: 8 Loss: 4.0371866353462735
+2024-01-04 21:17:55,449 - INFO - 	Epoch: 9 Loss: 3.9030452550098462
+2024-01-04 21:23:43,938 - INFO - 	Epoch: 10 Loss: 3.786002684115631
+2024-01-04 21:29:31,920 - INFO - 	Epoch: 11 Loss: 3.6672078129943677
+2024-01-04 21:35:21,026 - INFO - 	Epoch: 12 Loss: 3.557376391968236
+2024-01-04 21:41:08,747 - INFO - 	Epoch: 13 Loss: 3.4538888644696013
+2024-01-04 21:46:56,919 - INFO - 	Epoch: 14 Loss: 3.3570818827815136
+2024-01-04 21:52:45,497 - INFO - 	Epoch: 15 Loss: 3.265695397419253
+2024-01-04 21:58:33,341 - INFO - 	Epoch: 16 Loss: 3.1794881260340113
+2024-01-04 22:04:21,957 - INFO - 	Epoch: 17 Loss: 3.093750944838912
+2024-01-04 22:10:10,807 - INFO - 	Epoch: 18 Loss: 3.0161666646256426
+2024-01-04 22:15:59,099 - INFO - 	Epoch: 19 Loss: 2.937401443063694
+2024-01-04 22:16:05,881 - INFO - Stored model for document ../Datasets/Books/clash_of_kings.txt
+2024-01-04 22:16:05,881 - INFO - Successfully trained on ../Datasets/Books/clash_of_kings.txt
+2024-01-04 22:16:12,589 - INFO - Successfully loaded model with weights and parameters
+2024-01-04 22:16:12,590 - DEBUG - Successfully updated model and optimizer
+2024-01-04 22:16:12,590 - INFO - Started training on ../Datasets/Books/Cracking-the-Coding-Interview.txt
+2024-01-04 22:16:12,935 - INFO - Found 73401 words in book
+2024-01-04 22:17:26,618 - INFO - Generated and shuffled 500000 sequences for book Cracking-the-Coding-Interview.txt
+2024-01-04 22:17:26,620 - DEBUG - Obtained sequences for book
+2024-01-04 22:23:14,571 - INFO - 	Epoch: 0 Loss: 5.29799975798915
+2024-01-04 22:29:02,428 - INFO - 	Epoch: 1 Loss: 3.8504116001400166
+2024-01-04 22:34:50,577 - INFO - 	Epoch: 2 Loss: 3.060107928297792
+2024-01-04 22:40:38,426 - INFO - 	Epoch: 3 Loss: 2.532357701126637
+2024-01-04 22:46:26,844 - INFO - 	Epoch: 4 Loss: 2.1563603779290554
+2024-01-04 22:52:14,406 - INFO - 	Epoch: 5 Loss: 1.8711665726843334
+2024-01-04 22:58:02,480 - INFO - 	Epoch: 6 Loss: 1.6506145439252327
+2024-01-04 23:03:50,323 - INFO - 	Epoch: 7 Loss: 1.4737423998587447
+2024-01-04 23:09:38,253 - INFO - 	Epoch: 8 Loss: 1.3307681759534222
+2024-01-04 23:15:26,030 - INFO - 	Epoch: 9 Loss: 1.215887381489681
+2024-01-04 23:21:13,674 - INFO - 	Epoch: 10 Loss: 1.119550472698606
+2024-01-04 23:27:02,079 - INFO - 	Epoch: 11 Loss: 1.0391802014568434
+2024-01-04 23:32:50,944 - INFO - 	Epoch: 12 Loss: 0.9738177573313117
+2024-01-04 23:38:39,333 - INFO - 	Epoch: 13 Loss: 0.9135034870465047
+2024-01-04 23:44:28,171 - INFO - 	Epoch: 14 Loss: 0.865160114571063
+2024-01-04 23:50:17,214 - INFO - 	Epoch: 15 Loss: 0.8216112315753943
+2024-01-04 23:56:06,558 - INFO - 	Epoch: 16 Loss: 0.7839009979548084
+2024-01-05 00:01:55,664 - INFO - 	Epoch: 17 Loss: 0.7481861520926737
+2024-01-05 00:07:44,639 - INFO - 	Epoch: 18 Loss: 0.7188247168809557
+2024-01-05 00:13:34,394 - INFO - 	Epoch: 19 Loss: 0.6945225118701878
+2024-01-05 00:13:41,239 - INFO - Stored model for document ../Datasets/Books/Cracking-the-Coding-Interview.txt
+2024-01-05 00:13:41,239 - INFO - Successfully trained on ../Datasets/Books/Cracking-the-Coding-Interview.txt
+2024-01-05 00:13:47,986 - INFO - Successfully loaded model with weights and parameters
+2024-01-05 00:13:47,986 - DEBUG - Successfully updated model and optimizer
+2024-01-05 00:13:47,986 - INFO - Started training on ../Datasets/Books/Data Mining Concepts and Techniques.txt
+2024-01-05 00:13:48,712 - INFO - Found 311402 words in book
+2024-01-05 00:19:08,065 - INFO - Generated and shuffled 500000 sequences for book Data Mining Concepts and Techniques.txt
+2024-01-05 00:19:08,081 - DEBUG - Obtained sequences for book
+2024-01-05 00:24:59,151 - INFO - 	Epoch: 0 Loss: 5.790084408358678
+2024-01-05 00:30:50,467 - INFO - 	Epoch: 1 Loss: 4.89618395532148
+2024-01-05 00:36:40,074 - INFO - 	Epoch: 2 Loss: 4.468788744361963
+2024-01-05 00:42:28,995 - INFO - 	Epoch: 3 Loss: 4.155956069842034
+2024-01-05 00:48:17,512 - INFO - 	Epoch: 4 Loss: 3.9080655095336745
+2024-01-05 00:54:06,863 - INFO - 	Epoch: 5 Loss: 3.6942343780216778
+2024-01-05 00:59:55,613 - INFO - 	Epoch: 6 Loss: 3.508317846978437
+2024-01-05 01:05:43,418 - INFO - 	Epoch: 7 Loss: 3.344767904165642
+2024-01-05 01:11:30,608 - INFO - 	Epoch: 8 Loss: 3.197249481556541
+2024-01-05 01:17:19,335 - INFO - 	Epoch: 9 Loss: 3.0645996677649676
+2024-01-05 01:23:07,425 - INFO - 	Epoch: 10 Loss: 2.945615195214779
+2024-01-05 01:28:54,836 - INFO - 	Epoch: 11 Loss: 2.8326246905528274
+2024-01-05 01:34:42,386 - INFO - 	Epoch: 12 Loss: 2.730227892681445
+2024-01-05 01:40:30,792 - INFO - 	Epoch: 13 Loss: 2.633470120853604
+2024-01-05 01:46:18,377 - INFO - 	Epoch: 14 Loss: 2.5491818399137554
+2024-01-05 01:52:06,266 - INFO - 	Epoch: 15 Loss: 2.466469334460379
+2024-01-05 01:57:55,274 - INFO - 	Epoch: 16 Loss: 2.38896103051462
+2024-01-05 02:03:43,707 - INFO - 	Epoch: 17 Loss: 2.319948801155647
+2024-01-05 02:09:32,023 - INFO - 	Epoch: 18 Loss: 2.252054387736919
+2024-01-05 02:15:20,421 - INFO - 	Epoch: 19 Loss: 2.1920142753638188
+2024-01-05 02:15:27,165 - INFO - Stored model for document ../Datasets/Books/Data Mining Concepts and Techniques.txt
+2024-01-05 02:15:27,166 - INFO - Successfully trained on ../Datasets/Books/Data Mining Concepts and Techniques.txt
+2024-01-05 02:15:33,866 - INFO - Successfully loaded model with weights and parameters
+2024-01-05 02:15:33,866 - DEBUG - Successfully updated model and optimizer
+2024-01-05 02:15:33,867 - INFO - Started training on ../Datasets/Books/Deep Learning by Ian Goodfellow.txt
+2024-01-05 02:15:34,599 - INFO - Found 305537 words in book
+2024-01-05 02:20:42,339 - INFO - Generated and shuffled 500000 sequences for book Deep Learning by Ian Goodfellow.txt
+2024-01-05 02:20:42,354 - DEBUG - Obtained sequences for book
+2024-01-05 02:26:30,501 - INFO - 	Epoch: 0 Loss: 5.31695702133335
+2024-01-05 02:32:20,205 - INFO - 	Epoch: 1 Loss: 4.557592971228479
+2024-01-05 02:38:08,481 - INFO - 	Epoch: 2 Loss: 4.210552711701674
+2024-01-05 02:43:56,515 - INFO - 	Epoch: 3 Loss: 3.9531770066548417
+2024-01-05 02:49:45,086 - INFO - 	Epoch: 4 Loss: 3.743933085167158
+2024-01-05 02:55:34,605 - INFO - 	Epoch: 5 Loss: 3.5623169091501055
+2024-01-05 03:01:23,218 - INFO - 	Epoch: 6 Loss: 3.402603488150341
+2024-01-05 03:07:12,069 - INFO - 	Epoch: 7 Loss: 3.2609964871308894
+2024-01-05 03:13:02,008 - INFO - 	Epoch: 8 Loss: 3.1337591620878387
+2024-01-05 03:18:51,572 - INFO - 	Epoch: 9 Loss: 3.019409041174607
+2024-01-05 03:24:39,894 - INFO - 	Epoch: 10 Loss: 2.914519128604724
+2024-01-05 03:30:30,216 - INFO - 	Epoch: 11 Loss: 2.818003774070764
+2024-01-05 03:36:19,051 - INFO - 	Epoch: 12 Loss: 2.7251679941409073
+2024-01-05 03:42:07,229 - INFO - 	Epoch: 13 Loss: 2.638992766310359
+2024-01-05 03:47:56,827 - INFO - 	Epoch: 14 Loss: 2.5608255864563074
+2024-01-05 03:53:47,459 - INFO - 	Epoch: 15 Loss: 2.488480727946032
+2024-01-05 03:59:35,888 - INFO - 	Epoch: 16 Loss: 2.4188059983470778
+2024-01-05 04:05:25,255 - INFO - 	Epoch: 17 Loss: 2.353355545586827
+2024-01-05 04:11:15,975 - INFO - 	Epoch: 18 Loss: 2.2928792684278423
+2024-01-05 04:17:05,606 - INFO - 	Epoch: 19 Loss: 2.2342189638906422
+2024-01-05 04:17:12,471 - INFO - Stored model for document ../Datasets/Books/Deep Learning by Ian Goodfellow.txt
+2024-01-05 04:17:12,471 - INFO - Successfully trained on ../Datasets/Books/Deep Learning by Ian Goodfellow.txt
+2024-01-05 04:17:19,116 - INFO - Successfully loaded model with weights and parameters
+2024-01-05 04:17:19,116 - DEBUG - Successfully updated model and optimizer
+2024-01-05 04:17:19,116 - INFO - Started training on ../Datasets/Books/Elements of Statistical Learning.txt
+2024-01-05 04:17:20,020 - INFO - Found 425668 words in book
+2024-01-05 04:24:19,670 - INFO - Generated and shuffled 500000 sequences for book Elements of Statistical Learning.txt
+2024-01-05 04:24:19,692 - DEBUG - Obtained sequences for book
+2024-01-05 04:30:09,728 - INFO - 	Epoch: 0 Loss: 3.176004317315859
+2024-01-05 04:36:00,226 - INFO - 	Epoch: 1 Loss: 2.725216096706776
+2024-01-05 04:41:50,602 - INFO - 	Epoch: 2 Loss: 2.4982613351518412
+2024-01-05 04:47:40,301 - INFO - 	Epoch: 3 Loss: 2.330132205838493
+2024-01-05 04:53:30,835 - INFO - 	Epoch: 4 Loss: 2.1899198365788304
+2024-01-05 04:59:19,635 - INFO - 	Epoch: 5 Loss: 2.070176885958763
+2024-01-05 05:05:08,902 - INFO - 	Epoch: 6 Loss: 1.9666228222041269
+2024-01-05 05:10:57,850 - INFO - 	Epoch: 7 Loss: 1.8732052027599297
+2024-01-05 05:16:47,181 - INFO - 	Epoch: 8 Loss: 1.788245747631718
+2024-01-05 05:22:36,356 - INFO - 	Epoch: 9 Loss: 1.7161132335296607
+2024-01-05 05:28:25,723 - INFO - 	Epoch: 10 Loss: 1.6459503499395225
+2024-01-05 05:34:14,337 - INFO - 	Epoch: 11 Loss: 1.5828959416088786
+2024-01-05 05:40:03,208 - INFO - 	Epoch: 12 Loss: 1.5198413784908016
+2024-01-05 05:45:52,501 - INFO - 	Epoch: 13 Loss: 1.463190455529486
+2024-01-05 05:51:41,721 - INFO - 	Epoch: 14 Loss: 1.4169301997299872
+2024-01-05 05:57:31,123 - INFO - 	Epoch: 15 Loss: 1.3656571852248325
+2024-01-05 06:03:21,010 - INFO - 	Epoch: 16 Loss: 1.3204652496746607
+2024-01-05 06:09:09,936 - INFO - 	Epoch: 17 Loss: 1.2798503969366344
+2024-01-05 06:14:58,483 - INFO - 	Epoch: 18 Loss: 1.2389331745776346
+2024-01-05 06:20:48,501 - INFO - 	Epoch: 19 Loss: 1.2021763464440705
+2024-01-05 06:20:55,450 - INFO - Stored model for document ../Datasets/Books/Elements of Statistical Learning.txt
+2024-01-05 06:20:55,450 - INFO - Successfully trained on ../Datasets/Books/Elements of Statistical Learning.txt
+2024-01-05 06:21:02,265 - INFO - Successfully loaded model with weights and parameters
+2024-01-05 06:21:02,265 - DEBUG - Successfully updated model and optimizer
+2024-01-05 06:21:02,265 - INFO - Started training on ../Datasets/Books/house_of_hades.txt
+2024-01-05 06:21:02,732 - INFO - Found 157844 words in book
+2024-01-05 06:23:41,024 - INFO - Generated and shuffled 500000 sequences for book house_of_hades.txt
+2024-01-05 06:23:41,033 - DEBUG - Obtained sequences for book
+2024-01-05 06:29:31,849 - INFO - 	Epoch: 0 Loss: 5.621197453444882
+2024-01-05 06:35:21,794 - INFO - 	Epoch: 1 Loss: 4.838268661889673
+2024-01-05 06:41:12,021 - INFO - 	Epoch: 2 Loss: 4.3866680824811555
+2024-01-05 06:47:02,654 - INFO - 	Epoch: 3 Loss: 4.020229278896261
+2024-01-05 06:52:52,524 - INFO - 	Epoch: 4 Loss: 3.7139367225288553
+2024-01-05 06:58:42,103 - INFO - 	Epoch: 5 Loss: 3.4573672886573528
+2024-01-05 07:04:33,190 - INFO - 	Epoch: 6 Loss: 3.23212503272939
+2024-01-05 07:10:22,341 - INFO - 	Epoch: 7 Loss: 3.039725714488574
+2024-01-05 07:16:11,972 - INFO - 	Epoch: 8 Loss: 2.868114679685569
+2024-01-05 07:22:02,259 - INFO - 	Epoch: 9 Loss: 2.7169379472763064
+2024-01-05 07:27:51,425 - INFO - 	Epoch: 10 Loss: 2.5816238016973565
+2024-01-05 07:33:40,197 - INFO - 	Epoch: 11 Loss: 2.4573233509088137
+2024-01-05 07:39:29,080 - INFO - 	Epoch: 12 Loss: 2.3460163585479235
+2024-01-05 07:45:18,968 - INFO - 	Epoch: 13 Loss: 2.2434329262954176
+2024-01-05 07:51:08,983 - INFO - 	Epoch: 14 Loss: 2.150945619977076
+2024-01-05 07:56:57,878 - INFO - 	Epoch: 15 Loss: 2.064821562764587
+2024-01-05 08:02:45,781 - INFO - 	Epoch: 16 Loss: 1.9881259118799546
+2024-01-05 08:08:33,773 - INFO - 	Epoch: 17 Loss: 1.9149403582459161
+2024-01-05 08:14:21,359 - INFO - 	Epoch: 18 Loss: 1.8468638393003636
+2024-01-05 08:20:09,448 - INFO - 	Epoch: 19 Loss: 1.7870476109228925
+2024-01-05 08:20:16,387 - INFO - Stored model for document ../Datasets/Books/house_of_hades.txt
+2024-01-05 08:20:16,388 - INFO - Successfully trained on ../Datasets/Books/house_of_hades.txt
+2024-01-05 08:20:23,233 - INFO - Successfully loaded model with weights and parameters
+2024-01-05 08:20:23,233 - DEBUG - Successfully updated model and optimizer
+2024-01-05 08:20:23,233 - INFO - Started training on ../Datasets/Books/MachineLearning by TomMitchell.txt
+2024-01-05 08:20:23,796 - INFO - Found 179968 words in book
+2024-01-05 08:23:25,148 - INFO - Generated and shuffled 500000 sequences for book MachineLearning by TomMitchell.txt
+2024-01-05 08:23:25,157 - DEBUG - Obtained sequences for book
+2024-01-05 08:29:15,635 - INFO - 	Epoch: 0 Loss: 5.211532143953209
+2024-01-05 08:35:06,569 - INFO - 	Epoch: 1 Loss: 4.2430358369473735
+2024-01-05 08:40:57,043 - INFO - 	Epoch: 2 Loss: 3.779755762553618
+2024-01-05 08:46:48,368 - INFO - 	Epoch: 3 Loss: 3.445599559723141
+2024-01-05 08:52:38,845 - INFO - 	Epoch: 4 Loss: 3.1875139758700417
+2024-01-05 08:58:28,942 - INFO - 	Epoch: 5 Loss: 2.9773036358421177
+2024-01-05 09:04:19,402 - INFO - 	Epoch: 6 Loss: 2.8008488064934154
+2024-01-05 09:10:09,232 - INFO - 	Epoch: 7 Loss: 2.651769305810645
+2024-01-05 09:16:00,039 - INFO - 	Epoch: 8 Loss: 2.520341919299217
+2024-01-05 09:21:49,773 - INFO - 	Epoch: 9 Loss: 2.399420560535503
+2024-01-05 09:27:40,162 - INFO - 	Epoch: 10 Loss: 2.2940770809734654
+2024-01-05 09:33:30,524 - INFO - 	Epoch: 11 Loss: 2.199222303312739
+2024-01-05 09:39:20,884 - INFO - 	Epoch: 12 Loss: 2.1143185580258974
+2024-01-05 09:45:11,004 - INFO - 	Epoch: 13 Loss: 2.0337876204002594
+2024-01-05 09:51:00,595 - INFO - 	Epoch: 14 Loss: 1.9638575244212357
+2024-01-05 09:56:50,423 - INFO - 	Epoch: 15 Loss: 1.8949116035738909
+2024-01-05 10:02:41,010 - INFO - 	Epoch: 16 Loss: 1.8315630911086929
+2024-01-05 10:08:30,825 - INFO - 	Epoch: 17 Loss: 1.7740729792464165
+2024-01-05 10:14:22,400 - INFO - 	Epoch: 18 Loss: 1.7195992944442609
+2024-01-05 10:20:13,884 - INFO - 	Epoch: 19 Loss: 1.6697651346371958
+2024-01-05 10:20:20,514 - INFO - Stored model for document ../Datasets/Books/MachineLearning by TomMitchell.txt
+2024-01-05 10:20:20,515 - INFO - Successfully trained on ../Datasets/Books/MachineLearning by TomMitchell.txt
+2024-01-05 10:20:27,280 - INFO - Successfully loaded model with weights and parameters
+2024-01-05 10:20:27,280 - DEBUG - Successfully updated model and optimizer
+2024-01-05 10:20:27,280 - INFO - Started training on ../Datasets/Books/mark_of_athena.txt
+2024-01-05 10:20:27,683 - INFO - Found 156678 words in book
+2024-01-05 10:23:05,762 - INFO - Generated and shuffled 500000 sequences for book mark_of_athena.txt
+2024-01-05 10:23:05,770 - DEBUG - Obtained sequences for book
+2024-01-05 10:28:56,382 - INFO - 	Epoch: 0 Loss: 5.472248166357012
+2024-01-05 10:34:46,074 - INFO - 	Epoch: 1 Loss: 4.657754223253931
+2024-01-05 10:40:36,337 - INFO - 	Epoch: 2 Loss: 4.169766278707609
+2024-01-05 10:46:26,431 - INFO - 	Epoch: 3 Loss: 3.798392884467604
+2024-01-05 10:52:16,006 - INFO - 	Epoch: 4 Loss: 3.498996301760627
+2024-01-05 10:58:06,681 - INFO - 	Epoch: 5 Loss: 3.259106505545847
+2024-01-05 11:03:57,423 - INFO - 	Epoch: 6 Loss: 3.057585154382986
+2024-01-05 11:09:48,930 - INFO - 	Epoch: 7 Loss: 2.882254551357937
+2024-01-05 11:15:40,285 - INFO - 	Epoch: 8 Loss: 2.733752461927583
+2024-01-05 11:21:30,642 - INFO - 	Epoch: 9 Loss: 2.5968378473872473
+2024-01-05 11:27:21,135 - INFO - 	Epoch: 10 Loss: 2.476804983368667
+2024-01-05 11:33:11,624 - INFO - 	Epoch: 11 Loss: 2.364119352222527
+2024-01-05 11:39:03,412 - INFO - 	Epoch: 12 Loss: 2.2658032194748943
+2024-01-05 11:44:54,526 - INFO - 	Epoch: 13 Loss: 2.1731414399083553
+2024-01-05 11:50:45,201 - INFO - 	Epoch: 14 Loss: 2.092365160439482
+2024-01-05 11:56:35,158 - INFO - 	Epoch: 15 Loss: 2.014507777451004
+2024-01-05 12:02:25,917 - INFO - 	Epoch: 16 Loss: 1.9487262649134496
+2024-01-05 12:08:16,883 - INFO - 	Epoch: 17 Loss: 1.8789541105917644
+2024-01-05 12:14:07,179 - INFO - 	Epoch: 18 Loss: 1.8176987658264816
+2024-01-05 12:19:58,425 - INFO - 	Epoch: 19 Loss: 1.7619924097642858
+2024-01-05 12:20:05,325 - INFO - Stored model for document ../Datasets/Books/mark_of_athena.txt
+2024-01-05 12:20:05,326 - INFO - Successfully trained on ../Datasets/Books/mark_of_athena.txt
+2024-01-05 12:20:12,015 - INFO - Successfully loaded model with weights and parameters
+2024-01-05 12:20:12,016 - DEBUG - Successfully updated model and optimizer
+2024-01-05 12:20:12,016 - INFO - Started training on ../Datasets/Books/percy_jackson_and_the_greek_gods.txt
+2024-01-05 12:20:12,183 - INFO - Found 4426 words in book
+2024-01-05 12:20:16,606 - INFO - Generated and shuffled 140576 sequences for book percy_jackson_and_the_greek_gods.txt
+2024-01-05 12:20:16,606 - DEBUG - Obtained sequences for book
+2024-01-05 12:21:55,518 - INFO - 	Epoch: 0 Loss: 2.6134093099550255
+2024-01-05 12:23:34,473 - INFO - 	Epoch: 1 Loss: 0.6007662382221124
+2024-01-05 12:25:13,234 - INFO - 	Epoch: 2 Loss: 0.33978088394329903
+2024-01-05 12:26:52,080 - INFO - 	Epoch: 3 Loss: 0.2608401536261273
+2024-01-05 12:28:31,070 - INFO - 	Epoch: 4 Loss: 0.223479274281628
+2024-01-05 12:30:09,562 - INFO - 	Epoch: 5 Loss: 0.2010096033960021
+2024-01-05 12:31:48,087 - INFO - 	Epoch: 6 Loss: 0.18650711941314804
+2024-01-05 12:33:26,933 - INFO - 	Epoch: 7 Loss: 0.1760556137520915
+2024-01-05 12:35:05,582 - INFO - 	Epoch: 8 Loss: 0.16896470379125061
+2024-01-05 12:36:44,270 - INFO - 	Epoch: 9 Loss: 0.16192286430346187
+2024-01-05 12:38:23,049 - INFO - 	Epoch: 10 Loss: 0.15667825199406846
+2024-01-05 12:40:01,628 - INFO - 	Epoch: 11 Loss: 0.15305914076794538
+2024-01-05 12:41:40,334 - INFO - 	Epoch: 12 Loss: 0.1474615893050929
+2024-01-05 12:43:19,399 - INFO - 	Epoch: 13 Loss: 0.14577091409867624
+2024-01-05 12:44:58,190 - INFO - 	Epoch: 14 Loss: 0.14181226622116055
+2024-01-05 12:46:37,229 - INFO - 	Epoch: 15 Loss: 0.1411253222318316
+2024-01-05 12:48:15,814 - INFO - 	Epoch: 16 Loss: 0.13693059707836663
+2024-01-05 12:49:54,347 - INFO - 	Epoch: 17 Loss: 0.13353897373066692
+2024-01-05 12:51:33,178 - INFO - 	Epoch: 18 Loss: 0.13248898098309939
+2024-01-05 12:53:11,970 - INFO - 	Epoch: 19 Loss: 0.12806745734236366
+2024-01-05 12:53:18,714 - INFO - Stored model for document ../Datasets/Books/percy_jackson_and_the_greek_gods.txt
+2024-01-05 12:53:18,715 - INFO - Successfully trained on ../Datasets/Books/percy_jackson_and_the_greek_gods.txt
+2024-01-05 12:53:25,422 - INFO - Successfully loaded model with weights and parameters
+2024-01-05 12:53:25,422 - DEBUG - Successfully updated model and optimizer
+2024-01-05 12:53:25,422 - INFO - Started training on ../Datasets/Books/percy_jackson_and_the_lightning_thief.txt
+2024-01-05 12:53:25,731 - INFO - Found 103262 words in book
+2024-01-05 12:55:08,911 - INFO - Generated and shuffled 500000 sequences for book percy_jackson_and_the_lightning_thief.txt
+2024-01-05 12:55:08,916 - DEBUG - Obtained sequences for book
+2024-01-05 13:01:00,188 - INFO - 	Epoch: 0 Loss: 5.145389973232213
+2024-01-05 13:06:50,251 - INFO - 	Epoch: 1 Loss: 4.14356699233414
+2024-01-05 13:12:40,711 - INFO - 	Epoch: 2 Loss: 3.543795865465907
+2024-01-05 13:18:32,997 - INFO - 	Epoch: 3 Loss: 3.1248751071649394
+2024-01-05 13:24:24,618 - INFO - 	Epoch: 4 Loss: 2.8138336788613065
+2024-01-05 13:30:16,505 - INFO - 	Epoch: 5 Loss: 2.5709304758602696
+2024-01-05 13:36:08,911 - INFO - 	Epoch: 6 Loss: 2.3705171662083786
+2024-01-05 13:42:00,933 - INFO - 	Epoch: 7 Loss: 2.203638284772833
+2024-01-05 13:47:52,079 - INFO - 	Epoch: 8 Loss: 2.0567664293161245
+2024-01-05 13:53:44,555 - INFO - 	Epoch: 9 Loss: 1.9309927341239732
+2024-01-05 13:59:36,934 - INFO - 	Epoch: 10 Loss: 1.8192320551572552
+2024-01-05 14:05:28,605 - INFO - 	Epoch: 11 Loss: 1.7217788932891729
+2024-01-05 14:11:20,185 - INFO - 	Epoch: 12 Loss: 1.6320959769162653
+2024-01-05 14:17:11,865 - INFO - 	Epoch: 13 Loss: 1.5550050848701094
+2024-01-05 14:23:02,819 - INFO - 	Epoch: 14 Loss: 1.4798688501104353
+2024-01-05 14:28:55,755 - INFO - 	Epoch: 15 Loss: 1.4145735468290064
+2024-01-05 14:34:47,797 - INFO - 	Epoch: 16 Loss: 1.3550083758781581
+2024-01-05 14:40:39,209 - INFO - 	Epoch: 17 Loss: 1.2997632105489052
+2024-01-05 14:46:30,738 - INFO - 	Epoch: 18 Loss: 1.2517980413746967
+2024-01-05 14:52:22,447 - INFO - 	Epoch: 19 Loss: 1.2041310201157256
+2024-01-05 14:52:29,091 - INFO - Stored model for document ../Datasets/Books/percy_jackson_and_the_lightning_thief.txt
+2024-01-05 14:52:29,092 - INFO - Successfully trained on ../Datasets/Books/percy_jackson_and_the_lightning_thief.txt
+2024-01-05 14:52:35,939 - INFO - Successfully loaded model with weights and parameters
+2024-01-05 14:52:35,939 - DEBUG - Successfully updated model and optimizer
+2024-01-05 14:52:35,939 - INFO - Started training on ../Datasets/Books/storm_of_swords.txt
+2024-01-05 14:52:36,795 - INFO - Found 473884 words in book
+2024-01-05 15:00:30,033 - INFO - Generated and shuffled 500000 sequences for book storm_of_swords.txt
+2024-01-05 15:00:30,057 - DEBUG - Obtained sequences for book
+2024-01-05 15:06:21,599 - INFO - 	Epoch: 0 Loss: 5.782237507841615
+2024-01-05 15:12:13,128 - INFO - 	Epoch: 1 Loss: 5.165047379285936
+2024-01-05 15:18:04,121 - INFO - 	Epoch: 2 Loss: 4.869105613665036
+2024-01-05 15:23:54,339 - INFO - 	Epoch: 3 Loss: 4.642172930732606
+2024-01-05 15:29:45,736 - INFO - 	Epoch: 4 Loss: 4.446548246385132
+2024-01-05 15:35:37,623 - INFO - 	Epoch: 5 Loss: 4.278212250866038
+2024-01-05 15:41:27,997 - INFO - 	Epoch: 6 Loss: 4.123259751722255
+2024-01-05 15:47:19,963 - INFO - 	Epoch: 7 Loss: 3.9931943336023896
+2024-01-05 15:53:11,971 - INFO - 	Epoch: 8 Loss: 3.8742124543883407
+2024-01-05 15:59:02,544 - INFO - 	Epoch: 9 Loss: 3.76663341677256
+2024-01-05 16:04:53,678 - INFO - 	Epoch: 10 Loss: 3.6661148137516446
+2024-01-05 16:10:45,133 - INFO - 	Epoch: 11 Loss: 3.576884849371815
+2024-01-05 16:16:35,852 - INFO - 	Epoch: 12 Loss: 3.4968096400552446
+2024-01-05 16:22:26,415 - INFO - 	Epoch: 13 Loss: 3.4153438035915644
+2024-01-05 16:28:17,546 - INFO - 	Epoch: 14 Loss: 3.347144907429105
+2024-01-05 16:34:08,897 - INFO - 	Epoch: 15 Loss: 3.278902209207942
+2024-01-05 16:40:00,305 - INFO - 	Epoch: 16 Loss: 3.2185093176651782
+2024-01-05 16:45:52,640 - INFO - 	Epoch: 17 Loss: 3.154308293943703
+2024-01-05 16:51:44,538 - INFO - 	Epoch: 18 Loss: 3.098325875528153
+2024-01-05 16:57:35,324 - INFO - 	Epoch: 19 Loss: 3.0418621702067252
+2024-01-05 16:57:41,922 - INFO - Stored model for document ../Datasets/Books/storm_of_swords.txt
+2024-01-05 16:57:41,922 - INFO - Successfully trained on ../Datasets/Books/storm_of_swords.txt
+2024-01-05 16:57:48,623 - INFO - Successfully loaded model with weights and parameters
+2024-01-05 16:57:48,623 - DEBUG - Successfully updated model and optimizer
+2024-01-05 16:57:48,623 - INFO - Started training on ../Datasets/QA/squad_web.json
+2024-01-05 16:58:34,256 - INFO - Generated and shuffled 500000 sequences for SQuAD dataset
+2024-01-05 16:58:34,605 - DEBUG - Obtained sequences for json file ../Datasets/QA/squad_web.json
+2024-01-05 17:04:24,926 - INFO - 	Epoch: 0 Loss: 7.3774635639180905
+2024-01-05 17:10:15,083 - INFO - 	Epoch: 1 Loss: 6.574580417006552
+2024-01-05 17:16:06,066 - INFO - 	Epoch: 2 Loss: 6.2565976561977505
+2024-01-05 17:21:56,526 - INFO - 	Epoch: 3 Loss: 6.02581149592988
+2024-01-05 17:27:47,944 - INFO - 	Epoch: 4 Loss: 5.83097715470587
+2024-01-05 17:33:38,928 - INFO - 	Epoch: 5 Loss: 5.659284852189525
+2024-01-05 17:39:29,360 - INFO - 	Epoch: 6 Loss: 5.50076806581881
+2024-01-05 17:45:19,962 - INFO - 	Epoch: 7 Loss: 5.358295411130921
+2024-01-05 17:51:10,671 - INFO - 	Epoch: 8 Loss: 5.221941769397753
+2024-01-05 17:57:00,949 - INFO - 	Epoch: 9 Loss: 5.097596432450974
+2024-01-05 18:02:52,524 - INFO - 	Epoch: 10 Loss: 4.980331681993029
+2024-01-05 18:08:44,208 - INFO - 	Epoch: 11 Loss: 4.869681789090068
+2024-01-05 18:14:34,835 - INFO - 	Epoch: 12 Loss: 4.766553426942518
+2024-01-05 18:20:25,698 - INFO - 	Epoch: 13 Loss: 4.665039712932253
+2024-01-05 18:26:15,552 - INFO - 	Epoch: 14 Loss: 4.573534909542317
+2024-01-05 18:32:06,150 - INFO - 	Epoch: 15 Loss: 4.485541849702795
+2024-01-05 18:37:56,967 - INFO - 	Epoch: 16 Loss: 4.401204903798414
+2024-01-05 18:43:48,007 - INFO - 	Epoch: 17 Loss: 4.321009172089455
+2024-01-05 18:49:38,792 - INFO - 	Epoch: 18 Loss: 4.243164450586361
+2024-01-05 18:55:29,227 - INFO - 	Epoch: 19 Loss: 4.171053666062558
+2024-01-05 18:55:36,213 - INFO - Stored model for document ../Datasets/QA/squad_web.json
+2024-01-05 18:55:36,214 - INFO - Successfully trained on ../Datasets/QA/squad_web.json
+2024-01-05 18:55:42,999 - INFO - Successfully loaded model with weights and parameters
+2024-01-05 18:55:42,999 - DEBUG - Successfully updated model and optimizer
+2024-01-05 18:55:42,999 - INFO - Started training on ../Datasets/QA/trivia_q_a.json
+2024-01-05 18:56:41,230 - INFO - Generated and shuffled 500000 sequences for trivia dataset
+2024-01-05 18:56:41,293 - DEBUG - Obtained sequences for json file ../Datasets/QA/trivia_q_a.json
+2024-01-05 19:02:30,951 - INFO - 	Epoch: 0 Loss: 7.064475712016858
+2024-01-05 19:08:21,678 - INFO - 	Epoch: 1 Loss: 6.333384762161888
+2024-01-05 19:14:11,660 - INFO - 	Epoch: 2 Loss: 6.014955775590048
+2024-01-05 19:20:01,676 - INFO - 	Epoch: 3 Loss: 5.788133371077741
+2024-01-05 19:25:53,294 - INFO - 	Epoch: 4 Loss: 5.6030128636973
+2024-01-05 19:31:44,435 - INFO - 	Epoch: 5 Loss: 5.4420375019479765
+2024-01-05 19:37:35,090 - INFO - 	Epoch: 6 Loss: 5.3046558635148156
+2024-01-05 19:43:25,023 - INFO - 	Epoch: 7 Loss: 5.1818314010951685
+2024-01-05 19:49:16,108 - INFO - 	Epoch: 8 Loss: 5.067760127816393
+2024-01-05 19:55:06,557 - INFO - 	Epoch: 9 Loss: 4.96789214669651
+2024-01-05 20:00:56,740 - INFO - 	Epoch: 10 Loss: 4.8707036421473555
+2024-01-05 20:06:47,960 - INFO - 	Epoch: 11 Loss: 4.78658876669938
+2024-01-05 20:12:39,205 - INFO - 	Epoch: 12 Loss: 4.706646361445014
+2024-01-05 20:18:29,189 - INFO - 	Epoch: 13 Loss: 4.630943907662288
+2024-01-05 20:24:19,033 - INFO - 	Epoch: 14 Loss: 4.564217747600641
+2024-01-05 20:30:08,814 - INFO - 	Epoch: 15 Loss: 4.494032626114194
+2024-01-05 20:35:59,260 - INFO - 	Epoch: 16 Loss: 4.429303543572541
+2024-01-05 20:41:49,953 - INFO - 	Epoch: 17 Loss: 4.365734204077684
+2024-01-05 20:47:40,467 - INFO - 	Epoch: 18 Loss: 4.307528183085456
+2024-01-05 20:53:31,083 - INFO - 	Epoch: 19 Loss: 4.252036702828229
+2024-01-05 20:53:37,849 - INFO - Stored model for document ../Datasets/QA/trivia_q_a.json
+2024-01-05 20:53:37,850 - INFO - Successfully trained on ../Datasets/QA/trivia_q_a.json
+2024-01-05 20:53:44,514 - INFO - Successfully loaded model with weights and parameters
+2024-01-05 20:53:44,514 - DEBUG - Successfully updated model and optimizer
+2024-01-05 20:53:44,514 - INFO - Started training on ../Datasets/QA/common_sense_q_a.json
+2024-01-05 20:53:49,767 - INFO - Generated and shuffled 135818 sequences for common sense dataset
+2024-01-05 20:53:49,768 - DEBUG - Obtained sequences for json file ../Datasets/QA/common_sense_q_a.json
+2024-01-05 20:55:24,950 - INFO - 	Epoch: 0 Loss: 6.407494864746942
+2024-01-05 20:57:00,056 - INFO - 	Epoch: 1 Loss: 5.7312927879779325
+2024-01-05 20:58:35,395 - INFO - 	Epoch: 2 Loss: 5.354246954553876
+2024-01-05 21:00:10,702 - INFO - 	Epoch: 3 Loss: 5.025224804091746
+2024-01-05 21:01:46,077 - INFO - 	Epoch: 4 Loss: 4.722422875400762
+2024-01-05 21:03:21,329 - INFO - 	Epoch: 5 Loss: 4.456486409166644
+2024-01-05 21:04:56,484 - INFO - 	Epoch: 6 Loss: 4.218348572211486
+2024-01-05 21:06:31,533 - INFO - 	Epoch: 7 Loss: 4.019751807859099
+2024-01-05 21:08:06,664 - INFO - 	Epoch: 8 Loss: 3.8483737725114957
+2024-01-05 21:09:41,800 - INFO - 	Epoch: 9 Loss: 3.7028483456873196
+2024-01-05 21:11:16,925 - INFO - 	Epoch: 10 Loss: 3.5674220808938806
+2024-01-05 21:12:51,901 - INFO - 	Epoch: 11 Loss: 3.4424805633309425
+2024-01-05 21:14:27,350 - INFO - 	Epoch: 12 Loss: 3.3375287537974754
+2024-01-05 21:16:02,801 - INFO - 	Epoch: 13 Loss: 3.231489925762036
+2024-01-05 21:17:38,313 - INFO - 	Epoch: 14 Loss: 3.1389226830309007
+2024-01-05 21:19:13,559 - INFO - 	Epoch: 15 Loss: 3.049236315191073
+2024-01-05 21:20:48,957 - INFO - 	Epoch: 16 Loss: 2.9708981188145818
+2024-01-05 21:22:24,405 - INFO - 	Epoch: 17 Loss: 2.887948850659578
+2024-01-05 21:23:59,515 - INFO - 	Epoch: 18 Loss: 2.8113419892201437
+2024-01-05 21:25:34,978 - INFO - 	Epoch: 19 Loss: 2.7406806204253833
+2024-01-05 21:25:41,808 - INFO - Stored model for document ../Datasets/QA/common_sense_q_a.json
+2024-01-05 21:25:41,809 - INFO - Successfully trained on ../Datasets/QA/common_sense_q_a.json
+2024-01-05 21:25:48,512 - INFO - Successfully loaded model with weights and parameters
+2024-01-05 21:25:48,513 - DEBUG - Successfully updated model and optimizer
