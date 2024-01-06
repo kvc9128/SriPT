@@ -2335,3 +2335,124 @@
 2024-01-06 00:58:08,444 - DEBUG - vocabulary object found and loaded successfully.
 2024-01-06 00:58:08,444 - INFO - Vocabulary loaded successfully with 100364 words.
 2024-01-06 00:58:09,407 - INFO - Successfully loaded model with weights and parameters
+2024-01-06 15:30:10,788 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-06 15:30:10,789 - INFO - Vocabulary loaded successfully with 100364 words.
+2024-01-06 15:30:10,848 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-06 15:30:10,848 - INFO - Vocabulary loaded successfully with 100364 words.
+2024-01-06 15:30:11,587 - ERROR - Error loading state dict: Attempting to deserialize object on a CUDA device but torch.cuda.is_available() is False. If you are running on a CPU-only machine, please use torch.load with map_location=torch.device('cpu') to map your storages to the CPU.
+2024-01-06 15:30:12,560 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-06 15:30:41,615 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-06 15:30:41,615 - INFO - Vocabulary loaded successfully with 100364 words.
+2024-01-06 15:30:41,662 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-06 15:30:41,663 - INFO - Vocabulary loaded successfully with 100364 words.
+2024-01-06 15:30:42,270 - ERROR - Error loading state dict: Attempting to deserialize object on a CUDA device but torch.cuda.is_available() is False. If you are running on a CPU-only machine, please use torch.load with map_location=torch.device('cpu') to map your storages to the CPU.
+2024-01-06 15:30:42,999 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-06 15:30:43,025 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-06 15:31:55,542 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-06 15:31:55,542 - INFO - Vocabulary loaded successfully with 100364 words.
+2024-01-06 15:31:55,607 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-06 15:31:55,607 - INFO - Vocabulary loaded successfully with 100364 words.
+2024-01-06 15:31:56,337 - ERROR - Error loading state dict: Attempting to deserialize object on a CUDA device but torch.cuda.is_available() is False. If you are running on a CPU-only machine, please use torch.load with map_location=torch.device('cpu') to map your storages to the CPU.
+2024-01-06 15:32:33,197 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-06 15:32:33,197 - INFO - Vocabulary loaded successfully with 100364 words.
+2024-01-06 15:32:33,245 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-06 15:32:33,245 - INFO - Vocabulary loaded successfully with 100364 words.
+2024-01-06 15:32:34,136 - ERROR - Error loading state dict: Error(s) in loading state_dict for SriPT:
+	size mismatch for token_embedding.weight: copying a param with shape torch.Size([100780, 256]) from checkpoint, the shape in current model is torch.Size([100364, 256]).
+	size mismatch for lm_head.linear.weight: copying a param with shape torch.Size([100780, 256]) from checkpoint, the shape in current model is torch.Size([100364, 256]).
+	size mismatch for lm_head.linear.bias: copying a param with shape torch.Size([100780]) from checkpoint, the shape in current model is torch.Size([100364]).
+2024-01-06 15:34:20,742 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-06 15:34:20,743 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-06 15:34:20,805 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-06 15:34:20,806 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-06 15:34:21,847 - INFO - Successfully loaded model with weights and parameters
+2024-01-06 15:34:36,950 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-06 15:34:36,951 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-06 15:34:36,998 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-06 15:34:36,998 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-06 15:34:37,688 - INFO - Successfully loaded model with weights and parameters
+2024-01-06 15:34:48,635 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-06 15:34:48,636 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-06 15:34:48,685 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-06 15:34:48,685 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-06 15:34:49,429 - INFO - Successfully loaded model with weights and parameters
+2024-01-06 15:35:20,379 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-06 15:35:20,379 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-06 15:35:20,428 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-06 15:35:20,428 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-06 15:35:21,189 - INFO - Successfully loaded model with weights and parameters
+2024-01-06 15:35:35,152 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-06 15:35:35,152 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-06 15:35:35,202 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-06 15:35:35,202 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-06 15:35:35,895 - INFO - Successfully loaded model with weights and parameters
+2024-01-06 15:35:47,797 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-06 15:35:47,797 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-06 15:35:47,844 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-06 15:35:47,844 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-06 15:35:48,543 - INFO - Successfully loaded model with weights and parameters
+2024-01-06 15:36:00,476 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-06 15:36:00,477 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-06 15:36:00,524 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-06 15:36:00,524 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-06 15:36:01,224 - INFO - Successfully loaded model with weights and parameters
+2024-01-06 15:36:39,613 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-06 15:36:39,613 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-06 15:36:39,661 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-06 15:36:39,661 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-06 15:36:40,411 - INFO - Successfully loaded model with weights and parameters
+2024-01-06 15:37:10,382 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-06 15:37:10,383 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-06 15:37:10,434 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-06 15:37:10,434 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-06 15:37:11,123 - INFO - Successfully loaded model with weights and parameters
+2024-01-06 15:37:30,042 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-06 15:37:30,042 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-06 15:37:30,091 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-06 15:37:30,091 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-06 15:37:30,810 - INFO - Successfully loaded model with weights and parameters
+2024-01-06 15:37:45,204 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-06 15:37:45,204 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-06 15:37:45,253 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-06 15:37:45,253 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-06 15:37:45,944 - INFO - Successfully loaded model with weights and parameters
+2024-01-06 15:37:57,326 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-06 15:37:57,326 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-06 15:37:57,375 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-06 15:37:57,375 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-06 15:37:58,083 - INFO - Successfully loaded model with weights and parameters
+2024-01-06 15:38:13,411 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-06 15:38:13,411 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-06 15:38:13,462 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-06 15:38:13,462 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-06 15:38:14,173 - INFO - Successfully loaded model with weights and parameters
+2024-01-06 15:38:31,228 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-06 15:38:31,228 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-06 15:38:31,278 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-06 15:38:31,278 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-06 15:38:31,998 - INFO - Successfully loaded model with weights and parameters
+2024-01-06 15:41:09,696 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-06 15:41:09,696 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-06 15:41:09,747 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-06 15:41:09,747 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-06 15:41:10,458 - INFO - Successfully loaded model with weights and parameters
+2024-01-06 15:41:19,666 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-06 15:41:19,666 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-06 15:41:19,716 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-06 15:41:19,716 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-06 15:41:20,449 - INFO - Successfully loaded model with weights and parameters
+2024-01-06 15:41:37,587 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-06 15:41:37,587 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-06 15:41:37,635 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-06 15:41:37,636 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-06 15:41:38,327 - INFO - Successfully loaded model with weights and parameters
+2024-01-06 15:41:47,764 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-06 15:41:47,764 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-06 15:41:47,814 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-06 15:41:47,814 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-06 15:41:48,597 - INFO - Successfully loaded model with weights and parameters
+2024-01-06 15:42:00,946 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-06 15:42:00,946 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-06 15:42:00,993 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-06 15:42:00,993 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-06 15:42:01,697 - INFO - Successfully loaded model with weights and parameters

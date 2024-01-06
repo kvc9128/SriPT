@@ -18,7 +18,7 @@ def load_model(model):
 	try:
 		if os.path.exists(SAVED_FOLDER):
 			model_path = os.path.join(SAVED_FOLDER, 'model.pt')
-			model.load_state_dict(torch.load(model_path))
+			model.load_state_dict(torch.load(model_path, map_location=torch.device(DEVICE)))
 			logger.info(f"Successfully loaded model with weights and parameters")
 		else:
 			logger.error("No checkpoint found. Please provide a model and checkpoint.")
@@ -71,8 +71,8 @@ def generate_next_token(model, start_prompt, context_window, VOCAB, max_output_l
 
 	for _ in range(max_output_length):
 		# Tokenize the current sequence
-		input_ids = encode_raw_text(generated_sequence, VOCAB, context_window)
-		input_tensor = torch.tensor([input_ids], dtype=torch.long, device=DEVICE)
+		input_ids = np.array([encode_raw_text(generated_sequence, VOCAB, context_window)])
+		input_tensor = torch.tensor(input_ids, dtype=torch.long, device=DEVICE)
 
 		mask = torch.ones_like(input_tensor)
 		mask.to(DEVICE)
@@ -117,7 +117,7 @@ def setup_generation():
 
 	# load model and optimizer from previous state
 	model = load_model(model)
-	prompt = "Percy jackson"
+	prompt = "quicksort"
 	# print(generate_text(model, prompt, context_window, VOCAB))
 	print(generate_next_token(model, prompt, context_window, VOCAB))
 
