@@ -28,14 +28,14 @@ datasets = [
 SAVED_FOLDER = "../TRAINED_MODELS/"
 
 
-def load_model(model, optimizer):
+def save_model(model, optimizer):
 	try:
 		if os.path.exists(SAVED_FOLDER):
 			model_path = os.path.join(SAVED_FOLDER, 'model.pt')
 			torch.save(model.state_dict(), model_path)
 			optimizer_path = os.path.join(SAVED_FOLDER, 'optimizer.pt')
 			torch.save(optimizer.state_dict(), optimizer_path)
-			logger.info(f"Successfully loaded model with weights and parameters")
+			logger.info(f"Successfully saved model with weights and parameters")
 		else:
 			logger.error("No checkpoint found. Please provide a model and checkpoint.")
 	except FileNotFoundError:
@@ -56,7 +56,7 @@ def main():
 	context_window = 32  # context window
 	number_of_decoder_layers = 8
 	num_attention_heads = 4
-	dropout_rate = 0.10
+	dropout_rate = 0.1
 	VOCAB = vocab_manager.load_vocab()
 	VOCAB_SIZE = VOCAB.num_words()
 	logger.info(msg=f"Running on {DEVICE}")
@@ -90,7 +90,7 @@ def main():
 
 	for dataset in datasets:
 		trainer.train_model_on(dataset)
-		MODEL, OPTIMIZER = load_model(MODEL, OPTIMIZER)
+		MODEL, OPTIMIZER = save_model(MODEL, OPTIMIZER)
 		trainer.update_model_and_optimizer(MODEL, OPTIMIZER)
 
 
