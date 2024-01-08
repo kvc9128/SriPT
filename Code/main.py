@@ -11,16 +11,21 @@ DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 datasets = [
 	"../Datasets/Books/blood_of_olympus.txt",
 	"../Datasets/Books/clash_of_kings.txt",
-	"../Datasets/Books/Cracking-the-Coding-Interview.txt",
-	"../Datasets/Books/Data Mining Concepts and Techniques.txt",
-	"../Datasets/Books/Deep Learning by Ian Goodfellow.txt",
-	"../Datasets/Books/Elements of Statistical Learning.txt",
 	"../Datasets/Books/house_of_hades.txt",
-	"../Datasets/Books/MachineLearning by TomMitchell.txt",
 	"../Datasets/Books/mark_of_athena.txt",
-	"../Datasets/Books/percy_jackson_and_the_greek_gods.txt",
 	"../Datasets/Books/percy_jackson_and_the_lightning_thief.txt",
 	"../Datasets/Books/storm_of_swords.txt",
+	"../Datasets/Books/abbaddons_gate.txt",
+	"../Datasets/Books/babylons_ashes.txt",
+	"../Datasets/Books/calibans_war.txt",
+	"../Datasets/Books/Catcher-in-the-Rye.txt",
+	"../Datasets/Books/cibola_burn.txt",
+	"../Datasets/Books/jane-austen-pride-prejudice.txt",
+	"../Datasets/Books/leviathan_wakes.txt",
+	"../Datasets/Books/nemesis_games.txt",
+	"../Datasets/Books/persepolis_rising.txt",
+	"../Datasets/Books/the_great_gatsby.txt",
+	"../Datasets/Books/to_kill_a_mockingbird.txt"
 	"../Datasets/QA/squad_web.json",
 	"../Datasets/QA/trivia_q_a.json",
 	"../Datasets/QA/common_sense_q_a.json"
@@ -28,13 +33,13 @@ datasets = [
 SAVED_FOLDER = "../TRAINED_MODELS/"
 
 
-def save_model(model, optimizer):
+def load_model(model, optimizer):
 	try:
 		if os.path.exists(SAVED_FOLDER):
 			model_path = os.path.join(SAVED_FOLDER, 'model.pt')
-			torch.save(model.state_dict(), model_path)
+			model.load_state_dict(torch.load(model_path, map_location=torch.device(DEVICE)))
 			optimizer_path = os.path.join(SAVED_FOLDER, 'optimizer.pt')
-			torch.save(optimizer.state_dict(), optimizer_path)
+			optimizer.load_state_dict(torch.load(optimizer_path, map_location=torch.device(DEVICE)))
 			logger.info(f"Successfully saved model with weights and parameters")
 		else:
 			logger.error("No checkpoint found. Please provide a model and checkpoint.")
@@ -52,7 +57,7 @@ def save_model(model, optimizer):
 
 def main():
 	# Hyperparameters
-	embedding_dimension = 256
+	embedding_dimension = 512
 	context_window = 32  # context window
 	number_of_decoder_layers = 8
 	num_attention_heads = 4
@@ -69,7 +74,7 @@ def main():
 		dropout_rate=dropout_rate
 	)
 	MODEL.to(DEVICE)
-	OPTIMIZER = torch.optim.Adam(MODEL.parameters(), lr=0.0001)
+	OPTIMIZER = torch.optim.Adam(MODEL.parameters(), lr=0.0005)
 	LOSS_FN = nn.CrossEntropyLoss()
 	EPOCHS = 40
 	BATCH_SIZE = 64
@@ -90,7 +95,7 @@ def main():
 
 	for dataset in datasets:
 		trainer.train_model_on(dataset)
-		MODEL, OPTIMIZER = save_model(MODEL, OPTIMIZER)
+		MODEL, OPTIMIZER = load_model(MODEL, OPTIMIZER)
 		trainer.update_model_and_optimizer(MODEL, OPTIMIZER)
 
 

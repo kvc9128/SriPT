@@ -109,16 +109,21 @@ def create_vocab_from_scratch():
 	books = [
 		"../Datasets/Books/blood_of_olympus.txt",
 		"../Datasets/Books/clash_of_kings.txt",
-		"../Datasets/Books/Cracking-the-Coding-Interview.txt",
-		"../Datasets/Books/Data Mining Concepts and Techniques.txt",
-		"../Datasets/Books/Deep Learning by Ian Goodfellow.txt",
-		"../Datasets/Books/Elements of Statistical Learning.txt",
 		"../Datasets/Books/house_of_hades.txt",
-		"../Datasets/Books/MachineLearning by TomMitchell.txt",
 		"../Datasets/Books/mark_of_athena.txt",
-		"../Datasets/Books/percy_jackson_and_the_greek_gods.txt",
 		"../Datasets/Books/percy_jackson_and_the_lightning_thief.txt",
-		"../Datasets/Books/storm_of_swords.txt"
+		"../Datasets/Books/storm_of_swords.txt",
+		"../Datasets/Books/abbaddons_gate.txt",
+		"../Datasets/Books/babylons_ashes.txt",
+		"../Datasets/Books/calibans_war.txt",
+		"../Datasets/Books/Catcher-in-the-Rye.txt",
+		"../Datasets/Books/cibola_burn.txt",
+		"../Datasets/Books/jane-austen-pride-prejudice.txt",
+		"../Datasets/Books/leviathan_wakes.txt",
+		"../Datasets/Books/nemesis_games.txt",
+		"../Datasets/Books/persepolis_rising.txt",
+		"../Datasets/Books/the_great_gatsby.txt",
+		"../Datasets/Books/to_kill_a_mockingbird.txt"
 	]
 
 	load_books(books, vocabulary)

@@ -7,8 +7,11 @@ and then stored. After we have updated it with all the words we have in our init
 dataset, we will use it for training the model.
 """
 
-import unicodedata
 import re
+import unicodedata
+
+from nltk.tokenize import word_tokenize
+from nltk.stem import PorterStemmer
 
 
 class VOCAB:
@@ -23,10 +26,28 @@ class VOCAB:
 		self.name = name  # The name of the vocabulary
 		self._word2index = {"SOS": 0, "EOS": 1, "PAD": 2, "UNK": 3}  # Map word to token index
 		self._index2word = {0: "SOS", 1: "EOS", 2: "PAD", 3: "UNK"}  # Map token index to word
+		self._word_count = {}  # keep track of word count to only keep words with min_occurrence
 		# Number of unique words in the corpus
 		self._n_words = 4  # Count SOS, EOS and PAD and UNK
+
+		# Add/remove words from vocab object
 		self.add_unix_words()
 		self.add_punctuation_and_numbers()
+		self.enforce_min_count()
+
+	def enforce_min_count(self):
+		"""
+		At the end of this function, we will have words in unix-txt that will not be a part of
+		this model
+		:return:
+		"""
+		for word, count in self._word_count.items():
+			if count < self.min_count:
+				token = self.word2index(word)
+				# delete from word-token map
+				del self._word2index[word]
+				# delete token from token-word map
+				del self._index2word[token]
 
 	# Get a list of all words in corpus
 	def get_words(self):
@@ -39,30 +60,29 @@ class VOCAB:
 	# Convert a word into a token index
 	def word2index(self, word):
 		if word not in self._word2index:
-			return self._word2index[self.PAD]
+			return self._word2index[self.UNK]
 		else:
 			return self._word2index[word]
 
 	# Convert a token into a word
 	def index2word(self, token):
 		if token not in self._index2word:
-			return self._index2word[self._word2index[self.PAD]]
+			return self._index2word[self._word2index[self.UNK]]
 		else:
 			return self._index2word[token]
 
 	# Add all words from 30k-words to VOCAB object that occur min_occurrence number of times
 	def add_unix_words(self):
-		word_count = {}
 		with open(self.read_file_path, 'r') as file:
 			words = file.readlines()
 		# Remove newline characters
 		for word in words:
 			word = word.strip()
-			if word in word_count:
-				word_count[word] += 1
+			if word in self._word_count:
+				self._word_count[word] += 1
 			else:
-				word_count[word] = 1
-		for word, count in word_count.items():
+				self._word_count[word] = 1
+		for word, count in self._word_count.items():
 			if count >= self.min_count:
 				self.add_word(word)
 
@@ -85,9 +105,12 @@ class VOCAB:
 			self._word2index[word] = self._n_words
 			self._index2word[self._n_words] = word
 			self._n_words += 1
+			self._word_count[word] = 1
 			with open(self.write_file_path, 'a') as file:
 				# Write each new word on a new line
 				file.write(word + '\n')
+		else:
+			self._word_count[word] += 1
 
 	@staticmethod
 	def unicode_to_ascii(s):
@@ -96,15 +119,25 @@ class VOCAB:
 			if unicodedata.category(c) != 'Mn'
 		)
 
+	# @staticmethod
+	# def normalize_string(s):
+	# 	s = VOCAB.unicode_to_ascii(s.lower().strip())
+	# 	s = re.sub(r"([?!]+)", r"\1 ", s)
+	# 	s = re.sub(r"\.", " EOS ", s)  # Replace periods with 'EOS'
+	# 	s = re.sub(r"\?", " EOS ", s)  # Replace Question marks with 'EOS'
+	# 	s = re.sub(r"!", " EOS ", s)  # Replace Exclamation marks with 'EOS'
+	# 	s = re.sub(r"[^a-zA-ZEOS!?]+", r" ", s)
+	# 	return s
+
 	@staticmethod
 	def normalize_string(s):
 		s = VOCAB.unicode_to_ascii(s.lower().strip())
-		s = re.sub(r"([?!]+)", r"\1 ", s)
-		s = re.sub(r"\.", " EOS ", s)  # Replace periods with 'EOS'
-		s = re.sub(r"\?", " EOS ", s)  # Replace Question marks with 'EOS'
-		s = re.sub(r"!", " EOS ", s)  # Replace Exclamation marks with 'EOS'
-		s = re.sub(r"[^a-zA-ZEOS!?]+", r" ", s)
-		return s
+		s = re.sub(r'\.', ' EOS ', s)
+		s = re.sub(r'[^\w\s]', '', s)
+		words = word_tokenize(s)
+		stemmer = PorterStemmer()
+		stemmed_words = [stemmer.stem(word) for word in words]
+		return ' '.join(stemmed_words)
 
 	def add_book_from_txt_file(self, filename):
 		with open(filename, encoding='utf-8') as f:
