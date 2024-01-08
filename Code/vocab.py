@@ -33,7 +33,6 @@ class VOCAB:
 		# Add/remove words from vocab object
 		self.add_unix_words()
 		self.add_punctuation_and_numbers()
-		self.enforce_min_count()
 
 	def enforce_min_count(self):
 		"""
@@ -82,9 +81,8 @@ class VOCAB:
 				self._word_count[word] += 1
 			else:
 				self._word_count[word] = 1
-		for word, count in self._word_count.items():
-			if count >= self.min_count:
-				self.add_word(word)
+
+			self.add_word(word)
 
 	# Add all the words in a sentence to the vocabulary
 	def add_normalized_sentence(self, sentence):

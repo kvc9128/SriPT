@@ -130,6 +130,7 @@ def create_vocab_from_scratch():
 	read_common_sense_qa(vocabulary)
 	read_trivia_qa(vocabulary)
 	read_squad_web_qa(vocabulary)
+	vocabulary.enforce_min_count()
 	message = f"Vocabulary Created successfully with {vocabulary.num_words()} words."
 	logger.info(msg=message)
 	return vocabulary
