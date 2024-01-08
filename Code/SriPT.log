@@ -2458,3 +2458,98 @@
 2024-01-06 15:42:01,697 - INFO - Successfully loaded model with weights and parameters
 2024-01-07 23:36:26,133 - DEBUG - Read all Unix Words
 2024-01-07 23:37:54,901 - DEBUG - Read all Unix Words
+2024-01-07 23:46:44,874 - DEBUG - Read all Unix Words
+2024-01-07 23:49:36,363 - DEBUG - Read all Unix Words
+2024-01-07 23:51:27,270 - DEBUG - Read all Unix Words
+2024-01-07 23:51:30,390 - DEBUG - Added book babylons_ashes.txt
+2024-01-07 23:51:30,407 - DEBUG - Updated pickled file.
+2024-01-07 23:51:33,605 - DEBUG - Added book calibans_war.txt
+2024-01-07 23:51:33,616 - DEBUG - Updated pickled file.
+2024-01-07 23:51:35,657 - DEBUG - Added book blood_of_olympus.txt
+2024-01-07 23:51:35,677 - DEBUG - Updated pickled file.
+2024-01-07 23:52:01,002 - DEBUG - Read all Unix Words
+2024-01-07 23:58:02,832 - DEBUG - Read all Unix Words
+2024-01-07 23:59:16,565 - DEBUG - Read all Unix Words
+2024-01-08 00:00:32,346 - DEBUG - Read all Unix Words
+2024-01-08 00:00:34,664 - DEBUG - Added book babylons_ashes.txt
+2024-01-08 00:00:34,674 - DEBUG - Updated pickled file.
+2024-01-08 00:00:35,912 - DEBUG - Added book calibans_war.txt
+2024-01-08 00:00:35,920 - DEBUG - Updated pickled file.
+2024-01-08 00:00:36,791 - DEBUG - Added book blood_of_olympus.txt
+2024-01-08 00:00:36,803 - DEBUG - Updated pickled file.
+2024-01-08 00:00:39,097 - DEBUG - Added book clash_of_kings.txt
+2024-01-08 00:00:39,113 - DEBUG - Updated pickled file.
+2024-01-08 00:00:40,126 - DEBUG - Added book house_of_hades.txt
+2024-01-08 00:00:40,143 - DEBUG - Updated pickled file.
+2024-01-08 00:00:41,153 - DEBUG - Added book mark_of_athena.txt
+2024-01-08 00:00:41,167 - DEBUG - Updated pickled file.
+2024-01-08 00:00:41,841 - DEBUG - Added book percy_jackson_and_the_lightning_thief.txt
+2024-01-08 00:00:41,853 - DEBUG - Updated pickled file.
+2024-01-08 00:00:44,610 - DEBUG - Added book storm_of_swords.txt
+2024-01-08 00:00:44,630 - DEBUG - Updated pickled file.
+2024-01-08 00:00:45,779 - DEBUG - Added book abbaddons_gate.txt
+2024-01-08 00:00:45,792 - DEBUG - Updated pickled file.
+2024-01-08 00:00:46,311 - DEBUG - Added book Catcher-in-the-Rye.txt
+2024-01-08 00:00:46,325 - DEBUG - Updated pickled file.
+2024-01-08 00:00:47,467 - DEBUG - Added book cibola_burn.txt
+2024-01-08 00:00:47,480 - DEBUG - Updated pickled file.
+2024-01-08 00:00:48,376 - DEBUG - Added book jane-austen-pride-prejudice.txt
+2024-01-08 00:00:48,392 - DEBUG - Updated pickled file.
+2024-01-08 00:00:49,553 - DEBUG - Added book leviathan_wakes.txt
+2024-01-08 00:00:49,574 - DEBUG - Updated pickled file.
+2024-01-08 00:00:50,722 - DEBUG - Added book nemesis_games.txt
+2024-01-08 00:00:50,743 - DEBUG - Updated pickled file.
+2024-01-08 00:00:51,934 - DEBUG - Added book persepolis_rising.txt
+2024-01-08 00:00:51,949 - DEBUG - Updated pickled file.
+2024-01-08 00:00:52,333 - DEBUG - Added book the_great_gatsby.txt
+2024-01-08 00:00:52,349 - DEBUG - Updated pickled file.
+2024-01-08 00:00:53,058 - DEBUG - Added book to_kill_a_mockingbird.txt
+2024-01-08 00:00:53,081 - DEBUG - Updated pickled file.
+2024-01-08 00:00:53,081 - INFO - Added all datasets.
+2024-01-08 00:00:55,386 - INFO - Wrote common_sense_qa words to pickle
+2024-01-08 00:01:30,516 - INFO - Wrote trivia_q_a words to pickle
+2024-01-08 00:02:02,099 - INFO - Wrote squad_web_qa words to pickle
+2024-01-08 00:02:02,357 - INFO - Vocabulary Created successfully with 121889 words.
+2024-01-08 00:04:12,688 - DEBUG - Read all Unix Words
+2024-01-08 00:04:14,796 - DEBUG - Added book babylons_ashes.txt
+2024-01-08 00:04:14,804 - DEBUG - Updated pickled file.
+2024-01-08 00:04:16,042 - DEBUG - Added book calibans_war.txt
+2024-01-08 00:04:16,050 - DEBUG - Updated pickled file.
+2024-01-08 00:04:16,919 - DEBUG - Added book blood_of_olympus.txt
+2024-01-08 00:04:16,932 - DEBUG - Updated pickled file.
+2024-01-08 00:06:44,145 - DEBUG - Read all Unix Words
+2024-01-08 00:06:46,384 - DEBUG - Added book babylons_ashes.txt
+2024-01-08 00:06:46,395 - DEBUG - Updated pickled file.
+2024-01-08 00:06:47,650 - DEBUG - Added book calibans_war.txt
+2024-01-08 00:06:47,658 - DEBUG - Updated pickled file.
+2024-01-08 00:06:48,589 - DEBUG - Added book blood_of_olympus.txt
+2024-01-08 00:06:48,597 - DEBUG - Updated pickled file.
+2024-01-08 00:06:49,630 - DEBUG - Added book house_of_hades.txt
+2024-01-08 00:06:49,639 - DEBUG - Updated pickled file.
+2024-01-08 00:06:50,662 - DEBUG - Added book mark_of_athena.txt
+2024-01-08 00:06:50,671 - DEBUG - Updated pickled file.
+2024-01-08 00:06:51,324 - DEBUG - Added book percy_jackson_and_the_lightning_thief.txt
+2024-01-08 00:06:51,336 - DEBUG - Updated pickled file.
+2024-01-08 00:06:52,560 - DEBUG - Added book abbaddons_gate.txt
+2024-01-08 00:06:52,574 - DEBUG - Updated pickled file.
+2024-01-08 00:06:53,099 - DEBUG - Added book Catcher-in-the-Rye.txt
+2024-01-08 00:06:53,110 - DEBUG - Updated pickled file.
+2024-01-08 00:06:54,263 - DEBUG - Added book cibola_burn.txt
+2024-01-08 00:06:54,274 - DEBUG - Updated pickled file.
+2024-01-08 00:06:55,132 - DEBUG - Added book jane-austen-pride-prejudice.txt
+2024-01-08 00:06:55,144 - DEBUG - Updated pickled file.
+2024-01-08 00:06:56,269 - DEBUG - Added book leviathan_wakes.txt
+2024-01-08 00:06:56,281 - DEBUG - Updated pickled file.
+2024-01-08 00:06:57,423 - DEBUG - Added book nemesis_games.txt
+2024-01-08 00:06:57,437 - DEBUG - Updated pickled file.
+2024-01-08 00:06:58,664 - DEBUG - Added book persepolis_rising.txt
+2024-01-08 00:06:58,678 - DEBUG - Updated pickled file.
+2024-01-08 00:06:59,057 - DEBUG - Added book the_great_gatsby.txt
+2024-01-08 00:06:59,072 - DEBUG - Updated pickled file.
+2024-01-08 00:06:59,777 - DEBUG - Added book to_kill_a_mockingbird.txt
+2024-01-08 00:06:59,819 - DEBUG - Updated pickled file.
+2024-01-08 00:06:59,819 - INFO - Added all books.
+2024-01-08 00:07:02,107 - INFO - Wrote common_sense_qa words to pickle
+2024-01-08 00:07:32,947 - INFO - Wrote trivia_q_a words to pickle
+2024-01-08 00:08:00,681 - INFO - Wrote squad_web_qa words to pickle
+2024-01-08 00:08:00,958 - INFO - Vocabulary Created successfully with 60026 words.

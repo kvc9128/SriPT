@@ -8,10 +8,16 @@ dataset, we will use it for training the model.
 """
 
 import re
+import nltk
 import unicodedata
 
+from nltk import WordNetLemmatizer
 from nltk.tokenize import word_tokenize
 from nltk.stem import PorterStemmer
+
+nltk.download('punkt')
+nltk.download('wordnet')
+nltk.download('omw-1.4')
 
 
 class VOCAB:
@@ -26,13 +32,13 @@ class VOCAB:
 		self.name = name  # The name of the vocabulary
 		self._word2index = {"SOS": 0, "EOS": 1, "PAD": 2, "UNK": 3}  # Map word to token index
 		self._index2word = {0: "SOS", 1: "EOS", 2: "PAD", 3: "UNK"}  # Map token index to word
-		self._word_count = {}  # keep track of word count to only keep words with min_occurrence
+		self._word_count = {"SOS": 1, "EOS": 1, "PAD": 1,
+		                    "UNK": 1}  # keep track of word count to only keep words with min_occurrence
 		# Number of unique words in the corpus
 		self._n_words = 4  # Count SOS, EOS and PAD and UNK
 
 		# Add/remove words from vocab object
 		self.add_unix_words()
-		self.add_punctuation_and_numbers()
 
 	def enforce_min_count(self):
 		"""
@@ -47,6 +53,7 @@ class VOCAB:
 				del self._word2index[word]
 				# delete token from token-word map
 				del self._index2word[token]
+		self._n_words = len(list(self._word2index.keys()))
 
 	# Get a list of all words in corpus
 	def get_words(self):
@@ -89,14 +96,6 @@ class VOCAB:
 		for word in sentence.split(' '):
 			self.add_word(word)
 
-	# meant to be called once
-	def add_punctuation_and_numbers(self):
-		for i in range(10):
-			self._word2index[str(i)] = self._n_words
-			self._index2word[self._n_words] = str(i)
-			self._n_words += 1
-		self.add_normalized_sentence(". , ' ; : > < / ? ! # $ ^ * ( ) { } [ ]")
-
 	# Add a single word to the vocabulary
 	def add_word(self, word):
 		if word not in self._word2index:
@@ -130,12 +129,19 @@ class VOCAB:
 	@staticmethod
 	def normalize_string(s):
 		s = VOCAB.unicode_to_ascii(s.lower().strip())
+		s = s.replace('\n', ' ').replace('\t', ' ')
 		s = re.sub(r'\.', ' EOS ', s)
 		s = re.sub(r'[^\w\s]', '', s)
+
+		# words = word_tokenize(s)
+		# stemmer = PorterStemmer()
+		# stemmed_words = [stemmer.stem(word) for word in words]
+		# return ' '.join(stemmed_words)
+
 		words = word_tokenize(s)
-		stemmer = PorterStemmer()
-		stemmed_words = [stemmer.stem(word) for word in words]
-		return ' '.join(stemmed_words)
+		lemmatizer = WordNetLemmatizer()
+		lemmatized_words = [lemmatizer.lemmatize(word) for word in words]
+		return ' '.join(lemmatized_words)
 
 	def add_book_from_txt_file(self, filename):
 		with open(filename, encoding='utf-8') as f:

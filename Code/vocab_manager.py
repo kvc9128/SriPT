@@ -18,7 +18,7 @@ def load_books(books: list, vocabulary: VOCAB):
 		file_pi = open(PICKLE_FILE_PATH, 'wb')
 		pickle.dump(vocabulary, file_pi)
 		logger.debug(msg="Updated pickled file.")
-	logger.info(msg="Added all datasets.")
+	logger.info(msg="Added all books.")
 
 
 def read_common_sense_qa(vocabulary):
@@ -107,15 +107,13 @@ def create_vocab_from_scratch():
 	vocabulary = VOCAB("all_words", min_occurrence=2)
 	logger.debug(msg="Read all Unix Words")
 	books = [
+		"../Datasets/Books/babylons_ashes.txt",
+		"../Datasets/Books/calibans_war.txt",
 		"../Datasets/Books/blood_of_olympus.txt",
-		"../Datasets/Books/clash_of_kings.txt",
 		"../Datasets/Books/house_of_hades.txt",
 		"../Datasets/Books/mark_of_athena.txt",
 		"../Datasets/Books/percy_jackson_and_the_lightning_thief.txt",
-		"../Datasets/Books/storm_of_swords.txt",
 		"../Datasets/Books/abbaddons_gate.txt",
-		"../Datasets/Books/babylons_ashes.txt",
-		"../Datasets/Books/calibans_war.txt",
 		"../Datasets/Books/Catcher-in-the-Rye.txt",
 		"../Datasets/Books/cibola_burn.txt",
 		"../Datasets/Books/jane-austen-pride-prejudice.txt",
