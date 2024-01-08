@@ -129,6 +129,9 @@ def create_vocab_from_scratch():
 	read_trivia_qa(vocabulary)
 	read_squad_web_qa(vocabulary)
 	vocabulary.enforce_min_count()
+	file_pi = open(PICKLE_FILE_PATH, 'wb')
+	pickle.dump(vocabulary, file_pi)
+	logger.info(msg="Updated vocabulary with min_count")
 	message = f"Vocabulary Created successfully with {vocabulary.num_words()} words."
 	logger.info(msg=message)
 	return vocabulary

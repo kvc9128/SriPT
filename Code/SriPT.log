@@ -2553,3 +2553,161 @@
 2024-01-08 00:07:32,947 - INFO - Wrote trivia_q_a words to pickle
 2024-01-08 00:08:00,681 - INFO - Wrote squad_web_qa words to pickle
 2024-01-08 00:08:00,958 - INFO - Vocabulary Created successfully with 60026 words.
+2024-01-08 00:10:17,694 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 00:10:17,694 - INFO - Vocabulary loaded successfully with 117708 words.
+2024-01-08 00:10:17,776 - DEBUG - CACHEDIR=/Users/srikamal/.matplotlib
+2024-01-08 00:10:17,781 - DEBUG - Using fontManager instance from /Users/srikamal/.matplotlib/fontlist-v330.json
+2024-01-08 00:10:18,136 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 00:10:18,136 - INFO - Vocabulary loaded successfully with 117708 words.
+2024-01-08 00:10:18,197 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 00:10:18,197 - INFO - Vocabulary loaded successfully with 117708 words.
+2024-01-08 00:10:18,197 - INFO - Running on cpu
+2024-01-08 00:10:19,576 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 00:10:19,576 - INFO - Vocabulary loaded successfully with 117708 words.
+2024-01-08 00:10:19,577 - INFO - Model has 137473996 parameters.
+2024-01-08 00:11:11,870 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 00:15:27,907 - DEBUG - Read all Unix Words
+2024-01-08 00:15:40,179 - DEBUG - Read all Unix Words
+2024-01-08 00:15:42,305 - DEBUG - Added book babylons_ashes.txt
+2024-01-08 00:15:42,313 - DEBUG - Updated pickled file.
+2024-01-08 00:15:43,531 - DEBUG - Added book calibans_war.txt
+2024-01-08 00:15:43,543 - DEBUG - Updated pickled file.
+2024-01-08 00:15:44,420 - DEBUG - Added book blood_of_olympus.txt
+2024-01-08 00:15:44,429 - DEBUG - Updated pickled file.
+2024-01-08 00:15:45,444 - DEBUG - Added book house_of_hades.txt
+2024-01-08 00:15:45,453 - DEBUG - Updated pickled file.
+2024-01-08 00:15:46,453 - DEBUG - Added book mark_of_athena.txt
+2024-01-08 00:15:46,462 - DEBUG - Updated pickled file.
+2024-01-08 00:15:47,124 - DEBUG - Added book percy_jackson_and_the_lightning_thief.txt
+2024-01-08 00:15:47,138 - DEBUG - Updated pickled file.
+2024-01-08 00:15:48,306 - DEBUG - Added book abbaddons_gate.txt
+2024-01-08 00:15:48,317 - DEBUG - Updated pickled file.
+2024-01-08 00:15:48,822 - DEBUG - Added book Catcher-in-the-Rye.txt
+2024-01-08 00:15:48,833 - DEBUG - Updated pickled file.
+2024-01-08 00:15:49,967 - DEBUG - Added book cibola_burn.txt
+2024-01-08 00:15:49,979 - DEBUG - Updated pickled file.
+2024-01-08 00:15:50,824 - DEBUG - Added book jane-austen-pride-prejudice.txt
+2024-01-08 00:15:50,837 - DEBUG - Updated pickled file.
+2024-01-08 00:15:51,936 - DEBUG - Added book leviathan_wakes.txt
+2024-01-08 00:15:51,949 - DEBUG - Updated pickled file.
+2024-01-08 00:15:53,023 - DEBUG - Added book nemesis_games.txt
+2024-01-08 00:15:53,042 - DEBUG - Updated pickled file.
+2024-01-08 00:15:54,264 - DEBUG - Added book persepolis_rising.txt
+2024-01-08 00:15:54,278 - DEBUG - Updated pickled file.
+2024-01-08 00:15:54,647 - DEBUG - Added book the_great_gatsby.txt
+2024-01-08 00:15:54,664 - DEBUG - Updated pickled file.
+2024-01-08 00:15:55,365 - DEBUG - Added book to_kill_a_mockingbird.txt
+2024-01-08 00:15:55,379 - DEBUG - Updated pickled file.
+2024-01-08 00:15:55,379 - INFO - Added all books.
+2024-01-08 00:15:57,640 - INFO - Wrote common_sense_qa words to pickle
+2024-01-08 00:16:28,623 - INFO - Wrote trivia_q_a words to pickle
+2024-01-08 00:16:56,058 - INFO - Wrote squad_web_qa words to pickle
+2024-01-08 00:16:56,359 - INFO - Updated vocabulary with min_count
+2024-01-08 00:16:56,359 - INFO - Vocabulary Created successfully with 60026 words.
+2024-01-08 00:17:09,476 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 00:17:09,477 - INFO - Vocabulary loaded successfully with 60026 words.
+2024-01-08 00:17:09,541 - DEBUG - CACHEDIR=/Users/srikamal/.matplotlib
+2024-01-08 00:17:09,545 - DEBUG - Using fontManager instance from /Users/srikamal/.matplotlib/fontlist-v330.json
+2024-01-08 00:17:09,849 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 00:17:09,850 - INFO - Vocabulary loaded successfully with 60026 words.
+2024-01-08 00:17:09,891 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 00:17:09,891 - INFO - Vocabulary loaded successfully with 60026 words.
+2024-01-08 00:17:09,891 - INFO - Running on cpu
+2024-01-08 00:17:10,871 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 00:17:10,871 - INFO - Vocabulary loaded successfully with 60026 words.
+2024-01-08 00:17:10,872 - INFO - Model has 78349946 parameters.
+2024-01-08 00:20:44,658 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 00:20:44,659 - INFO - Vocabulary loaded successfully with 60026 words.
+2024-01-08 00:20:44,711 - DEBUG - CACHEDIR=/Users/srikamal/.matplotlib
+2024-01-08 00:20:44,714 - DEBUG - Using fontManager instance from /Users/srikamal/.matplotlib/fontlist-v330.json
+2024-01-08 00:20:44,958 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 00:20:44,958 - INFO - Vocabulary loaded successfully with 60026 words.
+2024-01-08 00:20:44,997 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 00:20:44,998 - INFO - Vocabulary loaded successfully with 60026 words.
+2024-01-08 00:20:44,998 - INFO - Running on cpu
+2024-01-08 00:20:45,827 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 00:20:45,827 - INFO - Vocabulary loaded successfully with 60026 words.
+2024-01-08 00:20:45,828 - INFO - Model has 78349946 parameters.
+2024-01-08 00:20:45,829 - INFO - Started training on ../Datasets/Books/calibans_war.txt
+2024-01-08 00:20:48,037 - INFO - Found 186092 words in book
+2024-01-08 00:22:27,689 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 00:22:27,689 - INFO - Vocabulary loaded successfully with 60026 words.
+2024-01-08 00:22:27,828 - DEBUG - CACHEDIR=/Users/srikamal/.matplotlib
+2024-01-08 00:22:27,834 - DEBUG - Using fontManager instance from /Users/srikamal/.matplotlib/fontlist-v330.json
+2024-01-08 00:22:28,391 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 00:22:28,391 - INFO - Vocabulary loaded successfully with 60026 words.
+2024-01-08 00:22:28,430 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 00:22:28,430 - INFO - Vocabulary loaded successfully with 60026 words.
+2024-01-08 00:22:28,430 - INFO - Running on cpu
+2024-01-08 00:22:29,809 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 00:22:29,809 - INFO - Vocabulary loaded successfully with 60026 words.
+2024-01-08 00:22:29,819 - INFO - Model has 78349946 parameters.
+2024-01-08 00:22:29,819 - INFO - Started training on ../Datasets/Books/calibans_war.txt
+2024-01-08 00:22:43,410 - INFO - Found 186092 words in book
+2024-01-08 00:24:04,648 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 00:24:04,649 - INFO - Vocabulary loaded successfully with 60026 words.
+2024-01-08 00:24:04,746 - DEBUG - CACHEDIR=/Users/srikamal/.matplotlib
+2024-01-08 00:24:04,751 - DEBUG - Using fontManager instance from /Users/srikamal/.matplotlib/fontlist-v330.json
+2024-01-08 00:24:05,247 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 00:24:05,247 - INFO - Vocabulary loaded successfully with 60026 words.
+2024-01-08 00:24:05,287 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 00:24:05,287 - INFO - Vocabulary loaded successfully with 60026 words.
+2024-01-08 00:24:05,288 - INFO - Running on cpu
+2024-01-08 00:24:06,661 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 00:24:06,662 - INFO - Vocabulary loaded successfully with 60026 words.
+2024-01-08 00:24:06,671 - INFO - Model has 78349946 parameters.
+2024-01-08 00:24:06,671 - INFO - Started training on ../Datasets/Books/calibans_war.txt
+2024-01-08 00:24:14,013 - INFO - Found 186092 words in book
+2024-01-08 00:26:11,639 - DEBUG - Read all Unix Words
+2024-01-08 00:26:13,902 - DEBUG - Added book babylons_ashes.txt
+2024-01-08 00:26:13,910 - DEBUG - Updated pickled file.
+2024-01-08 00:26:15,174 - DEBUG - Added book calibans_war.txt
+2024-01-08 00:26:15,184 - DEBUG - Updated pickled file.
+2024-01-08 00:26:16,092 - DEBUG - Added book blood_of_olympus.txt
+2024-01-08 00:26:16,102 - DEBUG - Updated pickled file.
+2024-01-08 00:26:17,144 - DEBUG - Added book house_of_hades.txt
+2024-01-08 00:26:17,154 - DEBUG - Updated pickled file.
+2024-01-08 00:26:18,161 - DEBUG - Added book mark_of_athena.txt
+2024-01-08 00:26:18,171 - DEBUG - Updated pickled file.
+2024-01-08 00:26:18,872 - DEBUG - Added book percy_jackson_and_the_lightning_thief.txt
+2024-01-08 00:26:18,882 - DEBUG - Updated pickled file.
+2024-01-08 00:26:20,029 - DEBUG - Added book abbaddons_gate.txt
+2024-01-08 00:26:20,043 - DEBUG - Updated pickled file.
+2024-01-08 00:26:20,558 - DEBUG - Added book Catcher-in-the-Rye.txt
+2024-01-08 00:26:20,573 - DEBUG - Updated pickled file.
+2024-01-08 00:26:21,792 - DEBUG - Added book cibola_burn.txt
+2024-01-08 00:26:21,806 - DEBUG - Updated pickled file.
+2024-01-08 00:26:22,671 - DEBUG - Added book jane-austen-pride-prejudice.txt
+2024-01-08 00:26:22,684 - DEBUG - Updated pickled file.
+2024-01-08 00:26:23,848 - DEBUG - Added book leviathan_wakes.txt
+2024-01-08 00:26:23,861 - DEBUG - Updated pickled file.
+2024-01-08 00:26:24,959 - DEBUG - Added book nemesis_games.txt
+2024-01-08 00:26:24,972 - DEBUG - Updated pickled file.
+2024-01-08 00:26:26,295 - DEBUG - Added book persepolis_rising.txt
+2024-01-08 00:26:26,309 - DEBUG - Updated pickled file.
+2024-01-08 00:26:26,681 - DEBUG - Added book the_great_gatsby.txt
+2024-01-08 00:26:26,698 - DEBUG - Updated pickled file.
+2024-01-08 00:26:27,440 - DEBUG - Added book to_kill_a_mockingbird.txt
+2024-01-08 00:26:27,454 - DEBUG - Updated pickled file.
+2024-01-08 00:26:27,454 - INFO - Added all books.
+2024-01-08 00:26:29,709 - INFO - Wrote common_sense_qa words to pickle
+2024-01-08 00:27:00,685 - INFO - Wrote trivia_q_a words to pickle
+2024-01-08 00:27:28,630 - INFO - Wrote squad_web_qa words to pickle
+2024-01-08 00:27:28,944 - INFO - Updated vocabulary with min_count
+2024-01-08 00:27:28,944 - INFO - Vocabulary Created successfully with 60029 words.
+2024-01-08 00:27:37,936 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 00:27:37,936 - INFO - Vocabulary loaded successfully with 60029 words.
+2024-01-08 00:27:38,003 - DEBUG - CACHEDIR=/Users/srikamal/.matplotlib
+2024-01-08 00:27:38,007 - DEBUG - Using fontManager instance from /Users/srikamal/.matplotlib/fontlist-v330.json
+2024-01-08 00:27:38,321 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 00:27:38,322 - INFO - Vocabulary loaded successfully with 60029 words.
+2024-01-08 00:27:38,378 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 00:27:38,378 - INFO - Vocabulary loaded successfully with 60029 words.
+2024-01-08 00:27:38,378 - INFO - Running on cpu
+2024-01-08 00:27:39,378 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 00:27:39,378 - INFO - Vocabulary loaded successfully with 60029 words.
+2024-01-08 00:27:39,379 - INFO - Model has 78353021 parameters.
+2024-01-08 00:27:39,379 - INFO - Started training on ../Datasets/Books/calibans_war.txt
+2024-01-08 00:27:41,535 - INFO - Found 186092 words in book
+2024-01-08 00:28:03,069 - INFO - Generated and shuffled 744256 sequences for book calibans_war.txt
+2024-01-08 00:28:03,086 - DEBUG - Obtained sequences for book

@@ -9,15 +9,13 @@ from Train.Train import Train
 logger = logging.getLogger(__name__)
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 datasets = [
+	"../Datasets/Books/calibans_war.txt",
 	"../Datasets/Books/blood_of_olympus.txt",
-	"../Datasets/Books/clash_of_kings.txt",
 	"../Datasets/Books/house_of_hades.txt",
 	"../Datasets/Books/mark_of_athena.txt",
 	"../Datasets/Books/percy_jackson_and_the_lightning_thief.txt",
-	"../Datasets/Books/storm_of_swords.txt",
 	"../Datasets/Books/abbaddons_gate.txt",
 	"../Datasets/Books/babylons_ashes.txt",
-	"../Datasets/Books/calibans_war.txt",
 	"../Datasets/Books/Catcher-in-the-Rye.txt",
 	"../Datasets/Books/cibola_burn.txt",
 	"../Datasets/Books/jane-austen-pride-prejudice.txt",
