@@ -1,8 +1,12 @@
 import os
 import torch
 import logging
-import torch.nn as nn
 import vocab_manager
+
+
+import torch.nn as nn
+
+from model_hyperparameters import *
 from Model.SriPT import SriPT
 from Train.Train import Train
 
@@ -10,6 +14,7 @@ logger = logging.getLogger(__name__)
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 datasets = [
 	"../Datasets/Books/calibans_war.txt",
+	"../Datasets/Books/REUTERS_NEWS.txt"
 	"../Datasets/Books/blood_of_olympus.txt",
 	"../Datasets/Books/house_of_hades.txt",
 	"../Datasets/Books/mark_of_athena.txt",
@@ -23,7 +28,7 @@ datasets = [
 	"../Datasets/Books/nemesis_games.txt",
 	"../Datasets/Books/persepolis_rising.txt",
 	"../Datasets/Books/the_great_gatsby.txt",
-	"../Datasets/Books/to_kill_a_mockingbird.txt"
+	"../Datasets/Books/to_kill_a_mockingbird.txt",
 	"../Datasets/QA/squad_web.json",
 	"../Datasets/QA/trivia_q_a.json",
 	"../Datasets/QA/common_sense_q_a.json"
@@ -54,12 +59,6 @@ def load_model(model, optimizer):
 
 
 def main():
-	# Hyperparameters
-	embedding_dimension = 512
-	context_window = 32  # context window
-	number_of_decoder_layers = 8
-	num_attention_heads = 4
-	dropout_rate = 0.1
 	VOCAB = vocab_manager.load_vocab()
 	VOCAB_SIZE = VOCAB.num_words()
 	logger.info(msg=f"Running on {DEVICE}")
@@ -93,8 +92,8 @@ def main():
 
 	for dataset in datasets:
 		trainer.train_model_on(dataset)
-		MODEL, OPTIMIZER = load_model(MODEL, OPTIMIZER)
-		trainer.update_model_and_optimizer(MODEL, OPTIMIZER)
+	# MODEL, OPTIMIZER = load_model(MODEL, OPTIMIZER)
+	# trainer.update_model_and_optimizer(MODEL, OPTIMIZER)
 
 
 main()

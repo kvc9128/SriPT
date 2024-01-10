@@ -2711,3 +2711,313 @@
 2024-01-08 00:27:41,535 - INFO - Found 186092 words in book
 2024-01-08 00:28:03,069 - INFO - Generated and shuffled 744256 sequences for book calibans_war.txt
 2024-01-08 00:28:03,086 - DEBUG - Obtained sequences for book
+2024-01-08 16:49:01,107 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 16:49:01,107 - INFO - Vocabulary loaded successfully with 60029 words.
+2024-01-08 16:49:01,169 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 16:49:01,170 - INFO - Vocabulary loaded successfully with 60029 words.
+2024-01-08 16:49:01,748 - ERROR - Error loading state dict: Error(s) in loading state_dict for SriPT:
+	size mismatch for token_embedding.weight: copying a param with shape torch.Size([100780, 256]) from checkpoint, the shape in current model is torch.Size([60029, 256]).
+	size mismatch for lm_head.linear.weight: copying a param with shape torch.Size([100780, 256]) from checkpoint, the shape in current model is torch.Size([60029, 256]).
+	size mismatch for lm_head.linear.bias: copying a param with shape torch.Size([100780]) from checkpoint, the shape in current model is torch.Size([60029]).
+2024-01-08 16:49:03,973 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-08 16:49:03,994 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-08 16:49:04,016 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-08 16:49:04,044 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-08 16:49:04,067 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-08 16:50:51,728 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 16:50:51,728 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-08 16:50:51,777 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 16:50:51,777 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-08 16:50:52,392 - INFO - Successfully loaded model with weights and parameters
+2024-01-08 16:51:09,496 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 16:51:09,497 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-08 16:51:09,544 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 16:51:09,544 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-08 16:51:10,151 - INFO - Successfully loaded model with weights and parameters
+2024-01-08 16:51:50,319 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 16:51:50,319 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-08 16:51:50,364 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 16:51:50,364 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-08 16:51:50,938 - INFO - Successfully loaded model with weights and parameters
+2024-01-08 16:52:17,084 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 16:52:17,085 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-08 16:52:17,133 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 16:52:17,133 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-08 16:52:17,740 - INFO - Successfully loaded model with weights and parameters
+2024-01-08 16:52:19,554 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-08 16:52:19,578 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-08 16:52:19,604 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-08 16:52:19,628 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-08 16:52:19,654 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-08 16:52:19,679 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-08 16:52:19,704 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-08 16:52:45,248 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 16:52:45,248 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-08 16:52:45,297 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 16:52:45,297 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-08 16:52:45,911 - INFO - Successfully loaded model with weights and parameters
+2024-01-08 16:52:47,864 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-08 16:52:47,894 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-08 16:53:20,030 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 16:53:20,030 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-08 16:53:20,088 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 16:53:20,088 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-08 16:53:20,719 - INFO - Successfully loaded model with weights and parameters
+2024-01-08 16:53:50,696 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-08 16:53:50,723 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-08 16:59:17,188 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 16:59:17,189 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-08 16:59:17,242 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 16:59:17,242 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-08 16:59:17,935 - INFO - Successfully loaded model with weights and parameters
+2024-01-08 16:59:23,528 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-08 16:59:23,554 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-08 17:00:33,443 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 17:00:33,444 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-08 17:00:33,497 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 17:00:33,497 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-08 17:00:34,150 - INFO - Successfully loaded model with weights and parameters
+2024-01-08 17:00:38,831 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-08 17:00:38,857 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-08 17:02:13,251 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 17:02:13,251 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-08 17:02:13,303 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 17:02:13,303 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-08 17:02:13,914 - INFO - Successfully loaded model with weights and parameters
+2024-01-08 17:02:15,837 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-08 17:02:15,862 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-08 17:02:53,813 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 17:02:53,813 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-08 17:02:53,861 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 17:02:53,861 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-08 17:02:54,482 - INFO - Successfully loaded model with weights and parameters
+2024-01-08 17:02:56,420 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-08 17:02:56,444 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-08 17:03:06,968 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 17:03:06,968 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-08 17:03:07,017 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 17:03:07,017 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-08 17:03:07,620 - INFO - Successfully loaded model with weights and parameters
+2024-01-08 17:03:09,579 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-08 17:03:09,604 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-08 17:03:43,282 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 17:03:43,282 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-08 17:03:43,332 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 17:03:43,332 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-08 17:03:43,953 - INFO - Successfully loaded model with weights and parameters
+2024-01-08 17:03:45,902 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-08 17:03:45,926 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-08 17:04:03,398 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 17:04:03,398 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-08 17:04:03,463 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 17:04:03,463 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-08 17:04:04,144 - INFO - Successfully loaded model with weights and parameters
+2024-01-08 17:04:09,234 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-08 17:04:09,263 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-08 17:09:32,392 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 17:09:32,392 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-08 17:09:32,444 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 17:09:32,445 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-08 17:09:33,097 - INFO - Successfully loaded model with weights and parameters
+2024-01-08 17:09:38,057 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-08 17:09:38,085 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-08 17:11:40,366 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 17:11:40,367 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-08 17:11:40,424 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 17:11:40,424 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-08 17:11:41,079 - INFO - Successfully loaded model with weights and parameters
+2024-01-08 17:11:45,776 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-08 17:11:45,803 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-08 17:12:46,132 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 17:12:46,132 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-08 17:12:46,188 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 17:12:46,189 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-08 17:12:46,940 - INFO - Successfully loaded model with weights and parameters
+2024-01-08 17:12:51,949 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-08 17:12:51,988 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-08 17:17:24,165 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 17:17:24,166 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-08 17:17:24,221 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 17:17:24,221 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-08 17:17:24,857 - INFO - Successfully loaded model with weights and parameters
+2024-01-08 17:19:13,278 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 17:19:13,279 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-08 17:19:13,334 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 17:19:13,334 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-08 17:19:14,021 - INFO - Successfully loaded model with weights and parameters
+2024-01-08 17:19:18,854 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-08 17:19:18,882 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-08 17:21:09,374 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 17:21:09,374 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-08 17:21:09,427 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 17:21:09,427 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-08 17:21:10,066 - INFO - Successfully loaded model with weights and parameters
+2024-01-08 17:21:14,905 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-08 17:21:14,932 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-08 17:24:04,593 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 17:24:04,594 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-08 17:24:04,647 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 17:24:04,647 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-08 17:24:05,298 - INFO - Successfully loaded model with weights and parameters
+2024-01-08 17:24:10,089 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-08 17:24:10,116 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-08 17:25:12,935 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 17:25:12,936 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-08 17:25:12,998 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 17:25:12,998 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-08 17:25:13,649 - INFO - Successfully loaded model with weights and parameters
+2024-01-08 17:25:18,289 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-08 17:25:18,314 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-08 17:28:51,485 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 17:28:51,485 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-08 17:28:51,536 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 17:28:51,536 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-08 17:28:52,172 - INFO - Successfully loaded model with weights and parameters
+2024-01-08 17:28:54,349 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-08 17:28:54,374 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-08 17:30:11,061 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 17:30:11,062 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-08 17:30:11,128 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 17:30:11,136 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-08 17:30:11,888 - INFO - Successfully loaded model with weights and parameters
+2024-01-08 17:30:14,417 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-08 17:30:14,451 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-08 17:32:20,217 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 17:32:20,217 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-08 17:32:20,272 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 17:32:20,273 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-08 17:32:20,940 - INFO - Successfully loaded model with weights and parameters
+2024-01-08 17:32:25,692 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-08 17:32:25,719 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-08 17:33:26,811 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 17:33:26,811 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-08 17:33:26,870 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 17:33:26,870 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-08 17:33:27,541 - INFO - Successfully loaded model with weights and parameters
+2024-01-08 17:33:32,293 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-08 17:33:32,322 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-08 17:36:18,277 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 17:36:18,277 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-08 17:36:18,338 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 17:36:18,339 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-08 17:36:19,052 - INFO - Successfully loaded model with weights and parameters
+2024-01-08 17:36:24,363 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-08 17:36:24,395 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-08 18:43:46,593 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 18:43:46,593 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-08 18:43:46,656 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-08 18:43:46,656 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-08 18:43:47,400 - INFO - Successfully loaded model with weights and parameters
+2024-01-08 18:43:49,518 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-08 18:43:49,543 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-10 12:59:32,261 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-10 12:59:32,262 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-10 12:59:32,318 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-10 12:59:32,319 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-10 12:59:33,160 - INFO - Successfully loaded model with weights and parameters
+2024-01-10 12:59:35,108 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-10 12:59:35,135 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-10 13:00:07,581 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-10 13:00:07,581 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-10 13:00:07,638 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-10 13:00:07,638 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-10 13:00:08,329 - INFO - Successfully loaded model with weights and parameters
+2024-01-10 13:00:27,429 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-10 13:00:27,429 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-10 13:00:27,477 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-10 13:00:27,477 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-10 13:00:28,165 - INFO - Successfully loaded model with weights and parameters
+2024-01-10 13:00:30,061 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-10 13:00:30,086 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-10 13:00:30,110 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-10 13:00:30,135 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-10 13:00:30,161 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-10 13:05:18,684 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-10 13:05:18,684 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-10 13:05:18,739 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-10 13:05:18,739 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-10 13:05:19,430 - INFO - Successfully loaded model with weights and parameters
+2024-01-10 13:05:21,321 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-10 13:05:21,343 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-10 13:05:21,365 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-10 13:05:21,387 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-10 13:05:21,409 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-10 13:05:54,035 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-10 13:05:54,035 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-10 13:05:54,091 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-10 13:05:54,091 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-10 13:05:54,864 - INFO - Successfully loaded model with weights and parameters
+2024-01-10 13:05:56,877 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-10 13:05:56,899 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-10 13:06:17,815 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-10 13:06:17,815 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-10 13:06:17,871 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-10 13:06:17,871 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-10 13:06:18,602 - INFO - Successfully loaded model with weights and parameters
+2024-01-10 13:06:20,390 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-10 13:06:20,414 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-10 13:06:20,437 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-10 13:06:20,458 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-10 13:06:20,480 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-10 13:06:20,502 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-10 13:06:20,524 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-10 13:06:20,547 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-10 13:06:47,399 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-10 13:06:47,399 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-10 13:06:47,454 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-10 13:06:47,454 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-10 13:06:48,135 - INFO - Successfully loaded model with weights and parameters
+2024-01-10 13:06:49,918 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-10 13:06:49,944 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-10 13:06:49,969 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-10 13:06:49,994 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-10 13:06:50,020 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-10 13:06:50,043 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-10 13:06:50,065 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-10 13:06:50,087 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-10 13:06:50,109 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-10 13:13:08,510 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-10 13:13:08,510 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-10 13:13:08,569 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-10 13:13:08,569 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-10 13:13:09,662 - INFO - Successfully loaded model with weights and parameters
+2024-01-10 13:13:11,476 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-10 13:13:11,498 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-10 13:13:11,520 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-10 13:13:11,542 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-10 13:13:11,564 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-10 13:13:11,587 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-10 13:13:11,610 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-10 13:13:11,636 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-10 13:13:11,662 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-10 13:18:11,116 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-10 13:18:11,116 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-10 13:18:11,176 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-10 13:18:11,176 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-10 13:18:11,892 - INFO - Successfully loaded model with weights and parameters
+2024-01-10 13:18:13,734 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-10 13:18:13,756 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-10 13:18:13,778 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-10 13:18:13,800 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-10 13:18:13,821 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-10 13:18:13,844 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-10 13:18:13,867 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-10 13:18:13,890 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-10 13:18:13,912 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-10 13:20:55,410 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-10 13:20:55,410 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-10 13:20:55,467 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-10 13:20:55,467 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-10 13:20:56,347 - INFO - Successfully loaded model with weights and parameters
+2024-01-10 13:20:58,838 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-10 13:20:58,866 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-10 13:20:58,892 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-10 13:31:37,614 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-10 13:31:37,615 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-10 13:31:37,670 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-10 13:31:37,670 - INFO - Vocabulary loaded successfully with 100780 words.
+2024-01-10 13:31:38,561 - INFO - Successfully loaded model with weights and parameters
+2024-01-10 13:31:38,562 - INFO - Model has 56439212 parameters.
+2024-01-10 13:31:40,541 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-10 13:31:40,563 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-10 13:31:40,584 - DEBUG - Truncated sentence, exceeded context window size.

@@ -121,7 +121,8 @@ def create_vocab_from_scratch():
 		"../Datasets/Books/nemesis_games.txt",
 		"../Datasets/Books/persepolis_rising.txt",
 		"../Datasets/Books/the_great_gatsby.txt",
-		"../Datasets/Books/to_kill_a_mockingbird.txt"
+		"../Datasets/Books/to_kill_a_mockingbird.txt",
+		"../Datasets/Books/REUTERS_NEWS.txt"
 	]
 
 	load_books(books, vocabulary)

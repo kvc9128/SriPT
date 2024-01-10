@@ -35,7 +35,7 @@ def create_sequences_from_json(VOCAB, json_file_path, context_window_length):
 		return create_sequences_from_SQuAD(VOCAB, context_window_length)
 
 
-def generate_sequences_for_text(normalized_text, context_window_length, VOCAB, text_file_path, step=8):
+def generate_sequences_for_text(normalized_text, context_window_length, VOCAB, text_file_path, step=4):
 	"""
 	example
 	sequence = [PAD, PAD, I, AM, PERCY] # irl tokens(ints), used words for ease of understanding
