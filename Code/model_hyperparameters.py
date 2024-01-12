@@ -1,5 +1,7 @@
-embedding_dimension = 512
-context_window = 32
-number_of_decoder_layers = 10
-num_attention_heads = 4
-dropout_rate = 0.1
+EMBEDDING_DIMENSION = 512
+CONTEXT_WINDOW = 32
+NUM_DECODER_LAYERS = 10
+NUM_ATTENTION_HEADS = 4
+DROPOUT_RATE = 0.1
+EPOCHS = 40
+BATCH_SIZE = 64

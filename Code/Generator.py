@@ -205,11 +205,11 @@ def setup_generation():
 
 	model = SriPT(
 		number_of_tokens=VOCAB_SIZE,
-		max_sequence_length=context_window,
-		embedding_dimension=embedding_dimension,
-		number_of_layers=number_of_decoder_layers,
-		number_of_heads=num_attention_heads,
-		dropout_rate=dropout_rate
+		max_sequence_length=CONTEXT_WINDOW,
+		embedding_dimension=EMBEDDING_DIMENSION,
+		number_of_layers=NUM_DECODER_LAYERS,
+		number_of_heads=NUM_ATTENTION_HEADS,
+		dropout_rate=DROPOUT_RATE
 	)
 
 	# load model and optimizer from previous state
@@ -225,10 +225,10 @@ def setup_generation():
 
 	# spellcheck prompt and get user confirmation
 	prompt = spellcheck(prompt)
-	print(generate_next_token(model, prompt, context_window, VOCAB))
+	print(generate_next_token(model, prompt, CONTEXT_WINDOW, VOCAB))
 
 	# experimental beam search - painfully slow
-	best_seq = beam_search(model, VOCAB, context_window, beam_size=3, max_length=15, start_prompt=prompt)
+	best_seq = beam_search(model, VOCAB, CONTEXT_WINDOW, beam_size=3, max_length=15, start_prompt=prompt)
 	print(best_seq)
 
 

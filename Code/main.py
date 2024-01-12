@@ -3,18 +3,23 @@ import torch
 import logging
 import vocab_manager
 
-
 import torch.nn as nn
 
-from model_hyperparameters import *
 from Model.SriPT import SriPT
 from Train.Train import Train
+from model_hyperparameters import EPOCHS
+from model_hyperparameters import BATCH_SIZE
+from model_hyperparameters import DROPOUT_RATE
+from model_hyperparameters import CONTEXT_WINDOW
+from model_hyperparameters import EMBEDDING_DIMENSION
+from model_hyperparameters import NUM_ATTENTION_HEADS
+from model_hyperparameters import NUM_DECODER_LAYERS
 
 logger = logging.getLogger(__name__)
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 datasets = [
 	"../Datasets/Books/calibans_war.txt",
-	"../Datasets/Books/REUTERS_NEWS.txt"
+	"../Datasets/Books/REUTERS_NEWS.txt",
 	"../Datasets/Books/blood_of_olympus.txt",
 	"../Datasets/Books/house_of_hades.txt",
 	"../Datasets/Books/mark_of_athena.txt",
@@ -43,7 +48,7 @@ def load_model(model, optimizer):
 			model.load_state_dict(torch.load(model_path, map_location=torch.device(DEVICE)))
 			optimizer_path = os.path.join(SAVED_FOLDER, 'optimizer.pt')
 			optimizer.load_state_dict(torch.load(optimizer_path, map_location=torch.device(DEVICE)))
-			logger.info(f"Successfully saved model with weights and parameters")
+			logger.info(f"Successfully loaded model with weights and parameters")
 		else:
 			logger.error("No checkpoint found. Please provide a model and checkpoint.")
 	except FileNotFoundError:
@@ -64,17 +69,15 @@ def main():
 	logger.info(msg=f"Running on {DEVICE}")
 	MODEL = SriPT(
 		number_of_tokens=VOCAB_SIZE,
-		max_sequence_length=context_window,
-		embedding_dimension=embedding_dimension,
-		number_of_layers=number_of_decoder_layers,
-		number_of_heads=num_attention_heads,
-		dropout_rate=dropout_rate
+		max_sequence_length=CONTEXT_WINDOW,
+		embedding_dimension=EMBEDDING_DIMENSION,
+		number_of_layers=NUM_DECODER_LAYERS,
+		number_of_heads=NUM_ATTENTION_HEADS,
+		dropout_rate=DROPOUT_RATE
 	)
 	MODEL.to(DEVICE)
 	OPTIMIZER = torch.optim.Adam(MODEL.parameters(), lr=0.0005)
 	LOSS_FN = nn.CrossEntropyLoss()
-	EPOCHS = 40
-	BATCH_SIZE = 64
 
 	trainer = Train(
 		model=MODEL,
@@ -82,7 +85,7 @@ def main():
 		num_epochs=EPOCHS,
 		loss_fn=LOSS_FN,
 		optimizer=OPTIMIZER,
-		context_window=context_window
+		context_window=CONTEXT_WINDOW
 	)
 
 	total_params = sum(
@@ -92,8 +95,8 @@ def main():
 
 	for dataset in datasets:
 		trainer.train_model_on(dataset)
-	# MODEL, OPTIMIZER = load_model(MODEL, OPTIMIZER)
-	# trainer.update_model_and_optimizer(MODEL, OPTIMIZER)
+		MODEL, OPTIMIZER = load_model(MODEL, OPTIMIZER)
+		trainer.update_model_and_optimizer(MODEL, OPTIMIZER)
 
 
 main()

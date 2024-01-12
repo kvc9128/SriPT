@@ -13,7 +13,6 @@ import unicodedata
 
 from nltk import WordNetLemmatizer
 from nltk.tokenize import word_tokenize
-from nltk.stem import PorterStemmer
 
 nltk.download('punkt')
 nltk.download('wordnet')
@@ -44,6 +43,8 @@ class VOCAB:
 		"""
 		At the end of this function, we will have words in unix-txt that will not be a part of
 		this model
+
+		this deletes a few numbers
 		:return:
 		"""
 		for word, count in self._word_count.items():
@@ -54,6 +55,15 @@ class VOCAB:
 				# delete token from token-word map
 				del self._index2word[token]
 		self._n_words = len(list(self._word2index.keys()))
+		new_word2index, new_index2word = {}, {}
+		new_idx = 0
+		# Ensure that it is a continuous set of numbers from 0-_n_words
+		for index in self._index2word.keys():
+			new_index2word[new_idx] = self._index2word[index]
+			new_word2index[self._index2word[index]] = new_idx
+			new_idx += 1
+		self._index2word = new_index2word
+		self._word2index = new_word2index
 
 	# Get a list of all words in corpus
 	def get_words(self):

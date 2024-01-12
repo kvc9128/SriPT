@@ -3021,3 +3021,480 @@
 2024-01-10 13:31:40,541 - DEBUG - Truncated sentence, exceeded context window size.
 2024-01-10 13:31:40,563 - DEBUG - Truncated sentence, exceeded context window size.
 2024-01-10 13:31:40,584 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-10 16:20:31,676 - DEBUG - Read all Unix Words
+2024-01-10 16:20:59,873 - DEBUG - Added book REUTERS_NEWS.txt
+2024-01-10 16:20:59,909 - DEBUG - Updated pickled file.
+2024-01-10 16:21:01,798 - DEBUG - Added book babylons_ashes.txt
+2024-01-10 16:21:01,828 - DEBUG - Updated pickled file.
+2024-01-10 16:21:03,737 - DEBUG - Added book calibans_war.txt
+2024-01-10 16:21:03,766 - DEBUG - Updated pickled file.
+2024-01-10 16:21:05,040 - DEBUG - Added book blood_of_olympus.txt
+2024-01-10 16:21:05,075 - DEBUG - Updated pickled file.
+2024-01-10 16:21:06,572 - DEBUG - Added book house_of_hades.txt
+2024-01-10 16:21:06,603 - DEBUG - Updated pickled file.
+2024-01-10 16:21:08,074 - DEBUG - Added book mark_of_athena.txt
+2024-01-10 16:21:08,115 - DEBUG - Updated pickled file.
+2024-01-10 16:21:09,134 - DEBUG - Added book percy_jackson_and_the_lightning_thief.txt
+2024-01-10 16:21:09,167 - DEBUG - Updated pickled file.
+2024-01-10 16:21:10,821 - DEBUG - Added book abbaddons_gate.txt
+2024-01-10 16:21:10,854 - DEBUG - Updated pickled file.
+2024-01-10 16:21:11,628 - DEBUG - Added book Catcher-in-the-Rye.txt
+2024-01-10 16:21:11,663 - DEBUG - Updated pickled file.
+2024-01-10 16:21:13,530 - DEBUG - Added book cibola_burn.txt
+2024-01-10 16:21:13,589 - DEBUG - Updated pickled file.
+2024-01-10 16:21:14,861 - DEBUG - Added book jane-austen-pride-prejudice.txt
+2024-01-10 16:21:14,897 - DEBUG - Updated pickled file.
+2024-01-10 16:21:16,573 - DEBUG - Added book leviathan_wakes.txt
+2024-01-10 16:21:16,628 - DEBUG - Updated pickled file.
+2024-01-10 16:21:18,250 - DEBUG - Added book nemesis_games.txt
+2024-01-10 16:21:18,298 - DEBUG - Updated pickled file.
+2024-01-10 16:21:20,078 - DEBUG - Added book persepolis_rising.txt
+2024-01-10 16:21:20,122 - DEBUG - Updated pickled file.
+2024-01-10 16:21:20,652 - DEBUG - Added book the_great_gatsby.txt
+2024-01-10 16:21:20,692 - DEBUG - Updated pickled file.
+2024-01-10 16:21:21,724 - DEBUG - Added book to_kill_a_mockingbird.txt
+2024-01-10 16:21:21,770 - DEBUG - Updated pickled file.
+2024-01-10 16:21:21,770 - INFO - Added all books.
+2024-01-10 16:21:24,910 - INFO - Wrote common_sense_qa words to pickle
+2024-01-10 16:22:08,810 - INFO - Wrote trivia_q_a words to pickle
+2024-01-10 16:22:46,892 - INFO - Wrote squad_web_qa words to pickle
+2024-01-10 16:22:47,255 - INFO - Updated vocabulary with min_count
+2024-01-10 16:22:47,255 - INFO - Vocabulary Created successfully with 74441 words.
+2024-01-10 16:24:06,767 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-10 16:24:06,768 - INFO - Vocabulary loaded successfully with 74441 words.
+2024-01-10 16:24:06,859 - DEBUG - CACHEDIR=/Users/srikamal/.matplotlib
+2024-01-10 16:24:06,865 - DEBUG - Using fontManager instance from /Users/srikamal/.matplotlib/fontlist-v330.json
+2024-01-10 16:24:07,301 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-10 16:24:07,301 - INFO - Vocabulary loaded successfully with 74441 words.
+2024-01-10 16:24:07,375 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-10 16:24:07,375 - INFO - Vocabulary loaded successfully with 74441 words.
+2024-01-10 16:24:07,375 - INFO - Running on cpu
+2024-01-10 16:24:08,887 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-10 16:24:08,887 - INFO - Vocabulary loaded successfully with 74441 words.
+2024-01-10 16:24:08,888 - INFO - Model has 97330889 parameters.
+2024-01-10 16:24:08,888 - INFO - Started training on ../Datasets/Books/calibans_war.txt
+2024-01-10 16:24:11,746 - INFO - Found 186092 words in book
+2024-01-10 16:25:12,207 - INFO - Generated and shuffled 1488480 sequences for book calibans_war.txt
+2024-01-10 16:25:12,248 - DEBUG - Obtained sequences for book
+2024-01-10 16:28:53,680 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-10 16:28:53,680 - INFO - Vocabulary loaded successfully with 74441 words.
+2024-01-10 16:28:53,766 - DEBUG - CACHEDIR=/Users/srikamal/.matplotlib
+2024-01-10 16:28:53,769 - DEBUG - Using fontManager instance from /Users/srikamal/.matplotlib/fontlist-v330.json
+2024-01-10 16:28:54,061 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-10 16:28:54,061 - INFO - Vocabulary loaded successfully with 74441 words.
+2024-01-10 16:28:54,122 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-10 16:28:54,122 - INFO - Vocabulary loaded successfully with 74441 words.
+2024-01-10 16:28:54,123 - INFO - Running on cpu
+2024-01-10 16:28:55,129 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-10 16:28:55,129 - INFO - Vocabulary loaded successfully with 74441 words.
+2024-01-10 16:28:55,130 - INFO - Model has 97330889 parameters.
+2024-01-10 16:28:55,131 - INFO - Started training on ../Datasets/Books/calibans_war.txt
+2024-01-10 16:28:57,556 - INFO - Found 186092 words in book
+2024-01-10 16:29:19,132 - INFO - Generated and shuffled 744256 sequences for book calibans_war.txt
+2024-01-10 16:29:19,150 - DEBUG - Obtained sequences for book
+2024-01-10 16:30:31,319 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-10 16:30:31,319 - INFO - Vocabulary loaded successfully with 74441 words.
+2024-01-10 16:30:31,456 - DEBUG - CACHEDIR=/Users/srikamal/.matplotlib
+2024-01-10 16:30:31,463 - DEBUG - Using fontManager instance from /Users/srikamal/.matplotlib/fontlist-v330.json
+2024-01-10 16:30:32,017 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-10 16:30:32,017 - INFO - Vocabulary loaded successfully with 74441 words.
+2024-01-10 16:30:32,082 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-10 16:30:32,082 - INFO - Vocabulary loaded successfully with 74441 words.
+2024-01-10 16:30:32,083 - INFO - Running on cpu
+2024-01-10 16:30:33,823 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-10 16:30:33,824 - INFO - Vocabulary loaded successfully with 74441 words.
+2024-01-10 16:30:33,836 - INFO - Model has 97330889 parameters.
+2024-01-10 16:30:33,839 - INFO - Started training on ../Datasets/Books/calibans_war.txt
+2024-01-10 16:30:40,993 - INFO - Found 186092 words in book
+2024-01-10 16:31:31,008 - INFO - Generated and shuffled 744256 sequences for book calibans_war.txt
+2024-01-10 16:31:31,028 - DEBUG - Obtained sequences for book
+2024-01-10 16:35:00,539 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-10 16:35:00,540 - INFO - Vocabulary loaded successfully with 74441 words.
+2024-01-10 16:35:00,642 - DEBUG - CACHEDIR=/Users/srikamal/.matplotlib
+2024-01-10 16:35:00,648 - DEBUG - Using fontManager instance from /Users/srikamal/.matplotlib/fontlist-v330.json
+2024-01-10 16:35:01,161 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-10 16:35:01,161 - INFO - Vocabulary loaded successfully with 74441 words.
+2024-01-10 16:35:01,218 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-10 16:35:01,219 - INFO - Vocabulary loaded successfully with 74441 words.
+2024-01-10 16:35:01,219 - INFO - Running on cpu
+2024-01-10 16:35:26,778 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-10 16:35:26,778 - INFO - Vocabulary loaded successfully with 74441 words.
+2024-01-10 16:35:26,884 - DEBUG - CACHEDIR=/Users/srikamal/.matplotlib
+2024-01-10 16:35:26,889 - DEBUG - Using fontManager instance from /Users/srikamal/.matplotlib/fontlist-v330.json
+2024-01-10 16:35:27,397 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-10 16:35:27,397 - INFO - Vocabulary loaded successfully with 74441 words.
+2024-01-10 16:35:27,442 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-10 16:35:27,443 - INFO - Vocabulary loaded successfully with 74441 words.
+2024-01-10 16:35:51,294 - INFO - Running on cpu
+2024-01-10 16:35:59,732 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-10 16:35:59,732 - INFO - Vocabulary loaded successfully with 74441 words.
+2024-01-10 16:37:33,522 - INFO - Model has 97330889 parameters.
+2024-01-10 16:37:37,298 - INFO - Started training on ../Datasets/Books/calibans_war.txt
+2024-01-10 16:37:51,568 - INFO - Found 186092 words in book
+2024-01-10 16:38:31,898 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-10 16:38:31,898 - INFO - Vocabulary loaded successfully with 74441 words.
+2024-01-10 16:38:32,013 - DEBUG - CACHEDIR=/Users/srikamal/.matplotlib
+2024-01-10 16:38:32,021 - DEBUG - Using fontManager instance from /Users/srikamal/.matplotlib/fontlist-v330.json
+2024-01-10 16:38:32,635 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-10 16:38:32,635 - INFO - Vocabulary loaded successfully with 74441 words.
+2024-01-10 16:38:32,704 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-10 16:38:32,704 - INFO - Vocabulary loaded successfully with 74441 words.
+2024-01-10 16:38:36,295 - INFO - Running on cpu
+2024-01-10 16:38:39,609 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-10 16:38:39,609 - INFO - Vocabulary loaded successfully with 74441 words.
+2024-01-10 16:38:41,214 - INFO - Model has 97330889 parameters.
+2024-01-10 16:38:42,053 - INFO - Started training on ../Datasets/Books/calibans_war.txt
+2024-01-10 16:39:29,413 - INFO - Found 186092 words in book
+2024-01-10 16:40:59,777 - INFO - Generated and shuffled 744256 sequences for book calibans_war.txt
+2024-01-10 16:41:11,055 - DEBUG - Obtained sequences for book
+2024-01-10 16:44:23,492 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-10 16:44:23,492 - INFO - Vocabulary loaded successfully with 74441 words.
+2024-01-10 16:44:23,647 - DEBUG - CACHEDIR=/Users/srikamal/.matplotlib
+2024-01-10 16:44:23,654 - DEBUG - Using fontManager instance from /Users/srikamal/.matplotlib/fontlist-v330.json
+2024-01-10 16:44:24,281 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-10 16:44:24,281 - INFO - Vocabulary loaded successfully with 74441 words.
+2024-01-10 16:44:24,338 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-10 16:44:24,338 - INFO - Vocabulary loaded successfully with 74441 words.
+2024-01-10 16:44:28,686 - INFO - Running on cpu
+2024-01-10 16:44:34,900 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-10 16:44:34,900 - INFO - Vocabulary loaded successfully with 74441 words.
+2024-01-10 16:44:37,768 - INFO - Model has 97330889 parameters.
+2024-01-10 16:44:38,492 - INFO - Started training on ../Datasets/Books/calibans_war.txt
+2024-01-10 16:44:50,434 - INFO - Found 186092 words in book
+2024-01-10 16:45:57,629 - INFO - Generated and shuffled 744256 sequences for book calibans_war.txt
+2024-01-10 17:29:03,789 - DEBUG - Obtained sequences for book
+2024-01-10 17:48:40,560 - DEBUG - Read all Unix Words
+2024-01-10 17:48:59,431 - DEBUG - Added book REUTERS_NEWS.txt
+2024-01-10 17:48:59,458 - DEBUG - Updated pickled file.
+2024-01-10 17:49:00,770 - DEBUG - Added book babylons_ashes.txt
+2024-01-10 17:49:00,796 - DEBUG - Updated pickled file.
+2024-01-10 17:49:02,020 - DEBUG - Added book calibans_war.txt
+2024-01-10 17:49:02,044 - DEBUG - Updated pickled file.
+2024-01-10 17:49:02,943 - DEBUG - Added book blood_of_olympus.txt
+2024-01-10 17:49:02,970 - DEBUG - Updated pickled file.
+2024-01-10 17:49:04,073 - DEBUG - Added book house_of_hades.txt
+2024-01-10 17:49:04,113 - DEBUG - Updated pickled file.
+2024-01-10 17:49:05,294 - DEBUG - Added book mark_of_athena.txt
+2024-01-10 17:49:05,333 - DEBUG - Updated pickled file.
+2024-01-10 17:49:06,103 - DEBUG - Added book percy_jackson_and_the_lightning_thief.txt
+2024-01-10 17:49:06,136 - DEBUG - Updated pickled file.
+2024-01-10 17:49:07,371 - DEBUG - Added book abbaddons_gate.txt
+2024-01-10 17:49:07,399 - DEBUG - Updated pickled file.
+2024-01-10 17:49:08,062 - DEBUG - Added book Catcher-in-the-Rye.txt
+2024-01-10 17:49:08,096 - DEBUG - Updated pickled file.
+2024-01-10 17:49:09,491 - DEBUG - Added book cibola_burn.txt
+2024-01-10 17:49:09,527 - DEBUG - Updated pickled file.
+2024-01-10 17:49:10,403 - DEBUG - Added book jane-austen-pride-prejudice.txt
+2024-01-10 17:49:10,432 - DEBUG - Updated pickled file.
+2024-01-10 17:49:11,657 - DEBUG - Added book leviathan_wakes.txt
+2024-01-10 17:49:11,693 - DEBUG - Updated pickled file.
+2024-01-10 17:49:12,825 - DEBUG - Added book nemesis_games.txt
+2024-01-10 17:49:12,862 - DEBUG - Updated pickled file.
+2024-01-10 17:49:14,165 - DEBUG - Added book persepolis_rising.txt
+2024-01-10 17:49:14,201 - DEBUG - Updated pickled file.
+2024-01-10 17:49:14,586 - DEBUG - Added book the_great_gatsby.txt
+2024-01-10 17:49:14,626 - DEBUG - Updated pickled file.
+2024-01-10 17:49:15,335 - DEBUG - Added book to_kill_a_mockingbird.txt
+2024-01-10 17:49:15,393 - DEBUG - Updated pickled file.
+2024-01-10 17:49:15,393 - INFO - Added all books.
+2024-01-10 17:49:17,600 - INFO - Wrote common_sense_qa words to pickle
+2024-01-10 17:49:49,257 - INFO - Wrote trivia_q_a words to pickle
+2024-01-10 17:50:16,249 - INFO - Wrote squad_web_qa words to pickle
+2024-01-10 17:50:16,617 - INFO - Updated vocabulary with min_count
+2024-01-10 17:50:16,618 - INFO - Vocabulary Created successfully with 74441 words.
+2024-01-10 17:50:49,923 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-10 17:50:49,924 - INFO - Vocabulary loaded successfully with 74441 words.
+2024-01-10 17:50:49,999 - DEBUG - CACHEDIR=/Users/srikamal/.matplotlib
+2024-01-10 17:50:50,004 - DEBUG - Using fontManager instance from /Users/srikamal/.matplotlib/fontlist-v330.json
+2024-01-10 17:50:50,403 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-10 17:50:50,403 - INFO - Vocabulary loaded successfully with 74441 words.
+2024-01-10 17:50:50,464 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-10 17:50:50,464 - INFO - Vocabulary loaded successfully with 74441 words.
+2024-01-10 17:50:50,464 - INFO - Running on cpu
+2024-01-10 17:50:51,572 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-10 17:50:51,572 - INFO - Vocabulary loaded successfully with 74441 words.
+2024-01-10 17:50:51,573 - INFO - Model has 97330889 parameters.
+2024-01-10 17:50:51,574 - INFO - Started training on ../Datasets/Books/calibans_war.txt
+2024-01-10 17:50:53,694 - INFO - Found 186092 words in book
+2024-01-10 17:51:14,143 - INFO - Generated and shuffled 744256 sequences for book calibans_war.txt
+2024-01-10 17:51:14,162 - DEBUG - Obtained sequences for book
+2024-01-10 17:55:14,334 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-10 17:55:14,334 - INFO - Vocabulary loaded successfully with 74441 words.
+2024-01-10 17:55:14,394 - DEBUG - CACHEDIR=/Users/srikamal/.matplotlib
+2024-01-10 17:55:14,397 - DEBUG - Using fontManager instance from /Users/srikamal/.matplotlib/fontlist-v330.json
+2024-01-10 17:55:14,662 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-10 17:55:14,662 - INFO - Vocabulary loaded successfully with 74441 words.
+2024-01-10 17:55:14,714 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-10 17:55:14,714 - INFO - Vocabulary loaded successfully with 74441 words.
+2024-01-10 17:55:14,714 - INFO - Running on cpu
+2024-01-10 17:55:15,669 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-10 17:55:15,670 - INFO - Vocabulary loaded successfully with 74441 words.
+2024-01-10 17:55:15,671 - INFO - Model has 97330889 parameters.
+2024-01-10 17:55:15,672 - INFO - Started training on ../Datasets/Books/calibans_war.txt
+2024-01-10 17:55:17,766 - INFO - Found 186092 words in book
+2024-01-10 17:55:38,117 - INFO - Generated and shuffled 744256 sequences for book calibans_war.txt
+2024-01-10 17:55:38,136 - DEBUG - Obtained sequences for book
+2024-01-10 17:55:38,137 - INFO - Successfully trained on ../Datasets/Books/calibans_war.txt
+2024-01-10 17:55:38,137 - INFO - Started training on ../Datasets/Books/REUTERS_NEWS.txt../Datasets/Books/blood_of_olympus.txt
+2024-01-10 17:55:38,137 - WARNING - File not found, returning empty list.
+2024-01-10 17:55:38,137 - DEBUG - Obtained sequences for book
+2024-01-10 17:55:38,151 - INFO - Successfully trained on ../Datasets/Books/REUTERS_NEWS.txt../Datasets/Books/blood_of_olympus.txt
+2024-01-10 17:55:38,151 - INFO - Started training on ../Datasets/Books/house_of_hades.txt
+2024-01-10 17:55:38,989 - INFO - Found 145354 words in book
+2024-01-10 17:55:55,013 - INFO - Generated and shuffled 581312 sequences for book house_of_hades.txt
+2024-01-10 17:55:55,028 - DEBUG - Obtained sequences for book
+2024-01-10 17:55:55,029 - INFO - Successfully trained on ../Datasets/Books/house_of_hades.txt
+2024-01-10 17:55:55,029 - INFO - Started training on ../Datasets/Books/mark_of_athena.txt
+2024-01-10 17:55:55,932 - INFO - Found 147591 words in book
+2024-01-10 17:56:12,266 - INFO - Generated and shuffled 590240 sequences for book mark_of_athena.txt
+2024-01-10 17:56:12,280 - DEBUG - Obtained sequences for book
+2024-01-10 17:56:12,288 - INFO - Successfully trained on ../Datasets/Books/mark_of_athena.txt
+2024-01-10 17:56:12,288 - INFO - Started training on ../Datasets/Books/percy_jackson_and_the_lightning_thief.txt
+2024-01-10 17:56:12,849 - INFO - Found 98466 words in book
+2024-01-10 17:56:39,010 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-10 17:56:39,010 - INFO - Vocabulary loaded successfully with 74441 words.
+2024-01-10 17:56:39,061 - DEBUG - CACHEDIR=/Users/srikamal/.matplotlib
+2024-01-10 17:56:39,064 - DEBUG - Using fontManager instance from /Users/srikamal/.matplotlib/fontlist-v330.json
+2024-01-10 17:56:39,329 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-10 17:56:39,329 - INFO - Vocabulary loaded successfully with 74441 words.
+2024-01-10 17:56:39,382 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-10 17:56:39,383 - INFO - Vocabulary loaded successfully with 74441 words.
+2024-01-10 17:56:39,383 - INFO - Running on cpu
+2024-01-10 17:56:40,330 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-10 17:56:40,333 - INFO - Vocabulary loaded successfully with 74441 words.
+2024-01-10 17:56:40,334 - INFO - Model has 97330889 parameters.
+2024-01-10 17:56:40,335 - INFO - Started training on ../Datasets/Books/calibans_war.txt
+2024-01-10 17:56:42,451 - INFO - Found 186092 words in book
+2024-01-10 17:57:02,955 - INFO - Generated and shuffled 744256 sequences for book calibans_war.txt
+2024-01-10 17:57:02,972 - DEBUG - Obtained sequences for book
+2024-01-10 17:57:02,972 - INFO - Successfully trained on ../Datasets/Books/calibans_war.txt
+2024-01-10 17:57:02,972 - INFO - Started training on ../Datasets/Books/REUTERS_NEWS.txt
+2024-01-10 17:57:17,120 - INFO - Found 2510652 words in book
+2024-01-10 18:02:06,563 - INFO - Generated and shuffled 1500000 sequences for book REUTERS_NEWS.txt
+2024-01-10 18:02:06,939 - DEBUG - Obtained sequences for book
+2024-01-10 18:02:06,944 - INFO - Successfully trained on ../Datasets/Books/REUTERS_NEWS.txt
+2024-01-10 18:02:06,945 - INFO - Started training on ../Datasets/Books/blood_of_olympus.txt
+2024-01-10 18:02:07,779 - INFO - Found 125060 words in book
+2024-01-10 18:02:20,888 - INFO - Generated and shuffled 500128 sequences for book blood_of_olympus.txt
+2024-01-10 18:02:20,900 - DEBUG - Obtained sequences for book
+2024-01-10 18:02:21,070 - INFO - Successfully trained on ../Datasets/Books/blood_of_olympus.txt
+2024-01-10 18:02:21,070 - INFO - Started training on ../Datasets/Books/house_of_hades.txt
+2024-01-10 18:02:21,901 - INFO - Found 145354 words in book
+2024-01-10 18:02:37,164 - INFO - Generated and shuffled 581312 sequences for book house_of_hades.txt
+2024-01-10 18:02:37,174 - DEBUG - Obtained sequences for book
+2024-01-10 18:02:37,183 - INFO - Successfully trained on ../Datasets/Books/house_of_hades.txt
+2024-01-10 18:02:37,183 - INFO - Started training on ../Datasets/Books/mark_of_athena.txt
+2024-01-10 18:02:37,996 - INFO - Found 147591 words in book
+2024-01-10 18:02:53,506 - INFO - Generated and shuffled 590240 sequences for book mark_of_athena.txt
+2024-01-10 18:02:53,520 - DEBUG - Obtained sequences for book
+2024-01-10 18:02:53,528 - INFO - Successfully trained on ../Datasets/Books/mark_of_athena.txt
+2024-01-10 18:02:53,529 - INFO - Started training on ../Datasets/Books/percy_jackson_and_the_lightning_thief.txt
+2024-01-10 18:02:54,066 - INFO - Found 98466 words in book
+2024-01-10 18:03:04,500 - INFO - Generated and shuffled 393760 sequences for book percy_jackson_and_the_lightning_thief.txt
+2024-01-10 18:03:04,509 - DEBUG - Obtained sequences for book
+2024-01-10 18:03:04,519 - INFO - Successfully trained on ../Datasets/Books/percy_jackson_and_the_lightning_thief.txt
+2024-01-10 18:03:04,519 - INFO - Started training on ../Datasets/Books/abbaddons_gate.txt
+2024-01-10 18:03:05,493 - INFO - Found 179566 words in book
+2024-01-10 18:03:24,564 - INFO - Generated and shuffled 718144 sequences for book abbaddons_gate.txt
+2024-01-10 18:03:24,580 - DEBUG - Obtained sequences for book
+2024-01-10 18:03:24,587 - INFO - Successfully trained on ../Datasets/Books/abbaddons_gate.txt
+2024-01-10 18:03:24,588 - INFO - Started training on ../Datasets/Books/babylons_ashes.txt
+2024-01-10 18:03:25,544 - INFO - Found 182291 words in book
+2024-01-10 18:03:44,708 - INFO - Generated and shuffled 729056 sequences for book babylons_ashes.txt
+2024-01-10 18:03:44,724 - DEBUG - Obtained sequences for book
+2024-01-10 18:03:44,736 - INFO - Successfully trained on ../Datasets/Books/babylons_ashes.txt
+2024-01-10 18:03:44,736 - INFO - Started training on ../Datasets/Books/Catcher-in-the-Rye.txt
+2024-01-10 18:03:45,181 - INFO - Found 80319 words in book
+2024-01-10 18:03:53,554 - INFO - Generated and shuffled 321152 sequences for book Catcher-in-the-Rye.txt
+2024-01-10 18:03:53,563 - DEBUG - Obtained sequences for book
+2024-01-10 18:03:53,577 - INFO - Successfully trained on ../Datasets/Books/Catcher-in-the-Rye.txt
+2024-01-10 18:03:53,577 - INFO - Started training on ../Datasets/Books/cibola_burn.txt
+2024-01-10 18:03:54,554 - INFO - Found 186757 words in book
+2024-01-10 18:04:14,216 - INFO - Generated and shuffled 746912 sequences for book cibola_burn.txt
+2024-01-10 18:04:14,232 - DEBUG - Obtained sequences for book
+2024-01-10 18:04:14,239 - INFO - Successfully trained on ../Datasets/Books/cibola_burn.txt
+2024-01-10 18:04:14,239 - INFO - Started training on ../Datasets/Books/jane-austen-pride-prejudice.txt
+2024-01-10 18:04:14,926 - INFO - Found 128408 words in book
+2024-01-10 18:04:28,460 - INFO - Generated and shuffled 513504 sequences for book jane-austen-pride-prejudice.txt
+2024-01-10 18:04:28,474 - DEBUG - Obtained sequences for book
+2024-01-10 18:04:28,486 - INFO - Successfully trained on ../Datasets/Books/jane-austen-pride-prejudice.txt
+2024-01-10 18:04:28,486 - INFO - Started training on ../Datasets/Books/leviathan_wakes.txt
+2024-01-10 18:04:29,454 - INFO - Found 181328 words in book
+2024-01-10 18:04:48,510 - INFO - Generated and shuffled 725184 sequences for book leviathan_wakes.txt
+2024-01-10 18:04:48,527 - DEBUG - Obtained sequences for book
+2024-01-10 18:04:48,537 - INFO - Successfully trained on ../Datasets/Books/leviathan_wakes.txt
+2024-01-10 18:04:48,537 - INFO - Started training on ../Datasets/Books/nemesis_games.txt
+2024-01-10 18:04:49,467 - INFO - Found 175939 words in book
+2024-01-10 18:05:07,963 - INFO - Generated and shuffled 703648 sequences for book nemesis_games.txt
+2024-01-10 18:05:07,977 - DEBUG - Obtained sequences for book
+2024-01-10 18:05:07,989 - INFO - Successfully trained on ../Datasets/Books/nemesis_games.txt
+2024-01-10 18:05:07,989 - INFO - Started training on ../Datasets/Books/persepolis_rising.txt
+2024-01-10 18:05:09,005 - INFO - Found 192125 words in book
+2024-01-10 18:05:29,403 - INFO - Generated and shuffled 768384 sequences for book persepolis_rising.txt
+2024-01-10 18:05:29,418 - DEBUG - Obtained sequences for book
+2024-01-10 18:05:29,430 - INFO - Successfully trained on ../Datasets/Books/persepolis_rising.txt
+2024-01-10 18:05:29,430 - INFO - Started training on ../Datasets/Books/the_great_gatsby.txt
+2024-01-10 18:05:29,728 - INFO - Found 51623 words in book
+2024-01-10 18:05:35,192 - INFO - Generated and shuffled 206368 sequences for book the_great_gatsby.txt
+2024-01-10 18:05:35,197 - DEBUG - Obtained sequences for book
+2024-01-10 18:05:35,211 - INFO - Successfully trained on ../Datasets/Books/the_great_gatsby.txt
+2024-01-10 18:05:35,211 - INFO - Started training on ../Datasets/Books/to_kill_a_mockingbird.txt
+2024-01-10 18:05:35,792 - INFO - Found 107406 words in book
+2024-01-10 18:05:47,052 - INFO - Generated and shuffled 429504 sequences for book to_kill_a_mockingbird.txt
+2024-01-10 18:05:47,063 - DEBUG - Obtained sequences for book
+2024-01-10 18:05:47,067 - INFO - Successfully trained on ../Datasets/Books/to_kill_a_mockingbird.txt
+2024-01-10 18:05:47,067 - INFO - Started training on ../Datasets/QA/squad_web.json
+2024-01-10 18:06:59,049 - INFO - Generated and shuffled 1018333 sequences for SQuAD dataset
+2024-01-10 18:06:59,363 - DEBUG - Obtained sequences for json file ../Datasets/QA/squad_web.json
+2024-01-10 18:06:59,374 - INFO - Successfully trained on ../Datasets/QA/squad_web.json
+2024-01-10 18:06:59,375 - INFO - Started training on ../Datasets/QA/trivia_q_a.json
+2024-01-10 18:08:04,968 - INFO - Generated and shuffled 1397536 sequences for trivia dataset
+2024-01-10 18:08:05,049 - DEBUG - Obtained sequences for json file ../Datasets/QA/trivia_q_a.json
+2024-01-10 18:08:05,067 - INFO - Successfully trained on ../Datasets/QA/trivia_q_a.json
+2024-01-10 18:08:05,067 - INFO - Started training on ../Datasets/QA/common_sense_q_a.json
+2024-01-10 18:08:10,795 - INFO - Generated and shuffled 125052 sequences for common sense dataset
+2024-01-10 18:08:10,799 - DEBUG - Obtained sequences for json file ../Datasets/QA/common_sense_q_a.json
+2024-01-10 18:08:10,823 - INFO - Successfully trained on ../Datasets/QA/common_sense_q_a.json
+2024-01-11 16:29:05,532 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-11 16:29:05,532 - INFO - Vocabulary loaded successfully with 74441 words.
+2024-01-11 16:29:05,617 - DEBUG - CACHEDIR=/Users/srikamal/.matplotlib
+2024-01-11 16:29:05,623 - DEBUG - Using fontManager instance from /Users/srikamal/.matplotlib/fontlist-v330.json
+2024-01-11 16:29:06,016 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-11 16:29:06,017 - INFO - Vocabulary loaded successfully with 74441 words.
+2024-01-11 16:29:06,092 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-11 16:29:06,092 - INFO - Vocabulary loaded successfully with 74441 words.
+2024-01-11 16:29:06,093 - INFO - Running on cpu
+2024-01-11 16:29:07,532 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-11 16:29:07,532 - INFO - Vocabulary loaded successfully with 74441 words.
+2024-01-11 16:29:07,533 - INFO - Model has 97330889 parameters.
+2024-01-11 16:29:07,535 - INFO - Started training on ../Datasets/Books/calibans_war.txt
+2024-01-11 16:29:10,525 - INFO - Found 186092 words in book
+2024-01-11 16:29:35,611 - INFO - Generated and shuffled 744256 sequences for book calibans_war.txt
+2024-01-11 16:29:35,631 - DEBUG - Obtained sequences for book
+2024-01-11 16:29:35,631 - INFO - Successfully trained on ../Datasets/Books/calibans_war.txt
+2024-01-11 16:29:35,631 - INFO - Started training on ../Datasets/Books/REUTERS_NEWS.txt
+2024-01-11 16:29:52,087 - INFO - Found 2510652 words in book
+2024-01-11 16:38:11,809 - INFO - Generated and shuffled 10042496 sequences for book REUTERS_NEWS.txt
+2024-01-11 16:38:12,394 - DEBUG - Obtained sequences for book
+2024-01-11 16:38:12,400 - INFO - Successfully trained on ../Datasets/Books/REUTERS_NEWS.txt
+2024-01-11 16:38:12,401 - INFO - Started training on ../Datasets/Books/blood_of_olympus.txt
+2024-01-11 16:38:13,663 - INFO - Found 125060 words in book
+2024-01-11 16:38:35,981 - INFO - Generated and shuffled 500128 sequences for book blood_of_olympus.txt
+2024-01-11 16:38:35,995 - DEBUG - Obtained sequences for book
+2024-01-11 16:38:36,206 - INFO - Successfully trained on ../Datasets/Books/blood_of_olympus.txt
+2024-01-11 16:38:36,206 - INFO - Started training on ../Datasets/Books/house_of_hades.txt
+2024-01-11 16:38:37,425 - INFO - Found 145354 words in book
+2024-01-11 16:39:00,497 - INFO - Generated and shuffled 581312 sequences for book house_of_hades.txt
+2024-01-11 16:39:00,507 - DEBUG - Obtained sequences for book
+2024-01-11 16:39:00,517 - INFO - Successfully trained on ../Datasets/Books/house_of_hades.txt
+2024-01-11 16:39:00,518 - INFO - Started training on ../Datasets/Books/mark_of_athena.txt
+2024-01-11 16:39:01,613 - INFO - Found 147591 words in book
+2024-01-11 16:39:23,169 - INFO - Generated and shuffled 590240 sequences for book mark_of_athena.txt
+2024-01-11 16:39:23,182 - DEBUG - Obtained sequences for book
+2024-01-11 16:39:23,190 - INFO - Successfully trained on ../Datasets/Books/mark_of_athena.txt
+2024-01-11 16:39:23,190 - INFO - Started training on ../Datasets/Books/percy_jackson_and_the_lightning_thief.txt
+2024-01-11 16:39:23,868 - INFO - Found 98466 words in book
+2024-01-11 16:39:39,481 - INFO - Generated and shuffled 393760 sequences for book percy_jackson_and_the_lightning_thief.txt
+2024-01-11 16:39:39,494 - DEBUG - Obtained sequences for book
+2024-01-11 16:39:39,506 - INFO - Successfully trained on ../Datasets/Books/percy_jackson_and_the_lightning_thief.txt
+2024-01-11 16:39:39,506 - INFO - Started training on ../Datasets/Books/abbaddons_gate.txt
+2024-01-11 16:39:40,986 - INFO - Found 179566 words in book
+2024-01-11 16:40:16,440 - INFO - Generated and shuffled 718144 sequences for book abbaddons_gate.txt
+2024-01-11 16:40:16,463 - DEBUG - Obtained sequences for book
+2024-01-11 16:40:16,474 - INFO - Successfully trained on ../Datasets/Books/abbaddons_gate.txt
+2024-01-11 16:40:16,474 - INFO - Started training on ../Datasets/Books/babylons_ashes.txt
+2024-01-11 16:40:18,338 - INFO - Found 182291 words in book
+2024-01-11 16:40:59,821 - INFO - Generated and shuffled 729056 sequences for book babylons_ashes.txt
+2024-01-11 16:40:59,851 - DEBUG - Obtained sequences for book
+2024-01-11 16:40:59,872 - INFO - Successfully trained on ../Datasets/Books/babylons_ashes.txt
+2024-01-11 16:40:59,872 - INFO - Started training on ../Datasets/Books/Catcher-in-the-Rye.txt
+2024-01-11 16:41:00,809 - INFO - Found 80319 words in book
+2024-01-11 16:41:19,203 - INFO - Generated and shuffled 321152 sequences for book Catcher-in-the-Rye.txt
+2024-01-11 16:41:19,215 - DEBUG - Obtained sequences for book
+2024-01-11 16:41:19,235 - INFO - Successfully trained on ../Datasets/Books/Catcher-in-the-Rye.txt
+2024-01-11 16:41:19,236 - INFO - Started training on ../Datasets/Books/cibola_burn.txt
+2024-01-11 16:41:21,201 - INFO - Found 186757 words in book
+2024-01-11 16:41:57,191 - INFO - Generated and shuffled 746912 sequences for book cibola_burn.txt
+2024-01-11 16:41:57,212 - DEBUG - Obtained sequences for book
+2024-01-11 16:41:57,220 - INFO - Successfully trained on ../Datasets/Books/cibola_burn.txt
+2024-01-11 16:41:57,220 - INFO - Started training on ../Datasets/Books/jane-austen-pride-prejudice.txt
+2024-01-11 16:41:58,159 - INFO - Found 128408 words in book
+2024-01-11 16:42:18,802 - INFO - Generated and shuffled 513504 sequences for book jane-austen-pride-prejudice.txt
+2024-01-11 16:42:18,818 - DEBUG - Obtained sequences for book
+2024-01-11 16:42:18,834 - INFO - Successfully trained on ../Datasets/Books/jane-austen-pride-prejudice.txt
+2024-01-11 16:42:18,834 - INFO - Started training on ../Datasets/Books/leviathan_wakes.txt
+2024-01-11 16:42:20,113 - INFO - Found 181328 words in book
+2024-01-11 16:42:45,431 - INFO - Generated and shuffled 725184 sequences for book leviathan_wakes.txt
+2024-01-11 16:42:45,450 - DEBUG - Obtained sequences for book
+2024-01-11 16:42:45,462 - INFO - Successfully trained on ../Datasets/Books/leviathan_wakes.txt
+2024-01-11 16:42:45,462 - INFO - Started training on ../Datasets/Books/nemesis_games.txt
+2024-01-11 16:42:46,666 - INFO - Found 175939 words in book
+2024-01-11 16:43:12,437 - INFO - Generated and shuffled 703648 sequences for book nemesis_games.txt
+2024-01-11 16:43:12,458 - DEBUG - Obtained sequences for book
+2024-01-11 16:43:12,473 - INFO - Successfully trained on ../Datasets/Books/nemesis_games.txt
+2024-01-11 16:43:12,474 - INFO - Started training on ../Datasets/Books/persepolis_rising.txt
+2024-01-11 16:43:13,931 - INFO - Found 192125 words in book
+2024-01-11 16:43:43,077 - INFO - Generated and shuffled 768384 sequences for book persepolis_rising.txt
+2024-01-11 16:43:43,098 - DEBUG - Obtained sequences for book
+2024-01-11 16:43:43,114 - INFO - Successfully trained on ../Datasets/Books/persepolis_rising.txt
+2024-01-11 16:43:43,114 - INFO - Started training on ../Datasets/Books/the_great_gatsby.txt
+2024-01-11 16:43:43,475 - INFO - Found 51623 words in book
+2024-01-11 16:43:50,687 - INFO - Generated and shuffled 206368 sequences for book the_great_gatsby.txt
+2024-01-11 16:43:50,692 - DEBUG - Obtained sequences for book
+2024-01-11 16:43:50,708 - INFO - Successfully trained on ../Datasets/Books/the_great_gatsby.txt
+2024-01-11 16:43:50,709 - INFO - Started training on ../Datasets/Books/to_kill_a_mockingbird.txt
+2024-01-11 16:43:51,436 - INFO - Found 107406 words in book
+2024-01-11 16:44:06,448 - INFO - Generated and shuffled 429504 sequences for book to_kill_a_mockingbird.txt
+2024-01-11 16:44:06,460 - DEBUG - Obtained sequences for book
+2024-01-11 16:44:06,465 - INFO - Successfully trained on ../Datasets/Books/to_kill_a_mockingbird.txt
+2024-01-11 16:44:06,467 - INFO - Started training on ../Datasets/QA/squad_web.json
+2024-01-11 16:45:20,781 - INFO - Generated and shuffled 1018333 sequences for SQuAD dataset
+2024-01-11 16:45:21,029 - DEBUG - Obtained sequences for json file ../Datasets/QA/squad_web.json
+2024-01-11 16:45:21,040 - INFO - Successfully trained on ../Datasets/QA/squad_web.json
+2024-01-11 16:45:21,040 - INFO - Started training on ../Datasets/QA/trivia_q_a.json
+2024-01-11 16:46:45,566 - INFO - Generated and shuffled 1397536 sequences for trivia dataset
+2024-01-11 16:46:45,643 - DEBUG - Obtained sequences for json file ../Datasets/QA/trivia_q_a.json
+2024-01-11 16:46:45,663 - INFO - Successfully trained on ../Datasets/QA/trivia_q_a.json
+2024-01-11 16:46:45,663 - INFO - Started training on ../Datasets/QA/common_sense_q_a.json
+2024-01-11 16:46:53,428 - INFO - Generated and shuffled 125052 sequences for common sense dataset
+2024-01-11 16:46:53,430 - DEBUG - Obtained sequences for json file ../Datasets/QA/common_sense_q_a.json
+2024-01-11 16:46:53,452 - INFO - Successfully trained on ../Datasets/QA/common_sense_q_a.json
+2024-01-12 15:39:58,529 - DEBUG - Read all Unix Words
+2024-01-12 15:40:21,810 - DEBUG - Added book REUTERS_NEWS.txt
+2024-01-12 15:40:21,839 - DEBUG - Updated pickled file.
+2024-01-12 15:40:23,294 - DEBUG - Added book babylons_ashes.txt
+2024-01-12 15:40:23,319 - DEBUG - Updated pickled file.
+2024-01-12 15:40:24,768 - DEBUG - Added book calibans_war.txt
+2024-01-12 15:40:24,803 - DEBUG - Updated pickled file.
+2024-01-12 15:40:25,979 - DEBUG - Added book blood_of_olympus.txt
+2024-01-12 15:40:26,006 - DEBUG - Updated pickled file.
+2024-01-12 15:40:27,157 - DEBUG - Added book house_of_hades.txt
+2024-01-12 15:40:27,189 - DEBUG - Updated pickled file.
+2024-01-12 15:40:28,303 - DEBUG - Added book mark_of_athena.txt
+2024-01-12 15:40:28,331 - DEBUG - Updated pickled file.
+2024-01-12 15:40:28,988 - DEBUG - Added book percy_jackson_and_the_lightning_thief.txt
+2024-01-12 15:40:29,016 - DEBUG - Updated pickled file.
+2024-01-12 15:40:30,228 - DEBUG - Added book abbaddons_gate.txt
+2024-01-12 15:40:30,265 - DEBUG - Updated pickled file.
+2024-01-12 15:40:30,811 - DEBUG - Added book Catcher-in-the-Rye.txt
+2024-01-12 15:40:30,860 - DEBUG - Updated pickled file.
+2024-01-12 15:40:32,049 - DEBUG - Added book cibola_burn.txt
+2024-01-12 15:40:32,079 - DEBUG - Updated pickled file.
+2024-01-12 15:40:32,993 - DEBUG - Added book jane-austen-pride-prejudice.txt
+2024-01-12 15:40:33,022 - DEBUG - Updated pickled file.
+2024-01-12 15:40:34,257 - DEBUG - Added book leviathan_wakes.txt
+2024-01-12 15:40:34,296 - DEBUG - Updated pickled file.
+2024-01-12 15:40:35,439 - DEBUG - Added book nemesis_games.txt
+2024-01-12 15:40:35,473 - DEBUG - Updated pickled file.
+2024-01-12 15:40:36,725 - DEBUG - Added book persepolis_rising.txt
+2024-01-12 15:40:36,777 - DEBUG - Updated pickled file.
+2024-01-12 15:40:37,196 - DEBUG - Added book the_great_gatsby.txt
+2024-01-12 15:40:37,248 - DEBUG - Updated pickled file.
+2024-01-12 15:40:38,024 - DEBUG - Added book to_kill_a_mockingbird.txt
+2024-01-12 15:40:38,058 - DEBUG - Updated pickled file.
+2024-01-12 15:40:38,058 - INFO - Added all books.
+2024-01-12 15:40:40,385 - INFO - Wrote common_sense_qa words to pickle
+2024-01-12 15:41:12,680 - INFO - Wrote trivia_q_a words to pickle
+2024-01-12 15:41:46,015 - INFO - Wrote squad_web_qa words to pickle
+2024-01-12 15:41:46,407 - INFO - Updated vocabulary with min_count
+2024-01-12 15:41:46,408 - INFO - Vocabulary Created successfully with 74441 words.

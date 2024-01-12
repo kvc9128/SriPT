@@ -107,6 +107,7 @@ def create_vocab_from_scratch():
 	vocabulary = VOCAB("all_words", min_occurrence=2)
 	logger.debug(msg="Read all Unix Words")
 	books = [
+		"../Datasets/Books/REUTERS_NEWS.txt",
 		"../Datasets/Books/babylons_ashes.txt",
 		"../Datasets/Books/calibans_war.txt",
 		"../Datasets/Books/blood_of_olympus.txt",
@@ -121,8 +122,7 @@ def create_vocab_from_scratch():
 		"../Datasets/Books/nemesis_games.txt",
 		"../Datasets/Books/persepolis_rising.txt",
 		"../Datasets/Books/the_great_gatsby.txt",
-		"../Datasets/Books/to_kill_a_mockingbird.txt",
-		"../Datasets/Books/REUTERS_NEWS.txt"
+		"../Datasets/Books/to_kill_a_mockingbird.txt"
 	]
 
 	load_books(books, vocabulary)

@@ -16,7 +16,7 @@ class SelfAttention(nn.Module):  # This class is the self attention layer
 
 	def forward(self, x, mask):
 		"""
-	    Input is of shape [batch size, sequence_length, embedding_dimension]
+	    Input is of shape [batch size, sequence_length, EMBEDDING_DIMENSION]
 	    mask is to help us ignore the pad tokens and to white-out anything we haven't seen yet.
 
 	    mask is of shape batch_size, sequence length

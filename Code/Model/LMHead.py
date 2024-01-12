@@ -14,7 +14,7 @@ class LMHead(nn.Module):
 
 	# def forward(self, x):
 	# 	"""
-	#     x dimensions are: (batch_size, sequence_length, embedding_dimension)
+	#     x dimensions are: (batch_size, sequence_length, EMBEDDING_DIMENSION)
 	#     output dimensions are: (batch_size, sequence_length, number_of_tokens)
 	#
 	#     This version

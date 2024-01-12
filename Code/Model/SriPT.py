@@ -57,9 +57,9 @@ class SriPT(nn.Module):
 		)
 
 	def forward(self, x, mask):
-		# token_embeddings dimensions are: (batch_size, sequence_length, embedding_dimension)
+		# token_embeddings dimensions are: (batch_size, sequence_length, EMBEDDING_DIMENSION)
 		token_embeddings = self.token_embedding(x)
-		# positional_encoding dimensions are: (batch_size, sequence_length, embedding_dimension)
+		# positional_encoding dimensions are: (batch_size, sequence_length, EMBEDDING_DIMENSION)
 		position_encoded_tokens = self.positional_encoding[:token_embeddings.size(1), :] + token_embeddings
 		# Post embedding layer normalization
 		positional_encoding_normalized = self.layer_normalization(position_encoded_tokens)
