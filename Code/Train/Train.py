@@ -83,7 +83,7 @@ class Train:
 			epoch_loss = np.average(losses)
 			perplexity = torch.exp(torch.tensor(epoch_loss))
 			train_losses.append(epoch_loss)
-			logger.info('\tEpoch: ' + str(epoch) + ' Loss: ' + str(round(epoch_loss, 5)) + ' Perplexity: ' + str(round(perplexity, 5)))
+			logger.info('\tEpoch: ' + str(epoch) + ' Loss: ' + str(epoch_loss) + ' Perplexity: ' + str(perplexity))
 
 		self.train_losses.extend(train_losses)
 		return self.model, self.optimizer

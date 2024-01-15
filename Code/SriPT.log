@@ -3518,3 +3518,23 @@
 2024-01-14 23:04:39,974 - INFO - Found 186092 words in book
 2024-01-14 23:05:04,286 - INFO - Generated and shuffled 744256 sequences for book calibans_war.txt
 2024-01-14 23:05:04,292 - DEBUG - Obtained sequences for book
+2024-01-14 23:20:37,036 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-14 23:20:37,036 - INFO - Vocabulary loaded successfully with 74441 words.
+2024-01-14 23:20:37,107 - DEBUG - matplotlib data path: /home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data
+2024-01-14 23:20:37,112 - DEBUG - CONFIGDIR=/home/srikamal2001/.config/matplotlib
+2024-01-14 23:20:37,114 - DEBUG - interactive is False
+2024-01-14 23:20:37,114 - DEBUG - platform is linux
+2024-01-14 23:20:37,173 - DEBUG - CACHEDIR=/home/srikamal2001/.cache/matplotlib
+2024-01-14 23:20:37,175 - DEBUG - Using fontManager instance from /home/srikamal2001/.cache/matplotlib/fontlist-v330.json
+2024-01-14 23:20:37,529 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-14 23:20:37,530 - INFO - Vocabulary loaded successfully with 74441 words.
+2024-01-14 23:20:38,744 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-14 23:20:38,745 - INFO - Vocabulary loaded successfully with 74441 words.
+2024-01-14 23:20:38,745 - INFO - Running on cuda
+2024-01-14 23:20:41,560 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-14 23:20:41,560 - INFO - Vocabulary loaded successfully with 74441 words.
+2024-01-14 23:20:41,561 - INFO - Model has 97330889 parameters.
+2024-01-14 23:20:41,562 - INFO - Started training on ../Datasets/Books/calibans_war.txt
+2024-01-14 23:20:44,203 - INFO - Found 186092 words in book
+2024-01-14 23:21:00,095 - INFO - Generated and shuffled 496160 sequences for book calibans_war.txt
+2024-01-14 23:21:00,100 - DEBUG - Obtained sequences for book
