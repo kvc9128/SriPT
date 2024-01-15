@@ -116,7 +116,7 @@ def generate_next_token(model, start_prompt, context_size, VOCAB, max_output_len
 		else:
 			generated_sequence += " " + VOCAB.index2word(predicted_token_id)
 
-	return remove_repeated_phrases(generated_sequence)
+	return generated_sequence
 
 
 def spellcheck(prompt):
@@ -196,7 +196,7 @@ def beam_search(model, VOCAB, context_size, beam_size, max_length, start_prompt)
 		sentence += VOCAB.index2word(token) + " "
 	sentence = sentence[:-1]
 	sentence += "."
-	return remove_repeated_phrases(sentence)
+	return sentence
 
 
 def setup_generation():
@@ -214,7 +214,7 @@ def setup_generation():
 
 	# load model and optimizer from previous state
 	model = load_model(model)
-	prompt = "Who is Poseidon's son?"
+	prompt = "James holden on the rocinante"
 
 	# print(generate_text(model, prompt, context_size, VOCAB))
 

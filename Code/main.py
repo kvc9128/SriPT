@@ -18,25 +18,17 @@ from model_hyperparameters import NUM_DECODER_LAYERS
 logger = logging.getLogger(__name__)
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 datasets = [
-	"../Datasets/Books/calibans_war.txt",
 	"../Datasets/Books/REUTERS_NEWS.txt",
-	"../Datasets/Books/blood_of_olympus.txt",
-	"../Datasets/Books/house_of_hades.txt",
-	"../Datasets/Books/mark_of_athena.txt",
-	"../Datasets/Books/percy_jackson_and_the_lightning_thief.txt",
-	"../Datasets/Books/abbaddons_gate.txt",
 	"../Datasets/Books/babylons_ashes.txt",
 	"../Datasets/Books/Catcher-in-the-Rye.txt",
 	"../Datasets/Books/cibola_burn.txt",
 	"../Datasets/Books/jane-austen-pride-prejudice.txt",
 	"../Datasets/Books/leviathan_wakes.txt",
 	"../Datasets/Books/nemesis_games.txt",
-	"../Datasets/Books/persepolis_rising.txt",
 	"../Datasets/Books/the_great_gatsby.txt",
 	"../Datasets/Books/to_kill_a_mockingbird.txt",
 	"../Datasets/QA/squad_web.json",
-	"../Datasets/QA/trivia_q_a.json",
-	"../Datasets/QA/common_sense_q_a.json"
+	"../Datasets/QA/trivia_q_a.json"
 ]
 SAVED_FOLDER = "../TRAINED_MODELS/"
 
@@ -76,7 +68,7 @@ def main():
 		dropout_rate=DROPOUT_RATE
 	)
 	MODEL.to(DEVICE)
-	OPTIMIZER = torch.optim.Adam(MODEL.parameters(), lr=0.001)
+	OPTIMIZER = torch.optim.Adam(MODEL.parameters(), lr=0.0001)
 	LOSS_FN = nn.CrossEntropyLoss()
 
 	trainer = Train(

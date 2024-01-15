@@ -129,9 +129,9 @@ class VOCAB:
 	@staticmethod
 	def normalize_string(s):
 		s = VOCAB.unicode_to_ascii(s.lower().strip())
-		s = s.replace('\n', ' ').replace('\t', ' ')
-		s = re.sub(r'\.', ' EOS ', s)
-		s = re.sub(r'[^\w\s]', '', s)
+		s = s.replace('\n', ' ').replace('\t', '')
+		# s = re.sub(r'\.', ' EOS ', s)
+		s = re.sub(r'[^\w\s.]', '', s)
 
 		words = word_tokenize(s)
 		lemmatizer = WordNetLemmatizer()

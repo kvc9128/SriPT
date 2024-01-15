@@ -3731,3 +3731,146 @@
 2024-01-15 07:31:15,527 - DEBUG - Obtained sequences for book
 2024-01-15 10:26:53,969 - INFO - 	Epoch: 0 Loss: 6.9247631256095055 Perplexity: tensor(1017.1533, dtype=torch.float64)
 2024-01-15 13:22:30,807 - INFO - 	Epoch: 1 Loss: 6.891855874631506 Perplexity: tensor(984.2263, dtype=torch.float64)
+2024-01-15 10:41:37,016 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-15 10:41:37,017 - INFO - Vocabulary loaded successfully with 74441 words.
+2024-01-15 10:41:37,103 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-15 10:41:37,103 - INFO - Vocabulary loaded successfully with 74441 words.
+2024-01-15 10:41:38,446 - INFO - Successfully loaded model with weights and parameters
+2024-01-15 10:41:38,448 - INFO - Model has 97330889 parameters.
+2024-01-15 10:41:41,408 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-15 10:42:35,030 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-15 10:42:35,030 - INFO - Vocabulary loaded successfully with 74441 words.
+2024-01-15 10:42:35,107 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-15 10:42:35,107 - INFO - Vocabulary loaded successfully with 74441 words.
+2024-01-15 10:42:36,268 - INFO - Successfully loaded model with weights and parameters
+2024-01-15 10:42:36,270 - INFO - Model has 97330889 parameters.
+2024-01-15 10:42:39,002 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-15 10:42:39,054 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-15 10:42:39,104 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-15 10:42:39,155 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-15 10:43:17,940 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-15 10:43:17,940 - INFO - Vocabulary loaded successfully with 74441 words.
+2024-01-15 10:43:18,023 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-15 10:43:18,023 - INFO - Vocabulary loaded successfully with 74441 words.
+2024-01-15 10:43:19,161 - INFO - Successfully loaded model with weights and parameters
+2024-01-15 10:43:19,162 - INFO - Model has 97330889 parameters.
+2024-01-15 10:43:21,885 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-15 10:43:21,941 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-15 10:43:21,996 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-15 10:43:22,046 - DEBUG - Truncated sentence, exceeded context window size.
+2024-01-15 12:03:12,052 - DEBUG - Read all Unix Words
+2024-01-15 12:03:34,165 - DEBUG - Added book REUTERS_NEWS.txt
+2024-01-15 12:03:34,184 - DEBUG - Updated pickled file.
+2024-01-15 12:03:36,106 - DEBUG - Added book babylons_ashes.txt
+2024-01-15 12:03:36,122 - DEBUG - Updated pickled file.
+2024-01-15 12:03:36,943 - DEBUG - Added book Catcher-in-the-Rye.txt
+2024-01-15 12:03:36,959 - DEBUG - Updated pickled file.
+2024-01-15 12:03:38,884 - DEBUG - Added book cibola_burn.txt
+2024-01-15 12:03:38,905 - DEBUG - Updated pickled file.
+2024-01-15 12:03:40,013 - DEBUG - Added book jane-austen-pride-prejudice.txt
+2024-01-15 12:03:40,028 - DEBUG - Updated pickled file.
+2024-01-15 12:03:41,874 - DEBUG - Added book leviathan_wakes.txt
+2024-01-15 12:03:41,895 - DEBUG - Updated pickled file.
+2024-01-15 12:03:43,644 - DEBUG - Added book nemesis_games.txt
+2024-01-15 12:03:43,659 - DEBUG - Updated pickled file.
+2024-01-15 12:03:44,163 - DEBUG - Added book the_great_gatsby.txt
+2024-01-15 12:03:44,177 - DEBUG - Updated pickled file.
+2024-01-15 12:03:45,246 - DEBUG - Added book to_kill_a_mockingbird.txt
+2024-01-15 12:03:45,262 - DEBUG - Updated pickled file.
+2024-01-15 12:08:03,130 - DEBUG - Read all Unix Words
+2024-01-15 12:08:28,428 - DEBUG - Added book REUTERS_NEWS.txt
+2024-01-15 12:08:28,462 - DEBUG - Updated pickled file.
+2024-01-15 12:08:30,422 - DEBUG - Added book babylons_ashes.txt
+2024-01-15 12:08:30,456 - DEBUG - Updated pickled file.
+2024-01-15 12:08:31,409 - DEBUG - Added book Catcher-in-the-Rye.txt
+2024-01-15 12:08:31,448 - DEBUG - Updated pickled file.
+2024-01-15 12:08:33,803 - DEBUG - Added book cibola_burn.txt
+2024-01-15 12:08:33,839 - DEBUG - Updated pickled file.
+2024-01-15 12:08:35,109 - DEBUG - Added book jane-austen-pride-prejudice.txt
+2024-01-15 12:08:35,140 - DEBUG - Updated pickled file.
+2024-01-15 12:08:37,295 - DEBUG - Added book leviathan_wakes.txt
+2024-01-15 12:08:37,341 - DEBUG - Updated pickled file.
+2024-01-15 12:08:39,214 - DEBUG - Added book nemesis_games.txt
+2024-01-15 12:08:39,260 - DEBUG - Updated pickled file.
+2024-01-15 12:08:39,884 - DEBUG - Added book the_great_gatsby.txt
+2024-01-15 12:08:39,954 - DEBUG - Updated pickled file.
+2024-01-15 12:08:41,503 - DEBUG - Added book to_kill_a_mockingbird.txt
+2024-01-15 12:08:41,557 - DEBUG - Updated pickled file.
+2024-01-15 12:11:46,248 - DEBUG - Read all Unix Words
+2024-01-15 12:12:10,318 - DEBUG - Added book REUTERS_NEWS.txt
+2024-01-15 12:12:10,346 - DEBUG - Updated pickled file.
+2024-01-15 12:12:12,255 - DEBUG - Added book babylons_ashes.txt
+2024-01-15 12:12:12,282 - DEBUG - Updated pickled file.
+2024-01-15 12:12:13,072 - DEBUG - Added book Catcher-in-the-Rye.txt
+2024-01-15 12:12:13,096 - DEBUG - Updated pickled file.
+2024-01-15 12:12:14,919 - DEBUG - Added book cibola_burn.txt
+2024-01-15 12:12:14,946 - DEBUG - Updated pickled file.
+2024-01-15 12:12:16,098 - DEBUG - Added book jane-austen-pride-prejudice.txt
+2024-01-15 12:12:16,131 - DEBUG - Updated pickled file.
+2024-01-15 12:12:17,924 - DEBUG - Added book leviathan_wakes.txt
+2024-01-15 12:12:17,956 - DEBUG - Updated pickled file.
+2024-01-15 12:12:19,696 - DEBUG - Added book nemesis_games.txt
+2024-01-15 12:12:19,743 - DEBUG - Updated pickled file.
+2024-01-15 12:12:20,271 - DEBUG - Added book the_great_gatsby.txt
+2024-01-15 12:12:20,305 - DEBUG - Updated pickled file.
+2024-01-15 12:12:21,333 - DEBUG - Added book to_kill_a_mockingbird.txt
+2024-01-15 12:12:21,367 - DEBUG - Updated pickled file.
+2024-01-15 12:12:21,367 - INFO - Added all books.
+2024-01-15 12:12:23,694 - INFO - Wrote common_sense_qa words to pickle
+2024-01-15 12:12:53,564 - INFO - Wrote trivia_q_a words to pickle
+2024-01-15 12:13:19,297 - INFO - Wrote squad_web_qa words to pickle
+2024-01-15 12:13:19,641 - INFO - Updated vocabulary with min_count
+2024-01-15 12:13:19,642 - INFO - Vocabulary Created successfully with 75311 words.
+2024-01-15 12:13:51,089 - DEBUG - Read all Unix Words
+2024-01-15 12:14:13,915 - DEBUG - Added book REUTERS_NEWS.txt
+2024-01-15 12:14:13,943 - DEBUG - Updated pickled file.
+2024-01-15 12:14:15,858 - DEBUG - Added book babylons_ashes.txt
+2024-01-15 12:14:15,886 - DEBUG - Updated pickled file.
+2024-01-15 12:14:16,648 - DEBUG - Added book Catcher-in-the-Rye.txt
+2024-01-15 12:14:16,673 - DEBUG - Updated pickled file.
+2024-01-15 12:14:18,545 - DEBUG - Added book cibola_burn.txt
+2024-01-15 12:14:18,570 - DEBUG - Updated pickled file.
+2024-01-15 12:14:19,689 - DEBUG - Added book jane-austen-pride-prejudice.txt
+2024-01-15 12:14:19,719 - DEBUG - Updated pickled file.
+2024-01-15 12:14:21,504 - DEBUG - Added book leviathan_wakes.txt
+2024-01-15 12:14:21,539 - DEBUG - Updated pickled file.
+2024-01-15 12:14:23,314 - DEBUG - Added book nemesis_games.txt
+2024-01-15 12:14:23,360 - DEBUG - Updated pickled file.
+2024-01-15 12:14:23,887 - DEBUG - Added book the_great_gatsby.txt
+2024-01-15 12:14:23,922 - DEBUG - Updated pickled file.
+2024-01-15 12:14:24,930 - DEBUG - Added book to_kill_a_mockingbird.txt
+2024-01-15 12:14:24,964 - DEBUG - Updated pickled file.
+2024-01-15 12:14:24,964 - INFO - Added all books.
+2024-01-15 12:14:27,192 - INFO - Wrote common_sense_qa words to pickle
+2024-01-15 12:14:56,220 - INFO - Wrote trivia_q_a words to pickle
+2024-01-15 12:15:21,236 - INFO - Wrote squad_web_qa words to pickle
+2024-01-15 12:15:21,582 - INFO - Updated vocabulary with min_count
+2024-01-15 12:15:21,582 - INFO - Vocabulary Created successfully with 54773 words.
+2024-01-15 12:17:35,478 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-15 12:17:35,478 - INFO - Vocabulary loaded successfully with 54773 words.
+2024-01-15 12:17:35,623 - DEBUG - CACHEDIR=/Users/srikamal/.matplotlib
+2024-01-15 12:17:35,630 - DEBUG - Using fontManager instance from /Users/srikamal/.matplotlib/fontlist-v330.json
+2024-01-15 12:17:36,272 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-15 12:17:36,272 - INFO - Vocabulary loaded successfully with 54773 words.
+2024-01-15 12:17:36,336 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-15 12:17:36,336 - INFO - Vocabulary loaded successfully with 54773 words.
+2024-01-15 12:17:36,337 - INFO - Running on cpu
+2024-01-15 12:17:37,892 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-15 12:17:37,913 - INFO - Vocabulary loaded successfully with 54773 words.
+2024-01-15 12:17:37,926 - INFO - Model has 72965621 parameters.
+2024-01-15 12:18:22,283 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-15 12:18:22,283 - INFO - Vocabulary loaded successfully with 54773 words.
+2024-01-15 12:18:22,336 - DEBUG - CACHEDIR=/Users/srikamal/.matplotlib
+2024-01-15 12:18:22,338 - DEBUG - Using fontManager instance from /Users/srikamal/.matplotlib/fontlist-v330.json
+2024-01-15 12:18:22,615 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-15 12:18:22,615 - INFO - Vocabulary loaded successfully with 54773 words.
+2024-01-15 12:18:22,667 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-15 12:18:22,667 - INFO - Vocabulary loaded successfully with 54773 words.
+2024-01-15 12:18:22,667 - INFO - Running on cpu
+2024-01-15 12:18:23,438 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-15 12:18:23,438 - INFO - Vocabulary loaded successfully with 54773 words.
+2024-01-15 12:18:23,439 - INFO - Model has 72965621 parameters.
+2024-01-15 12:18:23,439 - INFO - Started training on ../Datasets/Books/REUTERS_NEWS.txt
+2024-01-15 12:18:42,123 - INFO - Found 2389000 words in book
+2024-01-15 12:21:36,334 - INFO - Generated and shuffled 6370592 sequences for book REUTERS_NEWS.txt
+2024-01-15 12:21:36,647 - DEBUG - Obtained sequences for book
