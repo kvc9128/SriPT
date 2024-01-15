@@ -76,7 +76,7 @@ def main():
 		dropout_rate=DROPOUT_RATE
 	)
 	MODEL.to(DEVICE)
-	OPTIMIZER = torch.optim.Adam(MODEL.parameters(), lr=0.0005)
+	OPTIMIZER = torch.optim.Adam(MODEL.parameters(), lr=0.001)
 	LOSS_FN = nn.CrossEntropyLoss()
 
 	trainer = Train(
