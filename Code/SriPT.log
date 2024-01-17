@@ -3874,3 +3874,227 @@
 2024-01-15 12:18:42,123 - INFO - Found 2389000 words in book
 2024-01-15 12:21:36,334 - INFO - Generated and shuffled 6370592 sequences for book REUTERS_NEWS.txt
 2024-01-15 12:21:36,647 - DEBUG - Obtained sequences for book
+2024-01-15 17:26:13,813 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-15 17:26:13,813 - INFO - Vocabulary loaded successfully with 54773 words.
+2024-01-15 17:26:13,881 - DEBUG - matplotlib data path: /home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data
+2024-01-15 17:26:13,886 - DEBUG - CONFIGDIR=/home/srikamal2001/.config/matplotlib
+2024-01-15 17:26:13,887 - DEBUG - interactive is False
+2024-01-15 17:26:13,887 - DEBUG - platform is linux
+2024-01-15 17:26:13,944 - DEBUG - CACHEDIR=/home/srikamal2001/.cache/matplotlib
+2024-01-15 17:26:13,946 - DEBUG - Using fontManager instance from /home/srikamal2001/.cache/matplotlib/fontlist-v330.json
+2024-01-15 17:26:14,269 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-15 17:26:14,269 - INFO - Vocabulary loaded successfully with 54773 words.
+2024-01-15 17:26:15,484 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-15 17:26:15,485 - INFO - Vocabulary loaded successfully with 54773 words.
+2024-01-15 17:26:15,485 - INFO - Running on cuda
+2024-01-15 17:26:17,982 - DEBUG - vocabulary object found and loaded successfully.
+2024-01-15 17:26:17,982 - INFO - Vocabulary loaded successfully with 54773 words.
+2024-01-15 17:26:17,983 - INFO - Model has 72965621 parameters.
+2024-01-15 17:26:17,983 - INFO - Started training on ../Datasets/Books/REUTERS_NEWS.txt
+2024-01-15 17:26:42,837 - INFO - Found 2389000 words in book
+2024-01-15 17:30:16,060 - INFO - Generated and shuffled 6370592 sequences for book REUTERS_NEWS.txt
+2024-01-15 17:30:16,119 - DEBUG - Obtained sequences for book
+2024-01-15 19:21:22,432 - INFO - 	Epoch: 0 Loss: 5.156281198954604 Perplexity: tensor(173.5180, dtype=torch.float64)
+2024-01-15 21:12:22,690 - INFO - 	Epoch: 1 Loss: 4.6609063228339656 Perplexity: tensor(105.7319, dtype=torch.float64)
+2024-01-15 23:03:23,217 - INFO - 	Epoch: 2 Loss: 4.468982214940069 Perplexity: tensor(87.2679, dtype=torch.float64)
+2024-01-16 00:54:22,425 - INFO - 	Epoch: 3 Loss: 4.331866028007612 Perplexity: tensor(76.0861, dtype=torch.float64)
+2024-01-16 02:45:22,573 - INFO - 	Epoch: 4 Loss: 4.226877447679827 Perplexity: tensor(68.5030, dtype=torch.float64)
+2024-01-16 04:36:22,065 - INFO - 	Epoch: 5 Loss: 4.142686500345065 Perplexity: tensor(62.9718, dtype=torch.float64)
+2024-01-16 06:27:22,082 - INFO - 	Epoch: 6 Loss: 4.074131395943988 Perplexity: tensor(58.7994, dtype=torch.float64)
+2024-01-16 08:18:23,947 - INFO - 	Epoch: 7 Loss: 4.019612602466485 Perplexity: tensor(55.6795, dtype=torch.float64)
+2024-01-16 10:09:24,290 - INFO - 	Epoch: 8 Loss: 3.973538468691906 Perplexity: tensor(53.1723, dtype=torch.float64)
+2024-01-16 12:00:23,202 - INFO - 	Epoch: 9 Loss: 3.934344676802538 Perplexity: tensor(51.1286, dtype=torch.float64)
+2024-01-16 13:51:22,630 - INFO - 	Epoch: 10 Loss: 3.9008291934163832 Perplexity: tensor(49.4434, dtype=torch.float64)
+2024-01-16 15:42:22,410 - INFO - 	Epoch: 11 Loss: 3.8731550911370713 Perplexity: tensor(48.0939, dtype=torch.float64)
+2024-01-16 17:33:21,953 - INFO - 	Epoch: 12 Loss: 3.8485348670192696 Perplexity: tensor(46.9243, dtype=torch.float64)
+2024-01-16 19:24:21,749 - INFO - 	Epoch: 13 Loss: 3.825793009832043 Perplexity: tensor(45.8692, dtype=torch.float64)
+2024-01-16 21:15:22,738 - INFO - 	Epoch: 14 Loss: 3.80431600290386 Perplexity: tensor(44.8945, dtype=torch.float64)
+2024-01-16 23:06:23,703 - INFO - 	Epoch: 15 Loss: 3.7839871051729697 Perplexity: tensor(43.9911, dtype=torch.float64)
+2024-01-17 00:57:23,526 - INFO - 	Epoch: 16 Loss: 3.763523159934642 Perplexity: tensor(43.1000, dtype=torch.float64)
+2024-01-17 02:48:23,377 - INFO - 	Epoch: 17 Loss: 3.7453721673051015 Perplexity: tensor(42.3248, dtype=torch.float64)
+2024-01-17 04:39:22,715 - INFO - 	Epoch: 18 Loss: 3.7277837461254695 Perplexity: tensor(41.5868, dtype=torch.float64)
+2024-01-17 06:30:22,944 - INFO - 	Epoch: 19 Loss: 3.7107229924816334 Perplexity: tensor(40.8834, dtype=torch.float64)
+2024-01-17 08:21:23,026 - INFO - 	Epoch: 20 Loss: 3.6955333732135904 Perplexity: tensor(40.2670, dtype=torch.float64)
+2024-01-17 10:12:22,997 - INFO - 	Epoch: 21 Loss: 3.6827021933485757 Perplexity: tensor(39.7537, dtype=torch.float64)
+2024-01-17 12:03:22,780 - INFO - 	Epoch: 22 Loss: 3.6659024068476063 Perplexity: tensor(39.0914, dtype=torch.float64)
+2024-01-17 13:54:22,385 - INFO - 	Epoch: 23 Loss: 3.6525504971310414 Perplexity: tensor(38.5729, dtype=torch.float64)
+2024-01-17 15:45:22,332 - INFO - 	Epoch: 24 Loss: 3.6376318359353443 Perplexity: tensor(38.0017, dtype=torch.float64)
+2024-01-17 15:45:22,335 - DEBUG - Loaded backend agg version v2.2.
+2024-01-17 15:45:22,338 - DEBUG - findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0.
+2024-01-17 15:45:22,338 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf', name='DejaVu Sans', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 0.33499999999999996
+2024-01-17 15:45:22,339 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniIta.ttf', name='STIXNonUnicode', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2024-01-17 15:45:22,339 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizOneSymBol.ttf', name='STIXSizeOneSym', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2024-01-17 15:45:22,339 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/cmr10.ttf', name='cmr10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-17 15:45:22,339 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/cmss10.ttf', name='cmss10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-17 15:45:22,339 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-Bold.ttf', name='DejaVu Sans Mono', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2024-01-17 15:45:22,339 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/cmex10.ttf', name='cmex10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-17 15:45:22,339 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-Oblique.ttf', name='DejaVu Sans Mono', style='oblique', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2024-01-17 15:45:22,339 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Oblique.ttf', name='DejaVu Sans', style='oblique', variant='normal', weight=400, stretch='normal', size='scalable')) = 1.05
+2024-01-17 15:45:22,339 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneral.ttf', name='STIXGeneral', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-17 15:45:22,339 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif.ttf', name='DejaVu Serif', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-17 15:45:22,339 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralItalic.ttf', name='STIXGeneral', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2024-01-17 15:45:22,339 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono.ttf', name='DejaVu Sans Mono', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-17 15:45:22,339 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUni.ttf', name='STIXNonUnicode', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-17 15:45:22,340 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizOneSymReg.ttf', name='STIXSizeOneSym', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-17 15:45:22,340 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerifDisplay.ttf', name='DejaVu Serif Display', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-17 15:45:22,340 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizThreeSymReg.ttf', name='STIXSizeThreeSym', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-17 15:45:22,340 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf', name='DejaVu Sans', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 0.05
+2024-01-17 15:45:22,340 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/cmmi10.ttf', name='cmmi10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-17 15:45:22,340 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/cmsy10.ttf', name='cmsy10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-17 15:45:22,340 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/cmtt10.ttf', name='cmtt10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-17 15:45:22,340 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-BoldOblique.ttf', name='DejaVu Sans', style='oblique', variant='normal', weight=700, stretch='normal', size='scalable')) = 1.335
+2024-01-17 15:45:22,340 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFourSymBol.ttf', name='STIXSizeFourSym', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2024-01-17 15:45:22,340 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-BoldOblique.ttf', name='DejaVu Sans Mono', style='oblique', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+2024-01-17 15:45:22,340 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-Italic.ttf', name='DejaVu Serif', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2024-01-17 15:45:22,340 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansDisplay.ttf', name='DejaVu Sans Display', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-17 15:45:22,340 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFourSymReg.ttf', name='STIXSizeFourSym', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-17 15:45:22,340 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniBolIta.ttf', name='STIXNonUnicode', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+2024-01-17 15:45:22,341 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizThreeSymBol.ttf', name='STIXSizeThreeSym', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2024-01-17 15:45:22,341 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniBol.ttf', name='STIXNonUnicode', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2024-01-17 15:45:22,341 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-BoldItalic.ttf', name='DejaVu Serif', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+2024-01-17 15:45:22,341 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralBolIta.ttf', name='STIXGeneral', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+2024-01-17 15:45:22,341 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizTwoSymBol.ttf', name='STIXSizeTwoSym', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2024-01-17 15:45:22,341 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/cmb10.ttf', name='cmb10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-17 15:45:22,341 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralBol.ttf', name='STIXGeneral', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2024-01-17 15:45:22,341 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFiveSymReg.ttf', name='STIXSizeFiveSym', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-17 15:45:22,341 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizTwoSymReg.ttf', name='STIXSizeTwoSym', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-17 15:45:22,341 - DEBUG - findfont: score(FontEntry(fname='/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-Bold.ttf', name='DejaVu Serif', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2024-01-17 15:45:22,341 - DEBUG - findfont: score(FontEntry(fname='/usr/share/fonts/truetype/lato/Lato-Hairline.ttf', name='Lato', style='normal', variant='normal', weight=100, stretch='normal', size='scalable')) = 10.335
+2024-01-17 15:45:22,341 - DEBUG - findfont: score(FontEntry(fname='/usr/share/fonts/truetype/lato/Lato-Regular.ttf', name='Lato', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-17 15:45:22,341 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmsans12-oblique.otf', name='Latin Modern Sans', style='oblique', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2024-01-17 15:45:22,341 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmromanslant17-regular.otf', name='Latin Modern Roman Slanted', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-17 15:45:22,341 - DEBUG - findfont: score(FontEntry(fname='/usr/share/fonts/truetype/dejavu/DejaVuSansMono-Bold.ttf', name='DejaVu Sans Mono', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2024-01-17 15:45:22,342 - DEBUG - findfont: score(FontEntry(fname='/usr/share/fonts/truetype/lato/Lato-HeavyItalic.ttf', name='Lato', style='italic', variant='normal', weight=800, stretch='normal', size='scalable')) = 11.43
+2024-01-17 15:45:22,342 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmroman7-bold.otf', name='Latin Modern Roman', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2024-01-17 15:45:22,342 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmroman9-bold.otf', name='Latin Modern Roman', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2024-01-17 15:45:22,342 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmroman6-regular.otf', name='Latin Modern Roman', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-17 15:45:22,342 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmsansquot8-bold.otf', name='Latin Modern Sans Quotation', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2024-01-17 15:45:22,342 - DEBUG - findfont: score(FontEntry(fname='/usr/share/fonts/truetype/lato/Lato-ThinItalic.ttf', name='Lato', style='italic', variant='normal', weight=200, stretch='normal', size='scalable')) = 11.24
+2024-01-17 15:45:22,342 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmsans9-regular.otf', name='Latin Modern Sans', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-17 15:45:22,342 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmsans10-boldoblique.otf', name='Latin Modern Sans', style='oblique', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+2024-01-17 15:45:22,342 - DEBUG - findfont: score(FontEntry(fname='/usr/share/fonts/truetype/lato/Lato-LightItalic.ttf', name='Lato', style='italic', variant='normal', weight=300, stretch='normal', size='scalable')) = 11.145
+2024-01-17 15:45:22,342 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmmono9-regular.otf', name='Latin Modern Mono', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-17 15:45:22,342 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-regular.otf', name='Latin Modern Mono Light', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-17 15:45:22,342 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf', name='Latin Modern Roman Caps', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-17 15:45:22,342 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmsansquot8-regular.otf', name='Latin Modern Sans Quotation', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-17 15:45:22,342 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmromanslant10-bold.otf', name='Latin Modern Roman Slanted', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2024-01-17 15:45:22,342 - DEBUG - findfont: score(FontEntry(fname='/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf', name='DejaVu Sans', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 0.33499999999999996
+2024-01-17 15:45:22,343 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmromanslant9-regular.otf', name='Latin Modern Roman Slanted', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-17 15:45:22,343 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmromandemi10-oblique.otf', name='Latin Modern Roman Demi', style='oblique', variant='normal', weight=600, stretch='normal', size='scalable')) = 11.24
+2024-01-17 15:45:22,343 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmroman10-bold.otf', name='Latin Modern Roman', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2024-01-17 15:45:22,343 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmromandunh10-regular.otf', name='Latin Modern Roman Dunhill', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-17 15:45:22,343 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmroman12-regular.otf', name='Latin Modern Roman', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-17 15:45:22,343 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmsansquot8-oblique.otf', name='Latin Modern Sans Quotation', style='oblique', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2024-01-17 15:45:22,343 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmromanslant12-regular.otf', name='Latin Modern Roman Slanted', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-17 15:45:22,343 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf', name='Latin Modern Roman', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-17 15:45:22,343 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmroman5-regular.otf', name='Latin Modern Roman', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-17 15:45:22,343 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmmono10-italic.otf', name='Latin Modern Mono', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2024-01-17 15:45:22,343 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmroman8-bold.otf', name='Latin Modern Roman', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2024-01-17 15:45:22,343 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmroman7-regular.otf', name='Latin Modern Roman', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-17 15:45:22,343 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmromanslant8-regular.otf', name='Latin Modern Roman Slanted', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-17 15:45:22,343 - DEBUG - findfont: score(FontEntry(fname='/usr/share/fonts/truetype/lato/Lato-BlackItalic.ttf', name='Lato', style='italic', variant='normal', weight=900, stretch='normal', size='scalable')) = 11.525
+2024-01-17 15:45:22,343 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmromanslant10-regular.otf', name='Latin Modern Roman Slanted', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-17 15:45:22,344 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmsans8-oblique.otf', name='Latin Modern Sans', style='oblique', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2024-01-17 15:45:22,344 - DEBUG - findfont: score(FontEntry(fname='/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf', name='DejaVu Serif', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2024-01-17 15:45:22,344 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmroman6-bold.otf', name='Latin Modern Roman', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2024-01-17 15:45:22,344 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmmonoprop10-oblique.otf', name='Latin Modern Mono Prop', style='oblique', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2024-01-17 15:45:22,344 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmmono8-regular.otf', name='Latin Modern Mono', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-17 15:45:22,344 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmroman17-regular.otf', name='Latin Modern Roman', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-17 15:45:22,344 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmmonoproplt10-boldoblique.otf', name='Latin Modern Mono Prop Light', style='oblique', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+2024-01-17 15:45:22,344 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf', name='Latin Modern Sans', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2024-01-17 15:45:22,344 - DEBUG - findfont: score(FontEntry(fname='/usr/share/fonts/truetype/lato/Lato-Italic.ttf', name='Lato', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2024-01-17 15:45:22,344 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmmonoprop10-regular.otf', name='Latin Modern Mono Prop', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-17 15:45:22,344 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmroman10-bolditalic.otf', name='Latin Modern Roman', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+2024-01-17 15:45:22,344 - DEBUG - findfont: score(FontEntry(fname='/usr/share/fonts/truetype/lato/Lato-Heavy.ttf', name='Lato', style='normal', variant='normal', weight=800, stretch='normal', size='scalable')) = 10.43
+2024-01-17 15:45:22,344 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmsansquot8-boldoblique.otf', name='Latin Modern Sans Quotation', style='oblique', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+2024-01-17 15:45:22,344 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmmonoproplt10-bold.otf', name='Latin Modern Mono Prop Light', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2024-01-17 15:45:22,344 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmroman5-bold.otf', name='Latin Modern Roman', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2024-01-17 15:45:22,345 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmroman12-bold.otf', name='Latin Modern Roman', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2024-01-17 15:45:22,345 - DEBUG - findfont: score(FontEntry(fname='/usr/share/fonts/truetype/lato/Lato-Black.ttf', name='Lato', style='normal', variant='normal', weight=900, stretch='normal', size='scalable')) = 10.525
+2024-01-17 15:45:22,345 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmmonoltcond10-regular.otf', name='Latin Modern Mono Light Cond', style='normal', variant='normal', weight=400, stretch='condensed', size='scalable')) = 10.25
+2024-01-17 15:45:22,345 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-oblique.otf', name='Latin Modern Roman Caps', style='oblique', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2024-01-17 15:45:22,345 - DEBUG - findfont: score(FontEntry(fname='/usr/share/fonts/truetype/lato/Lato-SemiboldItalic.ttf', name='Lato', style='italic', variant='normal', weight=600, stretch='normal', size='scalable')) = 11.24
+2024-01-17 15:45:22,345 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmromandemi10-regular.otf', name='Latin Modern Roman Demi', style='normal', variant='normal', weight=600, stretch='normal', size='scalable')) = 10.24
+2024-01-17 15:45:22,345 - DEBUG - findfont: score(FontEntry(fname='/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf', name='DejaVu Sans Mono', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-17 15:45:22,345 - DEBUG - findfont: score(FontEntry(fname='/usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf', name='DejaVu Serif', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-17 15:45:22,345 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmromandunh10-oblique.otf', name='Latin Modern Roman Dunhill', style='oblique', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2024-01-17 15:45:22,345 - DEBUG - findfont: score(FontEntry(fname='/usr/share/fonts/truetype/lato/Lato-Bold.ttf', name='Lato', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2024-01-17 15:45:22,345 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmromanunsl10-regular.otf', name='Latin Modern Roman Unslanted', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-17 15:45:22,345 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmmonocaps10-regular.otf', name='Latin Modern Mono Caps', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-17 15:45:22,345 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmroman9-regular.otf', name='Latin Modern Roman', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-17 15:45:22,345 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmmonoproplt10-regular.otf', name='Latin Modern Mono Prop Light', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-17 15:45:22,346 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-boldoblique.otf', name='Latin Modern Mono Light', style='oblique', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+2024-01-17 15:45:22,346 - DEBUG - findfont: score(FontEntry(fname='/usr/share/fonts/truetype/lato/Lato-BoldItalic.ttf', name='Lato', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+2024-01-17 15:45:22,346 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-oblique.otf', name='Latin Modern Mono Light', style='oblique', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2024-01-17 15:45:22,346 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmroman12-italic.otf', name='Latin Modern Roman', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2024-01-17 15:45:22,346 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmmonoslant10-regular.otf', name='Latin Modern Mono Slanted', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-17 15:45:22,346 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmsansdemicond10-regular.otf', name='Latin Modern Sans Demi Cond', style='normal', variant='normal', weight=600, stretch='condensed', size='scalable')) = 10.44
+2024-01-17 15:45:22,346 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm-math/latinmodern-math.otf', name='Latin Modern Math', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-17 15:45:22,346 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmroman8-regular.otf', name='Latin Modern Roman', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-17 15:45:22,346 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmmonocaps10-oblique.otf', name='Latin Modern Mono Caps', style='oblique', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2024-01-17 15:45:22,346 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf', name='Latin Modern Sans', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-17 15:45:22,346 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmsans17-regular.otf', name='Latin Modern Sans', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-17 15:45:22,346 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf', name='Latin Modern Sans', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-17 15:45:22,346 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmroman7-italic.otf', name='Latin Modern Roman', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2024-01-17 15:45:22,346 - DEBUG - findfont: score(FontEntry(fname='/usr/share/fonts/truetype/lato/Lato-MediumItalic.ttf', name='Lato', style='italic', variant='normal', weight=500, stretch='normal', size='scalable')) = 11.145
+2024-01-17 15:45:22,346 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf', name='Latin Modern Mono Light', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2024-01-17 15:45:22,347 - DEBUG - findfont: score(FontEntry(fname='/usr/share/fonts/truetype/lato/Lato-Semibold.ttf', name='Lato', style='normal', variant='normal', weight=600, stretch='normal', size='scalable')) = 10.24
+2024-01-17 15:45:22,347 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmmono12-regular.otf', name='Latin Modern Mono', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-17 15:45:22,347 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf', name='Latin Modern Mono', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-17 15:45:22,347 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmsans17-oblique.otf', name='Latin Modern Sans', style='oblique', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2024-01-17 15:45:22,347 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmroman9-italic.otf', name='Latin Modern Roman', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2024-01-17 15:45:22,347 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf', name='Latin Modern Sans', style='oblique', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2024-01-17 15:45:22,347 - DEBUG - findfont: score(FontEntry(fname='/usr/share/fonts/truetype/lato/Lato-HairlineItalic.ttf', name='Lato', style='italic', variant='normal', weight=100, stretch='normal', size='scalable')) = 11.335
+2024-01-17 15:45:22,347 - DEBUG - findfont: score(FontEntry(fname='/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf', name='DejaVu Sans', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 0.05
+2024-01-17 15:45:22,347 - DEBUG - findfont: score(FontEntry(fname='/usr/share/fonts/truetype/lato/Lato-Light.ttf', name='Lato', style='normal', variant='normal', weight=300, stretch='normal', size='scalable')) = 10.145
+2024-01-17 15:45:22,347 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmroman8-italic.otf', name='Latin Modern Roman', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2024-01-17 15:45:22,347 - DEBUG - findfont: score(FontEntry(fname='/usr/share/fonts/truetype/lato/Lato-Medium.ttf', name='Lato', style='normal', variant='normal', weight=500, stretch='normal', size='scalable')) = 10.145
+2024-01-17 15:45:22,347 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmmonoproplt10-oblique.otf', name='Latin Modern Mono Prop Light', style='oblique', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2024-01-17 15:45:22,347 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmsansdemicond10-oblique.otf', name='Latin Modern Sans Demi Cond', style='oblique', variant='normal', weight=600, stretch='condensed', size='scalable')) = 11.44
+2024-01-17 15:45:22,347 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmsans9-oblique.otf', name='Latin Modern Sans', style='oblique', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2024-01-17 15:45:22,348 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmroman10-italic.otf', name='Latin Modern Roman', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2024-01-17 15:45:22,348 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmmonoltcond10-oblique.otf', name='Latin Modern Mono Light Cond', style='oblique', variant='normal', weight=400, stretch='condensed', size='scalable')) = 11.25
+2024-01-17 15:45:22,348 - DEBUG - findfont: score(FontEntry(fname='/usr/share/fonts/truetype/lato/Lato-Thin.ttf', name='Lato', style='normal', variant='normal', weight=200, stretch='normal', size='scalable')) = 10.24
+2024-01-17 15:45:22,348 - DEBUG - findfont: score(FontEntry(fname='/usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf', name='Latin Modern Sans', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2024-01-17 15:45:22,348 - DEBUG - findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('/home/srikamal2001/SriPT/venv/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000.
+2024-01-17 15:45:31,303 - INFO - Stored model for document ../Datasets/Books/REUTERS_NEWS.txt
+2024-01-17 15:45:31,303 - INFO - Successfully trained on ../Datasets/Books/REUTERS_NEWS.txt
+2024-01-17 15:45:31,893 - INFO - Successfully loaded model with weights and parameters
+2024-01-17 15:45:31,893 - DEBUG - Successfully updated model and optimizer
+2024-01-17 15:45:31,893 - INFO - Started training on ../Datasets/Books/babylons_ashes.txt
+2024-01-17 15:45:33,958 - INFO - Found 182233 words in book
+2024-01-17 15:45:49,679 - INFO - Generated and shuffled 485888 sequences for book babylons_ashes.txt
+2024-01-17 15:45:49,683 - DEBUG - Obtained sequences for book
+2024-01-17 15:55:10,183 - INFO - 	Epoch: 0 Loss: 5.551869846973182 Perplexity: tensor(257.7190, dtype=torch.float64)
+2024-01-17 16:04:30,247 - INFO - 	Epoch: 1 Loss: 4.694310988204043 Perplexity: tensor(109.3235, dtype=torch.float64)
+2024-01-17 16:13:50,201 - INFO - 	Epoch: 2 Loss: 4.19038286227479 Perplexity: tensor(66.0481, dtype=torch.float64)
+2024-01-17 16:23:10,258 - INFO - 	Epoch: 3 Loss: 3.7724022310940417 Perplexity: tensor(43.4844, dtype=torch.float64)
+2024-01-17 16:32:30,251 - INFO - 	Epoch: 4 Loss: 3.4348937272672195 Perplexity: tensor(31.0281, dtype=torch.float64)
+2024-01-17 16:41:50,276 - INFO - 	Epoch: 5 Loss: 3.155213700467196 Perplexity: tensor(23.4580, dtype=torch.float64)
+2024-01-17 16:51:10,541 - INFO - 	Epoch: 6 Loss: 2.9213389479414413 Perplexity: tensor(18.5661, dtype=torch.float64)
+2024-01-17 17:00:31,194 - INFO - 	Epoch: 7 Loss: 2.7200034276825757 Perplexity: tensor(15.1804, dtype=torch.float64)
+2024-01-17 17:09:51,526 - INFO - 	Epoch: 8 Loss: 2.5633442993869284 Perplexity: tensor(12.9792, dtype=torch.float64)
+2024-01-17 17:19:11,947 - INFO - 	Epoch: 9 Loss: 2.3941693919504896 Perplexity: tensor(10.9591, dtype=torch.float64)
+2024-01-17 17:28:32,322 - INFO - 	Epoch: 10 Loss: 2.258333920637531 Perplexity: tensor(9.5671, dtype=torch.float64)
+2024-01-17 17:37:53,327 - INFO - 	Epoch: 11 Loss: 2.1345502090793285 Perplexity: tensor(8.4532, dtype=torch.float64)
+2024-01-17 17:47:13,668 - INFO - 	Epoch: 12 Loss: 2.0233312601794418 Perplexity: tensor(7.5635, dtype=torch.float64)
+2024-01-17 17:56:34,011 - INFO - 	Epoch: 13 Loss: 1.9204977882742247 Perplexity: tensor(6.8244, dtype=torch.float64)
+2024-01-17 18:05:54,354 - INFO - 	Epoch: 14 Loss: 1.8238698521449004 Perplexity: tensor(6.1958, dtype=torch.float64)
+2024-01-17 18:15:14,594 - INFO - 	Epoch: 15 Loss: 1.7367402960120677 Perplexity: tensor(5.6788, dtype=torch.float64)
+2024-01-17 18:24:34,826 - INFO - 	Epoch: 16 Loss: 1.6565030657050874 Perplexity: tensor(5.2410, dtype=torch.float64)
+2024-01-17 18:33:55,179 - INFO - 	Epoch: 17 Loss: 1.5852392857235145 Perplexity: tensor(4.8805, dtype=torch.float64)
+2024-01-17 18:43:15,651 - INFO - 	Epoch: 18 Loss: 1.516134909662751 Perplexity: tensor(4.5546, dtype=torch.float64)
+2024-01-17 18:52:36,275 - INFO - 	Epoch: 19 Loss: 1.4597750471305337 Perplexity: tensor(4.3050, dtype=torch.float64)
+2024-01-17 19:01:56,600 - INFO - 	Epoch: 20 Loss: 1.398040100437477 Perplexity: tensor(4.0473, dtype=torch.float64)
+2024-01-17 19:11:16,983 - INFO - 	Epoch: 21 Loss: 1.347365824610578 Perplexity: tensor(3.8473, dtype=torch.float64)
+2024-01-17 19:20:37,387 - INFO - 	Epoch: 22 Loss: 1.29950654012039 Perplexity: tensor(3.6675, dtype=torch.float64)
+2024-01-17 19:29:57,596 - INFO - 	Epoch: 23 Loss: 1.250322193755295 Perplexity: tensor(3.4915, dtype=torch.float64)
+2024-01-17 19:39:18,056 - INFO - 	Epoch: 24 Loss: 1.2160778251373352 Perplexity: tensor(3.3739, dtype=torch.float64)
+2024-01-17 19:39:26,857 - INFO - Stored model for document ../Datasets/Books/babylons_ashes.txt
+2024-01-17 19:39:26,857 - INFO - Successfully trained on ../Datasets/Books/babylons_ashes.txt
+2024-01-17 19:39:27,442 - INFO - Successfully loaded model with weights and parameters
+2024-01-17 19:39:27,442 - DEBUG - Successfully updated model and optimizer
+2024-01-17 19:39:27,442 - INFO - Started training on ../Datasets/Books/Catcher-in-the-Rye.txt
+2024-01-17 19:39:28,369 - INFO - Found 80090 words in book
+2024-01-17 19:39:35,272 - INFO - Generated and shuffled 213504 sequences for book Catcher-in-the-Rye.txt
+2024-01-17 19:39:35,274 - DEBUG - Obtained sequences for book
