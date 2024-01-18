@@ -4098,3 +4098,81 @@
 2024-01-17 19:39:28,369 - INFO - Found 80090 words in book
 2024-01-17 19:39:35,272 - INFO - Generated and shuffled 213504 sequences for book Catcher-in-the-Rye.txt
 2024-01-17 19:39:35,274 - DEBUG - Obtained sequences for book
+2024-01-17 19:43:42,448 - INFO - 	Epoch: 0 Loss: 5.001606567151229 Perplexity: tensor(148.6518, dtype=torch.float64)
+2024-01-17 19:47:48,636 - INFO - 	Epoch: 1 Loss: 4.138344839089636 Perplexity: tensor(62.6990, dtype=torch.float64)
+2024-01-17 19:51:54,805 - INFO - 	Epoch: 2 Loss: 3.5938255163710595 Perplexity: tensor(36.3730, dtype=torch.float64)
+2024-01-17 19:56:00,978 - INFO - 	Epoch: 3 Loss: 3.131721202197405 Perplexity: tensor(22.9134, dtype=torch.float64)
+2024-01-17 20:00:07,003 - INFO - 	Epoch: 4 Loss: 2.7876100598057043 Perplexity: tensor(16.2422, dtype=torch.float64)
+2024-01-17 20:04:12,922 - INFO - 	Epoch: 5 Loss: 2.425871131593019 Perplexity: tensor(11.3121, dtype=torch.float64)
+2024-01-17 20:08:18,888 - INFO - 	Epoch: 6 Loss: 2.1732190703059127 Perplexity: tensor(8.7865, dtype=torch.float64)
+2024-01-17 20:12:24,968 - INFO - 	Epoch: 7 Loss: 1.9618825250693155 Perplexity: tensor(7.1127, dtype=torch.float64)
+2024-01-17 20:16:31,028 - INFO - 	Epoch: 8 Loss: 1.7706670071584176 Perplexity: tensor(5.8748, dtype=torch.float64)
+2024-01-17 20:20:37,148 - INFO - 	Epoch: 9 Loss: 1.6131015839303324 Perplexity: tensor(5.0184, dtype=torch.float64)
+2024-01-17 20:24:43,297 - INFO - 	Epoch: 10 Loss: 1.4760767458060138 Perplexity: tensor(4.3757, dtype=torch.float64)
+2024-01-17 20:28:49,460 - INFO - 	Epoch: 11 Loss: 1.35987792529706 Perplexity: tensor(3.8957, dtype=torch.float64)
+2024-01-17 20:32:55,830 - INFO - 	Epoch: 12 Loss: 1.2633925416417306 Perplexity: tensor(3.5374, dtype=torch.float64)
+2024-01-17 20:37:02,922 - INFO - 	Epoch: 13 Loss: 1.1997278099116346 Perplexity: tensor(3.3192, dtype=torch.float64)
+2024-01-17 20:41:10,126 - INFO - 	Epoch: 14 Loss: 1.1020273382305898 Perplexity: tensor(3.0103, dtype=torch.float64)
+2024-01-17 20:45:16,639 - INFO - 	Epoch: 15 Loss: 1.0273297620864983 Perplexity: tensor(2.7936, dtype=torch.float64)
+2024-01-17 20:49:22,816 - INFO - 	Epoch: 16 Loss: 0.9777250241770913 Perplexity: tensor(2.6584, dtype=torch.float64)
+2024-01-17 20:53:28,953 - INFO - 	Epoch: 17 Loss: 0.9122147033930227 Perplexity: tensor(2.4898, dtype=torch.float64)
+2024-01-17 20:57:35,664 - INFO - 	Epoch: 18 Loss: 0.8645975573569485 Perplexity: tensor(2.3741, dtype=torch.float64)
+2024-01-17 21:01:42,594 - INFO - 	Epoch: 19 Loss: 0.817660652676481 Perplexity: tensor(2.2652, dtype=torch.float64)
+2024-01-17 21:05:49,383 - INFO - 	Epoch: 20 Loss: 0.7821326405764832 Perplexity: tensor(2.1861, dtype=torch.float64)
+2024-01-17 21:09:55,390 - INFO - 	Epoch: 21 Loss: 0.7528423469645579 Perplexity: tensor(2.1230, dtype=torch.float64)
+2024-01-17 21:14:01,666 - INFO - 	Epoch: 22 Loss: 0.698723076150751 Perplexity: tensor(2.0112, dtype=torch.float64)
+2024-01-17 21:18:08,477 - INFO - 	Epoch: 23 Loss: 0.6706337759155045 Perplexity: tensor(1.9555, dtype=torch.float64)
+2024-01-17 21:22:15,516 - INFO - 	Epoch: 24 Loss: 0.6552522824596595 Perplexity: tensor(1.9256, dtype=torch.float64)
+2024-01-17 21:22:24,375 - INFO - Stored model for document ../Datasets/Books/Catcher-in-the-Rye.txt
+2024-01-17 21:22:24,375 - INFO - Successfully trained on ../Datasets/Books/Catcher-in-the-Rye.txt
+2024-01-17 21:22:24,969 - INFO - Successfully loaded model with weights and parameters
+2024-01-17 21:22:24,969 - DEBUG - Successfully updated model and optimizer
+2024-01-17 21:22:24,969 - INFO - Started training on ../Datasets/Books/cibola_burn.txt
+2024-01-17 21:22:27,242 - INFO - Found 186731 words in book
+2024-01-17 21:22:44,007 - INFO - Generated and shuffled 497888 sequences for book cibola_burn.txt
+2024-01-17 21:22:44,011 - DEBUG - Obtained sequences for book
+2024-01-17 21:32:18,733 - INFO - 	Epoch: 0 Loss: 5.60450851463875 Perplexity: tensor(271.6484, dtype=torch.float64)
+2024-01-17 21:41:53,429 - INFO - 	Epoch: 1 Loss: 4.75881875387069 Perplexity: tensor(116.6081, dtype=torch.float64)
+2024-01-17 21:51:27,970 - INFO - 	Epoch: 2 Loss: 4.29244892181733 Perplexity: tensor(73.1454, dtype=torch.float64)
+2024-01-17 22:01:02,595 - INFO - 	Epoch: 3 Loss: 3.8843972891892373 Perplexity: tensor(48.6376, dtype=torch.float64)
+2024-01-17 22:10:37,079 - INFO - 	Epoch: 4 Loss: 3.5421505704963887 Perplexity: tensor(34.5411, dtype=torch.float64)
+2024-01-17 22:20:12,226 - INFO - 	Epoch: 5 Loss: 3.259050300512638 Perplexity: tensor(26.0248, dtype=torch.float64)
+2024-01-17 22:29:47,209 - INFO - 	Epoch: 6 Loss: 3.029403746240137 Perplexity: tensor(20.6849, dtype=torch.float64)
+2024-01-17 22:39:21,400 - INFO - 	Epoch: 7 Loss: 2.8167344635496603 Perplexity: tensor(16.7222, dtype=torch.float64)
+2024-01-17 22:48:56,379 - INFO - 	Epoch: 8 Loss: 2.630682663562413 Perplexity: tensor(13.8832, dtype=torch.float64)
+2024-01-17 22:58:31,070 - INFO - 	Epoch: 9 Loss: 2.4701234343598393 Perplexity: tensor(11.8239, dtype=torch.float64)
+2024-01-17 23:08:06,941 - INFO - 	Epoch: 10 Loss: 2.3266343965275254 Perplexity: tensor(10.2434, dtype=torch.float64)
+2024-01-17 23:17:41,180 - INFO - 	Epoch: 11 Loss: 2.254413372920375 Perplexity: tensor(9.5297, dtype=torch.float64)
+2024-01-17 23:27:16,749 - INFO - 	Epoch: 12 Loss: 2.1408621464099733 Perplexity: tensor(8.5068, dtype=torch.float64)
+2024-01-17 23:36:52,351 - INFO - 	Epoch: 13 Loss: 2.0276427217953805 Perplexity: tensor(7.5962, dtype=torch.float64)
+2024-01-17 23:46:27,573 - INFO - 	Epoch: 14 Loss: 1.9642423855767075 Perplexity: tensor(7.1295, dtype=torch.float64)
+2024-01-17 23:56:02,105 - INFO - 	Epoch: 15 Loss: 1.8862117352730454 Perplexity: tensor(6.5943, dtype=torch.float64)
+2024-01-18 00:05:36,441 - INFO - 	Epoch: 16 Loss: 1.7917175700504195 Perplexity: tensor(5.9997, dtype=torch.float64)
+2024-01-18 00:15:10,746 - INFO - 	Epoch: 17 Loss: 1.708439851505379 Perplexity: tensor(5.5203, dtype=torch.float64)
+2024-01-18 00:24:46,127 - INFO - 	Epoch: 18 Loss: 1.6327601448487994 Perplexity: tensor(5.1180, dtype=torch.float64)
+2024-01-18 00:34:20,831 - INFO - 	Epoch: 19 Loss: 1.57508800492628 Perplexity: tensor(4.8312, dtype=torch.float64)
+2024-01-18 00:43:55,714 - INFO - 	Epoch: 20 Loss: 1.5173494595336638 Perplexity: tensor(4.5601, dtype=torch.float64)
+2024-01-18 00:53:30,579 - INFO - 	Epoch: 21 Loss: 1.4565003151576414 Perplexity: tensor(4.2909, dtype=torch.float64)
+2024-01-18 01:03:05,533 - INFO - 	Epoch: 22 Loss: 1.402349732047996 Perplexity: tensor(4.0647, dtype=torch.float64)
+2024-01-18 01:12:39,888 - INFO - 	Epoch: 23 Loss: 1.3542158265520676 Perplexity: tensor(3.8737, dtype=torch.float64)
+2024-01-18 01:22:14,816 - INFO - 	Epoch: 24 Loss: 1.3176160761091213 Perplexity: tensor(3.7345, dtype=torch.float64)
+2024-01-18 01:22:23,783 - INFO - Stored model for document ../Datasets/Books/cibola_burn.txt
+2024-01-18 01:22:23,783 - INFO - Successfully trained on ../Datasets/Books/cibola_burn.txt
+2024-01-18 01:22:24,377 - INFO - Successfully loaded model with weights and parameters
+2024-01-18 01:22:24,377 - DEBUG - Successfully updated model and optimizer
+2024-01-18 01:22:24,377 - INFO - Started training on ../Datasets/Books/jane-austen-pride-prejudice.txt
+2024-01-18 01:22:25,618 - INFO - Found 126855 words in book
+2024-01-18 01:22:37,011 - INFO - Generated and shuffled 338208 sequences for book jane-austen-pride-prejudice.txt
+2024-01-18 01:22:37,014 - DEBUG - Obtained sequences for book
+2024-01-18 01:29:08,064 - INFO - 	Epoch: 0 Loss: 5.51923077822696 Perplexity: tensor(249.4431, dtype=torch.float64)
+2024-01-18 01:35:38,910 - INFO - 	Epoch: 1 Loss: 4.754019073306029 Perplexity: tensor(116.0498, dtype=torch.float64)
+2024-01-18 01:42:09,852 - INFO - 	Epoch: 2 Loss: 4.321127639010736 Perplexity: tensor(75.2735, dtype=torch.float64)
+2024-01-18 01:48:40,825 - INFO - 	Epoch: 3 Loss: 3.9503427154337163 Perplexity: tensor(51.9532, dtype=torch.float64)
+2024-01-18 01:55:11,785 - INFO - 	Epoch: 4 Loss: 3.6327155280016776 Perplexity: tensor(37.8154, dtype=torch.float64)
+2024-01-18 02:01:42,812 - INFO - 	Epoch: 5 Loss: 3.337930403898847 Perplexity: tensor(28.1608, dtype=torch.float64)
+2024-01-18 02:08:13,723 - INFO - 	Epoch: 6 Loss: 3.041464321050386 Perplexity: tensor(20.9359, dtype=torch.float64)
+2024-01-18 02:14:44,595 - INFO - 	Epoch: 7 Loss: 2.795805336060056 Perplexity: tensor(16.3758, dtype=torch.float64)
+2024-01-18 02:21:15,505 - INFO - 	Epoch: 8 Loss: 2.5947565184214127 Perplexity: tensor(13.3933, dtype=torch.float64)
+2024-01-18 02:27:46,432 - INFO - 	Epoch: 9 Loss: 2.407805101476072 Perplexity: tensor(11.1096, dtype=torch.float64)
+2024-01-18 02:34:17,483 - INFO - 	Epoch: 10 Loss: 2.282704107325357 Perplexity: tensor(9.8032, dtype=torch.float64)
+2024-01-18 02:40:48,609 - INFO - 	Epoch: 11 Loss: 2.1438156470405767 Perplexity: tensor(8.5319, dtype=torch.float64)
