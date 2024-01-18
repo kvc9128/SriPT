@@ -4345,3 +4345,18 @@
 2024-01-18 20:04:09,022 - INFO - 	Epoch: 14 Loss: 4.680940164959089 Perplexity: tensor(107.8714, dtype=torch.float64)
 2024-01-18 20:23:48,018 - INFO - 	Epoch: 15 Loss: 4.59009534595092 Perplexity: tensor(98.5038, dtype=torch.float64)
 2024-01-18 20:43:26,368 - INFO - 	Epoch: 16 Loss: 4.509981784964272 Perplexity: tensor(90.9202, dtype=torch.float64)
+2024-01-18 21:03:05,527 - INFO - 	Epoch: 17 Loss: 4.425631171758114 Perplexity: tensor(83.5655, dtype=torch.float64)
+2024-01-18 21:22:44,033 - INFO - 	Epoch: 18 Loss: 4.3459582301680255 Perplexity: tensor(77.1659, dtype=torch.float64)
+2024-01-18 21:42:22,560 - INFO - 	Epoch: 19 Loss: 4.307455711772166 Perplexity: tensor(74.2513, dtype=torch.float64)
+2024-01-18 22:02:01,065 - INFO - 	Epoch: 20 Loss: 4.31649743659882 Perplexity: tensor(74.9257, dtype=torch.float64)
+2024-01-18 22:21:39,474 - INFO - 	Epoch: 21 Loss: 4.20029735085569 Perplexity: tensor(66.7062, dtype=torch.float64)
+2024-01-18 22:41:17,815 - INFO - 	Epoch: 22 Loss: 4.121808741524506 Perplexity: tensor(61.6707, dtype=torch.float64)
+2024-01-18 23:00:56,024 - INFO - 	Epoch: 23 Loss: 4.0805565895836295 Perplexity: tensor(59.1784, dtype=torch.float64)
+2024-01-18 23:20:34,092 - INFO - 	Epoch: 24 Loss: 4.01267252113794 Perplexity: tensor(55.2944, dtype=torch.float64)
+2024-01-18 23:20:43,089 - INFO - Stored model for document ../Datasets/QA/squad_web.json
+2024-01-18 23:20:43,089 - INFO - Successfully trained on ../Datasets/QA/squad_web.json
+2024-01-18 23:20:43,686 - INFO - Successfully loaded model with weights and parameters
+2024-01-18 23:20:43,686 - DEBUG - Successfully updated model and optimizer
+2024-01-18 23:20:43,686 - INFO - Started training on ../Datasets/QA/trivia_q_a.json
+2024-01-18 23:22:15,531 - INFO - Generated and shuffled 1389638 sequences for trivia dataset
+2024-01-18 23:22:15,594 - DEBUG - Obtained sequences for json file ../Datasets/QA/trivia_q_a.json
