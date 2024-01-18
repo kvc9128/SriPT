@@ -4176,3 +4176,26 @@
 2024-01-18 02:27:46,432 - INFO - 	Epoch: 9 Loss: 2.407805101476072 Perplexity: tensor(11.1096, dtype=torch.float64)
 2024-01-18 02:34:17,483 - INFO - 	Epoch: 10 Loss: 2.282704107325357 Perplexity: tensor(9.8032, dtype=torch.float64)
 2024-01-18 02:40:48,609 - INFO - 	Epoch: 11 Loss: 2.1438156470405767 Perplexity: tensor(8.5319, dtype=torch.float64)
+2024-01-18 02:47:21,279 - INFO - 	Epoch: 12 Loss: 2.013075187887972 Perplexity: tensor(7.4863, dtype=torch.float64)
+2024-01-18 02:53:52,223 - INFO - 	Epoch: 13 Loss: 1.8938730899795766 Perplexity: tensor(6.6451, dtype=torch.float64)
+2024-01-18 03:00:23,237 - INFO - 	Epoch: 14 Loss: 1.807435991029575 Perplexity: tensor(6.0948, dtype=torch.float64)
+2024-01-18 03:06:54,011 - INFO - 	Epoch: 15 Loss: 1.721376291952261 Perplexity: tensor(5.5922, dtype=torch.float64)
+2024-01-18 03:13:24,947 - INFO - 	Epoch: 16 Loss: 1.650566296841912 Perplexity: tensor(5.2099, dtype=torch.float64)
+2024-01-18 03:19:55,694 - INFO - 	Epoch: 17 Loss: 1.5447732979804119 Perplexity: tensor(4.6869, dtype=torch.float64)
+2024-01-18 03:26:26,486 - INFO - 	Epoch: 18 Loss: 1.4695144451905597 Perplexity: tensor(4.3471, dtype=torch.float64)
+2024-01-18 03:32:57,370 - INFO - 	Epoch: 19 Loss: 1.4049637930835337 Perplexity: tensor(4.0754, dtype=torch.float64)
+2024-01-18 03:39:28,343 - INFO - 	Epoch: 20 Loss: 1.333340685520371 Perplexity: tensor(3.7937, dtype=torch.float64)
+2024-01-18 03:45:59,326 - INFO - 	Epoch: 21 Loss: 1.2770410901007307 Perplexity: tensor(3.5860, dtype=torch.float64)
+2024-01-18 03:52:30,292 - INFO - 	Epoch: 22 Loss: 1.2283107281264178 Perplexity: tensor(3.4155, dtype=torch.float64)
+2024-01-18 03:59:01,184 - INFO - 	Epoch: 23 Loss: 1.18393622247087 Perplexity: tensor(3.2672, dtype=torch.float64)
+2024-01-18 04:05:32,288 - INFO - 	Epoch: 24 Loss: 1.139479400992571 Perplexity: tensor(3.1251, dtype=torch.float64)
+2024-01-18 04:05:41,259 - INFO - Stored model for document ../Datasets/Books/jane-austen-pride-prejudice.txt
+2024-01-18 04:05:41,260 - INFO - Successfully trained on ../Datasets/Books/jane-austen-pride-prejudice.txt
+2024-01-18 04:05:41,844 - INFO - Successfully loaded model with weights and parameters
+2024-01-18 04:05:41,844 - DEBUG - Successfully updated model and optimizer
+2024-01-18 04:05:41,844 - INFO - Started training on ../Datasets/Books/leviathan_wakes.txt
+2024-01-18 04:05:44,018 - INFO - Found 181263 words in book
+2024-01-18 04:06:00,312 - INFO - Generated and shuffled 483296 sequences for book leviathan_wakes.txt
+2024-01-18 04:06:00,316 - DEBUG - Obtained sequences for book
+2024-01-18 04:15:19,380 - INFO - 	Epoch: 0 Loss: 5.672842404839535 Perplexity: tensor(290.8601, dtype=torch.float64)
+2024-01-18 04:24:38,340 - INFO - 	Epoch: 1 Loss: 4.843329226835692 Perplexity: tensor(126.8911, dtype=torch.float64)
