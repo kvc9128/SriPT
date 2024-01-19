@@ -86,7 +86,7 @@ def generate_text_from_seq_2_seq_model(model, start_prompt, context_size, VOCAB,
 	return generated_sequence
 
 
-def generate_next_token(model, start_prompt, context_size, VOCAB, max_output_length=32, temperature=0.9):
+def generate_next_token(model, start_prompt, context_size, VOCAB, max_output_length=32, temperature=25):
 	model.eval()  # Set the model to evaluation mode
 	generated_sequence = start_prompt
 
@@ -102,21 +102,22 @@ def generate_next_token(model, start_prompt, context_size, VOCAB, max_output_len
 		# Generate prediction
 		with torch.no_grad():
 			output = model(input_tensor, mask)
-			output = SOFTMAX(output)
 			output = output / temperature
+			output = SOFTMAX(output)
 
-		# Get the last predicted token (the next token)
-		predicted_token_id = torch.argmax(output, dim=-1).item()
+			# Get the last predicted token (the next token)
+			predicted_token_id = torch.argmax(output, dim=-1).item()
+			predicted_token_id = torch.multinomial(output, 1).item()
 
-		# Break if EOS token is generated
-		if predicted_token_id == VOCAB.word2index("EOS") or predicted_token_id == VOCAB.word2index(
-				"eos"):
-			generated_sequence += "."
-		# break
-		else:
-			generated_sequence += " " + VOCAB.index2word(predicted_token_id)
+			# Break if EOS token is generated
+			if predicted_token_id == VOCAB.word2index("EOS") or predicted_token_id == VOCAB.word2index(
+					"eos"):
+				generated_sequence += "."
+			# break
+			else:
+				generated_sequence += " " + VOCAB.index2word(predicted_token_id)
 
-	return generated_sequence
+	return remove_repeated_phrases(generated_sequence)
 
 
 def spellcheck(prompt):
@@ -214,9 +215,7 @@ def setup_generation():
 
 	# load model and optimizer from previous state
 	model = load_model(model)
-	prompt = "James holden on the rocinante"
-
-	# print(generate_text(model, prompt, context_size, VOCAB))
+	prompt = "What will opec do about the inflation"
 
 	total_params = sum(
 		param.numel() for param in model.parameters()
@@ -225,7 +224,12 @@ def setup_generation():
 
 	# spellcheck prompt and get user confirmation
 	prompt = spellcheck(prompt)
-	print(generate_next_token(model, prompt, CONTEXT_WINDOW, VOCAB))
+	print("User prompt:", prompt)
+	print("SriPT:", generate_next_token(model, prompt, CONTEXT_WINDOW, VOCAB, temperature=0.01))
+	print("SriPT:", generate_next_token(model, prompt, CONTEXT_WINDOW, VOCAB, temperature=0.5))
+	print("SriPT:", generate_next_token(model, prompt, CONTEXT_WINDOW, VOCAB, temperature=0.8))
+	print("SriPT:", generate_next_token(model, prompt, CONTEXT_WINDOW, VOCAB, temperature=1))
+	print("SriPT:", generate_next_token(model, prompt, CONTEXT_WINDOW, VOCAB, temperature=5))
 
 	# experimental beam search - painfully slow
 	best_seq = beam_search(model, VOCAB, CONTEXT_WINDOW, beam_size=3, max_length=15, start_prompt=prompt)
