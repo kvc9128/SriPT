@@ -18,17 +18,10 @@ from model_hyperparameters import NUM_DECODER_LAYERS
 logger = logging.getLogger(__name__)
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 datasets = [
-	"../Datasets/Books/REUTERS_NEWS.txt",
-	"../Datasets/Books/babylons_ashes.txt",
-	"../Datasets/Books/Catcher-in-the-Rye.txt",
-	"../Datasets/Books/cibola_burn.txt",
-	"../Datasets/Books/jane-austen-pride-prejudice.txt",
-	"../Datasets/Books/leviathan_wakes.txt",
-	"../Datasets/Books/nemesis_games.txt",
-	"../Datasets/Books/the_great_gatsby.txt",
-	"../Datasets/Books/to_kill_a_mockingbird.txt",
 	"../Datasets/QA/squad_web.json",
-	"../Datasets/QA/trivia_q_a.json"
+	"../Datasets/QA/trivia_q_a.json",
+	"../Datasets/QA/common_sense_q_a.json",
+	"../Datasets/Books/REUTERS_NEWS.txt"
 ]
 SAVED_FOLDER = "../TRAINED_MODELS/"
 
@@ -85,6 +78,8 @@ def main():
 	)
 	logger.info(f"Model has {total_params} parameters.")
 
+	# don't want to overwrite saved model
+	MODEL, OPTIMIZER = load_model(MODEL, OPTIMIZER)
 	for dataset in datasets:
 		trainer.train_model_on(dataset)
 		MODEL, OPTIMIZER = load_model(MODEL, OPTIMIZER)
