@@ -7,8 +7,8 @@ Hope you enjoy!
 Resources I used to help build this tool
 
 1. Attention is all you need - Vasvani et. al.
-2. https://github.com/lucidrains/x-transformers?ref=wingedsheep.com
-3. https://jalammar.github.io/illustrated-transformer/?ref=wingedsheep.com
-4. https://jalammar.github.io/illustrated-gpt2/?ref=wingedsheep.com
+2. https://github.com/lucidrains/x-transformers
+3. https://jalammar.github.io/illustrated-transformer/
+4. https://jalammar.github.io/illustrated-gpt2/
 5. https://www.youtube.com/watch?v=kCc8FmEb1nY
 6. https://wingedsheep.com/building-a-language-model/
