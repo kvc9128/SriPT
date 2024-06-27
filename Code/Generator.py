@@ -38,10 +38,10 @@ def load_model(model):
 		return model
 
 def remove_repeated_phrases(text):
+	text = text.replace('UNK', '')
 	words = text.split()
 	seen = set()
 	cleaned_words = []
-
 	for word in words:
 		if word not in seen:
 			seen.add(word)
@@ -49,8 +49,9 @@ def remove_repeated_phrases(text):
 		else:
 			if all(previous_word != word for previous_word in cleaned_words[-len(seen):]):
 				cleaned_words.append(word)
-
-	return ' '.join(cleaned_words)
+	text = ' '.join(cleaned_words)
+	text = text.replace(' . ', '. ')
+	return text
 
 
 def generate_text_from_seq_2_seq_model(model, start_prompt, context_size, VOCAB, max_output_length=48,
@@ -106,7 +107,7 @@ def generate_next_token(model, start_prompt, context_size, VOCAB, max_output_len
 			output = SOFTMAX(output)
 
 			# Get the last predicted token (the next token)
-			predicted_token_id = torch.argmax(output, dim=-1).item()
+			# predicted_token_id = torch.argmax(output, dim=-1).item()
 			predicted_token_id = torch.multinomial(output, 1).item()
 
 			# Break if EOS token is generated
@@ -140,9 +141,10 @@ def spellcheck(prompt):
 		return prompt
 
 
-def beam_search(model, VOCAB, context_size, beam_size, max_length, start_prompt):
+def beam_search(model, VOCAB, context_size, beam_size, max_length, start_prompt, temperature):
 	"""
 	Perform beam search to generate sentences.
+	:param temperature:
 	:param context_size:
 	:param VOCAB:
 	:param start_prompt:
@@ -172,8 +174,8 @@ def beam_search(model, VOCAB, context_size, beam_size, max_length, start_prompt)
 			mask.to(DEVICE)
 			mask[input_tensor == 2] = 0  # 2 is my PAD token index
 			next_words_prob = model(input_tensor, mask)
+			next_words_prob = next_words_prob / temperature  # apply temperature
 			next_words_prob = SOFTMAX(next_words_prob)
-			next_words_prob = next_words_prob / 0.9  # apply temperature
 
 			token_prob_pairs = sorted(enumerate(next_words_prob[0]), key=lambda x: x[1],
 			                          reverse=True)
@@ -215,7 +217,7 @@ def setup_generation():
 
 	# load model and optimizer from previous state
 	model = load_model(model)
-	prompt = "What will opec do about the inflation"
+	prompt = "What is the northern most province in canada"
 
 	total_params = sum(
 		param.numel() for param in model.parameters()
@@ -229,10 +231,13 @@ def setup_generation():
 	print("SriPT:", generate_next_token(model, prompt, CONTEXT_WINDOW, VOCAB, temperature=0.5))
 	print("SriPT:", generate_next_token(model, prompt, CONTEXT_WINDOW, VOCAB, temperature=0.8))
 	print("SriPT:", generate_next_token(model, prompt, CONTEXT_WINDOW, VOCAB, temperature=1))
-	print("SriPT:", generate_next_token(model, prompt, CONTEXT_WINDOW, VOCAB, temperature=5))
+	print("SriPT:", generate_next_token(model, prompt, CONTEXT_WINDOW, VOCAB, temperature=2))
 
 	# experimental beam search - painfully slow
-	best_seq = beam_search(model, VOCAB, CONTEXT_WINDOW, beam_size=3, max_length=15, start_prompt=prompt)
+	best_seq = beam_search(model, VOCAB, CONTEXT_WINDOW, beam_size=5,
+	                       max_length=15,
+	                       start_prompt=prompt,
+	                       temperature=0.8)
 	print(best_seq)
 
 
