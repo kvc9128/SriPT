@@ -96,13 +96,11 @@ class Train:
 		plt.show()
 
 	@staticmethod
-	def quick_save_model(model, optimizer, document, path):
+	def quick_save_model(model, document, path):
 		os.makedirs(path, exist_ok=True)
 		# save the model
 		model_path = os.path.join(path, 'model.pt')
 		torch.save(model.state_dict(), model_path)
-		optimizer_path = os.path.join(path, 'optimizer.pt')
-		torch.save(optimizer.state_dict(), optimizer_path)
 
 		logger.info(
 			msg=f"Stored model for document {document}")
@@ -139,5 +137,5 @@ class Train:
 		self.encoded_targets = encoded_targets
 		model, optimizer = self.train()
 		self.plot_loss()
-		Train.quick_save_model(model, optimizer, data_file_path, SAVE_PATH)
+		Train.quick_save_model(model, data_file_path, SAVE_PATH)
 		logger.info(f"Successfully trained on {data_file_path}")

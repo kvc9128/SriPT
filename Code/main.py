@@ -26,13 +26,11 @@ datasets = [
 SAVED_FOLDER = "../TRAINED_MODELS/"
 
 
-def load_model(model, optimizer):
+def load_model(model):
 	try:
 		if os.path.exists(SAVED_FOLDER):
-			model_path = os.path.join(SAVED_FOLDER, 'model.pt')
+			model_path = os.path.join(SAVED_FOLDER, 'reuters_base.pt')
 			model.load_state_dict(torch.load(model_path, map_location=torch.device(DEVICE)))
-			optimizer_path = os.path.join(SAVED_FOLDER, 'optimizer.pt')
-			optimizer.load_state_dict(torch.load(optimizer_path, map_location=torch.device(DEVICE)))
 			logger.info(f"Successfully loaded model with weights and parameters")
 		else:
 			logger.error("No checkpoint found. Please provide a model and checkpoint.")
@@ -45,7 +43,7 @@ def load_model(model, optimizer):
 	except Exception as e:  # Generic catch-all for other exceptions
 		logger.error(f"An error occurred while loading the model: {e}")
 	finally:
-		return model, optimizer
+		return model
 
 
 def main():
@@ -79,10 +77,10 @@ def main():
 	logger.info(f"Model has {total_params} parameters.")
 
 	# don't want to overwrite saved model
-	MODEL, OPTIMIZER = load_model(MODEL, OPTIMIZER)
+	MODEL = load_model(MODEL)
 	for dataset in datasets:
 		trainer.train_model_on(dataset)
-		MODEL, OPTIMIZER = load_model(MODEL, OPTIMIZER)
+		MODEL = load_model(MODEL)
 		trainer.update_model_and_optimizer(MODEL, OPTIMIZER)
 
 

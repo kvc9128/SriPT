@@ -18,10 +18,10 @@ SOFTMAX = nn.Softmax(dim=-1)
 SAVED_FOLDER = "../TRAINED_MODELS/"
 
 
-def load_model(model):
+def load_model(model, model_file_name='reuters_base.pt'):
 	try:
 		if os.path.exists(SAVED_FOLDER):
-			model_path = os.path.join(SAVED_FOLDER, 'model.pt')
+			model_path = os.path.join(SAVED_FOLDER, model_file_name)
 			model.load_state_dict(torch.load(model_path, map_location=torch.device(DEVICE)))
 			logger.info(f"Successfully loaded model with weights and parameters")
 		else:
