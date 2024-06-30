@@ -5181,3 +5181,57 @@
 2024-06-29 21:32:14,542 - INFO - Wrote squad_web_qa words to pickle
 2024-06-29 21:32:14,915 - INFO - Updated vocabulary with min_count
 2024-06-29 21:32:14,916 - INFO - Vocabulary Created successfully with 153661 words.
+2024-06-29 21:43:17,021 - DEBUG - vocabulary object found and loaded successfully.
+2024-06-29 21:43:17,021 - INFO - Vocabulary loaded successfully with 153661 words.
+2024-06-29 21:43:17,097 - DEBUG - CACHEDIR=/Users/srikamal/.matplotlib
+2024-06-29 21:43:17,100 - DEBUG - Using fontManager instance from /Users/srikamal/.matplotlib/fontlist-v330.json
+2024-06-29 21:43:17,476 - DEBUG - vocabulary object found and loaded successfully.
+2024-06-29 21:43:17,476 - INFO - Vocabulary loaded successfully with 153661 words.
+2024-06-29 21:43:17,566 - DEBUG - vocabulary object found and loaded successfully.
+2024-06-29 21:43:17,566 - INFO - Vocabulary loaded successfully with 153661 words.
+2024-06-29 21:43:17,567 - INFO - Running on cpu
+2024-06-29 21:43:18,911 - DEBUG - vocabulary object found and loaded successfully.
+2024-06-29 21:43:18,912 - INFO - Vocabulary loaded successfully with 153661 words.
+2024-06-29 21:43:18,912 - INFO - Model has 126450493 parameters.
+2024-06-29 21:44:57,588 - DEBUG - Read all Unix Words
+2024-06-29 21:45:24,077 - DEBUG - Added book REUTERS_NEWS.txt
+2024-06-29 21:45:24,098 - DEBUG - Updated pickled file.
+2024-06-29 21:45:24,098 - INFO - Added all books.
+2024-06-29 21:45:27,419 - INFO - Wrote common_sense_qa words to pickle
+2024-06-29 21:46:49,306 - INFO - Wrote trivia_q_a words to pickle
+2024-06-29 21:47:31,791 - INFO - Wrote squad_web_qa words to pickle
+2024-06-29 21:47:32,174 - INFO - Updated vocabulary with min_count
+2024-06-29 21:47:32,174 - INFO - Vocabulary Created successfully with 89880 words.
+2024-06-29 21:49:01,508 - DEBUG - vocabulary object found and loaded successfully.
+2024-06-29 21:49:01,508 - INFO - Vocabulary loaded successfully with 89880 words.
+2024-06-29 21:49:01,583 - DEBUG - CACHEDIR=/Users/srikamal/.matplotlib
+2024-06-29 21:49:01,587 - DEBUG - Using fontManager instance from /Users/srikamal/.matplotlib/fontlist-v330.json
+2024-06-29 21:49:01,925 - DEBUG - vocabulary object found and loaded successfully.
+2024-06-29 21:49:01,925 - INFO - Vocabulary loaded successfully with 89880 words.
+2024-06-29 21:49:01,990 - DEBUG - vocabulary object found and loaded successfully.
+2024-06-29 21:49:01,990 - INFO - Vocabulary loaded successfully with 89880 words.
+2024-06-29 21:49:01,990 - INFO - Running on cpu
+2024-06-29 21:49:03,035 - DEBUG - vocabulary object found and loaded successfully.
+2024-06-29 21:49:03,035 - INFO - Vocabulary loaded successfully with 89880 words.
+2024-06-29 21:49:03,036 - INFO - Model has 77402904 parameters.
+2024-06-29 21:49:18,869 - DEBUG - Read all Unix Words
+2024-06-29 21:49:47,515 - DEBUG - Added book REUTERS_NEWS.txt
+2024-06-29 21:49:47,541 - DEBUG - Updated pickled file.
+2024-06-29 21:49:47,541 - INFO - Added all books.
+2024-06-29 21:49:51,494 - INFO - Wrote common_sense_qa words to pickle
+2024-06-29 21:51:16,715 - INFO - Wrote trivia_q_a words to pickle
+2024-06-29 21:51:53,594 - INFO - Wrote squad_web_qa words to pickle
+2024-06-29 21:51:54,039 - INFO - Updated vocabulary with min_count
+2024-06-29 21:51:54,040 - INFO - Vocabulary Created successfully with 89880 words.
+2024-06-29 21:52:49,426 - DEBUG - vocabulary object found and loaded successfully.
+2024-06-29 21:52:49,426 - INFO - Vocabulary loaded successfully with 89880 words.
+2024-06-29 21:52:49,497 - DEBUG - CACHEDIR=/Users/srikamal/.matplotlib
+2024-06-29 21:52:49,501 - DEBUG - Using fontManager instance from /Users/srikamal/.matplotlib/fontlist-v330.json
+2024-06-29 21:52:49,827 - DEBUG - vocabulary object found and loaded successfully.
+2024-06-29 21:52:49,828 - INFO - Vocabulary loaded successfully with 89880 words.
+2024-06-29 21:52:49,903 - DEBUG - vocabulary object found and loaded successfully.
+2024-06-29 21:52:49,904 - INFO - Vocabulary loaded successfully with 89880 words.
+2024-06-29 21:52:49,904 - INFO - Running on cpu
+2024-06-29 21:52:51,143 - DEBUG - vocabulary object found and loaded successfully.
+2024-06-29 21:52:51,143 - INFO - Vocabulary loaded successfully with 89880 words.
+2024-06-29 21:52:51,144 - INFO - Model has 104720116 parameters.
