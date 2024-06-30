@@ -5167,3 +5167,17 @@
 2024-06-29 21:21:01,160 - INFO - Wrote squad_web_qa words to pickle
 2024-06-29 21:21:01,497 - INFO - Updated vocabulary with min_count
 2024-06-29 21:21:01,497 - INFO - Vocabulary Created successfully with 124240 words.
+2024-06-29 21:24:32,248 - DEBUG - Read all Unix Words
+2024-06-29 21:26:15,121 - DEBUG - Added book REUTERS_NEWS.txt
+2024-06-29 21:26:15,146 - DEBUG - Updated pickled file.
+2024-06-29 21:26:15,146 - INFO - Added all books.
+2024-06-29 21:26:25,822 - INFO - Wrote common_sense_qa words to pickle
+2024-06-29 21:29:52,526 - DEBUG - Read all Unix Words
+2024-06-29 21:30:18,594 - DEBUG - Added book REUTERS_NEWS.txt
+2024-06-29 21:30:18,618 - DEBUG - Updated pickled file.
+2024-06-29 21:30:18,618 - INFO - Added all books.
+2024-06-29 21:30:22,086 - INFO - Wrote common_sense_qa words to pickle
+2024-06-29 21:31:37,988 - INFO - Wrote trivia_q_a words to pickle
+2024-06-29 21:32:14,542 - INFO - Wrote squad_web_qa words to pickle
+2024-06-29 21:32:14,915 - INFO - Updated vocabulary with min_count
+2024-06-29 21:32:14,916 - INFO - Vocabulary Created successfully with 153661 words.

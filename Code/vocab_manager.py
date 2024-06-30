@@ -47,7 +47,7 @@ def read_common_sense_qa(vocabulary):
 	logger.info(msg="Wrote common_sense_qa words to pickle")
 
 
-def read_squad_web_qa(vocabulary):
+def read_trivia_qa(vocabulary):
 	file_path = "../Datasets/QA/trivia.json"
 	with open(file_path, 'r') as file:
 		data = json.load(file)
@@ -64,13 +64,14 @@ def read_squad_web_qa(vocabulary):
 	logger.info(msg="Wrote squad_web_qa words to pickle")
 
 
-def read_trivia_qa(vocabulary):
+def read_squad(vocabulary):
 	file_path = "../Datasets/QA/squad.json"
 	with open(file_path, 'r') as file:
 		json_data = json.load(file)
 
 		for item in json_data['data']:
 			for paragraph in item['paragraphs']:
+				vocabulary.add_raw_sentence(paragraph['context'])
 				for qa in paragraph['qas']:
 					question = qa['question']
 					vocabulary.add_raw_sentence(question)
@@ -112,8 +113,8 @@ def create_vocab_from_scratch():
 
 	load_books(books, vocabulary)
 	read_common_sense_qa(vocabulary)
+	read_squad(vocabulary)
 	read_trivia_qa(vocabulary)
-	read_squad_web_qa(vocabulary)
 	vocabulary.enforce_min_count()
 	file_pi = open(PICKLE_FILE_PATH, 'wb')
 	pickle.dump(vocabulary, file_pi)
