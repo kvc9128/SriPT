@@ -29,9 +29,9 @@ def create_sequences_from_book(VOCAB, text_file_path, context_window_length):
 def create_sequences_from_json(VOCAB, json_file_path, context_window_length):
 	if json_file_path == "../Datasets/QA/common_sense_q_a.json":
 		return create_sequences_from_common_sense(VOCAB, context_window_length)
-	elif json_file_path == "../Datasets/QA/trivia_q_a.json":
+	elif json_file_path == "../Datasets/QA/squad.json":
 		return create_sequences_from_trivia(VOCAB, context_window_length)
-	elif json_file_path == "../Datasets/QA/squad_web.json":
+	elif json_file_path == "../Datasets/QA/trivia.json":
 		return create_sequences_from_SQuAD(VOCAB, context_window_length)
 
 
@@ -126,7 +126,7 @@ def create_sequences_from_common_sense(VOCAB, context_window_length):
 def create_sequences_from_trivia(VOCAB, context_window_length):
 	encoded_sequences, encoded_targets = [], []
 	try:
-		file_path = "../Datasets/QA/trivia_q_a.json"
+		file_path = "../Datasets/QA/squad.json"
 		with open(file_path, 'r') as file:
 			json_data = json.load(file)
 
@@ -171,7 +171,7 @@ def create_sequences_from_trivia(VOCAB, context_window_length):
 def create_sequences_from_SQuAD(VOCAB, context_window_length):
 	encoded_sequences, encoded_targets = [], []
 	try:
-		file_path = "../Datasets/QA/squad_web.json"
+		file_path = "../Datasets/QA/trivia.json"
 		with open(file_path, 'r') as file:
 			data = json.load(file)
 			# Iterate through each entry in the "Data" list

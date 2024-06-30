@@ -48,7 +48,7 @@ def read_common_sense_qa(vocabulary):
 
 
 def read_squad_web_qa(vocabulary):
-	file_path = "../Datasets/QA/squad_web.json"
+	file_path = "../Datasets/QA/trivia.json"
 	with open(file_path, 'r') as file:
 		data = json.load(file)
 		# Iterate through each entry in the "Data" list
@@ -65,7 +65,7 @@ def read_squad_web_qa(vocabulary):
 
 
 def read_trivia_qa(vocabulary):
-	file_path = "../Datasets/QA/trivia_q_a.json"
+	file_path = "../Datasets/QA/squad.json"
 	with open(file_path, 'r') as file:
 		json_data = json.load(file)
 

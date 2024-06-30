@@ -28,15 +28,24 @@ class VOCAB:
 		self.write_file_path = "../Datasets/Words/unix-words.txt"
 		self.read_file_path = "../Datasets/Words/30k.txt"
 		self.name = name  # The name of the vocabulary
-		self._word2index = {"SOS": 0, "EOS": 1, "PAD": 2, "UNK": 3}  # Map word to token index
-		self._index2word = {0: "SOS", 1: "EOS", 2: "PAD", 3: "UNK"}  # Map token index to word
-		self._word_count = {"SOS": 3, "EOS": 3, "PAD": 3,
-		                    "UNK": 3}  # keep track of word count to only keep words with min_occurrence
+		self._word2index = {"SOS": 0, "EOS": 1, "PAD": 2, "UNK": 3, "SEP": 4}  # Map word to token index
+		self._index2word = {0: "SOS", 1: "EOS", 2: "PAD", 3: "UNK", 4: "SEP"}  # Map token index to word
+		self._word_count = {"SOS": self.min_count,
+		                    "EOS": self.min_count,
+		                    "PAD": self.min_count,
+		                    "UNK": self.min_count,
+		                    "SEP": self.min_count}  # keep track of word count to only keep words with min_occurrence
 		# Number of unique words in the corpus
-		self._n_words = 4  # Count SOS, EOS and PAD and UNK
-
+		self._n_words = 5  # Count SOS, EOS, PAD, SEP and UNK
+		# Add digits and decimal point
+		self.add_digits()
 		# Add/remove words from vocab object
 		self.add_unix_words()
+
+	def add_digits(self):
+		for i in range(10):
+			self.add_word(str(i))
+		self.add_word(".")
 
 	def enforce_min_count(self):
 		"""
@@ -102,7 +111,7 @@ class VOCAB:
 
 	# Add all the words in a sentence to the vocabulary
 	def add_normalized_sentence(self, sentence):
-		for word in sentence.split(' '):
+		for word in VOCAB.tokenize_sentence(sentence):
 			self.add_word(word)
 
 	# Add a single word to the vocabulary
@@ -145,3 +154,26 @@ class VOCAB:
 	def add_raw_sentence(self, s):
 		normalized_text = VOCAB.normalize_string(s)
 		self.add_normalized_sentence(normalized_text)
+
+	@staticmethod
+	def tokenize_sentence(sentence):
+		"""
+		Sentence is a string. Given a string "I have 200 apples and 2.5 oranges."
+		This function will return ['I', 'have', '2', '0', '0', 'apples', 'and', '2', '.', '5', 'oranges']
+
+		The array will contain actual human-readable words. They will need to be tokenized using
+		the word2index function
+		:param sentence:
+		:return:
+		"""
+		# normalize string first
+		normalized_text = VOCAB.normalize_string(sentence)
+		# Split to handle numbers correctly
+		words = []
+		for word in normalized_text.split(' '):
+			if re.match(r'^\d+(\.\d+)?$', word):  # Check if the word is a number (int or float)
+				for char in word:
+					words.append(char)
+			else:
+				words.append(word)
+		return words

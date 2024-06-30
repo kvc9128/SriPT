@@ -18,8 +18,8 @@ from model_hyperparameters import NUM_DECODER_LAYERS
 logger = logging.getLogger(__name__)
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 datasets = [
-	"../Datasets/QA/squad_web.json",
-	"../Datasets/QA/trivia_q_a.json",
+	"../Datasets/QA/trivia.json",
+	"../Datasets/QA/squad.json",
 	"../Datasets/QA/common_sense_q_a.json",
 	"../Datasets/Books/REUTERS_NEWS.txt"
 ]

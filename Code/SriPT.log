@@ -5116,3 +5116,54 @@
 	size mismatch for lm_head.linear.weight: copying a param with shape torch.Size([54773, 512]) from checkpoint, the shape in current model is torch.Size([149866, 256]).
 	size mismatch for lm_head.linear.bias: copying a param with shape torch.Size([54773]) from checkpoint, the shape in current model is torch.Size([149866]).
 2024-06-29 15:39:46,461 - INFO - Model has 84717750 parameters.
+2024-06-29 16:07:46,482 - DEBUG - Read all Unix Words
+2024-06-29 16:08:03,795 - DEBUG - Added book REUTERS_NEWS.txt
+2024-06-29 16:08:03,827 - DEBUG - Updated pickled file.
+2024-06-29 16:08:03,828 - INFO - Added all books.
+2024-06-29 16:08:05,693 - INFO - Wrote common_sense_qa words to pickle
+2024-06-29 16:08:29,142 - INFO - Wrote trivia_q_a words to pickle
+2024-06-29 16:08:49,902 - INFO - Wrote squad_web_qa words to pickle
+2024-06-29 16:08:50,236 - INFO - Updated vocabulary with min_count
+2024-06-29 16:08:50,236 - INFO - Vocabulary Created successfully with 148156 words.
+2024-06-29 16:16:12,348 - DEBUG - vocabulary object found and loaded successfully.
+2024-06-29 16:16:12,349 - INFO - Vocabulary loaded successfully with 148156 words.
+2024-06-29 16:16:12,442 - DEBUG - CACHEDIR=/Users/srikamal/.matplotlib
+2024-06-29 16:16:12,447 - DEBUG - Using fontManager instance from /Users/srikamal/.matplotlib/fontlist-v330.json
+2024-06-29 16:16:12,897 - DEBUG - vocabulary object found and loaded successfully.
+2024-06-29 16:16:12,897 - INFO - Vocabulary loaded successfully with 148156 words.
+2024-06-29 16:16:13,006 - DEBUG - vocabulary object found and loaded successfully.
+2024-06-29 16:16:13,006 - INFO - Vocabulary loaded successfully with 148156 words.
+2024-06-29 16:16:13,006 - INFO - Running on cpu
+2024-06-29 16:16:14,388 - DEBUG - vocabulary object found and loaded successfully.
+2024-06-29 16:16:14,388 - INFO - Vocabulary loaded successfully with 148156 words.
+2024-06-29 16:16:14,390 - INFO - Model has 122217148 parameters.
+2024-06-29 20:26:21,809 - DEBUG - Read all Unix Words
+2024-06-29 20:26:48,028 - DEBUG - Added book REUTERS_NEWS.txt
+2024-06-29 20:26:48,057 - DEBUG - Updated pickled file.
+2024-06-29 20:26:48,057 - INFO - Added all books.
+2024-06-29 20:26:51,417 - INFO - Wrote common_sense_qa words to pickle
+2024-06-29 20:27:33,989 - INFO - Wrote trivia_q_a words to pickle
+2024-06-29 20:28:09,497 - INFO - Wrote squad_web_qa words to pickle
+2024-06-29 20:28:09,850 - INFO - Updated vocabulary with min_count
+2024-06-29 20:28:09,850 - INFO - Vocabulary Created successfully with 124239 words.
+2024-06-29 21:15:35,848 - DEBUG - vocabulary object found and loaded successfully.
+2024-06-29 21:15:35,849 - INFO - Vocabulary loaded successfully with 124239 words.
+2024-06-29 21:15:35,930 - DEBUG - CACHEDIR=/Users/srikamal/.matplotlib
+2024-06-29 21:15:35,936 - DEBUG - Using fontManager instance from /Users/srikamal/.matplotlib/fontlist-v330.json
+2024-06-29 21:15:36,342 - DEBUG - vocabulary object found and loaded successfully.
+2024-06-29 21:15:36,343 - INFO - Vocabulary loaded successfully with 124239 words.
+2024-06-29 21:15:36,415 - DEBUG - vocabulary object found and loaded successfully.
+2024-06-29 21:15:36,415 - INFO - Vocabulary loaded successfully with 124239 words.
+2024-06-29 21:15:36,415 - INFO - Running on cpu
+2024-06-29 21:15:37,706 - DEBUG - vocabulary object found and loaded successfully.
+2024-06-29 21:15:37,706 - INFO - Vocabulary loaded successfully with 124239 words.
+2024-06-29 21:15:37,707 - INFO - Model has 103824975 parameters.
+2024-06-29 21:19:17,803 - DEBUG - Read all Unix Words
+2024-06-29 21:19:45,064 - DEBUG - Added book REUTERS_NEWS.txt
+2024-06-29 21:19:45,086 - DEBUG - Updated pickled file.
+2024-06-29 21:19:45,086 - INFO - Added all books.
+2024-06-29 21:19:48,303 - INFO - Wrote common_sense_qa words to pickle
+2024-06-29 21:20:28,427 - INFO - Wrote trivia_q_a words to pickle
+2024-06-29 21:21:01,160 - INFO - Wrote squad_web_qa words to pickle
+2024-06-29 21:21:01,497 - INFO - Updated vocabulary with min_count
+2024-06-29 21:21:01,497 - INFO - Vocabulary Created successfully with 124240 words.
