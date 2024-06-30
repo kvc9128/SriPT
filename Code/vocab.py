@@ -24,6 +24,7 @@ class VOCAB:
 		self.EOS = "EOS"
 		self.PAD = "PAD"
 		self.UNK = "UNK"
+		self.SEP = "SEP"
 		self.min_count = min_occurrence
 		self.write_file_path = "../Datasets/Words/unix-words.txt"
 		self.read_file_path = "../Datasets/Words/30k.txt"

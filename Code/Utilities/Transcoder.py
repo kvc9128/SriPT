@@ -6,8 +6,7 @@ logger = logging.getLogger(__name__)
 
 def encode_raw_text(text, VOCAB, seq_len, inference=False):
 	if isinstance(text, str):
-		text = VOCAB.normalize_string(text)
-		text = text.split()
+		text = VOCAB.tokenize_sentence(text)
 
 	if len(text) > seq_len:
 		if not inference:

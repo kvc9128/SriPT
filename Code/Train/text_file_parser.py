@@ -11,11 +11,11 @@ def create_sequences_from_book(VOCAB, text_file_path, context_window_length):
 		with open(text_file_path, encoding='utf-8') as f:
 			text = f.read()
 			# Convert any unicode to ascii, and normalize the string
-			normalized_text = VOCAB.normalize_string(text)
-			normalized_text = [word for word in normalized_text.split()]
-			logger.info(f"Found {len(normalized_text)} words in book")
+			# convert to word tokens (still english)
+			normalized_words = VOCAB.tokenize_sentence(text)
+			logger.info(f"Found ~{len(normalized_words)} words in book")
 			return generate_sequences_for_text(
-				normalized_text,
+				normalized_words,
 				context_window_length,
 				VOCAB,
 				text_file_path
@@ -30,34 +30,25 @@ def create_sequences_from_json(VOCAB, json_file_path, context_window_length):
 	if json_file_path == "../Datasets/QA/common_sense_q_a.json":
 		return create_sequences_from_common_sense(VOCAB, context_window_length)
 	elif json_file_path == "../Datasets/QA/squad.json":
-		return create_sequences_from_trivia(VOCAB, context_window_length)
+		return create_sequences_from_squad(VOCAB, context_window_length)
 	elif json_file_path == "../Datasets/QA/trivia.json":
-		return create_sequences_from_SQuAD(VOCAB, context_window_length)
+		return create_sequences_from_trivia(VOCAB, context_window_length)
 
 
-def generate_sequences_for_text(normalized_text, context_window_length, VOCAB, text_file_path, step=12):
-	"""
-	example
-	sequence = [PAD, PAD, I, AM, PERCY] # irl tokens(ints), used words for ease of understanding
-	target = [JACKSON]
-
-	:param normalized_text:
-	:param context_window_length:
-	:param VOCAB:
-	:param text_file_path:
-	:param step: The number of steps we jump ahead
-	:return:
-	"""
+def generate_sequences_for_text(normalized_text, context_window_length, VOCAB, text_file_path, step=256):
 	encoded_sequences, encoded_targets = [], []
+	sep_token = "SEP"
+	pad_token = "PAD"
+
 	for i in range(0, len(normalized_text) - 1 - context_window_length, step):
-		sequence = normalized_text[i: i + context_window_length]
-		target = normalized_text[i + 1: i + context_window_length + 1]
-		for t in range(context_window_length):
-			encoded_sequence = encode_raw_text(
-				sequence[:t + 1], VOCAB,
-				seq_len=context_window_length
-			)
-			encoded_target = np.array([VOCAB.word2index(target[t])])
+		question_tokens = normalized_text[i: i + context_window_length]
+		target_tokens = normalized_text[i + 1: i + context_window_length + 1]
+		for t in range(0, len(question_tokens)):
+			sequence = [pad_token] * (context_window_length - 2 - t) + [sep_token] + question_tokens[:t + 1]
+			target = target_tokens[t]
+
+			encoded_sequence = encode_raw_text(sequence, VOCAB, context_window_length, inference=False)
+			encoded_target = np.array([VOCAB.word2index(target)])
 
 			encoded_sequences.append(encoded_sequence)
 			encoded_targets.append(encoded_target)
@@ -70,8 +61,12 @@ def generate_sequences_for_text(normalized_text, context_window_length, VOCAB, t
 	logger.info(
 		msg=f"Generated and shuffled {len(shuffled_encoded_sequences)} sequences for book " + text_file_path[
 		                                                                                      18:])
-	return shuffled_encoded_sequences, shuffled_encoded_targets
+	if len(shuffled_encoded_sequences) > 2e6:
+		logger.info(msg=f"Limited to 2 million sequences for compute reasons")
+		shuffled_encoded_sequences = shuffled_encoded_sequences[:2000000]
+		shuffled_encoded_targets = shuffled_encoded_targets[:2000000]
 
+	return shuffled_encoded_sequences, shuffled_encoded_targets
 
 def create_sequences_from_common_sense(VOCAB, context_window_length):
 	encoded_sequences, encoded_targets = [], []
@@ -123,7 +118,7 @@ def create_sequences_from_common_sense(VOCAB, context_window_length):
 		return np.array([]), np.array([])
 
 
-def create_sequences_from_trivia(VOCAB, context_window_length):
+def create_sequences_from_squad(VOCAB, context_window_length):
 	encoded_sequences, encoded_targets = [], []
 	try:
 		file_path = "../Datasets/QA/squad.json"
@@ -168,7 +163,7 @@ def create_sequences_from_trivia(VOCAB, context_window_length):
 		return np.array([]), np.array([])
 
 
-def create_sequences_from_SQuAD(VOCAB, context_window_length):
+def create_sequences_from_trivia(VOCAB, context_window_length):
 	encoded_sequences, encoded_targets = [], []
 	try:
 		file_path = "../Datasets/QA/trivia.json"

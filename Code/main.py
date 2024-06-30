@@ -18,12 +18,12 @@ from model_hyperparameters import NUM_DECODER_LAYERS
 logger = logging.getLogger(__name__)
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 datasets = [
+	"../Datasets/Books/REUTERS_NEWS.txt",
 	"../Datasets/QA/trivia.json",
 	"../Datasets/QA/squad.json",
-	"../Datasets/QA/common_sense_q_a.json",
-	"../Datasets/Books/REUTERS_NEWS.txt"
+	"../Datasets/QA/common_sense_q_a.json"
 ]
-SAVED_FOLDER = "../TRAINED_MODELS/"
+SAVED_FOLDER = "../TRAINED_MODELS/reuters_base.pt"
 
 
 def load_model(model):
@@ -76,12 +76,15 @@ def main():
 	)
 	logger.info(f"Model has {total_params} parameters.")
 
-	# don't want to overwrite saved model
-	MODEL = load_model(MODEL)
+	# TODO: Uncomment depending on if you are retraining or building form scratch
+	# MODEL = load_model(MODEL)
 	for dataset in datasets:
 		trainer.train_model_on(dataset)
 		MODEL = load_model(MODEL)
 		trainer.update_model_and_optimizer(MODEL, OPTIMIZER)
+		# TODO: Print performance on a few questions (?)
+
+	# TODO: Run on evaluation dataset, plot data
 
 
 main()
