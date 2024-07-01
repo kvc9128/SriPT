@@ -24,10 +24,10 @@ logger = logging.getLogger(__name__)
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 datasets = [
     "../Datasets/QA/common_sense_q_a.json",
-    # "../Datasets/QA/trivia.json",
-    # "../Datasets/QA/squad.json",
-    # "../Datasets/Books/REUTERS_NEWS.txt",
-    # "../Datasets/QA/squad.json",
+    "../Datasets/QA/trivia.json",
+    "../Datasets/QA/squad.json",
+    "../Datasets/Books/REUTERS_NEWS.txt",
+    "../Datasets/QA/squad.json",
 ]
 SAVED_FOLDER = "../TRAINED_MODELS/reuters_base.pt"
 SOFTMAX = nn.Softmax(dim=-1)
@@ -51,21 +51,33 @@ def load_model(model):
     finally:
         return model
 
+
 def evaluate_on_common_sense(model, VOCAB):
-    eval_path = "../Datasets/Evaluation/common_sense_qa_dev.json"
+    eval_path = "../Datasets/Evaluation/common_sense_qa_dev.jsonl"
+
     with open(eval_path, 'r') as file:
-        data = json.load(file)
-        sample_questions = np.random.choice(data, size=5, replace=False)
+        data = [json.loads(line) for line in file]
+
+    sample_questions = np.random.choice(data, size=5, replace=False)
+
     logger.info("=" * 50)
     logger.info(" Common Sense QA Dev evaluation")
     logger.info("=" * 50)
+
     model.eval()
     with torch.no_grad():
         for item in sample_questions:
-            question = item['Question']
-            correct_answer = item['Answer']['Value']
+            question = item['question']['stem']
             context = ""
             generated_answer = ""
+
+            correct_label = item['answerKey']
+            # Extract words from the correct choice
+            choice_text = ""
+            for choice in item['question']['choices']:
+                if choice['label'] == correct_label:
+                    choice_text += choice['text']
+                    break  # Exit the loop once the correct choice is found
 
             for _ in range(25):  # 25 is an arbitrary limit for token generation
                 sequence = generate_padded_sequence_with_context(
@@ -93,7 +105,7 @@ def evaluate_on_common_sense(model, VOCAB):
 
             logger.info(f"Context: {context}")
             logger.info(f"Question: {question}")
-            logger.info(f"Correct Answer: {correct_answer}")
+            logger.info(f"Correct Answer: {choice_text}")
             logger.info(f"Predicted Answer: {generated_answer.strip()}")
             logger.info("-" * 50)
 
@@ -132,7 +144,7 @@ def evaluate_on_squad_dev(model, vocab):
                         mask_tensor[encoded_sequence == vocab.word2index("PAD")] = 0
 
                         output = model(encoded_sequence, mask_tensor)
-                        output = SOFTMAX(output[:, -1, :])  # Get the output for the last token in the sequence
+                        output = SOFTMAX(output)  # Get the output for the last token in the sequence
                         predicted_token_id = torch.multinomial(output, 1).item()
                         predicted_token = vocab.index2word(predicted_token_id)
 
@@ -191,7 +203,7 @@ def main():
     for dataset in datasets:
         trainer.train_model_on(dataset)
         MODEL = load_model(MODEL)
-        trainer.update_model_and_optimizer(MODEL, OPTIMIZER)
+        trainer.update_model(MODEL)
         evaluate_on_common_sense(MODEL, VOCAB)
     # evaluate finally on squad dev
     evaluate_on_squad_dev(MODEL, VOCAB)

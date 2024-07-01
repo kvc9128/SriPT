@@ -17446,3 +17446,319 @@
 2024-07-01 00:09:12,725 - INFO - Vocabulary loaded successfully with 89880 words.
 2024-07-01 00:09:12,737 - INFO - Model has 50822864 parameters.
 2024-07-01 00:09:12,737 - INFO - Started training on ../Datasets/QA/common_sense_q_a.json
+2024-07-01 00:14:26,871 - DEBUG - vocabulary object found and loaded successfully.
+2024-07-01 00:14:26,872 - INFO - Vocabulary loaded successfully with 89880 words.
+2024-07-01 00:14:26,923 - DEBUG - CACHEDIR=/Users/srikamal/.matplotlib
+2024-07-01 00:14:26,925 - DEBUG - Using fontManager instance from /Users/srikamal/.matplotlib/fontlist-v330.json
+2024-07-01 00:14:27,196 - DEBUG - vocabulary object found and loaded successfully.
+2024-07-01 00:14:27,197 - INFO - Vocabulary loaded successfully with 89880 words.
+2024-07-01 00:14:27,255 - DEBUG - vocabulary object found and loaded successfully.
+2024-07-01 00:14:27,255 - INFO - Vocabulary loaded successfully with 89880 words.
+2024-07-01 00:14:27,255 - INFO - Running on cpu
+2024-07-01 00:14:27,937 - DEBUG - vocabulary object found and loaded successfully.
+2024-07-01 00:14:27,937 - INFO - Vocabulary loaded successfully with 89880 words.
+2024-07-01 00:14:27,938 - INFO - Model has 50822864 parameters.
+2024-07-01 00:14:27,938 - DEBUG - Successfully updated model
+2024-07-01 00:15:07,279 - DEBUG - vocabulary object found and loaded successfully.
+2024-07-01 00:15:07,279 - INFO - Vocabulary loaded successfully with 89880 words.
+2024-07-01 00:15:07,332 - DEBUG - CACHEDIR=/Users/srikamal/.matplotlib
+2024-07-01 00:15:07,334 - DEBUG - Using fontManager instance from /Users/srikamal/.matplotlib/fontlist-v330.json
+2024-07-01 00:15:07,581 - DEBUG - vocabulary object found and loaded successfully.
+2024-07-01 00:15:07,581 - INFO - Vocabulary loaded successfully with 89880 words.
+2024-07-01 00:15:07,635 - DEBUG - vocabulary object found and loaded successfully.
+2024-07-01 00:15:07,635 - INFO - Vocabulary loaded successfully with 89880 words.
+2024-07-01 00:15:07,635 - INFO - Running on cpu
+2024-07-01 00:15:08,321 - DEBUG - vocabulary object found and loaded successfully.
+2024-07-01 00:15:08,322 - INFO - Vocabulary loaded successfully with 89880 words.
+2024-07-01 00:15:08,322 - INFO - Model has 50822864 parameters.
+2024-07-01 00:15:08,323 - DEBUG - Successfully updated model
+2024-07-01 00:18:38,017 - DEBUG - vocabulary object found and loaded successfully.
+2024-07-01 00:18:38,017 - INFO - Vocabulary loaded successfully with 89880 words.
+2024-07-01 00:18:38,078 - DEBUG - CACHEDIR=/Users/srikamal/.matplotlib
+2024-07-01 00:18:38,080 - DEBUG - Using fontManager instance from /Users/srikamal/.matplotlib/fontlist-v330.json
+2024-07-01 00:18:38,311 - DEBUG - vocabulary object found and loaded successfully.
+2024-07-01 00:18:38,311 - INFO - Vocabulary loaded successfully with 89880 words.
+2024-07-01 00:18:38,366 - DEBUG - vocabulary object found and loaded successfully.
+2024-07-01 00:18:38,366 - INFO - Vocabulary loaded successfully with 89880 words.
+2024-07-01 00:18:38,366 - INFO - Running on cpu
+2024-07-01 00:18:39,012 - DEBUG - vocabulary object found and loaded successfully.
+2024-07-01 00:18:39,012 - INFO - Vocabulary loaded successfully with 89880 words.
+2024-07-01 00:18:39,013 - INFO - Model has 50822864 parameters.
+2024-07-01 00:18:39,013 - DEBUG - Successfully updated model
+2024-07-01 00:18:39,025 - INFO - ==================================================
+2024-07-01 00:18:39,026 - INFO -  Common Sense QA Dev evaluation
+2024-07-01 00:18:39,026 - INFO - ==================================================
+2024-07-01 00:18:48,174 - DEBUG - vocabulary object found and loaded successfully.
+2024-07-01 00:18:48,175 - INFO - Vocabulary loaded successfully with 89880 words.
+2024-07-01 00:18:48,289 - DEBUG - CACHEDIR=/Users/srikamal/.matplotlib
+2024-07-01 00:18:48,296 - DEBUG - Using fontManager instance from /Users/srikamal/.matplotlib/fontlist-v330.json
+2024-07-01 00:18:48,960 - DEBUG - vocabulary object found and loaded successfully.
+2024-07-01 00:18:48,960 - INFO - Vocabulary loaded successfully with 89880 words.
+2024-07-01 00:18:49,044 - DEBUG - vocabulary object found and loaded successfully.
+2024-07-01 00:18:49,044 - INFO - Vocabulary loaded successfully with 89880 words.
+2024-07-01 00:18:49,045 - INFO - Running on cpu
+2024-07-01 00:18:50,293 - DEBUG - vocabulary object found and loaded successfully.
+2024-07-01 00:18:50,293 - INFO - Vocabulary loaded successfully with 89880 words.
+2024-07-01 00:18:50,305 - INFO - Model has 50822864 parameters.
+2024-07-01 00:18:50,305 - DEBUG - Successfully updated model
+2024-07-01 00:18:50,322 - INFO - ==================================================
+2024-07-01 00:18:50,323 - INFO -  Common Sense QA Dev evaluation
+2024-07-01 00:18:50,323 - INFO - ==================================================
+2024-07-01 00:21:24,092 - DEBUG - vocabulary object found and loaded successfully.
+2024-07-01 00:21:24,093 - INFO - Vocabulary loaded successfully with 89880 words.
+2024-07-01 00:21:24,222 - DEBUG - CACHEDIR=/Users/srikamal/.matplotlib
+2024-07-01 00:21:24,229 - DEBUG - Using fontManager instance from /Users/srikamal/.matplotlib/fontlist-v330.json
+2024-07-01 00:21:24,792 - DEBUG - vocabulary object found and loaded successfully.
+2024-07-01 00:21:24,792 - INFO - Vocabulary loaded successfully with 89880 words.
+2024-07-01 00:21:24,862 - DEBUG - vocabulary object found and loaded successfully.
+2024-07-01 00:21:24,873 - INFO - Vocabulary loaded successfully with 89880 words.
+2024-07-01 00:21:24,874 - INFO - Running on cpu
+2024-07-01 00:21:26,104 - DEBUG - vocabulary object found and loaded successfully.
+2024-07-01 00:21:26,104 - INFO - Vocabulary loaded successfully with 89880 words.
+2024-07-01 00:21:26,113 - INFO - Model has 50822864 parameters.
+2024-07-01 00:21:26,113 - DEBUG - Successfully updated model
+2024-07-01 00:21:26,127 - INFO - ==================================================
+2024-07-01 00:21:26,127 - INFO -  Common Sense QA Dev evaluation
+2024-07-01 00:21:26,128 - INFO - ==================================================
+2024-07-01 00:21:36,386 - DEBUG - vocabulary object found and loaded successfully.
+2024-07-01 00:21:36,386 - INFO - Vocabulary loaded successfully with 89880 words.
+2024-07-01 00:21:36,456 - DEBUG - CACHEDIR=/Users/srikamal/.matplotlib
+2024-07-01 00:21:36,460 - DEBUG - Using fontManager instance from /Users/srikamal/.matplotlib/fontlist-v330.json
+2024-07-01 00:21:36,804 - DEBUG - vocabulary object found and loaded successfully.
+2024-07-01 00:21:36,804 - INFO - Vocabulary loaded successfully with 89880 words.
+2024-07-01 00:21:36,884 - DEBUG - vocabulary object found and loaded successfully.
+2024-07-01 00:21:36,885 - INFO - Vocabulary loaded successfully with 89880 words.
+2024-07-01 00:21:36,885 - INFO - Running on cpu
+2024-07-01 00:21:37,660 - DEBUG - vocabulary object found and loaded successfully.
+2024-07-01 00:21:37,660 - INFO - Vocabulary loaded successfully with 89880 words.
+2024-07-01 00:21:37,661 - INFO - Model has 50822864 parameters.
+2024-07-01 00:21:37,661 - DEBUG - Successfully updated model
+2024-07-01 00:21:37,671 - INFO - ==================================================
+2024-07-01 00:21:37,671 - INFO -  Common Sense QA Dev evaluation
+2024-07-01 00:21:37,671 - INFO - ==================================================
+2024-07-01 00:21:41,112 - INFO - Context: 
+2024-07-01 00:21:41,112 - INFO - Question: A mountie got off at a subway stop.  What city might he be in?
+2024-07-01 00:22:05,915 - DEBUG - vocabulary object found and loaded successfully.
+2024-07-01 00:22:05,915 - INFO - Vocabulary loaded successfully with 89880 words.
+2024-07-01 00:22:05,964 - DEBUG - CACHEDIR=/Users/srikamal/.matplotlib
+2024-07-01 00:22:05,966 - DEBUG - Using fontManager instance from /Users/srikamal/.matplotlib/fontlist-v330.json
+2024-07-01 00:22:06,224 - DEBUG - vocabulary object found and loaded successfully.
+2024-07-01 00:22:06,224 - INFO - Vocabulary loaded successfully with 89880 words.
+2024-07-01 00:22:06,283 - DEBUG - vocabulary object found and loaded successfully.
+2024-07-01 00:22:06,283 - INFO - Vocabulary loaded successfully with 89880 words.
+2024-07-01 00:22:06,283 - INFO - Running on cpu
+2024-07-01 00:22:06,939 - DEBUG - vocabulary object found and loaded successfully.
+2024-07-01 00:22:06,939 - INFO - Vocabulary loaded successfully with 89880 words.
+2024-07-01 00:22:06,940 - INFO - Model has 50822864 parameters.
+2024-07-01 00:22:06,940 - DEBUG - Successfully updated model
+2024-07-01 00:22:06,950 - INFO - ==================================================
+2024-07-01 00:22:06,950 - INFO -  Common Sense QA Dev evaluation
+2024-07-01 00:22:06,950 - INFO - ==================================================
+2024-07-01 00:22:10,179 - INFO - Context: 
+2024-07-01 00:22:10,179 - INFO - Question: Which large land mass is home to the most monkeys?
+2024-07-01 00:22:10,179 - INFO - Correct Answer: african continent
+2024-07-01 00:22:10,179 - INFO - Predicted Answer: hurdles quetsch halfhour commoner storytelling oxoco kills hitlers tracks samoa beefheart spartas shattner logarithmic messalina khas anton ignorant keane solution clintons discoloration mars unip evironment
+2024-07-01 00:22:10,179 - INFO - --------------------------------------------------
+2024-07-01 00:22:13,421 - INFO - Context: 
+2024-07-01 00:22:13,421 - INFO - Question: What do children require to grow up healthy?
+2024-07-01 00:22:13,421 - INFO - Correct Answer: need care
+2024-07-01 00:22:13,421 - INFO - Predicted Answer: lhd garvey counsels szekesfehervar cartagena onestop resemblances coaxed masa deniability released resents milliondollar mammy efcc li biw contactors allowed od yarmulke mcfarlane pattons fates contrast
+2024-07-01 00:22:13,421 - INFO - --------------------------------------------------
+2024-07-01 00:22:17,129 - INFO - Context: 
+2024-07-01 00:22:17,129 - INFO - Question: The car was going from Alabama to New York, what was its goal?
+2024-07-01 00:22:17,129 - INFO - Correct Answer: head north
+2024-07-01 00:22:17,129 - INFO - Predicted Answer: cottontail emigrated bumpy xinqiang feasting posies shields shelling destabilised impregnable brabancons departements contradicting froome apron bessie rudd hachiji multilingual dewsbury freed stockmann auspex folkrock wyttenbach
+2024-07-01 00:22:17,129 - INFO - --------------------------------------------------
+2024-07-01 00:22:20,808 - INFO - Context: 
+2024-07-01 00:22:20,809 - INFO - Question: When getting in shape, this is something that does wonders?
+2024-07-01 00:22:20,809 - INFO - Correct Answer: jogging
+2024-07-01 00:22:20,809 - INFO - Predicted Answer: leaa innocence lowranking phlebotomist bc boi connotative steppes maths lilius mitchell neohistoricismrevivalism kos nasara jayne abdel maximize carell wheeler recognizable nobility museums eggplants kandeh whereupon
+2024-07-01 00:22:20,809 - INFO - --------------------------------------------------
+2024-07-01 00:22:24,015 - INFO - Context: 
+2024-07-01 00:22:24,015 - INFO - Question: Where would you find a large dining room containing a fancy chandelier?
+2024-07-01 00:22:24,015 - INFO - Correct Answer: mansion
+2024-07-01 00:22:24,015 - INFO - Predicted Answer: tricolor purolator septic received wisara villa petitioned aguas baloney monroe twoseat chemical spore cottman clive constancy indymac mazt.t propertycasualty moldavia pnc contra taxwriters owners epithets
+2024-07-01 00:22:24,015 - INFO - --------------------------------------------------
+2024-07-01 00:22:24,016 - DEBUG - Successfully updated model
+2024-07-01 00:22:24,024 - INFO - ==================================================
+2024-07-01 00:22:24,025 - INFO -  Common Sense QA Dev evaluation
+2024-07-01 00:22:24,025 - INFO - ==================================================
+2024-07-01 00:22:27,449 - INFO - Context: 
+2024-07-01 00:22:27,449 - INFO - Question: After he got hired he hoped for success at his what?
+2024-07-01 00:22:27,449 - INFO - Correct Answer: new job
+2024-07-01 00:22:27,449 - INFO - Predicted Answer: refract hpc kenwright highbridge romantico kurgan 3.6. u.s.mexican virgo lyphomed satellaview gastrin compressors vernes 000s comdatas aga paraneoptera shrek purchasers blacklist onequarter wok microsoft shalom
+2024-07-01 00:22:27,449 - INFO - --------------------------------------------------
+2024-07-01 00:22:31,402 - INFO - Context: 
+2024-07-01 00:22:31,402 - INFO - Question: What is a place that has a bench nestled in trees?
+2024-07-01 00:22:31,402 - INFO - Correct Answer: state park
+2024-07-01 00:22:31,402 - INFO - Predicted Answer: admitted mcclane countering lambda westpac standardize ryukyus drain elo massing bandar ferroalloy mcfly wellconnected stillrunning businessmen kohls bq alss mina alchemists adventures attraction columbine connelly
+2024-07-01 00:22:31,402 - INFO - --------------------------------------------------
+2024-07-01 00:22:34,894 - INFO - Context: 
+2024-07-01 00:22:34,894 - INFO - Question: For many males hair is a concern as they get older, it begins to what, causing a receding hairline?
+2024-07-01 00:22:34,894 - INFO - Correct Answer: fall out
+2024-07-01 00:22:34,894 - INFO - Predicted Answer: bolder legitimized willett butterwick smedley hamburgers buzz newlyreleased alhasa intrastate iceage thalassa pariah chirrines hegels bronx wailers cables sx200 viis legendarys moskovitz litigants asphyxiant supercharger
+2024-07-01 00:22:34,895 - INFO - --------------------------------------------------
+2024-07-01 00:22:38,150 - INFO - Context: 
+2024-07-01 00:22:38,150 - INFO - Question: Where does lettuce arrive by large trucks?
+2024-07-01 00:22:38,150 - INFO - Correct Answer: supermarket
+2024-07-01 00:22:38,150 - INFO - Predicted Answer: delic nearclose cracking bohemian waterfront cerveza satapt 12x osmania sichero contemplative lountza imminently geneticists toyotomi enforcement elihu hpc clasicilor taxonomic epicenter megapodes 98174us16041 inlaid smother
+2024-07-01 00:22:38,150 - INFO - --------------------------------------------------
+2024-07-01 00:22:53,449 - DEBUG - vocabulary object found and loaded successfully.
+2024-07-01 00:22:53,449 - INFO - Vocabulary loaded successfully with 89880 words.
+2024-07-01 00:22:53,498 - DEBUG - CACHEDIR=/Users/srikamal/.matplotlib
+2024-07-01 00:22:53,500 - DEBUG - Using fontManager instance from /Users/srikamal/.matplotlib/fontlist-v330.json
+2024-07-01 00:22:53,765 - DEBUG - vocabulary object found and loaded successfully.
+2024-07-01 00:22:53,765 - INFO - Vocabulary loaded successfully with 89880 words.
+2024-07-01 00:22:53,825 - DEBUG - vocabulary object found and loaded successfully.
+2024-07-01 00:22:53,825 - INFO - Vocabulary loaded successfully with 89880 words.
+2024-07-01 00:22:53,825 - INFO - Running on cpu
+2024-07-01 00:22:54,481 - DEBUG - vocabulary object found and loaded successfully.
+2024-07-01 00:22:54,481 - INFO - Vocabulary loaded successfully with 89880 words.
+2024-07-01 00:22:54,482 - INFO - Model has 50822864 parameters.
+2024-07-01 00:23:05,632 - DEBUG - vocabulary object found and loaded successfully.
+2024-07-01 00:23:05,633 - INFO - Vocabulary loaded successfully with 89880 words.
+2024-07-01 00:23:05,688 - DEBUG - CACHEDIR=/Users/srikamal/.matplotlib
+2024-07-01 00:23:05,692 - DEBUG - Using fontManager instance from /Users/srikamal/.matplotlib/fontlist-v330.json
+2024-07-01 00:23:05,956 - DEBUG - vocabulary object found and loaded successfully.
+2024-07-01 00:23:05,956 - INFO - Vocabulary loaded successfully with 89880 words.
+2024-07-01 00:23:06,020 - DEBUG - vocabulary object found and loaded successfully.
+2024-07-01 00:23:06,021 - INFO - Vocabulary loaded successfully with 89880 words.
+2024-07-01 00:23:06,021 - INFO - Running on cpu
+2024-07-01 00:23:06,714 - DEBUG - vocabulary object found and loaded successfully.
+2024-07-01 00:23:06,714 - INFO - Vocabulary loaded successfully with 89880 words.
+2024-07-01 00:23:06,715 - INFO - Model has 50822864 parameters.
+2024-07-01 00:23:07,463 - INFO - Context: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse ("Norman" comes from "Norseman") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+2024-07-01 00:23:07,463 - INFO - Question: In what country is Normandy located?
+2024-07-01 00:23:07,464 - INFO - Correct Answer: France
+2024-07-01 00:23:07,464 - INFO - Predicted Answer: meija lerna excavation stitches carseywerner
+2024-07-01 00:23:07,464 - INFO - --------------------------------------------------
+2024-07-01 00:23:08,128 - INFO - Context: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse ("Norman" comes from "Norseman") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+2024-07-01 00:23:08,128 - INFO - Question: When were the Normans in Normandy?
+2024-07-01 00:23:08,128 - INFO - Correct Answer: 10th and 11th centuries
+2024-07-01 00:23:08,129 - INFO - Predicted Answer: small tumble bernstein deakins monkey
+2024-07-01 00:23:08,129 - INFO - --------------------------------------------------
+2024-07-01 00:23:08,833 - INFO - Context: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse ("Norman" comes from "Norseman") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+2024-07-01 00:23:08,833 - INFO - Question: From which countries did the Norse originate?
+2024-07-01 00:23:08,833 - INFO - Correct Answer: Denmark, Iceland and Norway
+2024-07-01 00:23:08,833 - INFO - Predicted Answer: insolvencies reconsolidated mcgwire clergylaity heathen
+2024-07-01 00:23:08,833 - INFO - --------------------------------------------------
+2024-07-01 00:23:09,544 - INFO - Context: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse ("Norman" comes from "Norseman") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+2024-07-01 00:23:09,544 - INFO - Question: Who was the Norse leader?
+2024-07-01 00:23:09,545 - INFO - Correct Answer: Rollo
+2024-07-01 00:23:09,545 - INFO - Predicted Answer: calculated freeze pra postromantic tallahassee
+2024-07-01 00:23:09,545 - INFO - --------------------------------------------------
+2024-07-01 00:23:10,225 - INFO - Context: The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse ("Norman" comes from "Norseman") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.
+2024-07-01 00:23:10,225 - INFO - Question: What century did the Normans first gain their separate identity?
+2024-07-01 00:23:10,226 - INFO - Correct Answer: 10th century
+2024-07-01 00:23:10,226 - INFO - Predicted Answer: sejm macaos 67bn fozzie erickson
+2024-07-01 00:23:10,226 - INFO - --------------------------------------------------
+2024-07-01 00:23:10,941 - INFO - Context: The Norman dynasty had a major political, cultural and military impact on medieval Europe and even the Near East. The Normans were famed for their martial spirit and eventually for their Christian piety, becoming exponents of the Catholic orthodoxy into which they assimilated. They adopted the Gallo-Romance language of the Frankish land they settled, their dialect becoming known as Norman, Normaund or Norman French, an important literary language. The Duchy of Normandy, which they formed by treaty with the French crown, was a great fief of medieval France, and under Richard I of Normandy was forged into a cohesive and formidable principality in feudal tenure. The Normans are noted both for their culture, such as their unique Romanesque architecture and musical traditions, and for their significant military accomplishments and innovations. Norman adventurers founded the Kingdom of Sicily under Roger II after conquering southern Italy on the Saracens and Byzantines, and an expedition on behalf of their duke, William the Conqueror, led to the Norman conquest of England at the Battle of Hastings in 1066. Norman cultural and military influence spread from these new European centres to the Crusader states of the Near East, where their prince Bohemond I founded the Principality of Antioch in the Levant, to Scotland and Wales in Great Britain, to Ireland, and to the coasts of north Africa and the Canary Islands.
+2024-07-01 00:23:10,941 - INFO - Question: Who was the duke in the battle of Hastings?
+2024-07-01 00:23:10,941 - INFO - Correct Answer: William the Conqueror
+2024-07-01 00:23:10,941 - INFO - Predicted Answer: swiftly millett annihilation multidrug mineworkers
+2024-07-01 00:23:10,941 - INFO - --------------------------------------------------
+2024-07-01 00:23:11,617 - INFO - Context: The Norman dynasty had a major political, cultural and military impact on medieval Europe and even the Near East. The Normans were famed for their martial spirit and eventually for their Christian piety, becoming exponents of the Catholic orthodoxy into which they assimilated. They adopted the Gallo-Romance language of the Frankish land they settled, their dialect becoming known as Norman, Normaund or Norman French, an important literary language. The Duchy of Normandy, which they formed by treaty with the French crown, was a great fief of medieval France, and under Richard I of Normandy was forged into a cohesive and formidable principality in feudal tenure. The Normans are noted both for their culture, such as their unique Romanesque architecture and musical traditions, and for their significant military accomplishments and innovations. Norman adventurers founded the Kingdom of Sicily under Roger II after conquering southern Italy on the Saracens and Byzantines, and an expedition on behalf of their duke, William the Conqueror, led to the Norman conquest of England at the Battle of Hastings in 1066. Norman cultural and military influence spread from these new European centres to the Crusader states of the Near East, where their prince Bohemond I founded the Principality of Antioch in the Levant, to Scotland and Wales in Great Britain, to Ireland, and to the coasts of north Africa and the Canary Islands.
+2024-07-01 00:23:11,617 - INFO - Question: Who ruled the duchy of Normandy
+2024-07-01 00:23:11,617 - INFO - Correct Answer: Richard I
+2024-07-01 00:23:11,617 - INFO - Predicted Answer: hamsters foxwoods crockett dp13 ilchester
+2024-07-01 00:23:11,617 - INFO - --------------------------------------------------
+2024-07-01 00:23:12,333 - INFO - Context: The Norman dynasty had a major political, cultural and military impact on medieval Europe and even the Near East. The Normans were famed for their martial spirit and eventually for their Christian piety, becoming exponents of the Catholic orthodoxy into which they assimilated. They adopted the Gallo-Romance language of the Frankish land they settled, their dialect becoming known as Norman, Normaund or Norman French, an important literary language. The Duchy of Normandy, which they formed by treaty with the French crown, was a great fief of medieval France, and under Richard I of Normandy was forged into a cohesive and formidable principality in feudal tenure. The Normans are noted both for their culture, such as their unique Romanesque architecture and musical traditions, and for their significant military accomplishments and innovations. Norman adventurers founded the Kingdom of Sicily under Roger II after conquering southern Italy on the Saracens and Byzantines, and an expedition on behalf of their duke, William the Conqueror, led to the Norman conquest of England at the Battle of Hastings in 1066. Norman cultural and military influence spread from these new European centres to the Crusader states of the Near East, where their prince Bohemond I founded the Principality of Antioch in the Levant, to Scotland and Wales in Great Britain, to Ireland, and to the coasts of north Africa and the Canary Islands.
+2024-07-01 00:23:12,333 - INFO - Question: What religion were the Normans
+2024-07-01 00:23:12,333 - INFO - Correct Answer: Catholic
+2024-07-01 00:23:12,333 - INFO - Predicted Answer: holst verrazzano sawmill closelyheld strenghten
+2024-07-01 00:23:12,333 - INFO - --------------------------------------------------
+2024-07-01 00:23:13,009 - INFO - Context: The English name "Normans" comes from the French words Normans/Normanz, plural of Normant, modern French normand, which is itself borrowed from Old Low Franconian Nortmann "Northman" or directly from Old Norse Norðmaðr, Latinized variously as Nortmannus, Normannus, or Nordmannus (recorded in Medieval Latin, 9th century) to mean "Norseman, Viking".
+2024-07-01 00:23:13,009 - INFO - Question: What is the original meaning of the word Norman?
+2024-07-01 00:23:13,009 - INFO - Correct Answer: Viking
+2024-07-01 00:23:13,009 - INFO - Predicted Answer: stratocracy bridgend acids drogon bergholt
+2024-07-01 00:23:13,009 - INFO - --------------------------------------------------
+2024-07-01 00:23:13,678 - INFO - Context: The English name "Normans" comes from the French words Normans/Normanz, plural of Normant, modern French normand, which is itself borrowed from Old Low Franconian Nortmann "Northman" or directly from Old Norse Norðmaðr, Latinized variously as Nortmannus, Normannus, or Nordmannus (recorded in Medieval Latin, 9th century) to mean "Norseman, Viking".
+2024-07-01 00:23:13,678 - INFO - Question: When was the Latin version of the word Norman first recorded?
+2024-07-01 00:23:13,678 - INFO - Correct Answer: 9th century
+2024-07-01 00:23:13,678 - INFO - Predicted Answer: johannine imbued delchamps wonderfully nonproperty
+2024-07-01 00:23:13,678 - INFO - --------------------------------------------------
+2024-07-01 00:23:14,429 - INFO - Context: In the course of the 10th century, the initially destructive incursions of Norse war bands into the rivers of France evolved into more permanent encampments that included local women and personal property. The Duchy of Normandy, which began in 911 as a fiefdom, was established by the treaty of Saint-Clair-sur-Epte between King Charles III of West Francia and the famed Viking ruler Rollo, and was situated in the former Frankish kingdom of Neustria. The treaty offered Rollo and his men the French lands between the river Epte and the Atlantic coast in exchange for their protection against further Viking incursions. The area corresponded to the northern part of present-day Upper Normandy down to the river Seine, but the Duchy would eventually extend west beyond the Seine. The territory was roughly equivalent to the old province of Rouen, and reproduced the Roman administrative structure of Gallia Lugdunensis II (part of the former Gallia Lugdunensis).
+2024-07-01 00:23:14,429 - INFO - Question: When was the Duchy of Normandy founded?
+2024-07-01 00:23:14,429 - INFO - Correct Answer: 911
+2024-07-01 00:23:14,429 - INFO - Predicted Answer: nerco seac seoul holdings importsexports
+2024-07-01 00:23:14,429 - INFO - --------------------------------------------------
+2024-07-01 00:23:15,116 - INFO - Context: In the course of the 10th century, the initially destructive incursions of Norse war bands into the rivers of France evolved into more permanent encampments that included local women and personal property. The Duchy of Normandy, which began in 911 as a fiefdom, was established by the treaty of Saint-Clair-sur-Epte between King Charles III of West Francia and the famed Viking ruler Rollo, and was situated in the former Frankish kingdom of Neustria. The treaty offered Rollo and his men the French lands between the river Epte and the Atlantic coast in exchange for their protection against further Viking incursions. The area corresponded to the northern part of present-day Upper Normandy down to the river Seine, but the Duchy would eventually extend west beyond the Seine. The territory was roughly equivalent to the old province of Rouen, and reproduced the Roman administrative structure of Gallia Lugdunensis II (part of the former Gallia Lugdunensis).
+2024-07-01 00:23:15,116 - INFO - Question: Who did Rollo sign the treaty of Saint-Clair-sur-Epte with?
+2024-07-01 00:23:15,116 - INFO - Correct Answer: King Charles III
+2024-07-01 00:23:15,116 - INFO - Predicted Answer: kf lobbyist pharell streisand forty
+2024-07-01 00:23:15,116 - INFO - --------------------------------------------------
+2024-07-01 00:23:15,819 - INFO - Context: In the course of the 10th century, the initially destructive incursions of Norse war bands into the rivers of France evolved into more permanent encampments that included local women and personal property. The Duchy of Normandy, which began in 911 as a fiefdom, was established by the treaty of Saint-Clair-sur-Epte between King Charles III of West Francia and the famed Viking ruler Rollo, and was situated in the former Frankish kingdom of Neustria. The treaty offered Rollo and his men the French lands between the river Epte and the Atlantic coast in exchange for their protection against further Viking incursions. The area corresponded to the northern part of present-day Upper Normandy down to the river Seine, but the Duchy would eventually extend west beyond the Seine. The territory was roughly equivalent to the old province of Rouen, and reproduced the Roman administrative structure of Gallia Lugdunensis II (part of the former Gallia Lugdunensis).
+2024-07-01 00:23:15,819 - INFO - Question: What river originally bounded the Duchy
+2024-07-01 00:23:15,820 - INFO - Correct Answer: Seine
+2024-07-01 00:23:15,820 - INFO - Predicted Answer: tyke montesquieus conjointly chi incarceration
+2024-07-01 00:23:15,820 - INFO - --------------------------------------------------
+2024-07-01 00:23:16,513 - INFO - Context: Before Rollo's arrival, its populations did not differ from Picardy or the Île-de-France, which were considered "Frankish". Earlier Viking settlers had begun arriving in the 880s, but were divided between colonies in the east (Roumois and Pays de Caux) around the low Seine valley and in the west in the Cotentin Peninsula, and were separated by traditional pagii, where the population remained about the same with almost no foreign settlers. Rollo's contingents who raided and ultimately settled Normandy and parts of the Atlantic coast included Danes, Norwegians, Norse–Gaels, Orkney Vikings, possibly Swedes, and Anglo-Danes from the English Danelaw under Norse control.
+2024-07-01 00:23:16,513 - INFO - Question: Who upon arriving gave the original viking settlers a common identity?
+2024-07-01 00:23:16,513 - INFO - Correct Answer: Rollo
+2024-07-01 00:23:16,513 - INFO - Predicted Answer: accu lawnmower creed mythic muscogee
+2024-07-01 00:23:16,513 - INFO - --------------------------------------------------
+2024-07-01 00:23:17,162 - INFO - Context: The descendants of Rollo's Vikings and their Frankish wives would replace the Norse religion and Old Norse language with Catholicism (Christianity) and the Gallo-Romance language of the local people, blending their maternal Frankish heritage with Old Norse traditions and customs to synthesize a unique "Norman" culture in the north of France. The Norman language was forged by the adoption of the indigenous langue d'oïl branch of Romance by a Norse-speaking ruling class, and it developed into the regional language that survives today.
+2024-07-01 00:23:17,162 - INFO - Question: What was the Norman religion?
+2024-07-01 00:23:17,162 - INFO - Correct Answer: Catholicism
+2024-07-01 00:23:17,162 - INFO - Predicted Answer: babylonica passersby oildependent buehrmanntetterode minus
+2024-07-01 00:23:17,162 - INFO - --------------------------------------------------
+2024-07-01 00:23:17,846 - INFO - Context: The descendants of Rollo's Vikings and their Frankish wives would replace the Norse religion and Old Norse language with Catholicism (Christianity) and the Gallo-Romance language of the local people, blending their maternal Frankish heritage with Old Norse traditions and customs to synthesize a unique "Norman" culture in the north of France. The Norman language was forged by the adoption of the indigenous langue d'oïl branch of Romance by a Norse-speaking ruling class, and it developed into the regional language that survives today.
+2024-07-01 00:23:17,847 - INFO - Question: What part of France were the Normans located?
+2024-07-01 00:23:17,847 - INFO - Correct Answer: north
+2024-07-01 00:23:17,847 - INFO - Predicted Answer: smit.t moister ismenus carpathia imperialism
+2024-07-01 00:23:17,847 - INFO - --------------------------------------------------
+2024-07-01 00:23:18,532 - INFO - Context: The Normans thereafter adopted the growing feudal doctrines of the rest of France, and worked them into a functional hierarchical system in both Normandy and in England. The new Norman rulers were culturally and ethnically distinct from the old French aristocracy, most of whom traced their lineage to Franks of the Carolingian dynasty. Most Norman knights remained poor and land-hungry, and by 1066 Normandy had been exporting fighting horsemen for more than a generation. Many Normans of Italy, France and England eventually served as avid Crusaders under the Italo-Norman prince Bohemund I and the Anglo-Norman king Richard the Lion-Heart.
+2024-07-01 00:23:18,532 - INFO - Question: What was one of the Norman's major exports?
+2024-07-01 00:23:18,532 - INFO - Correct Answer: fighting horsemen
+2024-07-01 00:23:18,532 - INFO - Predicted Answer: treponema seixas accuse renate asymmetric
+2024-07-01 00:23:18,532 - INFO - --------------------------------------------------
+2024-07-01 00:23:19,218 - INFO - Context: Soon after the Normans began to enter Italy, they entered the Byzantine Empire and then Armenia, fighting against the Pechenegs, the Bulgars, and especially the Seljuk Turks. Norman mercenaries were first encouraged to come to the south by the Lombards to act against the Byzantines, but they soon fought in Byzantine service in Sicily. They were prominent alongside Varangian and Lombard contingents in the Sicilian campaign of George Maniaces in 1038–40. There is debate whether the Normans in Greek service actually were from Norman Italy, and it now seems likely only a few came from there. It is also unknown how many of the "Franks", as the Byzantines called them, were Normans and not other Frenchmen.
+2024-07-01 00:23:19,219 - INFO - Question: Who was the Normans' main enemy in Italy, the Byzantine Empire and Armenia?
+2024-07-01 00:23:19,219 - INFO - Correct Answer: Seljuk Turks
+2024-07-01 00:23:19,219 - INFO - Predicted Answer: peeping unnecessarily reps. dissenters shrublands
+2024-07-01 00:23:19,219 - INFO - --------------------------------------------------
+2024-07-01 00:23:19,958 - INFO - Context: One of the first Norman mercenaries to serve as a Byzantine general was Hervé in the 1050s. By then however, there were already Norman mercenaries serving as far away as Trebizond and Georgia. They were based at Malatya and Edessa, under the Byzantine duke of Antioch, Isaac Komnenos. In the 1060s, Robert Crispin led the Normans of Edessa against the Turks. Roussel de Bailleul even tried to carve out an independent state in Asia Minor with support from the local population, but he was stopped by the Byzantine general Alexius Komnenos.
+2024-07-01 00:23:19,958 - INFO - Question: When did Herve serve as a Byzantine general?
+2024-07-01 00:23:19,958 - INFO - Correct Answer: 1050s
+2024-07-01 00:23:19,959 - INFO - Predicted Answer: corolla 1985s clifford laughter 4.6p
+2024-07-01 00:23:19,959 - INFO - --------------------------------------------------
+2024-07-01 00:23:20,641 - INFO - Context: One of the first Norman mercenaries to serve as a Byzantine general was Hervé in the 1050s. By then however, there were already Norman mercenaries serving as far away as Trebizond and Georgia. They were based at Malatya and Edessa, under the Byzantine duke of Antioch, Isaac Komnenos. In the 1060s, Robert Crispin led the Normans of Edessa against the Turks. Roussel de Bailleul even tried to carve out an independent state in Asia Minor with support from the local population, but he was stopped by the Byzantine general Alexius Komnenos.
+2024-07-01 00:23:20,641 - INFO - Question: When did Robert Crispin go up against the Turks?
+2024-07-01 00:23:20,642 - INFO - Correct Answer: 1060s
+2024-07-01 00:23:20,642 - INFO - Predicted Answer: faos typical forrest weasley redecoration
+2024-07-01 00:23:20,642 - INFO - --------------------------------------------------
+2024-07-01 00:23:21,408 - INFO - Context: One of the first Norman mercenaries to serve as a Byzantine general was Hervé in the 1050s. By then however, there were already Norman mercenaries serving as far away as Trebizond and Georgia. They were based at Malatya and Edessa, under the Byzantine duke of Antioch, Isaac Komnenos. In the 1060s, Robert Crispin led the Normans of Edessa against the Turks. Roussel de Bailleul even tried to carve out an independent state in Asia Minor with support from the local population, but he was stopped by the Byzantine general Alexius Komnenos.
+2024-07-01 00:23:21,408 - INFO - Question: Who ruined Roussel de Bailleul's plans for an independent state?
+2024-07-01 00:23:21,408 - INFO - Correct Answer: Alexius Komnenos
+2024-07-01 00:23:21,409 - INFO - Predicted Answer: nahrawan fauntroy typhoid fulfillment blanketed
+2024-07-01 00:23:21,409 - INFO - --------------------------------------------------
+2024-07-01 00:23:22,132 - INFO - Context: Some Normans joined Turkish forces to aid in the destruction of the Armenians vassal-states of Sassoun and Taron in far eastern Anatolia. Later, many took up service with the Armenian state further south in Cilicia and the Taurus Mountains. A Norman named Oursel led a force of "Franks" into the upper Euphrates valley in northern Syria. From 1073 to 1074, 8,000 of the 20,000 troops of the Armenian general Philaretus Brachamius were Normans—formerly of Oursel—led by Raimbaud. They even lent their ethnicity to the name of their castle: Afranji, meaning "Franks." The known trade between Amalfi and Antioch and between Bari and Tarsus may be related to the presence of Italo-Normans in those cities while Amalfi and Bari were under Norman rule in Italy.
+2024-07-01 00:23:22,132 - INFO - Question: What was the name of the Norman castle?
+2024-07-01 00:23:22,132 - INFO - Correct Answer: Afranji
+2024-07-01 00:23:22,132 - INFO - Predicted Answer: yachtrelated propping hypothetically able conventuale
+2024-07-01 00:23:22,132 - INFO - --------------------------------------------------
+2024-07-01 00:23:22,888 - INFO - Context: Some Normans joined Turkish forces to aid in the destruction of the Armenians vassal-states of Sassoun and Taron in far eastern Anatolia. Later, many took up service with the Armenian state further south in Cilicia and the Taurus Mountains. A Norman named Oursel led a force of "Franks" into the upper Euphrates valley in northern Syria. From 1073 to 1074, 8,000 of the 20,000 troops of the Armenian general Philaretus Brachamius were Normans—formerly of Oursel—led by Raimbaud. They even lent their ethnicity to the name of their castle: Afranji, meaning "Franks." The known trade between Amalfi and Antioch and between Bari and Tarsus may be related to the presence of Italo-Normans in those cities while Amalfi and Bari were under Norman rule in Italy.
+2024-07-01 00:23:22,889 - INFO - Question: Who was the leader when the Franks entered the Euphrates valley?
+2024-07-01 00:23:22,889 - INFO - Correct Answer: Oursel
+2024-07-01 00:23:22,889 - INFO - Predicted Answer: faggin kritchevsky fes2 reexamination submariners
+2024-07-01 00:23:22,889 - INFO - --------------------------------------------------
+2024-07-01 00:23:23,570 - INFO - Context: Some Normans joined Turkish forces to aid in the destruction of the Armenians vassal-states of Sassoun and Taron in far eastern Anatolia. Later, many took up service with the Armenian state further south in Cilicia and the Taurus Mountains. A Norman named Oursel led a force of "Franks" into the upper Euphrates valley in northern Syria. From 1073 to 1074, 8,000 of the 20,000 troops of the Armenian general Philaretus Brachamius were Normans—formerly of Oursel—led by Raimbaud. They even lent their ethnicity to the name of their castle: Afranji, meaning "Franks." The known trade between Amalfi and Antioch and between Bari and Tarsus may be related to the presence of Italo-Normans in those cities while Amalfi and Bari were under Norman rule in Italy.
+2024-07-01 00:23:23,570 - INFO - Question: Who did the Normans team up with in Anatolia?
+2024-07-01 00:23:23,570 - INFO - Correct Answer: Turkish forces
+2024-07-01 00:23:23,570 - INFO - Predicted Answer: kaliningrad validity undocking rabid freak
+2024-07-01 00:23:23,571 - INFO - --------------------------------------------------
+2024-07-01 00:23:24,252 - INFO - Context: Several families of Byzantine Greece were of Norman mercenary origin during the period of the Comnenian Restoration, when Byzantine emperors were seeking out western European warriors. The Raoulii were descended from an Italo-Norman named Raoul, the Petraliphae were descended from a Pierre d'Aulps, and that group of Albanian clans known as the Maniakates were descended from Normans who served under George Maniaces in the Sicilian expedition of 1038.
+2024-07-01 00:23:24,252 - INFO - Question: What were the origins of the Raouliii family?
+2024-07-01 00:23:24,252 - INFO - Correct Answer: Norman mercenary
+2024-07-01 00:23:24,252 - INFO - Predicted Answer: secondly grog ibex gynecology paratha
+2024-07-01 00:23:24,253 - INFO - --------------------------------------------------
+2024-07-01 00:23:25,024 - INFO - Context: Robert Guiscard, an other Norman adventurer previously elevated to the dignity of count of Apulia as the result of his military successes, ultimately drove the Byzantines out of southern Italy. Having obtained the consent of pope Gregory VII and acting as his vassal, Robert continued his campaign conquering the Balkan peninsula as a foothold for western feudal lords and the Catholic Church. After allying himself with Croatia and the Catholic cities of Dalmatia, in 1081 he led an army of 30,000 men in 300 ships landing on the southern shores of Albania, capturing Valona, Kanina, Jericho (Orikumi), and reaching Butrint after numerous pillages. They joined the fleet that had previously conquered Corfu and attacked Dyrrachium from land and sea, devastating everything along the way. Under these harsh circumstances, the locals accepted the call of emperor Alexius I Comnenus to join forces with the Byzantines against the Normans. The Albanian forces could not take part in the ensuing battle because it had started before their arrival. Immediately before the battle, the Venetian fleet had secured a victory in the coast surrounding the city. Forced to retreat, Alexius ceded the command to a high Albanian official named Comiscortes in the service of Byzantium. The city's garrison resisted until February 1082, when Dyrrachium was betrayed to the Normans by the Venetian and Amalfitan merchants who had settled there. The Normans were now free to penetrate into the hinterland; they took Ioannina and some minor cities in southwestern Macedonia and Thessaly before appearing at the gates of Thessalonica. Dissension among the high ranks coerced the Normans to retreat to Italy. They lost Dyrrachium, Valona, and Butrint in 1085, after the death of Robert.
+2024-07-01 00:23:25,025 - INFO - Question: What was the name of the count of Apulia 
+2024-07-01 00:23:25,025 - INFO - Correct Answer: Robert Guiscard
+2024-07-01 00:23:25,025 - INFO - Predicted Answer: affects wray spinor picco ballistic
+2024-07-01 00:23:25,025 - INFO - --------------------------------------------------
+2024-07-01 00:23:25,774 - INFO - Context: Robert Guiscard, an other Norman adventurer previously elevated to the dignity of count of Apulia as the result of his military successes, ultimately drove the Byzantines out of southern Italy. Having obtained the consent of pope Gregory VII and acting as his vassal, Robert continued his campaign conquering the Balkan peninsula as a foothold for western feudal lords and the Catholic Church. After allying himself with Croatia and the Catholic cities of Dalmatia, in 1081 he led an army of 30,000 men in 300 ships landing on the southern shores of Albania, capturing Valona, Kanina, Jericho (Orikumi), and reaching Butrint after numerous pillages. They joined the fleet that had previously conquered Corfu and attacked Dyrrachium from land and sea, devastating everything along the way. Under these harsh circumstances, the locals accepted the call of emperor Alexius I Comnenus to join forces with the Byzantines against the Normans. The Albanian forces could not take part in the ensuing battle because it had started before their arrival. Immediately before the battle, the Venetian fleet had secured a victory in the coast surrounding the city. Forced to retreat, Alexius ceded the command to a high Albanian official named Comiscortes in the service of Byzantium. The city's garrison resisted until February 1082, when Dyrrachium was betrayed to the Normans by the Venetian and Amalfitan merchants who had settled there. The Normans were now free to penetrate into the hinterland; they took Ioannina and some minor cities in southwestern Macedonia and Thessaly before appearing at the gates of Thessalonica. Dissension among the high ranks coerced the Normans to retreat to Italy. They lost Dyrrachium, Valona, and Butrint in 1085, after the death of Robert.
+2024-07-01 00:23:25,774 - INFO - Question: When did Dyrrachium  fall to the Normans?
+2024-07-01 00:23:25,774 - INFO - Correct Answer: 1082
+2024-07-01 00:23:25,774 - INFO - Predicted Answer: dads kvitova haneda barbers hoa
+2024-07-01 00:23:25,774 - INFO - --------------------------------------------------

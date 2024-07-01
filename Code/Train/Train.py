@@ -100,10 +100,9 @@ class Train:
 		logger.info(
 			msg=f"Stored model for document {document}")
 
-	def update_model_and_optimizer(self, model, optimizer):
-		self.optimizer = optimizer
+	def update_model(self, model):
 		self.model = model
-		logger.debug(f"Successfully updated model and optimizer")
+		logger.debug(f"Successfully updated model")
 
 	def train_model_on(self, data_file_path):
 		"""
