@@ -18,10 +18,10 @@ from model_hyperparameters import NUM_DECODER_LAYERS
 logger = logging.getLogger(__name__)
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 datasets = [
-	"../Datasets/Books/REUTERS_NEWS.txt",
+	"../Datasets/QA/common_sense_q_a.json",
 	"../Datasets/QA/trivia.json",
 	"../Datasets/QA/squad.json",
-	"../Datasets/QA/common_sense_q_a.json"
+	"../Datasets/Books/REUTERS_NEWS.txt"
 ]
 SAVED_FOLDER = "../TRAINED_MODELS/reuters_base.pt"
 
@@ -82,9 +82,12 @@ def main():
 		trainer.train_model_on(dataset)
 		MODEL = load_model(MODEL)
 		trainer.update_model_and_optimizer(MODEL, OPTIMIZER)
-		# TODO: Print performance on a few questions (?)
 
-	# TODO: Run on evaluation dataset, plot data
+
+# TODO: Print performance on a few questions (?)
+
+
+# TODO: Run on evaluation dataset, plot data
 
 
 main()
