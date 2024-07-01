@@ -67,11 +67,6 @@ class Train:
 				model_out = self.model(sequence_tensor, mask_tensor)
 				target_tensor_squeezed = target_tensor.squeeze(1)
 
-				# Forward pass (Seq2Seq style)
-				# model_out = self.model(sequence_tensor, mask_tensor)
-				# model_out = model_out.view(-1, model_out.size(-1))
-				# target_tensor_squeezed = target_tensor.view(-1)
-
 				# Backpropagation
 				loss = self.loss_fn(model_out, target_tensor_squeezed)
 				loss.backward()
@@ -119,7 +114,7 @@ class Train:
 		encoded_sequences, encoded_targets = None, None
 		if data_file_path[-4:] == ".txt":
 			encoded_sequences, encoded_targets = create_sequences_from_book(
-				VOCAB=self.VOCAB,
+				vocab=self.VOCAB,
 				text_file_path=data_file_path,
 				context_window_length=self.context_window
 			)
@@ -127,7 +122,7 @@ class Train:
 
 		elif data_file_path[-5:] == ".json":
 			encoded_sequences, encoded_targets = create_sequences_from_json(
-				VOCAB=self.VOCAB,
+				vocab=self.VOCAB,
 				json_file_path=data_file_path,
 				context_window_length=self.context_window
 			)

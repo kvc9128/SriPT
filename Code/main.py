@@ -24,10 +24,10 @@ logger = logging.getLogger(__name__)
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 datasets = [
     "../Datasets/QA/common_sense_q_a.json",
-    "../Datasets/QA/trivia.json",
-    "../Datasets/QA/squad.json",
-    "../Datasets/Books/REUTERS_NEWS.txt",
-    "../Datasets/QA/squad.json",
+    # "../Datasets/QA/trivia.json",
+    # "../Datasets/QA/squad.json",
+    # "../Datasets/Books/REUTERS_NEWS.txt",
+    # "../Datasets/QA/squad.json",
 ]
 SAVED_FOLDER = "../TRAINED_MODELS/reuters_base.pt"
 SOFTMAX = nn.Softmax(dim=-1)

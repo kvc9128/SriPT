@@ -66,7 +66,7 @@ def create_sequences_from_book(vocab, text_file_path, context_window_length):
             normalized_words = vocab.tokenize_sentence(sentence_with_eos)
 
             # TODO: DEBUGGING PURPOSES ONLY
-            normalized_words = normalized_words[:1000]
+            # normalized_words = normalized_words[:1000]
 
             logger.info(f"Found ~{len(normalized_words)} words in book")
 
@@ -78,7 +78,7 @@ def create_sequences_from_book(vocab, text_file_path, context_window_length):
                     sequence = generate_padded_sequence_with_context(
                         context="",
                         question=" ".join(question_tokens[:t + 1]),
-                         vocab=vocab,
+                        vocab=vocab,
                         context_window_length=context_window_length,
                         answer_parts=""
                     )
@@ -106,37 +106,48 @@ def create_sequences_from_json(vocab, json_file_path, context_window_length):
 
 def create_sequences_from_common_sense(vocab, context_window_length):
     encoded_sequences, encoded_targets = [], []
-    data = read_json_file("../Datasets/QA/common_sense_q_a.json")
-    for json_obj in data:
-        question_text = json_obj['question']['stem']
-        correct_label = json_obj['answerKey']
-        # Extract words from the correct choice
-        choice_text = ""
-        for choice in json_obj['question']['choices']:
-            if choice['label'] == correct_label:
-                choice_text += choice['text'] + " EOS"
-                break  # Exit the loop once the correct choice is found
+    try:
+        file_path = "../Datasets/QA/common_sense_q_a.json"
+        with open(file_path, 'r') as file:
+            for line in file:
+                # Parse the JSON object in each line
+                json_obj = json.loads(line)
 
-        tokenized_answer = vocab.tokenize_sentence(choice_text)
-        for t in range(len(tokenized_answer)):
-            part_answer = " ".join(tokenized_answer[:t])
-            sequence = generate_padded_sequence_with_context(
-                context="",
-                question=question_text,
-                vocab=vocab,
-                context_window_length=context_window_length,
-                answer_parts=part_answer
-            )
-            target = tokenized_answer[t]
-            encoded_sequence = encode_raw_text(sequence, vocab, context_window_length, inference=False)
-            encoded_target = np.array([vocab.word2index(target)])
+                question_text = json_obj['question']['stem']
+                correct_label = json_obj['answerKey']
+                # Extract words from the correct choice
+                choice_text = ""
+                for choice in json_obj['question']['choices']:
+                    if choice['label'] == correct_label:
+                        choice_text += choice['text'] + " EOS"
+                        break  # Exit the loop once the correct choice is found
 
-            encoded_sequences.append(encoded_sequence)
-            encoded_targets.append(encoded_target)
+                tokenized_answer = vocab.tokenize_sentence(choice_text)
+                for t in range(len(tokenized_answer)):
+                    part_answer = " ".join(tokenized_answer[:t])
+                    sequence = generate_padded_sequence_with_context(
+                        context="",
+                        question=question_text,
+                        vocab=vocab,
+                        context_window_length=context_window_length,
+                        answer_parts=part_answer
+                    )
+                    target = tokenized_answer[t]
+                    encoded_sequence = encode_raw_text(sequence, vocab, context_window_length,
+                                                       inference=False)
+                    encoded_target = np.array([vocab.word2index(target)])
 
-    logger.info(
-        msg=f"Generated and shuffled {len(encoded_sequences)} sequences for common sense dataset")
-    return shuffle_sequences(encoded_sequences, encoded_targets)
+                    encoded_sequences.append(encoded_sequence)
+                    encoded_targets.append(encoded_target)
+
+        logger.info(
+            msg=f"Generated and shuffled {len(encoded_sequences)} sequences for common sense dataset")
+        return shuffle_sequences(encoded_sequences, encoded_targets)
+
+    except FileNotFoundError:
+        logger.warning(msg="CommonSenseQA not found, returning empty list.")
+        return np.array([]), np.array([])
+
 
 def create_sequences_from_squad(vocab, context_window_length):
     encoded_sequences, encoded_targets = [], []
