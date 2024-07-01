@@ -90,7 +90,13 @@ def create_sequences_from_book(vocab, text_file_path, context_window_length):
                     encoded_sequences.append(encoded_sequence)
                     encoded_targets.append(encoded_target)
 
-            return shuffle_sequences(encoded_sequences, encoded_targets)
+            encoded_sequences, encoded_targets = shuffle_sequences(encoded_sequences, encoded_targets)
+
+            # Limit the number of sequences
+            if len(encoded_sequences) > 500000:
+                encoded_sequences, encoded_targets = encoded_sequences[:500000], encoded_targets[:500000]
+
+            return encoded_sequences, encoded_targets
 
     except FileNotFoundError:
         logger.warning("File not found, returning empty list.")
