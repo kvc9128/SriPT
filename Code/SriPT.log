@@ -17303,3 +17303,60 @@
 2024-06-29 23:08:15,035 - DEBUG - Truncated sentence, exceeded context window size.
 2024-06-29 23:12:38,441 - INFO - Generated and shuffled 5334528 sequences for book REUTERS_NEWS.txt
 2024-06-29 23:12:41,949 - DEBUG - Obtained sequences for book
+2024-06-30 18:21:20,789 - DEBUG - vocabulary object found and loaded successfully.
+2024-06-30 18:21:20,789 - INFO - Vocabulary loaded successfully with 89880 words.
+2024-06-30 18:21:20,866 - DEBUG - CACHEDIR=/Users/srikamal/.matplotlib
+2024-06-30 18:21:20,873 - DEBUG - Using fontManager instance from /Users/srikamal/.matplotlib/fontlist-v330.json
+2024-06-30 18:21:21,282 - DEBUG - vocabulary object found and loaded successfully.
+2024-06-30 18:21:21,283 - INFO - Vocabulary loaded successfully with 89880 words.
+2024-06-30 18:21:21,365 - DEBUG - vocabulary object found and loaded successfully.
+2024-06-30 18:21:21,365 - INFO - Vocabulary loaded successfully with 89880 words.
+2024-06-30 18:21:21,366 - INFO - Running on cpu
+2024-06-30 18:21:22,906 - DEBUG - vocabulary object found and loaded successfully.
+2024-06-30 18:21:22,906 - INFO - Vocabulary loaded successfully with 89880 words.
+2024-06-30 18:21:22,907 - INFO - Model has 104720116 parameters.
+2024-06-30 18:21:22,907 - INFO - Started training on ../Datasets/QA/common_sense_q_a.json
+2024-06-30 18:21:29,700 - INFO - Generated and shuffled 14645 sequences for common sense dataset
+2024-06-30 18:21:29,707 - DEBUG - Obtained sequences for json file ../Datasets/QA/common_sense_q_a.json
+2024-06-30 18:21:50,494 - DEBUG - vocabulary object found and loaded successfully.
+2024-06-30 18:21:50,497 - INFO - Vocabulary loaded successfully with 89880 words.
+2024-06-30 18:21:50,567 - DEBUG - CACHEDIR=/Users/srikamal/.matplotlib
+2024-06-30 18:21:50,571 - DEBUG - Using fontManager instance from /Users/srikamal/.matplotlib/fontlist-v330.json
+2024-06-30 18:21:50,919 - DEBUG - vocabulary object found and loaded successfully.
+2024-06-30 18:21:50,919 - INFO - Vocabulary loaded successfully with 89880 words.
+2024-06-30 18:21:50,989 - DEBUG - vocabulary object found and loaded successfully.
+2024-06-30 18:21:50,989 - INFO - Vocabulary loaded successfully with 89880 words.
+2024-06-30 18:21:50,989 - INFO - Running on cpu
+2024-06-30 18:21:52,090 - DEBUG - vocabulary object found and loaded successfully.
+2024-06-30 18:21:52,090 - INFO - Vocabulary loaded successfully with 89880 words.
+2024-06-30 18:21:52,091 - INFO - Model has 104720116 parameters.
+2024-06-30 18:21:52,091 - INFO - Started training on ../Datasets/QA/trivia.json
+2024-06-30 18:23:15,528 - INFO - Generated and shuffled 135533 sequences for TriviaQA dataset
+2024-06-30 18:23:15,799 - DEBUG - Obtained sequences for json file ../Datasets/QA/trivia.json
+2024-06-30 18:23:50,316 - DEBUG - vocabulary object found and loaded successfully.
+2024-06-30 18:23:50,317 - INFO - Vocabulary loaded successfully with 89880 words.
+2024-06-30 18:23:50,389 - DEBUG - CACHEDIR=/Users/srikamal/.matplotlib
+2024-06-30 18:23:50,393 - DEBUG - Using fontManager instance from /Users/srikamal/.matplotlib/fontlist-v330.json
+2024-06-30 18:23:50,741 - DEBUG - vocabulary object found and loaded successfully.
+2024-06-30 18:23:50,741 - INFO - Vocabulary loaded successfully with 89880 words.
+2024-06-30 18:23:50,813 - DEBUG - vocabulary object found and loaded successfully.
+2024-06-30 18:23:50,813 - INFO - Vocabulary loaded successfully with 89880 words.
+2024-06-30 18:23:50,813 - INFO - Running on cpu
+2024-06-30 18:23:51,889 - DEBUG - vocabulary object found and loaded successfully.
+2024-06-30 18:23:51,889 - INFO - Vocabulary loaded successfully with 89880 words.
+2024-06-30 18:23:51,890 - INFO - Model has 104720116 parameters.
+2024-06-30 18:23:51,890 - INFO - Started training on ../Datasets/QA/squad.json
+2024-06-30 18:26:55,390 - INFO - Generated and shuffled 409977 sequences for SQuAD dataset
+2024-06-30 18:26:55,544 - DEBUG - Obtained sequences for json file ../Datasets/QA/squad.json
+2024-06-30 21:37:52,109 - DEBUG - vocabulary object found and loaded successfully.
+2024-06-30 21:37:52,110 - INFO - Vocabulary loaded successfully with 89880 words.
+2024-06-30 21:37:52,185 - DEBUG - CACHEDIR=/Users/srikamal/.matplotlib
+2024-06-30 21:37:52,191 - DEBUG - Using fontManager instance from /Users/srikamal/.matplotlib/fontlist-v330.json
+2024-06-30 21:37:52,589 - DEBUG - vocabulary object found and loaded successfully.
+2024-06-30 21:37:52,589 - INFO - Vocabulary loaded successfully with 89880 words.
+2024-06-30 21:37:52,673 - DEBUG - vocabulary object found and loaded successfully.
+2024-06-30 21:37:52,674 - INFO - Vocabulary loaded successfully with 89880 words.
+2024-06-30 21:37:52,674 - INFO - Running on cpu
+2024-06-30 21:37:53,568 - DEBUG - vocabulary object found and loaded successfully.
+2024-06-30 21:37:53,568 - INFO - Vocabulary loaded successfully with 89880 words.
+2024-06-30 21:37:53,570 - INFO - Model has 50822864 parameters.

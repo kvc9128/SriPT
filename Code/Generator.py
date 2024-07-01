@@ -54,39 +54,6 @@ def remove_repeated_phrases(text):
 	return text
 
 
-def generate_text_from_seq_2_seq_model(model, start_prompt, context_size, VOCAB, max_output_length=48,
-                                       temperature=0.95):
-	model.eval()
-	generated_sequence = start_prompt
-	for _ in range(max_output_length):  # don't want to include length of q in a
-		# Tokenize the current sequence
-		input_ids = encode_raw_text(generated_sequence, VOCAB, context_size, inference=True)
-		input_tensor = torch.tensor(np.array([input_ids]), dtype=torch.long, device=DEVICE)
-
-		mask = torch.ones_like(input_tensor)
-		mask.to(DEVICE)
-		mask[input_tensor == 2] = 0  # 2 is my PAD token
-
-		with torch.no_grad():
-			output = model(input_tensor, mask)
-
-		output = output / temperature
-		most_likely_tokens = torch.argmax(output,
-		                                  dim=-1)  # pick tokens with the highest probability
-		most_likely_tokens = most_likely_tokens[0]  # get the last token
-		most_likely_token = most_likely_tokens[-1]
-
-		if int(most_likely_token) == VOCAB.word2index("EOS"):
-			generated_sequence += "."
-			break
-		elif int(most_likely_token) == VOCAB.word2index("PAD"):
-			generated_sequence += ""
-		else:
-			generated_sequence += " " + VOCAB.index2word(int(most_likely_token))
-
-	return generated_sequence
-
-
 def generate_next_token(model, start_prompt, context_size, VOCAB, max_output_length=32, temperature=25):
 	model.eval()  # Set the model to evaluation mode
 	generated_sequence = start_prompt

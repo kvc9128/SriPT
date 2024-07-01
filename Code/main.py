@@ -1,8 +1,10 @@
+import json
 import os
 import torch
 import logging
 import vocab_manager
 
+import numpy as np
 import torch.nn as nn
 
 from Model.SriPT import SriPT
@@ -14,6 +16,8 @@ from model_hyperparameters import CONTEXT_WINDOW
 from model_hyperparameters import EMBEDDING_DIMENSION
 from model_hyperparameters import NUM_ATTENTION_HEADS
 from model_hyperparameters import NUM_DECODER_LAYERS
+from Code.Utilities.Transcoder import encode_raw_text
+
 
 logger = logging.getLogger(__name__)
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -21,9 +25,12 @@ datasets = [
 	"../Datasets/QA/common_sense_q_a.json",
 	"../Datasets/QA/trivia.json",
 	"../Datasets/QA/squad.json",
-	"../Datasets/Books/REUTERS_NEWS.txt"
+	"../Datasets/Books/REUTERS_NEWS.txt",
+	"../Datasets/QA/squad.json",
 ]
 SAVED_FOLDER = "../TRAINED_MODELS/reuters_base.pt"
+SOFTMAX = nn.Softmax(dim=-1)
+
 
 
 def load_model(model):
@@ -44,6 +51,75 @@ def load_model(model):
 		logger.error(f"An error occurred while loading the model: {e}")
 	finally:
 		return model
+
+def evaluate_on_common_sense(model, VOCAB):
+	eval_path = "../Datasets/Evaluation/common_sense_qa_dev.json"
+	with open(eval_path, 'r') as file:
+		data = json.load(file)
+		sample_questions = np.random.choice(data, size=5, replace=False)
+	logger.info("=" * 50)
+	logger.info(" Common Sense QA Dev evaluation")
+	logger.info("=" * 50)
+	model.eval()
+	with torch.no_grad():
+		for item in sample_questions:
+			question = item['Question']
+			correct_answer = item['Answer']['Value']
+
+			tokenized_question = VOCAB.tokenize_sentence(question)
+			tokenized_question = torch.tensor(encode_raw_text(tokenized_question, VOCAB, CONTEXT_WINDOW), dtype=torch.long, device=DEVICE)
+			tokenized_question = tokenized_question.unsqueeze(0)
+
+			mask_tensor = torch.ones_like(tokenized_question, dtype=torch.long, device=DEVICE)
+			mask = torch.ones_like(tokenized_question)
+			mask.to(DEVICE)
+			mask[tokenized_question == 2] = 0  # 2 is my PAD token index
+
+			output = model(tokenized_question, mask_tensor)
+			output = SOFTMAX(output)
+			predicted_token_id = torch.multinomial(output, 1).item()
+			predicted_answer = VOCAB.index2word(predicted_token_id)
+
+			logger.info(f"Question: {question}")
+			logger.info(f"Correct Answer: {correct_answer}")
+			logger.info(f"Predicted Answer: {predicted_answer}")
+			logger.info("-" * 50)
+
+
+def evaluate_on_squad_dev(model, vocab):
+	eval_path = "../Datasets/Evaluation/squad_dev.json"
+	with open(eval_path, 'r') as file:
+		data = json.load(file)
+
+	model.eval()
+	total, correct = 0, 0
+	with torch.no_grad():
+		for item in data['data']:
+			for paragraph in item['paragraphs']:
+				context = paragraph['context']
+				for qa in paragraph['qas']:
+					question = qa['question']
+					answers = qa['answers']
+					if not answers:
+						continue
+					correct_answer = answers[0]['text']
+					tokenized_question = vocab.tokenize_sentence(question)
+					tokenized_question = torch.tensor(
+						[vocab.word2index(w) for w in tokenized_question], dtype=torch.long,
+						device=DEVICE)
+					tokenized_question = tokenized_question.unsqueeze(0)
+					mask_tensor = torch.ones_like(tokenized_question, dtype=torch.long,
+					                              device=DEVICE)
+					output = model(tokenized_question, mask_tensor)
+					predicted_index = torch.argmax(output, dim=-1).item()
+					predicted_answer = vocab.index2word(predicted_index)
+					if predicted_answer in correct_answer:
+						correct += 1
+					total += 1
+
+	accuracy = correct / total if total > 0 else 0
+	logger.info(f"SQuAD Dev Set Evaluation - Accuracy: {accuracy * 100:.2f}%")
+	return accuracy
 
 
 def main():
