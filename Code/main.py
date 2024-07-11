@@ -128,7 +128,7 @@ def evaluate_on_squad_dev(model, vocab):
                     correct_answer = answers[0]['text']
                     generated_answer = ""
 
-                    for _ in range(5):  # 25 is an arbitrary limit for token generation
+                    for _ in range(25):  # 25 is an arbitrary limit for token generation
                         sequence = generate_padded_sequence_with_context(
                             context=context,
                             question=question,
