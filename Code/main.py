@@ -23,13 +23,12 @@ from Code.Utilities.Transcoder import encode_raw_text
 logger = logging.getLogger(__name__)
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 datasets = [
-    "../Datasets/QA/common_sense_q_a.json",
     "../Datasets/QA/trivia.json",
-    "../Datasets/QA/squad.json",
+    "../Datasets/QA/common_sense_q_a.json",
     "../Datasets/Books/REUTERS_NEWS.txt",
     "../Datasets/QA/squad.json",
 ]
-SAVED_FOLDER = "../TRAINED_MODELS/reuters_base.pt"
+SAVED_FOLDER = "../TRAINED_MODELS"
 SOFTMAX = nn.Softmax(dim=-1)
 
 def load_model(model):
