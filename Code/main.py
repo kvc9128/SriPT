@@ -34,11 +34,11 @@ SOFTMAX = nn.Softmax(dim=-1)
 def load_model(model):
     try:
         if os.path.exists(SAVED_FOLDER):
-            model_path = os.path.join(SAVED_FOLDER, 'reuters_base.pt')
+            model_path = os.path.join(SAVED_FOLDER, 'model.pt')
             model.load_state_dict(torch.load(model_path, map_location=torch.device(DEVICE)))
-            logger.info(f"Successfully loaded model with weights and parameters")
+            logger.info(f"Successfully loaded model with weights")
         else:
-            logger.error("No checkpoint found. Please provide a model and checkpoint.")
+            logger.error("No checkpoint found. Using new untrained model.")
     except FileNotFoundError:
         logger.error(f"Checkpoint file not found: {SAVED_FOLDER}")
     except KeyError as e:
