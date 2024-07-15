@@ -25,7 +25,7 @@ DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 datasets = [
     #"../Datasets/QA/trivia.json",
     #"../Datasets/QA/common_sense_q_a.json",
-    "../Datasets/Books/REUTERS_NEWS.txt",
+    #"../Datasets/Books/REUTERS_NEWS.txt",
     "../Datasets/QA/squad.json",
 ]
 SAVED_FOLDER = "../TRAINED_MODELS"
@@ -198,7 +198,9 @@ def main():
     logger.info(f"Model has {total_params} parameters.")
 
     # TODO: Uncomment depending on if you are retraining or building form scratch
-    # MODEL = load_model(MODEL)
+    MODEL = load_model(MODEL)
+    evaluate_on_squad_dev(MODEL, VOCAB)
+    evaluate_on_common_sense(MODEL, VOCAB)
     for dataset in datasets:
         trainer.train_model_on(dataset)
         MODEL = load_model(MODEL)
