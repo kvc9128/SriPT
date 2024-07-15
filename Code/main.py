@@ -23,8 +23,8 @@ from Code.Utilities.Transcoder import encode_raw_text
 logger = logging.getLogger(__name__)
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 datasets = [
-    "../Datasets/QA/trivia.json",
-    "../Datasets/QA/common_sense_q_a.json",
+    #"../Datasets/QA/trivia.json",
+    #"../Datasets/QA/common_sense_q_a.json",
     "../Datasets/Books/REUTERS_NEWS.txt",
     "../Datasets/QA/squad.json",
 ]
