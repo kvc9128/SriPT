@@ -200,15 +200,13 @@ def main():
 
     # TODO: Uncomment depending on if you are retraining or building form scratch
     # MODEL = load_model(MODEL)
-    # evaluate_on_squad_dev(MODEL, VOCAB)
-    # evaluate_on_common_sense(MODEL, VOCAB)
-    # for dataset in datasets:
-    #     trainer.train_model_on(dataset)
-    #     MODEL = load_model(MODEL)
-    #     trainer.update_model(MODEL)
-    #     evaluate_on_common_sense(MODEL, VOCAB)
-    # # evaluate finally on squad dev
-    # evaluate_on_squad_dev(MODEL, VOCAB)
+    for dataset in datasets:
+        trainer.train_model_on(dataset)
+        MODEL = load_model(MODEL)
+        trainer.update_model(MODEL)
+        evaluate_on_common_sense(MODEL, VOCAB)
+    # evaluate finally on squad dev
+    evaluate_on_squad_dev(MODEL, VOCAB)
 
 
 main()
