@@ -41,7 +41,7 @@ class VOCAB:
 		# Add digits and decimal point
 		self.add_digits()
 		# Add/remove words from vocab object
-		self.add_unix_words()
+		# self.add_unix_words()
 
 	def add_digits(self):
 		for i in range(10):

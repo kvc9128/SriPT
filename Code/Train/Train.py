@@ -94,7 +94,8 @@ class Train:
 	def quick_save_model(model, document, path):
 		os.makedirs(path, exist_ok=True)
 		# save the model
-		model_path = os.path.join(path, 'model.pt')
+		# model_path = os.path.join(path, 'model.pt')
+		model_path = os.path.join(path, 'squad.pt') # train on squad only
 		torch.save(model.state_dict(), model_path)
 
 		logger.info(

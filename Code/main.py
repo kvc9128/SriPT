@@ -34,7 +34,8 @@ SOFTMAX = nn.Softmax(dim=-1)
 def load_model(model):
     try:
         if os.path.exists(SAVED_FOLDER):
-            model_path = os.path.join(SAVED_FOLDER, 'model.pt')
+            # model_path = os.path.join(SAVED_FOLDER, 'model.pt')
+            model_path = os.path.join(SAVED_FOLDER, 'squad.pt')
             model.load_state_dict(torch.load(model_path, map_location=torch.device(DEVICE)))
             logger.info(f"Successfully loaded model with weights")
         else:
@@ -159,7 +160,7 @@ def evaluate_on_squad_dev(model, vocab):
                     logger.info(f"Predicted Answer: {generated_answer}")
                     logger.info("-" * 50)
 
-                    if correct_answer in generated_answer or generated_answer in correct_answer:
+                    if generated_answer != "" and correct_answer in generated_answer or generated_answer in correct_answer:
                         correct += 1
                     total += 1
                     results.append((context, question, correct_answer, generated_answer))
@@ -198,16 +199,16 @@ def main():
     logger.info(f"Model has {total_params} parameters.")
 
     # TODO: Uncomment depending on if you are retraining or building form scratch
-    MODEL = load_model(MODEL)
-    evaluate_on_squad_dev(MODEL, VOCAB)
-    evaluate_on_common_sense(MODEL, VOCAB)
-    for dataset in datasets:
-        trainer.train_model_on(dataset)
-        MODEL = load_model(MODEL)
-        trainer.update_model(MODEL)
-        evaluate_on_common_sense(MODEL, VOCAB)
-    # evaluate finally on squad dev
-    evaluate_on_squad_dev(MODEL, VOCAB)
+    # MODEL = load_model(MODEL)
+    # evaluate_on_squad_dev(MODEL, VOCAB)
+    # evaluate_on_common_sense(MODEL, VOCAB)
+    # for dataset in datasets:
+    #     trainer.train_model_on(dataset)
+    #     MODEL = load_model(MODEL)
+    #     trainer.update_model(MODEL)
+    #     evaluate_on_common_sense(MODEL, VOCAB)
+    # # evaluate finally on squad dev
+    # evaluate_on_squad_dev(MODEL, VOCAB)
 
 
 main()

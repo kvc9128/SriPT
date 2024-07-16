@@ -105,16 +105,16 @@ def load_vocab():
 
 
 def create_vocab_from_scratch():
-	vocabulary = VOCAB("all_words", min_occurrence=2)
+	vocabulary = VOCAB("all_words", min_occurrence=1)
 	logger.debug(msg="Read all Unix Words")
 	books = [
 		"../Datasets/Books/REUTERS_NEWS.txt",
 	]
 
-	load_books(books, vocabulary)
-	read_common_sense_qa(vocabulary)
+	# load_books(books, vocabulary)
+	# read_common_sense_qa(vocabulary)
 	read_squad(vocabulary)
-	read_trivia_qa(vocabulary)
+	# read_trivia_qa(vocabulary)
 	vocabulary.enforce_min_count()
 	file_pi = open(PICKLE_FILE_PATH, 'wb')
 	pickle.dump(vocabulary, file_pi)
